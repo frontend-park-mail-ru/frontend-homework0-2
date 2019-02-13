@@ -10,6 +10,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 /******************/
@@ -119,10 +120,10 @@ a {
 }
 
 .input {
-    margin: 12px 0;
+    margin: 10px 0;
     height: 20px;
     /* can't align the text any other way */
-    padding: 5px 5px 3px 5px;
+    padding: 5px 5px 2px 5px;
     border-radius: 3px;
     border: 1px solid #E0E0E0;
     font-size: 12px;
