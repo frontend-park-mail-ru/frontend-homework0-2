@@ -1,0 +1,274 @@
+/* things I was told to write xd */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.body {
+    background-color: #858585;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/******************/
+/* Generic styles */
+/******************/
+
+a {
+    text-decoration: none;
+    color: #005BD1;
+}
+
+.align-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.empty-margin-15 {
+    height: 15px;
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-muted {
+    font-size: 9px;
+    color: #A9A9A9;
+}
+
+.text-small {
+    font-size: 12px;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+}
+
+/* form-related generic styles */
+
+.btn {
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+    height: 32px;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    box-shadow: 0 2px #F5F5F5;
+    font-weight: bold;
+    width: 144px;
+    margin: 5px auto 15px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-purple {
+    background-color: #CA9CF4;
+}
+
+.checkbox {
+    vertical-align: bottom;
+    position: relative;
+    background-color: #8E8E8E;
+    margin: 0;
+    top: -4px;
+    width: 14px;
+    height: 14px;
+    overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 3px;
+}
+
+.checkbox:checked::after {
+    content: "✓";
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    /* pixel values require fractional numbers, so instead I use % */
+    top: -5%;
+    right: -1%;
+}
+
+.checkbox:focus {
+    outline: none;
+}
+
+.checkbox-small {
+    width: 12px;
+    height: 12px;
+}
+
+.checkbox-purple {
+    background-color: #CA9CF4;
+}
+
+.column-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    margin: 12px 0;
+    height: 20px;
+    /* can't align the text any other way */
+    padding: 5px 5px 3px 5px;
+    border-radius: 3px;
+    border: 1px solid #E0E0E0;
+    font-size: 12px;
+}
+
+/* Input + icon */
+.input-w-icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-w-icon > .input {
+    padding-right: 30px;
+}
+
+.input-w-icon > .icon {
+    position: absolute;
+    top: 21px;
+    right: 7px;
+}
+
+.input-w-icon > .icon-small {
+    top: 22px;
+    right: 7px;
+}
+
+.form-group {
+    margin: 5px 0;
+}
+
+/************************/
+/* Popup-related styles */
+/************************/
+
+.popup {
+    position: relative;
+    background-color: white;
+    min-width: 300px;
+    border-radius: 3px;
+    padding: 20px 20px 15px 20px;
+    box-shadow: 0 0 50px 5px #676767;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup_close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.popup-hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #E0E0E0;
+    /* compensating for the popup margin (there's probably a better way) */
+    margin: 15px -20px;
+    padding: 0;
+}
+
+/******************************/
+/* Social icon related styles */
+/******************************/
+
+.social-icons-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.social-icon-wrapper {
+    display: inline-block;
+    padding: 10px 5px 5px;
+    border-radius: 3px;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 2px #F5F5F5;
+    margin: 0 2.5px;
+}
+
+.social-icon-wrapper-vk {
+    background-color: #4A76A8;
+}
+
+.social-icon-wrapper-fb {
+    background-color: #3B5998;
+}
+
+.social-icon-wrapper-ok {
+    background-color: #EE8208;
+}
+
+/*********/
+/* Icons */
+/*********/
+.icon {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: black;
+}
+
+.icon-small {
+    width: 12px;
+    height: 12px;
+}
+
+.icon-btn {
+    cursor: pointer;
+}
+
+.icon-white {
+    background-color: white;
+}
+
+.icon-large {
+    width: 20px;
+    height: 20px;
+}
+
+/*icon svg urls*/
+.eye-icon {
+    -webkit-mask-image: url("../icons/show.svg");
+    mask-image: url("../icons/show.svg");
+}
+
+.cross-icon {
+    -webkit-mask-image: url("../icons/close.svg");
+    mask-image: url("../icons/close.svg");
+}
+
+.vk-icon {
+    -webkit-mask-image: url("../icons/vk.svg");
+    mask-image: url("../icons/vk.svg");
+}
+
+.fb-icon {
+    -webkit-mask-image: url("../icons/fb.svg");
+    mask-image: url("../icons/fb.svg");
+}
+
+.ok-icon {
+    -webkit-mask-image: url("../icons/ok.svg");
+    mask-image: url("../icons/ok.svg");
+}
