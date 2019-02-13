@@ -120,7 +120,7 @@ a {
 }
 
 .input {
-    margin: 10px 0;
+    margin: 7px 0;
     height: 20px;
     /* can't align the text any other way */
     padding: 5px 5px 2px 5px;
@@ -142,12 +142,12 @@ a {
 
 .input-w-icon > .icon {
     position: absolute;
-    top: 21px;
+    top: 15px;
     right: 7px;
 }
 
 .input-w-icon > .icon-small {
-    top: 22px;
+    top: 16px;
     right: 7px;
 }
 
