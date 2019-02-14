@@ -28,12 +28,6 @@ a {
     justify-content: space-between;
 }
 
-.empty-margin-15 {
-    height: 15px;
-    margin: 0;
-    background: transparent;
-}
-
 .text-center {
     text-align: center;
 }
@@ -48,7 +42,10 @@ a {
 }
 
 .title {
-    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 16px 0;
+    display: block;
     text-align: center;
 }
 
@@ -140,7 +137,7 @@ a {
     margin: 8px 0;
     height: 20px;
     /* can't align the text any other way */
-    padding: 5px 5px 3px 5px;
+    padding: 5px 5px 3px 10px;
     border-radius: 3px;
     border: 1px solid #E0E0E0;
     font-size: 12px;
@@ -159,24 +156,24 @@ a {
 }
 
 /* Input + icon */
-.input-w-icon {
+.input-w-icon-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.input-w-icon > .input {
+.input-w-icon {
     padding-right: 30px;
 }
 
-.input-w-icon > .icon {
+.icon-input {
     position: absolute;
     top: 15px;
     right: 7px;
 }
 
-.input-w-icon > .icon-12 {
-    top: 16px;
+.icon-input.icon-12 {
+    top: 17px;
     right: 7px;
 }
 
