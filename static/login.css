@@ -1,0 +1,155 @@
+body {
+    background: rgb(133, 133, 133);
+}
+.modal-window {
+    box-shadow: 0 10px 60px rgb(102,102,102);
+    padding: 20px 20px 10px 20px;
+    background: white;
+    width: 380px;
+    height: 380px;
+    border-radius: 1px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-window-header {
+    font-size: 150%;
+    display: block;
+}
+    .close-icon {
+        float: left;
+        width: 5%;
+    }
+
+    .title {
+        width: 90%;
+        float: left;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+.modal-window-body {
+    display: block;
+    margin-top: 5%; 
+}
+
+.input-holder {
+
+}
+    input[type=text], select, textarea {
+        float: left;
+        width: 100%;
+        padding: 1.8% 2%;
+        margin-top: 6%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+
+        border-radius: 4px;
+        border: 0.5px solid #ccc;
+    }
+
+
+.container-passwords {
+
+}
+    .password-variants {
+        margin-top: 5%;
+        display: block;
+        float: left;
+        width: 50%;
+    }
+
+    .t-left {
+        text-align: left;
+    }
+
+    .t-right {
+        text-align: right;
+    }
+
+.container-btn {
+    /* justify-content: middle; */
+    padding-top: 41%;
+}
+    .btn-blue {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        
+        background-color: blue;
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        border-radius: 4px;
+        padding: 6px 65px;
+    }
+
+
+.container-text {
+    text-align: center;
+    margin-top: 4%;
+}
+    .txt-gray {
+        font-size: 90%;
+        color: rgb(154, 154, 154);
+    }
+
+
+.container-icons {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+    .icons {
+        display: block;
+        float: left;
+        height: 32px;
+        width: 32px;
+        border-radius: 1px;
+        margin: 1%;
+        margin-top: 0;
+    }
+        .icons-icon {
+            display: flex;
+            justify-content: center;
+            margin-top: 27%;
+            fill: white;
+        }
+
+        .vk {
+            background: rgb(74, 118, 168);
+            border: 1px solid rgb(52, 78, 134);
+        }
+        .fb {
+            background: rgb(59, 89, 152);
+            border: 1px solid rgb(52, 78, 134);
+        }
+        .ok {
+            background: rgb(238, 130, 8);
+            border: 1px solid rgb(209, 114, 7);
+        }
+
+.modal-window-footer {
+    margin-top: 4%;
+}
+    hr {
+        border: 0.5px solid rgb(224,224,224);
+    }
+
+    .register-footer {
+        margin-top: 6%;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+        .register-footer a {
+            margin: 0;
+        }
