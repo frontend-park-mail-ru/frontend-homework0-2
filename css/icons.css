@@ -1,0 +1,135 @@
+/*********/
+/* Icons */
+/*********/
+
+.icon {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: transparent;
+}
+
+/* wrappers */
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-wrapper-rect-20-30 {
+    width: 20px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #E0E0E0;
+}
+
+.icon-wrapper-green {
+    background-color: #28C57D;
+}
+
+.icon-wrapper-round {
+    border-radius: 100%;
+}
+
+.icon-wrapper-xlarge {
+    width: 28px;
+    height: 28px;
+}
+
+.icon-btn {
+    cursor: pointer;
+}
+
+/* sizes */
+
+.icon-12 {
+    width: 12px;
+    height: 12px;
+}
+
+.icon-20 {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-24 {
+    width: 24px;
+    height: 24px;
+}
+
+/* colors */
+
+.icon-btn {
+    cursor: pointer;
+}
+
+.icon-white {
+    background-color: white;
+}
+
+.icon-black {
+    background-color: black;
+}
+
+.icon-orange {
+    background-color: #FD9E0B;
+}
+
+/*icon svg urls*/
+.eye-icon {
+    -webkit-mask-image: url("../icons/show.svg");
+    mask-image: url("../icons/show.svg");
+}
+
+.cross-icon {
+    -webkit-mask-image: url("../icons/close.svg");
+    mask-image: url("../icons/close.svg");
+}
+
+.vk-icon {
+    -webkit-mask-image: url("../icons/vk.svg");
+    mask-image: url("../icons/vk.svg");
+}
+
+.fb-icon {
+    -webkit-mask-image: url("../icons/fb.svg");
+    mask-image: url("../icons/fb.svg");
+}
+
+.ok-icon {
+    -webkit-mask-image: url("../icons/ok.svg");
+    mask-image: url("../icons/ok.svg");
+}
+
+.mailru-icon {
+    -webkit-mask-image: url("../icons/mailru.svg");
+    mask-image: url("../icons/mailru.svg");
+}
+
+.dropdown-icon {
+    -webkit-mask-image: url("../icons/drop_down.svg");
+    mask-image: url("../icons/drop_down.svg");
+}
+
+.signin-icon {
+    -webkit-mask-image: url("../icons/sign_in.svg");
+    mask-image: url("../icons/sign_in.svg");
+}
+
+.key-icon {
+    -webkit-mask-image: url("../icons/access.svg");
+    mask-image: url("../icons/access.svg");
+}
+
+.users-icon {
+    -webkit-mask-image: url("../icons/users.svg");
+    mask-image: url("../icons/users.svg");
+}
+
+.gamepad-icon {
+    -webkit-mask-image: url("../icons/game1.svg");
+    mask-image: url("../icons/game1.svg");
+}
