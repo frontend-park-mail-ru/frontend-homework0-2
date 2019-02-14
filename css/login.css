@@ -1,7 +1,8 @@
 /* things I was told to write xd */
 html, body {
-    width: 100%;
     height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 .body {
@@ -10,7 +11,6 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 /******************/
@@ -31,6 +31,7 @@ a {
 .empty-margin-15 {
     height: 15px;
     margin: 0;
+    background: transparent;
 }
 
 .text-center {
@@ -58,13 +59,15 @@ a {
     border-radius: 3px;
     height: 32px;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     font-size: 14px;
     padding: 5px;
     box-shadow: 0 2px #F5F5F5;
     font-weight: bold;
     width: 144px;
     margin: 5px auto 15px;
-    line-height: 22px;
     cursor: pointer;
 }
 
@@ -94,11 +97,21 @@ a {
 .checkbox:checked::after {
     content: "✓";
     font-weight: bold;
+    font-size: 14px;
     color: white;
     position: absolute;
     /* pixel values require fractional numbers, so instead I use % */
     top: -5%;
-    right: -1%;
+    right: 3%;
+}
+
+@-moz-document url-prefix() {
+    /* ✓ renders differently, hence the changes */
+    .checkbox:checked::after {
+        top: -10%;
+        right: 5%;
+        font-size: 11px;
+    }
 }
 
 .checkbox:focus {
@@ -119,14 +132,30 @@ a {
     flex-direction: column;
 }
 
+.form-group {
+    margin: 4px 0;
+}
+
 .input {
-    margin: 7px 0;
+    margin: 8px 0;
     height: 20px;
     /* can't align the text any other way */
-    padding: 5px 5px 2px 5px;
+    padding: 5px 5px 3px 5px;
     border-radius: 3px;
     border: 1px solid #E0E0E0;
     font-size: 12px;
+}
+
+@-moz-document url-prefix() {
+    /* 16 + 7 = 20 + 3 so size doesn't change, just the alignment */
+    .input {
+        height: 16px;
+        padding: 5px 5px 7px 5px;
+    }
+}
+
+.input:focus {
+    outline: none;
 }
 
 /* Input + icon */
@@ -146,13 +175,9 @@ a {
     right: 7px;
 }
 
-.input-w-icon > .icon-small {
+.input-w-icon > .icon-12 {
     top: 16px;
     right: 7px;
-}
-
-.form-group {
-    margin: 5px 0;
 }
 
 /************************/
@@ -182,7 +207,7 @@ a {
     border: 0;
     border-top: 1px solid #E0E0E0;
     /* compensating for the popup margin (there's probably a better way) */
-    margin: 15px -20px;
+    margin: 16px -20px;
     padding: 0;
 }
 
@@ -198,12 +223,8 @@ a {
 }
 
 .social-icon-wrapper {
-    display: inline-block;
-    padding: 10px 5px 5px;
-    border-radius: 3px;
-    border: 1px solid #E0E0E0;
-    box-shadow: 0 2px #F5F5F5;
-    margin: 0 2.5px;
+    box-shadow: 0 2px 0 0 #F5F5F5;
+    margin: 0 2px;
 }
 
 .social-icon-wrapper-vk {
@@ -216,60 +237,4 @@ a {
 
 .social-icon-wrapper-ok {
     background-color: #EE8208;
-}
-
-/*********/
-/* Icons */
-/*********/
-.icon {
-    width: 14px;
-    height: 14px;
-    display: inline-block;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    background-color: black;
-}
-
-.icon-small {
-    width: 12px;
-    height: 12px;
-}
-
-.icon-btn {
-    cursor: pointer;
-}
-
-.icon-white {
-    background-color: white;
-}
-
-.icon-large {
-    width: 20px;
-    height: 20px;
-}
-
-/*icon svg urls*/
-.eye-icon {
-    -webkit-mask-image: url("../icons/show.svg");
-    mask-image: url("../icons/show.svg");
-}
-
-.cross-icon {
-    -webkit-mask-image: url("../icons/close.svg");
-    mask-image: url("../icons/close.svg");
-}
-
-.vk-icon {
-    -webkit-mask-image: url("../icons/vk.svg");
-    mask-image: url("../icons/vk.svg");
-}
-
-.fb-icon {
-    -webkit-mask-image: url("../icons/fb.svg");
-    mask-image: url("../icons/fb.svg");
-}
-
-.ok-icon {
-    -webkit-mask-image: url("../icons/ok.svg");
-    mask-image: url("../icons/ok.svg");
 }
