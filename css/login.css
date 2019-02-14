@@ -95,20 +95,20 @@ a {
 }
 
 .checkbox:checked::after {
-    content: "✓";
+    content: "\2713";
     font-weight: bold;
     font-size: 14px;
     color: white;
     position: absolute;
     /* pixel values require fractional numbers, so instead I use % */
     top: -5%;
-    right: 3%;
+    right: 2%;
 }
 
 @-moz-document url-prefix() {
-    /* ✓ renders differently, hence the changes */
+    /* checkmark renders differently, hence the changes */
     .checkbox:checked::after {
-        top: -10%;
+        top: -8%;
         right: 5%;
         font-size: 11px;
     }
