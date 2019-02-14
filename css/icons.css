@@ -14,6 +14,8 @@
 /* wrappers */
 
 .icon-wrapper {
+    width: 20px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,13 +32,22 @@
     background-color: #28C57D;
 }
 
+.icon-wrapper-grey {
+    background-color: #F0F0F0;
+}
+
 .icon-wrapper-round {
     border-radius: 100%;
 }
 
-.icon-wrapper-xlarge {
+.icon-wrapper-large {
     width: 28px;
     height: 28px;
+}
+
+.icon-wrapper-xlarge {
+    width: 50px;
+    height: 50px;
 }
 
 .icon-btn {

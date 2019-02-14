@@ -98,8 +98,8 @@ a {
     color: white;
     position: absolute;
     /* pixel values require fractional numbers, so instead I use % */
-    top: -5%;
-    right: 2%;
+    top: -10%;
+    right: -2%;
 }
 
 @-moz-document url-prefix() {
@@ -187,6 +187,9 @@ a {
     min-width: 300px;
     border-radius: 3px;
     padding: 20px 20px 15px 20px;
+}
+
+.login-popup {
     box-shadow: 0 0 50px 5px #676767;
     display: flex;
     flex-direction: column;
@@ -200,7 +203,7 @@ a {
 
 .popup-hr {
     display: block;
-    height: 1px;
+    height: 0;
     border: 0;
     border-top: 1px solid #E0E0E0;
     /* compensating for the popup margin (there's probably a better way) */
