@@ -77,6 +77,10 @@
     cursor: pointer;
 }
 
+.icon-muted {
+    background-color: #A9A9A9;
+}
+
 .icon-white {
     background-color: white;
 }
@@ -143,4 +147,14 @@
 .gamepad-icon {
     -webkit-mask-image: url("../icons/game1.svg");
     mask-image: url("../icons/game1.svg");
+}
+
+.delete-icon {
+    -webkit-mask-image: url("../icons/delete.svg");
+    mask-image: url("../icons/delete.svg");
+}
+
+.useredit-icon {
+    -webkit-mask-image: url("../icons/user_edit.svg");
+    mask-image: url("../icons/user_edit.svg");
 }

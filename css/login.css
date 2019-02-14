@@ -64,7 +64,7 @@ a {
     box-shadow: 0 2px #F5F5F5;
     font-weight: bold;
     width: 144px;
-    margin: 5px auto 15px;
+    margin: 4px auto 8px;
     cursor: pointer;
 }
 
@@ -81,10 +81,9 @@ a {
     position: relative;
     background-color: #8E8E8E;
     margin: 0;
-    top: -4px;
+    top: -3px;
     width: 14px;
     height: 14px;
-    overflow: hidden;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -92,23 +91,13 @@ a {
 }
 
 .checkbox:checked::after {
+    position: absolute;
+    top: -15%;
+    right: 15%;
     content: "\2713";
     font-weight: bold;
-    font-size: 14px;
+    font-size: 80%;
     color: white;
-    position: absolute;
-    /* pixel values require fractional numbers, so instead I use % */
-    top: -10%;
-    right: -2%;
-}
-
-@-moz-document url-prefix() {
-    /* checkmark renders differently, hence the changes */
-    .checkbox:checked::after {
-        top: -8%;
-        right: 5%;
-        font-size: 11px;
-    }
 }
 
 .checkbox:focus {
