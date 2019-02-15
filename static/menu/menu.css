@@ -1,0 +1,14 @@
+.nav-bar {
+    background: rgb(0,95,249);
+    height: 56px;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-logo {
+    display: block;
+    margin-left: 84px;
+}
