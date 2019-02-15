@@ -1,0 +1,23 @@
+.icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: #ffffff;
+
+  &_black {
+    background-color: #000000;
+  }
+
+  &_vk {
+    mask-image: url("./components/Icon/img/vk.svg");
+  }
+
+  &_fb {
+    mask-image: url("./components/Icon/img/fb.svg");
+  }
+
+  &_mail {
+    mask-image: url("./components/Icon/img/mailru.svg");
+  }
+}

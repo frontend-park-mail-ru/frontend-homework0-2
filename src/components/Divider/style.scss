@@ -1,0 +1,29 @@
+@import "../../constants";
+
+.divider {
+  font-size: 13px;
+  height: 13px;
+  font-weight: 700;
+  text-align: center;
+  margin: 38px 0 40px;
+  color: #9c9c9c;
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+
+  &:after,
+  &:before {
+    content: "";
+    flex-grow: 1;
+    transform: translateY(100%);
+    background: $global-color-light-grey;
+    height: 1px;
+    line-height: 0px;
+    margin-right: 3px;
+  }
+
+  &:after {
+    margin-right: 0;
+    margin-left: 3px;
+  }
+}

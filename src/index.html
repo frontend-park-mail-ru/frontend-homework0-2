@@ -7,6 +7,36 @@
 </head>
 
 <body>
-    <h2>Hello</h2>
+
+    <div class="modal-form">
+        <div class="modal-form__content">
+            <div class="modal-form__title">Логин</div>
+            <div class="modal-form__oauth-btn-container">
+                <button class="button button_vk modal-form__oauth-btn">
+                    <i class="icon icon_vk button__icon"></i>
+                    Войти через Вконтакте
+                </button>
+                <button class="button button_fb modal-form__oauth-btn">
+                    <i class="icon icon_fb button__icon"></i>
+                    Войти через Facebook
+                </button>
+            </div>
+            <div class="divider">или</div>
+            <div class="modal-form__input-container">
+                <div class="modal-form__input input">
+                    <input class="input__field" placeholder="Email">
+                </div>
+                <div class="modal-form__input input input_password-show">
+                    <input class="input__field  input__field_error" placeholder="Пароль">
+                    <p class="input__error">Введите пароль</p>
+                </div>
+            </div>
+            <button class="modal-form__email-btn button button_green">
+                <i class="icon icon_mail button__icon"></i>
+                Войти через почту
+            </button>
+        </div>
+    </div>
+
 </body>
 </html>

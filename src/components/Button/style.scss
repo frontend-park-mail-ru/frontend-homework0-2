@@ -1,0 +1,28 @@
+@import "../../constants";
+
+.button {
+  border-radius: 8px;
+  width: 100%;
+  height: $global-controller-height;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-weight: 1000;
+  font-size: 14px;
+
+  &_vk {
+    background: $global-color-vk;
+  }
+
+  &_fb {
+    background: $global-color-fb;
+  }
+
+  &_green {
+    background: $global-color-green;
+  }
+
+  &__icon {
+    margin-right: 8px;
+  }
+}

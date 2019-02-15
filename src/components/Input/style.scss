@@ -1,0 +1,53 @@
+@import "../../constants";
+
+$local-color-error: #f51a5b;
+
+@mixin inputText {
+  font-family: 'Helvetica', 'Arial', san-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #757575;
+}
+
+.input {
+  position: relative;
+
+  &_password-show:after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+    top: calc(#{$global-controller-height} / 2);
+    right: 16px;
+    background: url('./components/Input/img/show.svg');
+  }
+
+  &__field {
+    box-sizing: border-box;
+    height: $global-controller-height;
+    border-radius: $global-border-radius;
+    border: 1px solid $global-color-light-grey;
+    background: #ffffff;
+    padding: 10px;
+    width: 100%;
+    background: none;
+    outline: none;
+
+    @include inputText;
+    &::placeholder {
+      @include inputText;
+    }
+
+    &_error {
+      border-color: $local-color-error;
+    }
+  }
+
+  &__error {
+    color: $local-color-error;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 7px 0 0;
+  }
+}

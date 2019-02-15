@@ -29,7 +29,6 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: {
-                            modules: true,
                             importLoaders: 1,
                             sourceMap: false,
                             localIdentName: '[local][hash:base64:10]',
@@ -49,7 +48,7 @@ module.exports = {
                         options: {
                             outputStyle: 'expanded',
                             sourceMap: false,
-                            includePaths: ["../"]
+                            includePaths: [srcPath],
                         }
                     },
                 ],
@@ -81,7 +80,7 @@ module.exports = {
             ],
         }),
         new MiniCssExtractPlugin({
-            filename: 'static/css/[name]-[hash].css',
+            filename: '[name]-[hash].css',
         }),
     ]
 };
