@@ -1,6 +1,6 @@
 .btn {
   background-color: $main-color;
-  border: 1px solid $border-color;
+  border: 1px solid $main-color-dark;
   border-radius: 3px;
   box-shadow: 0 2px $outline-color;
   color: white;
@@ -19,9 +19,17 @@
     outline: none;
   }
 
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 2px;
+  }
+
   &_color_muted {
     color: $muted-color-dark;
     background-color: $muted-color-light;
+    border-color: $border-color;
   }
 
   &_large {
