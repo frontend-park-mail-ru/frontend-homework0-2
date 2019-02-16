@@ -1,0 +1,13 @@
+.form__pswd-helpers-wrapper {
+    width: 372px;
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 414px) {
+    .from__pswd-helpers-wrapper {
+        width: 272px !important;
+    }
+}

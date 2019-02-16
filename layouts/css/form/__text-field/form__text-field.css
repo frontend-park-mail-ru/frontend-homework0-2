@@ -1,0 +1,14 @@
+.form__text-field {
+    width: 350px;
+    margin: 8px;
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: .25rem;
+    background: white;
+}
+
+@media (max-width: 414px) {
+    .from__text-field {
+        width: 250px !important;
+    }
+}

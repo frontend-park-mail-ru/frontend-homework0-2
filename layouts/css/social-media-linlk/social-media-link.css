@@ -1,0 +1,11 @@
+.social_media_link {
+    width: 30px;
+    height: 40px;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: .25rem;
+    outline: none;
+}

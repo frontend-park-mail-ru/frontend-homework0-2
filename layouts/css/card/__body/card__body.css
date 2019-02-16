@@ -1,0 +1,6 @@
+.card__body {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 10px;
+}
