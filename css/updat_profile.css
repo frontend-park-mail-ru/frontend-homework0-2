@@ -1,0 +1,231 @@
+* {
+    font-family: Helvetica;
+    font-size: 12px;
+}
+
+.shadow-text {
+    opacity: 0.5;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 350px 1fr;
+    grid-template-rows: 20% 400px auto;
+
+    grid-template-areas:
+            ". . ."
+            ". plate ."
+            ". . .";
+}
+
+.plate {
+    grid-area: plate;
+    height: 360px;
+
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+}
+
+div#title {
+    height: 25%;
+    padding: 20px 20px 0px 20px;
+
+    box-sizing: border-box;
+
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#title div#title-name {
+    width: 50%;
+
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+div#title div.title-name-part {
+    font-size: 30px;
+}
+
+div#title  div#cross-img {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: start;
+}
+
+div#title  div#cross-img img {
+    width: 20px;
+}
+
+div#body {
+    height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div#body div#body-plate {
+
+    height: 150px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div#body div.info-row {
+    width: 100%;
+}
+
+div#body div#bubble-text {
+
+    left: 68%;
+    height: 50px;
+
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    font-size: 1.3em;
+    position: absolute;
+    top: 280px;
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+div#body div#bubble-text::after {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: #ffffff;
+    border-right-color: gainsboro;
+    border-width: 8px;
+    margin-top: -8px;
+}
+
+div#body div.input-title {
+    font-weight: bold;
+}
+
+div#body input#login {
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+div#body .input-size {
+    height: 34px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+div#body div#phone-form {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div#body div#select-country {
+    border-top: 1px solid red;
+    border-left: 1px solid red;
+    border-bottom: 1px solid red;
+
+    border-radius: 4px 0px 0px 4px;
+
+    width: 40%;
+
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#body div#country {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+div#body img.bottom-arrow {
+    width: 10px;
+    transform: rotate(90deg);
+}
+
+div#body div#country-name {
+    margin-left: 5px;
+}
+
+div#body input#input-number {
+    width: 60%;
+
+    border: 1px solid red;
+    border-radius: 0px 4px 4px 0px;
+
+}
+
+div#body div#warnin-number {
+    color: red;
+}
+
+div#buttons {
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-top: 1px solid lightgrey;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+div#buttons button {
+    height: 30px;
+    width: 110px;
+    margin-right: 10px;
+
+    border-radius: 4px;
+}
+
+div#buttons button#update {
+    background-color: lightpink;
+    color: white;
+}
+
+div#buttons button#cancel {
+    background-color: lightgrey;
+    color: gray;
+}
+

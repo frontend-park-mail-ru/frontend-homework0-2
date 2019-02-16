@@ -1,0 +1,133 @@
+* {
+    font-family: Helvetica;
+    font-size: 12px;
+}
+
+div.container {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: auto 420px auto;
+    grid-template-rows: 0px 440px auto;
+
+    grid-template-areas:
+            ". . ."
+            ". plate ."
+            ". . .";
+}
+
+.plate {
+    grid-area: plate;
+    background-color: white;
+    /*padding: 20px;*/
+    border: 1px solid gainsboro;
+
+    border-radius: 4px;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+
+    grid-template-areas:
+            "header"
+            "information";
+}
+
+.header {
+    grid-area: header;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header div#profiles-round {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: whitesmoke;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header div.header-title {
+    font-size: 32px;
+}
+
+.information {
+    grid-area: information;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.information div#info-rows {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.information div.info-row {
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    /*justify-content: start;*/
+}
+
+.information div.bottom-line {
+    border-bottom: 1px solid gainsboro;
+}
+
+.information div.col {
+    width: 50%;
+    padding-left: 40px;
+}
+
+.information div#buttons {
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information div#buttons button {
+    width: 140px;
+    height: 44px;
+    margin: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-radius: 4px;
+    border-color: lightgray;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.information button#change {
+    background-color: #ff2953;
+    color: white;
+
+}
+
+.information button#change img{
+    filter: invert(1);
+}
+
+.information button#delete {
+    background-color: whitesmoke;
+    color: gray;
+}
+
+.information button#delete img{
+    opacity: 0.5;
+}

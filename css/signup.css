@@ -1,0 +1,185 @@
+* {
+    font-family: Helvetica;
+    font-size: 12px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    /*border-radius: 4;*/
+}
+
+.clarity {
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}
+
+.grey-text {
+    color: darkgrey;
+}
+
+select {
+    background-color: white;
+}
+
+div.container {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10px 600px auto;
+
+    grid-template-areas:
+            ". . ."
+            ". plate ."
+            ". . .";
+}
+
+.plate {
+    grid-area: plate;
+    background-color: white;
+    padding-top: 20px;
+
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+
+    grid-template-areas:
+            "header"
+            "main-body";
+
+}
+
+.header {
+    height: 60px;
+    /*padding-left: 20px;*/
+
+    font-size: 30px;
+    font-weight: bold;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main-body {
+    height: 450px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+input#warning-input {
+    border: 1px solid red;
+    border-radius: 4px;
+}
+
+div#warning-text {
+    color: red;
+}
+
+.main-body div#iput-content {
+    height: 95%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-body div.input-row {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*.main-body div#select-country {*/
+    /*width: 50%;*/
+/*}*/
+
+.main-body div#date-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-body input {
+    height: 35px;
+}
+
+.main-body div.date-select {
+    width: 33%;
+    height: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    border: 1px solid silver;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-body img.bottom-arrow {
+    width: 10px;
+    transform: rotate(90deg);
+}
+
+.main-body div#phone-form {
+    display: flex;
+}
+
+.main-body div#flag-choise {
+    width: 50%;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-body div#country {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-body div#country-name {
+    margin-left: 4px;
+}
+
+.main-body input#phone-number {
+    padding-left: 10px;
+}
+
+div#buttons {
+    height: 70px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-top: 1px solid lightgrey;
+
+    display: flex;
+    align-items: center;
+}
+
+button {
+    height: 40px;
+
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+button#register {
+    width: 140px;
+    background-color: #ff2953;
+    color: white;
+}
+
+button#cancel {
+    width: 120px;
+    background-color: lightgrey;
+}

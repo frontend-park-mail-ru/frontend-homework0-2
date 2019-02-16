@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="plate">
+            <div class="header">Регистрация</div>
+
+            <form class="main-body">
+                <div id="iput-content">
+                    <div class="input-row">
+                        <div class="grey-text">Для регистрации на ресурсе укажите информацию
+                            о себе
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <input type="text" value="Имя" id="warning-input" class="grey-text">
+                        <div id="warning-text" class="select-title"> Заполните обязательное поле</div>
+                    </div>
+
+                    <div class="input-row">
+                        <input type="text" value="Фамилия" class="clarity grey-text">
+                    </div>
+
+                    <div class="input-row">
+                        <div><b>Дата рождения</b></div>
+
+                        <div id="date-form">
+                            <div class="date-select clarity">
+                                <div>День</div>
+                                <img src="../icons/actions/play.svg" class="bottom-arrow">
+                            </div>
+
+                            <div class="date-select clarity">
+                                <div>Месяц</div>
+                                <img src="../icons/actions/play.svg" class="bottom-arrow">
+                            </div>
+
+                            <div class="date-select clarity">
+                                <div>Год</div>
+                                <img src="../icons/actions/play.svg" class="bottom-arrow">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="input-row">
+                        <div><b>Телефон</b></div>
+                        <div id="phone-form">
+
+                                <div id="flag-choise" class="clarity">
+                                    <div id="country">
+                                        <img src="../icons/ru.png">
+                                        <div id="country-name">Россия</div>
+                                    </div>
+                                    <img src="../icons/actions/play.svg" class="bottom-arrow">
+                                </div>
+
+                            <input value="+7" id="phone-number" class="clarity">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <input type="text" value="Пароль" class="clarity grey-text">
+                    </div>
+
+                    <div class="input-row">
+                        <input type="text" value="Повторите пароль" class="clarity grey-text">
+                    </div>
+                </div>
+            </form>
+
+            <div id="buttons">
+                <button id="register">
+                    <div>Зарегистрироваться</div>
+                </button>
+                <button id="cancel">
+                    <div>Отменить</div>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
