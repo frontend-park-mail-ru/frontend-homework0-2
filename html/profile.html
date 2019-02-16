@@ -3,44 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../css/profile.css">
+    <link href="../css/generic.css" rel="stylesheet">
     <link href="../css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/profile.css">
 </head>
 <body class="body">
-<div class="popup profile-popup">
+<div class="profile-popup">
     <span class="title">Профиль</span>
-    <div class="icon-wrapper icon-wrapper-xlarge icon-wrapper-round icon-wrapper-grey profile-popup_profile-icon">
-        <span class="profile-popup_profile-icon_text">ИИ</span>
+    <div class="icon-wrapper icon-wrapper-xlarge icon-wrapper-round icon-wrapper-grey profile-popup__profile-icon">
+        <span class="profile-popup__userpic-text">ИИ</span>
     </div>
-    <div class="profile-items">
-        <div class="profile-item">
-            <div class="profile-item-col"><span class="align-col_text"><strong>Никнейм</strong></span></div>
-            <div class="profile-item-col col2"><span class="align-col_text">vileven</span></div>
+    <div class="profile-popup__profile-items">
+        <div class="profile-popup__profile-item">
+            <div class="profile-popup__profile-item-name">Никнейм</div>
+            <div class="profile-popup__profile-item-value">vileven</div>
         </div>
-        <div class="profile-item">
-            <div class="profile-item-col"><span class="align-col_text"><strong>Имя</strong></span></div>
-            <div class="profile-item-col col2"><span class="align-col_text">Иван</span></div>
+        <div class="profile-popup__profile-item">
+            <div class="profile-popup__profile-item-name">Имя</div>
+            <div class="profile-popup__profile-item-value">Иван</div>
         </div>
-        <div class="profile-item">
-            <div class="profile-item-col"><span class="align-col_text"><strong>Фамилия</strong></span></div>
-            <div class="profile-item-col col2"><span class="align-col_text">Иванов</span></div>
+        <div class="profile-popup__profile-item">
+            <div class="profile-popup__profile-item-name">Фамилия</div>
+            <div class="profile-popup__profile-item-value">Иванов</div>
         </div>
-        <div class="profile-item">
-            <div class="profile-item-col"><span class="align-col_text"><strong>Дата рождения</strong></span></div>
-            <div class="profile-item-col col2"><span class="align-col_text">15.06.1997</span></div>
+        <div class="profile-popup__profile-item">
+            <div class="profile-popup__profile-item-name">Дата рождения</div>
+            <div class="profile-popup__profile-item-value">15.06.1997</div>
         </div>
-        <div class="profile-item">
-            <div class="profile-item-col"><span class="align-col_text"><strong>Пол</strong></span></div>
-            <div class="profile-item-col col2"><span class="align-col_text">Мужской</span></div>
+        <div class="profile-popup__profile-item">
+            <div class="profile-popup__profile-item-name">Пол</div>
+            <div class="profile-popup__profile-item-value">Мужской</div>
         </div>
     </div>
-    <div class="popup_double-btn">
-        <button class="btn btn-large btn-purple btn-w-icon">
-            <span class="icon icon-white icon-20 btn-w-icon-large_icon useredit-icon"></span>
+    <div class="profile-popup__double-btn">
+        <button class="btn--large--purple--w-icon">
+            <span class="btn__icon--20--white useredit-icon"></span>
             <span class="btn-w-icon-large_text">Изменить</span>
         </button>
-        <button class="btn btn-large btn-muted btn-w-icon">
-            <span class="icon icon-muted icon-20 btn-w-icon-large_icon delete-icon"></span>
+        <button class="btn--large--muted--w-icon">
+            <span class="btn__icon--20-white delete-icon"></span>
             <span class="btn-w-icon-large_text">Удалить</span>
         </button>
     </div>

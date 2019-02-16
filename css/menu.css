@@ -28,7 +28,7 @@ html, body {
     align-items: center;
 }
 
-.nav_title {
+.nav__title {
     color: white;
     font-size: 24px;
     margin-left: 4px;
@@ -38,10 +38,11 @@ html, body {
 /* Menu */
 /********/
 
-.menu-item_text {
+.menu-item__text {
     font-size: 14px;
     margin-left: 4px;
 }
+
 .menu {
     margin: 0 auto;
     width: 60%;
@@ -55,7 +56,6 @@ html, body {
 /* Menu header */
 
 .menu-title {
-    font-weight: bold;
     margin:0;
     padding: 15px;
 }
@@ -64,15 +64,7 @@ html, body {
     font-size: 28px;
     padding: 0;
     margin: 0;
-}
-
-.menu-hr {
-    display: block;
-    border: 0;
-    border-top: 1px solid #E0E0E0;
-    /* compensating for the popup margin (there's probably a better way) */
-    padding: 0;
-    margin: 0;
+    text-align: left;
 }
 
 /* Menu items */
