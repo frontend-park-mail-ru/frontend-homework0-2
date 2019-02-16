@@ -1,0 +1,15 @@
+@import "modules/theme";
+@import "modules/generic";
+@import "modules/popup";
+
+@import "blocks/icon";
+@import "blocks/btn";
+@import "blocks/profile-popup";
+@import "blocks/profile-info";
+
+.body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+

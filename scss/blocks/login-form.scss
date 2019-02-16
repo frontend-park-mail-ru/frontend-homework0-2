@@ -1,0 +1,36 @@
+.login-form {
+  $login-form-margin: 4px;
+  display: flex;
+  flex-direction: column;
+  &__form-group {
+    display: flex;
+    flex-direction: column;
+    margin: $login-form-margin 0;
+    &_align_space-between {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &_align_center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &_inline {
+      margin: 0;
+    }
+  }
+
+  &__input {
+    margin: $login-form-margin 0;
+  }
+
+  &__remember-me-label,
+  &__forgot-password-link{
+    font-size: $small-font-size;
+
+  }
+
+  &__submit-btn {
+    margin: 0 auto;
+  }
+}

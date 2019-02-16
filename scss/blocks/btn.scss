@@ -1,0 +1,35 @@
+.btn {
+  background-color: $main-color;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  box-shadow: 0 2px $outline-color;
+  color: white;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: bold;
+  padding: 5px;
+  height: 32px;
+  width: 144px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  &:focus {
+    outline: none;
+  }
+
+  &_color_muted {
+    color: $muted-color-dark;
+    background-color: $muted-color-light;
+  }
+
+  &_large {
+    height: 40px;
+  }
+
+  &__icon-span {
+    margin-right: 8px;
+  }
+
+}

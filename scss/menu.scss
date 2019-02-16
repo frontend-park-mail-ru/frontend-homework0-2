@@ -1,0 +1,14 @@
+@import "modules/theme";
+@import "modules/generic";
+
+@import "blocks/icon";
+@import "blocks/header";
+@import "blocks/menu";
+
+.body {
+    background-color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}

@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    font-family: $font-stack;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: $link-color;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    &_size_large {
+        font-size: 28px;
+    }
+}
+
+.hr {
+    border: 0;
+    border-top: 1px solid $border-color;
+    display: block;
+    height: 0;
+    padding: 0;
+    &_inline {
+        margin: 0;
+    }
+}

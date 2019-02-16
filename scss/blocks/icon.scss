@@ -1,0 +1,189 @@
+@mixin mask-image($path) {
+    -webkit-mask-image: url($path);
+    mask-image: url($path);
+}
+
+$icons-path: "../../icons";
+
+$eye-icon: $icons-path + "/show.svg";
+$cross-icon: $icons-path + "/close.svg";
+$vk-icon: $icons-path + "/vk.svg";
+$fb-icon: $icons-path + "/fb.svg";
+$ok-icon: $icons-path + "/ok.svg";
+$mailru-icon: $icons-path + "/mailru.svg";
+$dropdown-icon: $icons-path + "/drop_down.svg";
+$signin-icon: $icons-path + "/sign_in.svg";
+$key-icon: $icons-path + "/access.svg";
+$users-icon: $icons-path + "/users.svg";
+$gamepad-icon: $icons-path + "/game1.svg";
+$delete-icon: $icons-path + "/delete.svg";
+$useredit-icon: $icons-path + "/user_edit.svg";
+
+$icon-size: 14px;
+$small-icon-size: 12px;
+$large-icon-size: 20px;
+$xlarge-icon-size: 24px;
+$xxlarge-icon-size: 40px;
+
+// icons
+.icon-span {
+    display: inline-block;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: transparent;
+    height: $icon-size;
+    width: $icon-size;
+
+    //sizes
+    &_size_small {
+        height: $small-icon-size;
+        width: $small-icon-size;
+    }
+    &_size_large {
+        height: $large-icon-size;
+        width: $large-icon-size;
+    }
+    &_size_xlarge {
+        height: $xlarge-icon-size;
+        width: $xlarge-icon-size;
+    }
+    &_size_xxlarge {
+        height: $xxlarge-icon-size;
+        width: $xxlarge-icon-size;
+    }
+    //colors
+    &_color_green {
+        background-color: $green;
+    }
+    &_color_orange {
+        background-color: $orange;
+    }
+    &_color_white {
+        background-color: white;
+    }
+    &_color_black {
+        background-color: black;
+    }
+    &_color_muted {
+        background-color: $muted-color-dark;
+    }
+    &_color_muted-light {
+        background-color: $muted-color-light;
+    }
+    // flags
+    &_btn {
+        cursor: pointer;
+    }
+
+    // types (urls)
+    &_type_cross {
+        @include mask-image($cross-icon);
+    }
+
+    &_type_eye {
+        @include mask-image($eye-icon);
+    }
+
+    &_type_vk{
+        @include mask-image($vk-icon);
+    }
+    &_type_fb{
+        @include mask-image($fb-icon);
+    }
+    &_type_ok{
+        @include mask-image($ok-icon);
+    }
+    &_type_mailru {
+        @include mask-image($mailru-icon);
+    }
+    &_type_users {
+        @include mask-image($users-icon);
+    }
+    &_type_key {
+        @include mask-image($key-icon);
+    }
+    &_type_gamepad {
+        @include mask-image($gamepad-icon);
+    }
+    &_type_signin {
+        @include mask-image($signin-icon);
+    }
+    &_type_dropdown {
+        @include mask-image($dropdown-icon);
+    }
+    &_type_useredit {
+        @include mask-image($useredit-icon);
+    }
+    &_type_delete {
+        @include mask-image($delete-icon);
+    }
+}
+
+// wrappers
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    border: 1px solid $border-color;
+
+    // shapes
+    &_shape_round {
+        border-radius: 100%;
+    }
+
+    // colors
+    &_color_green {
+        background-color: $green;
+    }
+    &_color_white {
+        background-color: white;
+    }
+    &_color_black {
+        background-color: black;
+    }
+    &_color_muted {
+        background-color: $muted-color-dark;
+    }
+    &_color_muted-light {
+        background-color: $muted-color-light;
+    }
+    &_color_vk {
+        background-color: $vk-color;
+    }
+    &_color_fb {
+        background-color: $fb-color;
+    }
+    &_color_ok {
+        background-color: $ok-color;
+    }
+    // sizes
+    &_size_large {
+        width: 24px;
+        height: 24px;
+    }
+    &_size_xlarge {
+        width: 36px;
+        height: 36px;
+    }
+    &_size_xxlarge {
+        width: 50px;
+        height: 50px;
+    }
+
+    &_size_tall {
+        height: 30px;
+        width: 20px;
+    }
+
+    // flags
+    &_btn {
+        cursor: pointer;
+    }
+    &_borderless {
+        border: none;
+    }
+}

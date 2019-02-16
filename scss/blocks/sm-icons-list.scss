@@ -1,43 +1,14 @@
-@import 'icons_urls';
-@import 'theme';
+@import '../modules/theme';
 
 .sm-icons-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 10px;
 
-  &__icon-wrapper {
-    @extend %icon-wrapper;
-    @extend %icon-wrapper_shape_rect;
+  &__icon {
     box-shadow: 0 2px 0 0 $outline-color;
     margin: 0 2px;
-    &_color_vk {
-      background-color: $vk-color;
-    }
-    &_color_fb {
-      background-color: $fb-color;
-    }
-    &_color_ok {
-      background-color: $ok-color;
-    }
-  }
 
-  &__sm-icon {
-    @extend %icon;
-    @extend %icon_size_small;
-    @extend %icon_color_white;
-    @extend %icon_btn;
-
-    &_vk{
-      @include mask-image($vk-icon);
-    }
-    &_fb{
-      @include mask-image($fb-icon);
-    }
-    &_ok{
-      @include mask-image($ok-icon);
-    }
   }
 
 }

@@ -1,0 +1,30 @@
+.profile-info {
+  padding: 20px;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 10px;
+
+  &__item {
+    display: table-row;
+    height: 40px;
+    white-space: nowrap;
+    border-bottom: 1px solid #E0E0E0;
+
+    &:last-of-type {
+      border: none;
+    }
+  }
+  %profile-item-row {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  &__item-name {
+    @extend %profile-item-row;
+    font-weight: bold;
+  }
+  &__item-value {
+    @extend %profile-item-row;
+    padding-left: 40px;
+  }
+
+}
