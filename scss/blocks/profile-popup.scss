@@ -1,0 +1,22 @@
+@import "../modules/theme";
+
+.profile-popup {
+  @extend %popup;
+  border: 1px solid $border-color;
+  min-width: 400px;
+  height: fit-content;
+  margin-top: 8px;
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__profile-icon {
+    margin: 0 auto;
+  }
+
+  &__userpic-text {
+    font-weight: bold;
+    font-size: 32px;
+  }
+}
