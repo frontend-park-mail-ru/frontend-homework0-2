@@ -2,48 +2,56 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Login</title>
 
-    <link href="../css/login.css" rel="stylesheet">
-    <link href="../css/icons.css" rel="stylesheet">
-
+    <link href="../scss/compiled/login.css" rel="stylesheet">
 </head>
 <body class="body">
-<div class="popup login-popup">
-    <span class="icon icon-20 cross-icon icon-black popup_close-btn icon-btn"></span>
-    <span class="title">Войти</span>
-    <form class="column-form">
-        <input class="input" placeholder="Телефон или электронная почта" type="text">
-        <span class="input-w-icon-wrapper">
-            <input class="input input-w-icon" placeholder="Пароль" type="password">
-            <span class="icon icon-btn icon-12 icon-black icon-input eye-icon"></span>
-        </span>
-        <div class="form-group align-space-between">
-            <div>
-                <input class="checkbox checkbox-small checkbox-purple" id="remember-me-checkbox" type="checkbox">
-                <label class="text-small" for="remember-me-checkbox">Запомнить пароль</label>
-            </div>
-            <div>
-                <a class="text-small" href="#">Забыли пароль?</a>
+<div class="login-popup">
+    <div class="title login-popup__title">Войти</div>
+    <i class="icon-span icon-span_size_large icon-span_color_black
+                 icon-span_btn icon-span_type_cross login-popup__close-popup"></i>
+    <form class="login-form">
+        <div class="login-form__form-group login-form__form-group_inline">
+            <input class="input input__field login-form__input" placeholder="Телефон или электронная почта" type="text">
+            <div class="input input_with-icon login-form__input">
+                <input class="input__field" placeholder="Пароль" type="password">
+                <i class="icon-span icon-span_btn icon-span_color_black input__icon-span icon-span_type_eye"></i>
             </div>
         </div>
-        <button class="btn btn-purple" type="submit">Войти</button>
+        <div class="login-form__form-group login-form__form-group_align_space-between">
+            <div>
+                <input class="checkbox checkbox_size_small login-form__remember-me-checkbox"
+                       id="login-form__remember-me-checkbox1" type="checkbox">
+                <label class="login-form__remember-me-label" for="login-form__remember-me-checkbox1">
+                    Запомнить пароль
+                </label>
+            </div>
+            <div>
+                <a class="login-form__forgot-password-link" href="#">Забыли пароль?</a>
+            </div>
+        </div>
+        <div class="login-form__form-group login-form__form-group_align_center">
+            <button class=" btn login-form__submit-btn" type="submit">
+                <span class="btn__text">Войти</span>
+            </button>
+        </div>
     </form>
-    <div class="text-muted text-center"><strong>или продолжить через</strong></div>
-    <div class="social-icons-list">
-        <div class="icon-wrapper icon-btn icon-wrapper-rect-20-30 social-icon-wrapper social-icon-wrapper-vk">
-            <span class="icon icon-12 icon-white vk-icon"></span>
+    <div class="login-popup__continue-with-text">или продолжить через</div>
+    <div class="sm-icons-list">
+        <div class="sm-icons-list__icon icon icon_btn icon_size_tall icon_color_vk">
+            <i class="icon-span icon-span_color_white icon-span_size_small icon-span_type_vk"></i>
         </div>
-        <div class="icon-wrapper icon-btn icon-wrapper-rect-20-30 social-icon-wrapper social-icon-wrapper-fb">
-            <span class="icon icon-12 icon-white fb-icon"></span>
+        <div class="sm-icons-list__icon icon icon_btn icon_size_tall icon_color_fb">
+            <i class="icon-span icon-span_color_white icon-span_size_small icon-span_type_fb"></i>
         </div>
-        <div class="icon-wrapper icon-btn icon-wrapper-rect-20-30 social-icon-wrapper social-icon-wrapper-ok">
-            <span class="icon icon-12 icon-white ok-icon"></span>
+        <div class="sm-icons-list__icon icon icon_btn icon_size_tall icon_color_ok">
+            <i class="icon-span icon-span_color_white icon-span_size_small icon-span_type_ok"></i>
         </div>
     </div>
-    <hr class="popup-hr">
-    <div class="text-center">
-        <a href="#" class="text-small"><strong>Зарегистрироваться</strong></a>
+    <hr class="hr login-popup__hr">
+    <div class="login-popup__signup-link">
+        <a href="#">Зарегистрироваться</a>
     </div>
 </div>
 </body>
