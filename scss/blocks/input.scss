@@ -32,7 +32,7 @@ $input-border-radius: 3px;
   &__field {
     display: inline-block;
     height: $input-height;
-    border-radius: $input-border-radius + 2px;
+    border-radius: $input-border-radius;
     /* can't align the text any other way */
     padding: $input-padding-top $input-padding-sides $input-padding-bottom $input-padding-sides;
     border-width: 0;
