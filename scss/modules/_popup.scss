@@ -8,6 +8,10 @@ $popup-left-padding: 15px;
   background-color: white;
   border-radius: 3px;
   padding: $popup-top-padding $popup-right-padding $popup-bottom-padding $popup-left-padding;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 
   &__close-popup {
       position: absolute;

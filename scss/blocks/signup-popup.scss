@@ -4,11 +4,7 @@
   @extend %popup;
   border: 1px solid $border-color;
   height: fit-content;
-  width: 50%;
   max-width: 600px;
-  min-width: 300px;
-  display: flex;
-  flex-direction: column;
 
   &_main {
     margin: 8px 0 0 0;

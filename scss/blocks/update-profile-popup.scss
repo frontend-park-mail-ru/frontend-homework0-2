@@ -1,11 +1,7 @@
 .update-profile-popup {
   @extend %popup;
-  width: 50%;
   max-width: 250px;
-  min-width: fit-content;
   box-shadow: $shadow;
-  display: flex;
-  flex-direction: column;
 
   &__close-popup {
     @extend %popup__close-popup

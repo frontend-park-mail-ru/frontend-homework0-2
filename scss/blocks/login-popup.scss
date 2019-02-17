@@ -1,11 +1,7 @@
 .login-popup {
   @extend %popup;
-  width: 50%;
   max-width: 350px;
-  min-width: fit-content;
   box-shadow: $shadow;
-  display: flex;
-  flex-direction: column;
 
   &__close-popup {
     @extend %popup__close-popup
