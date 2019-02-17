@@ -11,11 +11,10 @@ $input-border-radius: 3px;
   padding: 0;
   border: 1px solid $border-color;
   min-width: fit-content; // this is important
+  position: relative;
+  display: flex;
   &_with-icon {
-    position: relative;
     padding-right: 20px;
-    display: flex;
-    flex-direction: column;
   }
   &__icon-span {
     position: absolute;
@@ -30,6 +29,7 @@ $input-border-radius: 3px;
   }
 
   &__field {
+    flex-grow: 1;
     display: inline-block;
     height: $input-height;
     border-radius: $input-border-radius;
@@ -51,12 +51,12 @@ $input-border-radius: 3px;
 
   &__field-appendix {
     display: inline-block;
-    border-radius: $input-border-radius + 2px;
+    border-radius: $input-border-radius;
     top: -2px;
     margin: 0;
     height: $input-height; // minus the border
     font-size: 12px;
-    padding: $input-padding-top 0 $input-padding-bottom 5px;
+    padding: 9px 2px 3px 2px;
     pointer-events: none;
   }
 
@@ -68,6 +68,45 @@ $input-border-radius: 3px;
   &__inner {
     display: flex;
     flex-direction: row;
+  }
+
+  &__tooltip {
+    $width: 200px;
+    $height: 30px;
+    $arrow-length: 6px;
+    $arrow-width: 4px;
+    $padding: 10px;
+    position: absolute;
+    padding: $padding;
+    width: $width;
+    height: $height;
+    right: - $width - $arrow-length - $input-padding-sides - $padding - 1px;
+    top: $input-total-height - $height - $padding - 1px; //1 px for border
+    z-index: 10000;
+    background-color: white;
+    box-shadow: $shadow-tiny;
+    border-radius: 3px;
+    pointer-events: none;
+    &::before {
+      position: absolute;
+      left: - $arrow-length;
+      top: ($height + $padding) / 2;
+      content: "";
+      border-style: solid;
+      border-width: $arrow-width $arrow-length $arrow-width 0;
+      border-color: transparent white transparent transparent;
+    }
+  }
+
+  &__tooltip-title {
+    font-size: $small-font-size;
+    color: black;
+    display: block;
+  }
+
+  &__tooltip-help {
+    font-size: $smaller-font-size;
+    color: $muted-color-dark;
   }
 }
 

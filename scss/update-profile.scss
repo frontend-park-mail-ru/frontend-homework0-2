@@ -1,0 +1,19 @@
+@import "modules/theme";
+@import "modules/generic";
+@import "modules/popup";
+
+@import "blocks/icon";
+@import "blocks/btn";
+@import "blocks/form-group";
+@import "blocks/input";
+@import "blocks/select";
+@import "blocks/field-group";
+@import "blocks/update-profile-popup";
+@import "blocks/update-profile-form";
+
+.body {
+  background-color: #858585;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

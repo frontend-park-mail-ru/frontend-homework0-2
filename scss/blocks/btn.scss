@@ -28,6 +28,11 @@
     height: 40px;
   }
 
+  &_disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
   &__inner {
     display: flex;
     justify-content: center;

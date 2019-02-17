@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link href="../scss/compiled/update-profile.css" rel="stylesheet">
+</head>
+<body class="body">
+<div class="update-profile-popup update-profile-popup_main">
+    <i class="icon-span icon-span_size_large icon-span_color_black
+                 icon-span_btn icon-span_type_cross update-profile-popup__close-popup"></i>
+    <div class="title update-profile-popup__title">Изменение настроек</div>
+    <div class="update-profile-form">
+        <div class="form-group form-group_margin_large update-profile-form__form-group">
+            <div class="form-group__title form-group__title_align_left">
+                <label for="update-profile__login">Логин</label>
+            </div>
+            <div class="form-group form-group__margin_inline">
+                <div class="input">
+                    <input type="text" class="input__field" id="update-profile__login">
+                    <div class="input__tooltip">
+                        <span class="input__tooltip-title">Укажите новый логин</span>
+                        <span class="input__tooltip-help">Вы можете изменить свой логин</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group form-group__margin_inline update-profile-form__form-group">
+            <div class="form-group__title form-group__title_align_left">
+                <label for="update-profile__phone-number">Телефон</label>
+            </div>
+            <div class="form-group form-group__margin_inline">
+                <div class="field-group">
+                    <div class="select select_status_error select_with-icon
+                                field-group__field_position_prepend field-group__field_stretched_4">
+                        <span class="icon-span icon-span_type_ru select__chosen-icon"></span>
+                        <select class="select__field">
+                            <option value="ru" class="select__option_with-icon
+                                                     select__option_icon-type_ru" data-code="+7" selected>
+                                Россия
+                            </option>
+                            <option value="ua" class="select__option_with-icon
+                                                     select__option_icon-type_ru" data-code="+380">
+                                Украина
+                            </option>
+                            <option value="us" class="select__option_with-icon
+                                                     select__option_icon-type_ru" data-code="+1">
+                                США
+                            </option>
+                        </select>
+                        <i class="icon-span icon-span icon-span_color_black
+                                  icon-span_type_dropdown select__dropdown-icon"></i>
+                    </div>
+                    <div class="input input_status_error field-group__field_position_append field-group__field_stretched_1">
+                        <span class="input__field-appendix input__field-appendix_position_prepend">+7</span>
+                        <input class="input__field input__field_prepended" type="text"
+                               id="update-profile__phone-number">
+                    </div>
+                </div>
+                <span class="form-group__help-text form-group__help-text_type_error">
+                    Неправильный телефон
+                </span>
+            </div>
+        </div>
+    </div>
+    <hr class="hr update-profile-popup__hr">
+    <div class="update-profile-popup__double-btn">
+        <button class="btn btn_large update-profile-popup__update-btn btn_disabled">
+            <span class="btn__inner">
+                <span class="btn__text">Обновить</span>
+            </span>
+        </button>
+        <button class="btn btn_large btn_color_muted update-profile-popup__cancel-btn">
+            <span class="btn__inner">
+                <span class="btn__text btn__text_normal">Отменить</span>
+            </span>
+        </button>
+    </div>
+</div>
+</body>
+</html>

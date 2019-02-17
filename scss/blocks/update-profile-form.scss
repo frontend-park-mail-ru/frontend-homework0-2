@@ -1,0 +1,10 @@
+.signup-form{
+  &__date-select {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__form-group {
+    margin: 8px 0;
+  }
+}

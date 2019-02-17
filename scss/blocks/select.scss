@@ -14,6 +14,19 @@ $select-border-radius: 3px;
     width: 100%;
   }
 
+
+  &_with-icon {
+    .select__field {
+      padding-left: $select-padding + $icon-size + 8px;
+    }
+  }
+
+  &_status {
+    &_error {
+      border-color: $error-color;
+    }
+  }
+
   &__field {
     @include appearance-none;
     width: 100%;
@@ -26,13 +39,6 @@ $select-border-radius: 3px;
       outline: none;
     }
   }
-
-  &_with-icon {
-    .select__field {
-      padding-left: $select-padding + $icon-size + 8px;
-    }
-  }
-
   &__dropdown-icon {
     @extend .icon-span_size_small;
     position: absolute;
@@ -47,6 +53,7 @@ $select-border-radius: 3px;
     top: ((20px + $select-padding*2 - $icon-size) / 2);
     left: $select-padding-sides;
   }
+
 
   //options are ugly af but can't do much without js
 }
