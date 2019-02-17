@@ -11,19 +11,16 @@
   cursor: pointer;
   height: 14px;
   width: 14px;
-  &:checked::after {
+  &:checked::before {
     position: absolute;
+    left: -15%;
     top: -20%;
-    right: -5%;
-    content: "\2713";
-    font-weight: bold;
-    font-size: 120%;
-    color: white;
-    @-moz-document url-prefix() {
-      top: -5%;
-      right: 5%;
-      font-size: 50%;
-    }
+    height: 16px;
+    width: 16px;
+    content: "";
+    @include mask-image($checkmark-icon);
+    @extend .icon-span;
+    @extend .icon-span_color_white;
   }
   &:focus {
     outline: none;
