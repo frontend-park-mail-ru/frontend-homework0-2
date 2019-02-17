@@ -1,17 +1,17 @@
-$popup-top-margin: 15px;
-$popup-right-margin: 15px;
-$popup-bottom-margin: 15px;
-$popup-left-margin: 15px;
+$popup-top-padding: 15px;
+$popup-right-padding: 15px;
+$popup-bottom-padding: 15px;
+$popup-left-padding: 15px;
 
 %popup {
   position: relative;
   background-color: white;
   border-radius: 3px;
-  padding: $popup-top-margin $popup-right-margin $popup-bottom-margin $popup-left-margin;
+  padding: $popup-top-padding $popup-right-padding $popup-bottom-padding $popup-left-padding;
 
   &__close-popup {
       position: absolute;
-      top: $popup-top-margin - 5px;
-      right: $popup-right-margin - 5px;
+      top: $popup-top-padding - 5px;
+      right: $popup-right-padding - 5px;
   }
 }
