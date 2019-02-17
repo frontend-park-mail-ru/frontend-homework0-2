@@ -3,19 +3,8 @@
   display: flex;
   flex-direction: column;
   &__form-group {
-    display: flex;
-    flex-direction: column;
     margin: $login-form-margin 0;
-    &_align_space-between {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    &_align_center {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    &_inline {
+    &.form-group_inline {
       margin: 0;
     }
   }
