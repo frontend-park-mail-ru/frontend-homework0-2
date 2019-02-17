@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+        License: none (public domain)
+        */
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* //////////////////////// */
+
+        .modal-window {
+            background: white;
+            width: 420px;
+            height: 588px;
+            border-radius: 1px;
+            margin: auto;
+            margin-top: 8px;
+
+            border: 1px solid rgb(224,224,224);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            height: 58px;
+            border-bottom: 1px solid rgb(224,224,224);
+
+            display: flex;
+            align-items: center;
+        }
+
+        .header .header-text {
+            margin-left: 20px;
+            font-size: 150%;
+            margin-top: 5px;
+        }
+
+        .body {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .body .info {
+            margin-top: 20px;
+            font-size: 90%;
+            color: rgb(154, 154, 154);
+            font-weight: 100;
+            line-height: 1.2;
+        }
+
+        .input-holder {
+
+        }
+        .input-holder input[type=text], select, textarea {
+            width: 100%;
+            font-size: 90%;
+            /* padding: 1.8% 2%; */
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-bottom: 9px;
+            margin-top: 13px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+
+            border-radius: 4px;
+            border: 1px solid rgb(224,224,224);
+        }
+        .wrong-answer {
+            border: 1px solid rgb(255,17,0) !important;
+        }
+        .red-txt {
+            color: rgb(255,17,0);
+        }
+        .input-holder .alert {
+            margin-top: 8px;
+            font-size: 90%;
+        }
+
+        .label-holder {
+            margin-top: 17px;
+            font-size: 80%;
+            font-weight: bold;
+        }
+
+        .date-holder {
+            margin-top: 5px;
+            display: flex;
+        }
+
+        .date-holder .left {
+            width: 124px;
+        }
+
+        .date-holder .middle {
+            width: 135px;;
+        }
+
+        .date-holder .right {
+            width: 115px;
+        }
+
+        .element {
+            /* width: 124px; */
+            height: 30px;
+
+            display: flex;
+            align-items: center;
+            border: 1px solid rgb(224,224,224);
+            border-radius: 2px;
+        }
+
+        .element .element-dropdown {
+            display: flex;
+            margin-left: auto;
+            align-items: center;
+            margin-right: 4px;
+            /* margin-bottom: -1px; */
+        }
+
+        .element .element-text {
+            margin-left: 12px;
+        }
+
+        .element .image {
+            margin-left: 12px;
+        }
+
+        .region {
+            width: 156px;
+        }
+
+        .number-input {
+            width: 221px;
+        }
+        .number-input input[type=text] {
+            font-size: 100%;
+            padding-left: 12px;
+            width: 100%;
+            height: 32px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+
+            border: 1px solid rgb(224,224,224);
+        }
+
+        
+        .passwords input[type=text] {
+            margin-top: 20px !important;
+        }
+
+        .footer {
+            height: 72px;
+            border-top: 1px solid rgb(224,224,224);
+            margin-bottom: 0;
+            display: flex;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .btn-blue {
+            background-color: rgb(0,95,249);
+            border: 1px solid rgb(0,83,219);
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            border-radius: 1px;
+            width: 178px;
+            height: 30px;
+            margin-left: 20px;
+        }
+
+        .btn-grey {
+            background-color: rgb(240,240,240);
+            border: 1px solid rgb(211,211,211);
+            text-align: center;
+            color: rgb(51,51,51);
+            font-size: 15px;
+            border-radius: 1px;
+            width: 102px;
+            height: 30px;
+            margin-left: 8px;
+        }
+
+    </style>
+
+    <title>Menu</title>
+</head>
+<body>
+    <div class="modal-window">
+        <div class="header">
+            <div class="header-text">
+                Регистрация
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                Для регистрации на ресурсе укажите информацию о себе
+            </div>
+            <div class="input-holder">
+                <input class="wrong-answer" type="text" placeholder="Имя">
+                <div class="alert red-txt">
+                    Заполните обязательное поле
+                </div>
+                <input type="text" placeholder="Фамилия">
+            </div>
+
+            <div class="label-holder">
+                Дата рождения
+            </div>
+            <div class="date-holder">
+                <div class="element left">
+                    <div class="element-text">
+                        День
+                    </div>
+                    <div class="element-dropdown">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.228 6.635A1 1 0 0 1 5 5h6a1 1 0 0 1 .772 1.635l-2.964 3.954a.999.999 0 0 1-1.616 0L4.228 6.635z"/>
+                            </svg>
+                        </div> 
+                    </div>
+                </div>
+                <div class="element middle">
+                    <div class="element-text">
+                        Месяц
+                    </div>
+                    <div class="element-dropdown">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.228 6.635A1 1 0 0 1 5 5h6a1 1 0 0 1 .772 1.635l-2.964 3.954a.999.999 0 0 1-1.616 0L4.228 6.635z"/>
+                            </svg>
+                        </div> 
+                    </div>
+                </div>
+                <div class="element right">
+                    <div class="element-text">
+                        Год
+                    </div>
+                    <div class="element-dropdown">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.228 6.635A1 1 0 0 1 5 5h6a1 1 0 0 1 .772 1.635l-2.964 3.954a.999.999 0 0 1-1.616 0L4.228 6.635z"/>
+                            </svg>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="label-holder">
+                Телефон
+            </div>
+            <div class="date-holder">
+                <div class="element region">
+                    <div class="image">
+                        <img src="https://img.imgsmail.ru/mail/ru/images/country_icons/ru.png">
+                    </div>
+                    <div class="element-text">
+                        Россия
+                    </div>
+                    <div class="element-dropdown">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.228 6.635A1 1 0 0 1 5 5h6a1 1 0 0 1 .772 1.635l-2.964 3.954a.999.999 0 0 1-1.616 0L4.228 6.635z"/>
+                            </svg>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="number-input">
+                    <input type="text" placeholder="+7">
+                </div>
+            </div>
+            <div class="input-holder passwords">
+                <input type="text" placeholder="Пароль">
+                <input type="text" placeholder="Повторите пароль">
+            </div>
+        </div>
+        <div class="footer">
+            <button class="btn-blue">
+                Зарегистрироваться
+            </button>
+
+            <button class="btn-grey">
+                Отменить
+            </button>
+        </div>
+    </div>
+</body>
+</html>
