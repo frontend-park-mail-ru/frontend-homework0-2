@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HW-0.2-profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+        License: none (public domain)
+        */
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        body {
+            font-family: Helvetica, Arial, san-serif;
+            background: white;
+            line-height: 1;
+        }
+
+        .background {
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-panel {
+            width: 420px;
+            height: 432px;
+            margin-top: 12px;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            border: 1px solid rgb(224,224,224);
+            border-radius: 6px;
+        }
+
+        .panel-header {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .user-logo {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background:rgb(240,240,240);
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .content-row {
+            width: 248px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgb(224,224,224);
+        }
+
+        .row-label {
+            width: 136px;
+            font-weight: bold;
+            font-size: 14px 
+        }
+
+        .row-content {
+            margin-left: 32px;
+        }
+
+        .buttons-row {
+            display: flex;
+            justify-content: center;
+            margin: 18px;
+        }
+
+        .btn-icon {
+            display: flex;
+            justify-content: center;
+            margin-right: 8px;
+        }
+
+        .change-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: rgb(255,212,0);
+            color: white;
+            font-size: 16px;
+            width: 146px;
+            height: 40px;
+            border-radius: 4px;
+            border: 1px solid rgb(224,186,0);
+            margin-right: 16px; 
+        }
+
+        .delete-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: rgb(247,247,247);
+            color: rgb(156,156,156);
+            font-size: 16px;
+            height: 40px;
+            width: 132px;
+            border-radius: 4px;
+            border: 1px solid rgb(233,233,233)
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="profile-panel">
+            <div>
+                <h1 class="panel-header">Профиль</h1>
+            </div>
+            <div class="user-logo">
+                <div class="circle">
+                    <span>ИИ</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-row">
+                    <div class="row-label">
+                        <span>Никнейм</span>
+                    </div>
+                    <div class="row-content">
+                        <span>vileven</span>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div class="row-label">
+                        <span>Имя</span>
+                    </div>
+                    <div class="row-content">
+                        <span>Иван</span>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div class="row-label">
+                        <span>Фамилия</span>
+                    </div>
+                    <div class="row-content">
+                        <span>Иванов</span>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div class="row-label">
+                        <span>Дата рождения</span>
+                    </div>
+                    <div class="row-content">
+                        <span>15.06.1997</span>
+                    </div>
+                </div>
+                <div class="content-row" style="border-bottom: none">
+                    <div class="row-label">
+                        <span>Пол</span>
+                    </div>
+                    <div class="row-content">
+                        <span>Мужской</span>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-row">
+                <button class="change-btn">
+                    <i class="btn-icon" style="fill:white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M7.627 13.203l4.237-4.237 2.17 2.17-3.152 3.152-1.085 1.085c-.001.001-.243.225-.712.314l-1.621.306a.438.438 0 0 1-.36-.097.438.438 0 0 1-.097-.36l.306-1.621c.089-.468.312-.71.314-.712zM5.557 14H2.013a1 1 0 0 1-1-1v-.3c0-2.48 2.01-4.494 4.488-4.5v-.796a3 3 0 0 1-1.488-2.591V3a3.001 3.001 0 0 1 6 0v1.813a3 3 0 0 1-1.488 2.591V8.2a4.52 4.52 0 0 1 1.199.165 2477.73 2477.73 0 0 0-3.326 3.329c-.004.004-.509.552-.71 1.611L5.557 14zm8.994-6.812a.643.643 0 0 0-.909 0l-.856.856 2.17 2.17.856-.856a.643.643 0 0 0 0-.909l-1.261-1.261z"/>
+                        </svg>
+                    </i>
+                    <span>Изменить</span>
+                </button>
+                <button class="delete-btn">
+                    <i class="btn-icon" style="fill:rgb(156,156,156)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M12.437 6a.463.463 0 0 1 .464.489l-.367 6.679c0 1.104-.914 1.84-2.018 1.84H5.548c-1.103 0-2.017-.686-2.017-1.79l-.436-6.724A.462.462 0 0 1 3.558 6h8.879zM2.128 5a.529.529 0 0 1-.531-.525l.001-.012c0-.414.251-.769.608-.922.455-.241 1.681-.439 3.292-.542V1.41C5.498.632 6.13 0 6.908 0h2.184c.778 0 1.41.632 1.41 1.41v1.589c1.611.103 2.837.301 3.292.542.357.153.608.508.608.922 0 .297-.24.537-.537.537H2.128zm6.571-3.407H7.301A.301.301 0 0 0 7 1.894v1.041a46.454 46.454 0 0 1 2 0V1.894a.301.301 0 0 0-.301-.301z"/>
+                        </svg>
+                    </i>
+                    <span>Удалить</span>
+                </button>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
