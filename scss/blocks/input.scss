@@ -1,15 +1,16 @@
 // form-related invariant styles
 
 $input-height: 20px;
-$input-padding-top: 5px;
-$input-padding-bottom: 3px;
+$input-padding-top: 6px;
+$input-padding-bottom: 4px;
 $input-padding-sides: 10px;
 $input-total-height: $input-height + $input-padding-bottom + $input-padding-top + 2px; // border 2px
-
+$input-border-radius: 3px;
 .input{
-  border: 1px solid #E0E0E0 !important;
-  border-radius: 3px;
+  border-radius: $input-border-radius;
   padding: 0;
+  border: 1px solid $border-color;
+  min-width: fit-content; // this is important
   &_with-icon {
     position: relative;
     padding-right: 20px;
@@ -27,12 +28,14 @@ $input-total-height: $input-height + $input-padding-bottom + $input-padding-top 
       top: ($input-total-height - $large-icon-size) / 2;
     }
   }
+
   &__field {
+    display: inline-block;
     height: $input-height;
-    border-radius: 3px;
+    border-radius: $input-border-radius + 2px;
     /* can't align the text any other way */
-    padding: $input-padding-top 10px $input-padding-bottom 10px;
-    border: none;
+    padding: $input-padding-top $input-padding-sides $input-padding-bottom $input-padding-sides;
+    border-width: 0;
     font-size: 12px;
     outline: none;
     margin: 0; // kinda !important but i feel bad putting it there
@@ -41,5 +44,34 @@ $input-total-height: $input-height + $input-padding-bottom + $input-padding-top 
       height: $input-height - 4px;
       padding: $input-padding-top 5px $input-padding-bottom + 4px 5px;
     }
+    &_prepended {
+      padding-left: 0;
+    }
   }
+
+  &__field-appendix {
+    display: inline-block;
+    border-radius: $input-border-radius + 2px;
+    top: -2px;
+    margin: 0;
+    height: $input-height; // minus the border
+    font-size: 12px;
+    padding: $input-padding-top 0 $input-padding-bottom 5px;
+    pointer-events: none;
+  }
+
+  &_status {
+    &_error {
+      border-color: $error-color;
+    }
+  }
+  &__inner {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.input {
+  // preference over input__field in case an input has both types
+  border-width: 1px;
 }

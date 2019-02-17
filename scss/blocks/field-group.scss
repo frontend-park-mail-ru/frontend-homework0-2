@@ -1,0 +1,30 @@
+.field-group {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: stretch;
+
+  &__field {
+    &_position {
+      &_prepend {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right-width: 0;
+        margin-right: 0;
+      }
+      &_append {
+        margin-left: 0;
+        border-left-width: 1px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+    &_stretched {
+      @for $i from 1 through 12 {
+        &_#{$i} {
+          flex-grow: $i;
+        }
+      }
+    }
+  }
+}

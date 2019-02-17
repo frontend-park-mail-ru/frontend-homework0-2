@@ -1,0 +1,18 @@
+@import "modules/theme";
+@import "modules/generic";
+@import "modules/popup";
+
+@import "blocks/icon";
+@import "blocks/btn";
+@import "blocks/form-group";
+@import "blocks/input";
+@import "blocks/select";
+@import "blocks/signup-popup";
+@import "blocks/signup-form";
+@import "blocks/field-group";
+
+.body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}

@@ -1,6 +1,12 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 4px 0;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
   &_align_space-between {
     flex-direction: row;
     justify-content: space-between;
@@ -10,7 +16,38 @@
     flex-direction: row;
     justify-content: center;
   }
-  &_inline {
-    margin: 0;
+
+  &_margin {
+    &_inline {
+      margin: 0;
+    }
+    &_large {
+      margin-bottom: 8px;
+    }
   }
+
+  &__help-text {
+    font-size: $small-font-size;
+    margin-top: 4px;
+    &_type {
+      &_error {
+        color: $error-color;
+      }
+    }
+    &_hidden {
+      display: none;
+    }
+  }
+  &__title {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    &_align {
+      &_left {
+        text-align: left;
+      }
+    }
+  }
+
 }

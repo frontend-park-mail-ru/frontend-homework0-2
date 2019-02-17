@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link href="../scss/compiled/signup.css" rel="stylesheet">
+</head>
+<body class="body">
+<div class="signup-popup signup-popup_main">
+    <div class="title signup-popup__title">Регистрация</div>
+    <hr class="hr signup-popup__hr">
+    <span class="signup-popup__explanation-text">
+        Для регистрации на ресурсе укажите информацию о себе
+    </span>
+    <div class="signup-form">
+        <div class="form-group form-group_margin_large signup-form__form-group">
+            <input type="text" class="input input_status_error input__field" placeholder="Имя">
+            <span class="form-group__help-text form-group__help-text_type_error">
+                Заполните обязательное поле
+            </span>
+        </div>
+        <div class="form-group form-group_margin_large signup-form__form-group">
+            <input type="text" class="input input__field" placeholder="Фамилия">
+            <span class="form-group__help-text form-group__help-text_type_error form-group__help-text_hidden">
+                Заполните обязательное поле
+            </span>
+        </div>
+        <div class="form-group form-group__margin_inline signup-form__form-group">
+            <div class="form-group__title form-group__title_align_left">
+                <label for="signup__day-select">Дата рождения</label></div>
+            <div class="form-group form-group_align_space-between form-group__margin_inline">
+                <div class="select select_stretched signup-form__date-select">
+                    <select class="select__field" id="signup__day-select">
+                        <option value="0" selected>День</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <i class="icon-span icon-span_size_small icon-span_color_black
+                              icon-span_type_dropdown select__dropdown-icon"></i>
+                </div>
+                <div class="select select_stretched signup-form__date-select">
+                    <select class="select__field">
+                        <option value="0" selected>Месяц</option>
+                        <option value="1">Январь</option>
+                        <option value="2">Февраль</option>
+                        <option value="3">Март</option>
+                    </select>
+                    <i class="icon-span icon-span_size_small icon-span_color_black
+                              icon-span_type_dropdown select__dropdown-icon"></i>
+                </div>
+                <div class="select select_stretched signup-form__date-select">
+                    <select class="select__field">
+                        <option value="0" selected>Год</option>
+                        <option value="1">2019</option>
+                        <option value="2">2018</option>field-group__field_stretched_4
+                        <option value="3">2017</option>
+                    </select>
+                    <i class="icon-span icon-span_size_small icon-span_color_black
+                              icon-span_type_dropdown select__dropdown-icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="form-group form-group__margin_inline signup-form__form-group">
+            <div class="form-group__title form-group__title_align_left">
+                <label for="signup__phone-number">Телефон</label>
+            </div>
+            <div class="form-group form-group__margin_inline">
+                <div class="field-group">
+                    <div class="select select_with-icon
+                                field-group__field_position_prepend field-group__field_stretched_4">
+                        <span class="icon-span icon-span_type_ru select__chosen-icon"></span>
+                        <select class="select__field">
+                            <option value="ru" class="select__option_with-icon
+                                                     select__option_icon-type_ru" data-code="+7" selected>
+                                Россия
+                            </option>
+                            <option value="ua" class="select__option_with-icon
+                                                     select__option_icon-type_ru" data-code="+380">
+                                Украина
+                            </option>
+                            <option value="us" class="select__option_with-icon
+                                                     select__option_icon-type_ru" data-code="+1">
+                                Соединенные Штаты Америки
+                            </option>
+                        </select>
+                        <i class="icon-span icon-span icon-span_color_black
+                                  icon-span_type_dropdown select__dropdown-icon"></i>
+                    </div>
+                    <div class="input field-group__field_position_append field-group__field_stretched_1">
+                        <span class="input__field-appendix input__field-appendix_position_prepend"
+                              id="signup__country-code-span">+7</span>
+                        <input class="input__field input__field_prepended" type="text" id="signup__phone-number">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group signup-form__form-group">
+            <input type="password" class="input input__field" placeholder="Пароль">
+            <span class="form-group__help-text form-group__help-text_type_error form-group__help-text_hidden">
+                Заполните обязательное поле
+            </span>
+        </div>
+        <div class="form-group signup-form__form-group">
+            <input type="password" class="input input__field" placeholder="Повторите пароль">
+            <span class="form-group__help-text form-group__help-text_type_error form-group__help-text_hidden">
+                Пароли не совпадают
+            </span>
+        </div>
+    </div>
+    <hr class="hr signup-popup__hr">
+    <div class="signup-popup__double-btn">
+        <button class="btn btn_large signup-popup__singup-btn">
+            <span class="btn__inner">
+                <span class="btn__text">Зарегистрироваться</span>
+            </span>
+        </button>
+        <button class="btn btn_large btn_color_muted signup-popup__cancel-btn">
+            <span class="btn__inner">
+                <span class="btn__text btn__text_normal">Отменить</span>
+            </span>
+        </button>
+    </div>
+</div>
+</body>
+</html>

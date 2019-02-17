@@ -1,0 +1,52 @@
+@import "../modules/mixins";
+
+$select-height: 20px;
+$select-padding: 5px;
+$select-padding-sides: 10px;
+$select-border-radius: 3px;
+
+.select {
+  border: 1px solid $border-color;
+  border-radius: $select-border-radius;
+  position: relative;
+
+  &_stretched {
+    width: 100%;
+  }
+
+  &__field {
+    @include appearance-none;
+    width: 100%;
+    background-color: white;
+    border-width: 0;
+    border-radius: $select-border-radius;
+    height: $select-height + $select-padding * 2; // it's inline so gotta add the padding
+    padding: $select-padding $select-padding-sides + $small-icon-size + 2px $select-padding $select-padding-sides;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &_with-icon {
+    .select__field {
+      padding-left: $select-padding + $icon-size + 8px;
+    }
+  }
+
+  &__dropdown-icon {
+    @extend .icon-span_size_small;
+    position: absolute;
+    top: ((20px + $select-padding*2 - $small-icon-size) / 2);
+    right: 5px;
+    pointer-events: none
+  }
+
+  &__chosen-icon {
+    position: absolute;
+    pointer-events: none;
+    top: ((20px + $select-padding*2 - $icon-size) / 2);
+    left: $select-padding-sides;
+  }
+
+  //options are ugly af but can't do much without js
+}
