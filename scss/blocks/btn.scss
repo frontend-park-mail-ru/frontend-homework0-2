@@ -7,9 +7,8 @@
   cursor: pointer;
   font-size: inherit;
   font-weight: bold;
-  padding: 5px;
+  padding: 5px 10px;
   height: 32px;
-  width: 144px;
 
   display: flex;
   justify-content: center;
@@ -17,13 +16,6 @@
 
   &:focus {
     outline: none;
-  }
-
-  &__inner {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-top: 2px;
   }
 
   &_color_muted {
@@ -34,6 +26,18 @@
 
   &_large {
     height: 40px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 2px;
+  }
+  &__text {
+    &_normal {
+      font-weight: normal;
+    }
   }
 
   &__icon-span {
