@@ -1,0 +1,10 @@
+@mixin appearance-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@mixin mask-image($path) {
+  -webkit-mask-image: url($path);
+  mask-image: url($path);
+}

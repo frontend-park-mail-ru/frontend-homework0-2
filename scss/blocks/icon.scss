@@ -1,8 +1,4 @@
-@mixin mask-image($path) {
-    -webkit-mask-image: url($path);
-    mask-image: url($path);
-}
-
+@import "../modules/mixins";
 $icons-path: "../../icons";
 
 $eye-icon: $icons-path + "/show.svg";
@@ -19,6 +15,8 @@ $gamepad-icon: $icons-path + "/game1.svg";
 $delete-icon: $icons-path + "/delete.svg";
 $useredit-icon: $icons-path + "/user_edit.svg";
 
+$ru-png: $icons-path + "/ru.png";
+
 $icon-size: 14px;
 $small-icon-size: 12px;
 $large-icon-size: 20px;
@@ -30,96 +28,99 @@ $xxlarge-icon-size: 40px;
     display: inline-block;
     -webkit-mask-size: contain;
     mask-size: contain;
-    background-color: transparent;
     height: $icon-size;
     width: $icon-size;
 
-    //sizes
-    &_size_small {
+    &_size{
+        &_small {
         height: $small-icon-size;
         width: $small-icon-size;
+        }
+        &_large {
+            height: $large-icon-size;
+            width: $large-icon-size;
+        }
+        &_xlarge {
+            height: $xlarge-icon-size;
+            width: $xlarge-icon-size;
+        }
+        &_xxlarge {
+            height: $xxlarge-icon-size;
+            width: $xxlarge-icon-size;
+        }
     }
-    &_size_large {
-        height: $large-icon-size;
-        width: $large-icon-size;
+    &_color {
+        &_green {
+            background-color: $green;
+        }
+        &_orange {
+            background-color: $orange;
+        }
+        &_white {
+            background-color: white;
+        }
+        &_black {
+            background-color: black;
+        }
+        &_muted {
+            background-color: $muted-color-dark;
+        }
+        &_muted-light {
+            background-color: $muted-color-light;
+        }
     }
-    &_size_xlarge {
-        height: $xlarge-icon-size;
-        width: $xlarge-icon-size;
+    &_type {
+        &_cross {
+            @include mask-image($cross-icon);
+        }
+        &_eye {
+            @include mask-image($eye-icon);
+        }
+        &_vk {
+            @include mask-image($vk-icon);
+        }
+        &_fb {
+            @include mask-image($fb-icon);
+        }
+        &_ok {
+            @include mask-image($ok-icon);
+        }
+        &_mailru {
+            @include mask-image($mailru-icon);
+        }
+        &_users {
+            @include mask-image($users-icon);
+        }
+        &_key {
+            @include mask-image($key-icon);
+        }
+        &_gamepad {
+            @include mask-image($gamepad-icon);
+        }
+        &_signin {
+            @include mask-image($signin-icon);
+        }
+        &_dropdown {
+            @include mask-image($dropdown-icon);
+        }
+        &_useredit {
+            @include mask-image($useredit-icon);
+        }
+        &_delete {
+            @include mask-image($delete-icon);
+        }
+        &_ru {
+            background-image: url($ru-png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 0 30%;
+        }
     }
-    &_size_xxlarge {
-        height: $xxlarge-icon-size;
-        width: $xxlarge-icon-size;
-    }
-    //colors
-    &_color_green {
-        background-color: $green;
-    }
-    &_color_orange {
-        background-color: $orange;
-    }
-    &_color_white {
-        background-color: white;
-    }
-    &_color_black {
-        background-color: black;
-    }
-    &_color_muted {
-        background-color: $muted-color-dark;
-    }
-    &_color_muted-light {
-        background-color: $muted-color-light;
-    }
-    // flags
+    //flags
     &_btn {
         cursor: pointer;
     }
-
-    // types (urls)
-    &_type_cross {
-        @include mask-image($cross-icon);
-    }
-
-    &_type_eye {
-        @include mask-image($eye-icon);
-    }
-
-    &_type_vk{
-        @include mask-image($vk-icon);
-    }
-    &_type_fb{
-        @include mask-image($fb-icon);
-    }
-    &_type_ok{
-        @include mask-image($ok-icon);
-    }
-    &_type_mailru {
-        @include mask-image($mailru-icon);
-    }
-    &_type_users {
-        @include mask-image($users-icon);
-    }
-    &_type_key {
-        @include mask-image($key-icon);
-    }
-    &_type_gamepad {
-        @include mask-image($gamepad-icon);
-    }
-    &_type_signin {
-        @include mask-image($signin-icon);
-    }
-    &_type_dropdown {
-        @include mask-image($dropdown-icon);
-    }
-    &_type_useredit {
-        @include mask-image($useredit-icon);
-    }
-    &_type_delete {
-        @include mask-image($delete-icon);
-    }
 }
-
-// wrappers
 
 .icon {
     display: flex;
@@ -130,56 +131,60 @@ $xxlarge-icon-size: 40px;
     border-radius: 3px;
     border: 1px solid $border-color;
 
-    // shapes
-    &_shape_round {
-        border-radius: 100%;
+    &_shape {
+        &_round {
+            border-radius: 100%;
+        }
     }
 
-    // colors
-    &_color_green {
-        background-color: $green;
+    &_color {
+        &_green {
+            background-color: $green;
+        }
+        &_white {
+            background-color: white;
+        }
+        &_black {
+            background-color: black;
+        }
+        &_muted {
+            background-color: $muted-color-dark;
+        }
+        &_muted-light {
+            background-color: $muted-color-light;
+        }
+        &_vk {
+            background-color: $vk-color;
+        }
+        &_fb {
+            background-color: $fb-color;
+        }
+        &_ok {
+            background-color: $ok-color;
+        }
     }
-    &_color_white {
-        background-color: white;
-    }
-    &_color_black {
-        background-color: black;
-    }
-    &_color_muted {
-        background-color: $muted-color-dark;
-    }
-    &_color_muted-light {
-        background-color: $muted-color-light;
-    }
-    &_color_vk {
-        background-color: $vk-color;
-    }
-    &_color_fb {
-        background-color: $fb-color;
-    }
-    &_color_ok {
-        background-color: $ok-color;
-    }
-    // sizes
-    &_size_large {
-        width: 24px;
-        height: 24px;
-    }
-    &_size_xlarge {
-        width: 36px;
-        height: 36px;
-    }
-    &_size_xxlarge {
-        width: 50px;
-        height: 50px;
-    }
+    &_size {
+        &_large {
+            width: 24px;
+            height: 24px;
+        }
 
-    &_size_tall {
-        height: 30px;
-        width: 20px;
-    }
+        &_xlarge {
+            width: 36px;
+            height: 36px;
+        }
 
-    // flags
+        &_xxlarge {
+            width: 50px;
+            height: 50px;
+        }
+
+        &_tall {
+            height: 30px;
+            width: 20px;
+        }
+    }
+    //flags
     &_btn {
         cursor: pointer;
     }

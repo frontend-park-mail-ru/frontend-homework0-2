@@ -1,8 +1,4 @@
-@mixin appearance-none {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
+@import "../modules/mixins";
 
 .checkbox {
   @include appearance-none();
