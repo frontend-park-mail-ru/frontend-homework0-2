@@ -3,7 +3,9 @@
 .profile-popup {
   @extend %popup;
   border: 1px solid $border-color;
-  min-width: 400px;
+  max-width: 400px;
+  width: 50%;
+  min-width: fit-content;
   height: fit-content;
   margin-top: 8px;
 

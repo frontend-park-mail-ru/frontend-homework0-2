@@ -1,6 +1,8 @@
 .login-popup {
   @extend %popup;
-  width: 350px;
+  width: 50%;
+  max-width: 350px;
+  min-width: fit-content;
   box-shadow: 0 0 50px 5px #676767;
   display: flex;
   flex-direction: column;
@@ -10,7 +12,7 @@
   }
 
   &__hr {
-    margin: 16px (0-$popup-right-margin) 16px (0-$popup-left-margin);
+    margin: 16px (0-$popup-right-padding) 16px (0-$popup-left-padding);
   }
 
   &__title {
