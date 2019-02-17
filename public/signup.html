@@ -122,6 +122,8 @@
         }
 
         .userblock-day {
+            display: flex;
+            align-items: center;
             width: 124px;
             height: 38px;
             border-radius: 4px;
@@ -131,7 +133,7 @@
 
         .day {
             display: flex;
-            padding: 12px;
+            padding-left: 12px;
         }
 
         .dropdown-days {
@@ -140,6 +142,8 @@
         }
 
         .userblock-month {
+            display: flex;
+            align-items: center;
             width: 132px;
             height: 38px;
             border-radius: 4px;
@@ -153,6 +157,8 @@
         }
 
         .userblock-year {
+            display: flex;
+            align-items: center;
             width: 118px;
             height: 38px;
             border-radius: 4px;
@@ -177,6 +183,8 @@
 
         .country-code-block {
             display: flex;
+            align-items: center;
+            display: flex;
             width: 156px;
             height: 40px;
             border: 1px solid rgb(224,224,224);
@@ -191,14 +199,14 @@
         }
 
         .country-name {
-            margin-top: 12px;
             margin-right: 36px;
             font-size: 14px;
         }
 
         .dropdown-arrow {
             display: flex;
-            margin: 8%;
+            margin-right: 4px;
+            margin-left: auto; 
             cursor: pointer;
         }
 
@@ -277,13 +285,11 @@
                     <div class="date-row">
                         <div class="userblock-day">
                             <span class="day">День</span>
-                            <div class="dropdown-days">
-                                <div class="dropdown-arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
-                                    </svg>  
-                                </div> 
-                            </div>
+                            <div class="dropdown-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
+                                </svg>  
+                            </div> 
                         </div>
                         <div class="userblock-month">
                             <span class="month">Месяц</span>

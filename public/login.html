@@ -111,11 +111,23 @@
             padding-left: 12px;
             font-size: 14px;
             display: flex;
+            align-items: center;
             margin-right: auto;
             margin-left: auto;
             margin-top: 18px;
             border: 1px solid rgb(224,224,224);
             border-radius: 4px;
+        }
+
+        .password {
+            color: rgb(117,117,117)
+        }
+
+        .eye-icon {
+            display: flex;
+            justify-content: center;
+            padding-left: 292px;
+            cursor: pointer;
         }
 
         input::placeholder {
@@ -273,8 +285,14 @@
                         <input class="userblock-line" type="text" placeholder="Телефон или электронная почта" name="uname">
                     </div>
                     <div class="password-row">
-                        <input class="userblock-line" type="password" placeholder="Пароль" name="psw" required>
-                        <span class="glyphicon glyphicon-eye-open"></span>
+                        <div class="userblock-line">
+                            <span class="password">Пароль</span>
+                            <div class="eye-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.488c-5.302 0-8 5.21-8 6.512 0 1.302 2.791 6.512 8 6.512S16 9.302 16 8c0-1.302-2.698-6.512-8-6.512zm0 10.233A3.731 3.731 0 0 1 4.279 8 3.731 3.731 0 0 1 8 4.279 3.731 3.731 0 0 1 11.721 8 3.731 3.731 0 0 1 8 11.721zM8 6c1.143 0 2 .953 2 2 0 1.143-.952 2-2 2-1.143 0-2-.952-2-2 0-1.142.857-2 2-2z"/>
+                                </svg>   
+                            </div>
+                        </div>                       
                     </div>
                     <div class="password-extra-row">
                         <label>
@@ -282,7 +300,6 @@
                             <span class="custom-checkbox"></span>
                             <span class="label">Запомнить пароль</span>
                         </label>
-                        
                         <a class="password-remind" href="">Забыли пароль?</a>
                     </div>
 

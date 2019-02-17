@@ -105,9 +105,9 @@
             padding-left: 2%;
             font-size: 14px;
             display: block;
-            margin-right: 16px;
             margin-top: 4px;
             margin-bottom: 4%;
+            margin-right: 4px;
             border: 1px solid rgb(224,224,224);
             border-radius: 4px;
         }
@@ -208,6 +208,40 @@
             margin-left: 8px;
         }
 
+        .login-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .dialog-window {
+            margin-top: -24px;
+            margin-left: 4px;
+            box-shadow: 1px 2px 5px rgb(70, 70, 70);
+        }
+
+        .corner {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            border-bottom: none;
+            border-right: none;
+            background: white;
+            transform: rotate(-45deg);
+            background: linear-gradient(135deg, white 0%, white 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .dialog-content {
+            position: absolute;
+            z-index: -1;
+            width: 278px;
+            height: 72px;
+            background: white;
+            margin-top: -30px;
+            margin-left: 7px;
+            border-radius: 4px;
+            box-shadow: 1px 2px 32px rgb(70, 70, 70);
+        }
+
     </style>
 </head>
 <body>
@@ -224,8 +258,14 @@
             <div class="container">
                 <div class="login-block">
                     <label class="small-label">Логин</label>
-                    <div>
+                    <div class="login-content">
                         <input class="userblock-line" type="text" placeholder="">
+                        <div class="dialog-window">
+                            <div class="corner">
+                            </div>
+                            <div class="dialog-content">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="phone-block">
