@@ -1,6 +1,0 @@
-<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <path d="M3 13h5a1 1 0 0 1 0 2H2a.997.997 0 0 1-1-1V8a1 1 0 0 1 2 0v5zM13 3H8a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V3zM9 8a1 1 0 1 1-2.001-.001A1 1 0 0 1 9 8z" id="navigation-zoom-overlay-a"/>
-  </defs>
-  <use xlink:href="#navigation-zoom-overlay-a" fill-rule="evenodd"/>
-</svg>

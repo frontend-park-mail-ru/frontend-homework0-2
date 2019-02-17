@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-  <defs>
-    <path id="wysiwyg-postcard-a" d="M11 14H5c-1.104 0-2-.896-2-2V4c0-1.104.896-2 2-2h6c1.104 0 2 .896 2 2v8c0 1.104-.896 2-2 2zm-1.75-4h-2.5c-.414 0-.75.336-.75.75s.336.75.75.75h2.5c.414 0 .75-.336.75-.75S9.664 10 9.25 10zm1-3h-3.5c-.414 0-.75.336-.75.75s.336.75.75.75h3.5c.414 0 .75-.336.75-.75S10.664 7 10.25 7z"/>
-  </defs>
-  <use xlink:href="#wysiwyg-postcard-a" fill-rule="evenodd"/>
-</svg>
