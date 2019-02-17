@@ -225,21 +225,34 @@
             height: 14px;
             border-bottom: none;
             border-right: none;
-            background: white;
             transform: rotate(-45deg);
             background: linear-gradient(135deg, white 0%, white 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
         }
 
         .dialog-content {
             position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 12px; 
             z-index: -1;
-            width: 278px;
+            width: 276px;
             height: 72px;
             background: white;
             margin-top: -30px;
             margin-left: 7px;
             border-radius: 4px;
             box-shadow: 1px 2px 32px rgb(70, 70, 70);
+            line-height: 20px;
+        }
+
+        .dialog-label-big {
+            font-size: 16px;
+        }
+
+        .dialog-label-small {
+            font-size: 12px;
+            color: rgb(117,117,117)
         }
 
     </style>
@@ -264,6 +277,12 @@
                             <div class="corner">
                             </div>
                             <div class="dialog-content">
+                                <div class="dialog-label-big">
+                                    <label>Укажите новый логин</label>
+                                </div>
+                                <div class="dialog-label-small">
+                                    <label>Вы можете изменить свой логин</label>
+                                </div>
                             </div>
                         </div>
                     </div>
