@@ -1,3 +1,5 @@
+@import "../modules/mixins";
+
 .field-group {
   display: flex;
   flex-direction: row;
@@ -5,6 +7,14 @@
   justify-content: stretch;
 
   &__field {
+    @include firefox {
+      .input__field {
+        // I SWEAR THE CRAZIEST THING HAPPENED:
+        // a man in a mask broke in, put a gun to my head
+        // and told me to write nested selectors
+        width: 100%;
+      }
+    }
     &_position {
       &_prepend {
         border-top-right-radius: 0;

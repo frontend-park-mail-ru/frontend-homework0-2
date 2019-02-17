@@ -1,4 +1,5 @@
 .update-profile-popup {
+  min-width: 300px;
   @extend %popup;
   max-width: 250px;
   box-shadow: $shadow;

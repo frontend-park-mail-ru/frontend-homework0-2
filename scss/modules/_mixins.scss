@@ -8,3 +8,9 @@
   -webkit-mask-image: url($path);
   mask-image: url($path);
 }
+
+@mixin firefox() {
+  @-moz-document url-prefix() {
+    @content;
+  }
+}

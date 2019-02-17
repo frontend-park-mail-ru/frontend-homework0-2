@@ -27,22 +27,23 @@ $input-border-radius: 3px;
       top: ($input-total-height - $large-icon-size) / 2;
     }
   }
-
   &__field {
+    min-width: 0;
     flex-grow: 1;
     display: inline-block;
+    line-height: 12px;
     height: $input-height;
     border-radius: $input-border-radius;
-    /* can't align the text any other way */
+    // can't align the text any other way
     padding: $input-padding-top $input-padding-sides $input-padding-bottom $input-padding-sides;
     border-width: 0;
     font-size: 12px;
     outline: none;
     margin: 0; // kinda !important but i feel bad putting it there
-    @-moz-document url-prefix() {
-      /* 16 + 7 = 20 + 3 so size doesn't change, just the alignment */
+    @include firefox {
+      // 16 + 7 = 20 + 3 so size doesn't change, just the alignment
       height: $input-height - 4px;
-      padding: $input-padding-top 5px $input-padding-bottom + 4px 5px;
+      padding: $input-padding-top $input-padding-sides $input-padding-bottom + 4px $input-padding-sides;
     }
     &_prepended {
       padding-left: 0;
@@ -58,6 +59,10 @@ $input-border-radius: 3px;
     font-size: 12px;
     padding: 9px 2px 3px 2px;
     pointer-events: none;
+    @include firefox {
+      // BECAUSE APPARENTLY THIS IS NOT IMPLIED
+      line-height: 12px;
+    }
   }
 
   &_status {

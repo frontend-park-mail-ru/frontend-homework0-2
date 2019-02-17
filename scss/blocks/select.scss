@@ -1,14 +1,19 @@
 @import "../modules/mixins";
 
 $select-height: 20px;
-$select-padding: 5px;
+$select-padding-top: 6px;
+$select-padding-bottom: 4px;
 $select-padding-sides: 10px;
 $select-border-radius: 3px;
+
+$select-total-height: $select-height + $select-padding-top + $select-padding-bottom;
 
 .select {
   border: 1px solid $border-color;
   border-radius: $select-border-radius;
   position: relative;
+  min-width: fit-content;
+  width: -moz-fit-content;
 
   &_stretched {
     width: 100%;
@@ -17,7 +22,7 @@ $select-border-radius: 3px;
 
   &_with-icon {
     .select__field {
-      padding-left: $select-padding + $icon-size + 8px;
+      padding-left: $select-padding-sides + $icon-size + 3px;
     }
   }
 
@@ -30,19 +35,27 @@ $select-border-radius: 3px;
   &__field {
     @include appearance-none;
     width: 100%;
+    width: -moz-fit-content;
+    font-size: 12px;
     background-color: white;
     border-width: 0;
     border-radius: $select-border-radius;
-    height: $select-height + $select-padding * 2; // it's inline so gotta add the padding
-    padding: $select-padding $select-padding-sides + $small-icon-size + 2px $select-padding $select-padding-sides;
+    height: $select-total-height; // it's inline so gotta add the padding
+    padding: $select-padding-top $select-padding-sides + $small-icon-size + 2px
+             $select-padding-bottom $select-padding-sides;
+    @include firefox {
+      padding: $select-padding-top - 2px $select-padding-sides + $small-icon-size + 2px
+      $select-padding-bottom + 2px $select-padding-sides;
+    }
     &:focus {
       outline: none;
+      border: none;
     }
   }
   &__dropdown-icon {
     @extend .icon-span_size_small;
     position: absolute;
-    top: ((20px + $select-padding*2 - $small-icon-size) / 2);
+    top: (($select-total-height - $small-icon-size) / 2);
     right: 5px;
     pointer-events: none
   }
@@ -50,7 +63,7 @@ $select-border-radius: 3px;
   &__chosen-icon {
     position: absolute;
     pointer-events: none;
-    top: ((20px + $select-padding*2 - $icon-size) / 2);
+    top: (($select-total-height - $icon-size) / 2);
     left: $select-padding-sides;
   }
 
