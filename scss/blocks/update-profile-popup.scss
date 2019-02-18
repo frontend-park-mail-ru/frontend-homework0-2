@@ -2,7 +2,7 @@
   min-width: 300px;
   @extend %popup;
   max-width: 250px;
-  box-shadow: $shadow;
+  @include shadow($shadow);
 
   &__close-popup {
     @extend %popup__close-popup

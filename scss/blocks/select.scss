@@ -9,11 +9,19 @@ $select-border-radius: 3px;
 $select-total-height: $select-height + $select-padding-top + $select-padding-bottom;
 
 .select {
+  @include transition(_transition(box-shadow, 0.2s));
   border: 1px solid $border-color;
   border-radius: $select-border-radius;
   position: relative;
   min-width: fit-content;
   width: -moz-fit-content;
+
+
+  &:focus-within {
+    border-color: $color-focus;
+    @include shadow($shadow-focus);
+    z-index: $z-index-shadow;
+  }
 
   &_stretched {
     width: 100%;
@@ -29,6 +37,9 @@ $select-total-height: $select-height + $select-padding-top + $select-padding-bot
   &_status {
     &_error {
       border-color: $error-color;
+      &:focus-within {
+        border-color: $error-color;
+      }
     }
   }
 

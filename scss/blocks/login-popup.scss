@@ -1,7 +1,7 @@
 .login-popup {
   @extend %popup;
   max-width: 350px;
-  box-shadow: $shadow;
+  @include shadow($shadow);
 
   &__close-popup {
     @extend %popup__close-popup

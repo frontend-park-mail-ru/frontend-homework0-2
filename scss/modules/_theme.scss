@@ -6,17 +6,29 @@ $muted-color-dark: #A9A9A9;
 $muted-color-light: #F7F7F7;
 $link-color: #005BD1;
 $error-color: #FF1100;
+$color-focus: lightblue;
+$shadow-color: #676767;
 $green: #28C57D;
 $orange: #FD9E0B;
-
-$font-stack: Helvetica, Arial, sans-serif;
-$small-font-size: 12px;
-$smaller-font-size: 9px;
 
 $vk-color: #4A76A8;
 $fb-color: #3B5998;
 $ok-color: #EE8208;
 
-$shadow: 0 0 50px 5px #676767;
-$shadow-tiny: 0 0 50px -5px #676767;
+$font-stack: Helvetica, Arial, sans-serif;
+$small-font-size: 12px;
+$smaller-font-size: 9px;
 
+
+
+$shadow: 0 0 50px 5px $shadow-color;
+$shadow-tiny: 0 0 50px -5px $shadow-color;
+$shadow-outline: 0 2px 0 0 $outline-color;
+$shadow-focus: 0 0 50px -12px $color-focus;
+$shadow-small-focus: 0 0 12px -1px $color-focus;
+
+$z-index-scale: 100;
+$z-index-popup: 1 * $z-index-scale;
+$z-index-input: 2 * $z-index-scale;
+$z-index-shadow: 3 * $z-index-scale;
+$z-index-tooltip: 4 * $z-index-scale;

@@ -5,7 +5,7 @@
   max-width: 600px;
   border-radius: 3px;
   // border takes up space, making colored elements leaves blank pixels, so I use a shadow-border
-  box-shadow: 0 0 0 1px #EBEBEB, 0 2.5px #F5F5F5;
+  @include shadow(0 0 0 1px #EBEBEB, 0 2.5px #F5F5F5);
 
   &__title {
     margin:0;

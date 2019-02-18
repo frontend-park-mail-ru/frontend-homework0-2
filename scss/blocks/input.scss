@@ -7,14 +7,31 @@ $input-padding-sides: 10px;
 $input-total-height: $input-height + $input-padding-bottom + $input-padding-top + 2px; // border 2px
 $input-border-radius: 3px;
 .input{
+  @include transition(_transition(box-shadow, 0.2s));
   border-radius: $input-border-radius;
   padding: 0;
   border: 1px solid $border-color;
   min-width: fit-content; // this is important
   position: relative;
   display: flex;
+  z-index: $z-index-input;
+
+  &:focus-within {
+    border-color: lightblue;
+    @include shadow($shadow-focus);
+    z-index: $z-index-shadow;
+  }
+
   &_with-icon {
     padding-right: 20px;
+  }
+  &_status {
+    &_error {
+      border-color: $error-color;
+      &:focus-within {
+        border-color: $error-color;
+      }
+    }
   }
   &__icon-span {
     position: absolute;
@@ -65,11 +82,6 @@ $input-border-radius: 3px;
     }
   }
 
-  &_status {
-    &_error {
-      border-color: $error-color;
-    }
-  }
   &__inner {
     display: flex;
     flex-direction: row;
@@ -87,9 +99,9 @@ $input-border-radius: 3px;
     height: $height;
     right: - $width - $arrow-length - $input-padding-sides - $padding - 1px;
     top: $input-total-height - $height - $padding - 1px; //1 px for border
-    z-index: 10000;
+    z-index: $z-index-tooltip;
     background-color: white;
-    box-shadow: $shadow-tiny;
+    @include shadow($shadow-tiny);
     border-radius: 3px;
     pointer-events: none;
     &::before {

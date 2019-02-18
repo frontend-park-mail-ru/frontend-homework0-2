@@ -9,6 +9,9 @@ html, body {
 a {
     text-decoration: none;
     color: $link-color;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .title {

@@ -1,15 +1,61 @@
+@import "../modules/mixins";
+
+$btn-hover-transition: 0.5s;
+$btn-active-transition: 0.2s;
+
+
+@mixin btn-color($bg, $color, $bg-hover: darker($bg), $color-hover: $color,
+                 $bg-active: darker(darker($bg)), $color-active: $color, $block) {
+  // TLDR: set animations (0.5 for hover, 0.2 for click), and colors to those given
+  // default: bg gets darker, text color doesn't change. Icon is treated like text.
+  // btn_disabled is not reactive
+  $hover-duration: 0.5s;
+  $active-duration: 0.2s;
+
+  @include transition(_transition(background-color, $hover-duration),
+          _transition(color, $hover-duration));
+  background-color: $bg;
+  color: $color;
+
+  #{$block}__icon-span {
+    @include transition(_transition(background-color, $hover-duration));
+    background-color: $color;
+  }
+
+  &:hover:not(#{$block}_disabled) {
+    @include transition(_transition(background-color, $hover-duration),
+            _transition(color, $hover-duration));
+    background-color: $bg-hover;
+    color: $color-hover;
+    #{$block}__icon-span {
+      @include transition(_transition(background-color, $hover-duration));
+      background-color: $color-hover;
+    }
+  }
+
+  &:active:not(#{$block}_disabled) {
+    @include transition(_transition(background-color, $active-duration),
+            _transition(color, $active-duration));
+    background-color: $bg-active;
+    color: $color-active;
+    #{$block}__icon-span {
+      @include transition(_transition(background-color, $active-duration));
+      background-color: $color-active;
+    }
+  }
+}
+
 .btn {
-  background-color: $main-color;
+  $block: &;
+  @include shadow(0 2px $outline-color);
+  @include btn-color($main-color, white, $block: $block);
   border: 1px solid $main-color-dark;
   border-radius: 3px;
-  box-shadow: 0 2px $outline-color;
-  color: white;
   cursor: pointer;
   font-size: inherit;
   font-weight: bold;
   padding: 5px 10px;
   height: 32px;
-
   display: flex;
   justify-content: center;
   align-content: center;
@@ -19,13 +65,18 @@
   }
 
   &_color_muted {
-    color: $muted-color-dark;
-    background-color: $muted-color-light;
-    border-color: $border-color;
+    @include btn-color ($muted-color-light, $muted-color-dark,
+                        $color-hover: darker($muted-color-dark),
+                        $color-active: darker(darker($muted-color-dark)),
+                        $block: $block);
+    border-color: $muted-color-dark;
   }
 
   &_large {
     height: 40px;
+    #{$block}__icon-span {
+      @extend .icon-span_size_large;
+    }
   }
 
   &_disabled {
@@ -39,6 +90,7 @@
     align-content: center;
     padding-top: 2px;
   }
+
   &__text {
     &_normal {
       font-weight: normal;

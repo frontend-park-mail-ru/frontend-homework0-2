@@ -6,9 +6,18 @@
   justify-content: center;
 
   &__icon {
-    box-shadow: 0 2px 0 0 $outline-color;
+    @extend .icon_size_tall;
+    @extend .icon_btn;
+    @include shadow($shadow-outline);
     margin: 0 2px;
+    &:hover {
+      @include shadow($shadow-outline, $shadow-small-focus);
+    }
+  }
 
+  &__icon-span {
+    @extend .icon-span_color_white;
+    @extend .icon-span_size_small;
   }
 
 }

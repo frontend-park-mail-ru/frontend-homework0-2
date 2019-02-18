@@ -13,6 +13,7 @@ $popup-left-padding: 15px;
   display: flex;
   flex-direction: column;
   width: 50%;
+  z-index: $z-index-popup;
 
   &__close-popup {
       position: absolute;

@@ -14,3 +14,20 @@
     @content;
   }
 }
+
+@mixin shadow($shadow...) {
+  -webkit-box-shadow:$shadow;
+  -moz-box-shadow:$shadow;
+  box-shadow:$shadow;
+}
+
+@mixin transition($values...) {
+  transition: $values;
+}
+@function _transition($property, $duration, $timing-function: ease, $delay:0s) {
+  @return $property $duration $timing-function $delay;
+}
+
+@function darker($color) {
+  @return darken($color, 20);
+}

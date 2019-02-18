@@ -41,20 +41,24 @@
     </form>
     <div class="login-popup__continue-with-text">или продолжить через</div>
     <div class="sm-icons-list">
-        <div class="sm-icons-list__icon icon icon_btn icon_size_tall icon_color_vk">
-            <i class="icon-span icon-span_color_white icon-span_size_small icon-span_type_vk"></i>
-        </div>
-        <div class="sm-icons-list__icon icon icon_btn icon_size_tall icon_color_fb">
-            <i class="icon-span icon-span_color_white icon-span_size_small icon-span_type_fb"></i>
-        </div>
-        <div class="sm-icons-list__icon icon icon_btn icon_size_tall icon_color_ok">
-            <i class="icon-span icon-span_color_white icon-span_size_small icon-span_type_ok"></i>
-        </div>
+        <a class="sm-icons-list__icon icon icon_color_vk" href="#">
+            <i class="sm-icons-list__icon-span icon-span icon-span_type_vk"></i>
+        </a>
+        <a class="sm-icons-list__icon icon icon_color_fb" href="#">
+            <i class="sm-icons-list__icon-span icon-span icon-span_type_fb"></i>
+        </a>
+        <a class="sm-icons-list__icon icon icon_color_ok" href="#">
+            <i class="sm-icons-list__icon-span icon-span icon-span_type_ok"></i>
+        </a>
     </div>
     <hr class="hr login-popup__hr">
     <div class="login-popup__signup-link">
         <a href="#">Зарегистрироваться</a>
     </div>
 </div>
+<script>
+  // chrome executes transition while rendering, using this costыlь to prevent it
+  // i have no idea how this works
+</script>
 </body>
 </html>
