@@ -8,7 +8,8 @@
 
 <body>
 
-    <div class="modal-form">
+    <!--Screen 1-->
+    <div class="modal-form" hidden>
         <div class="modal-form__content">
             <div class="modal-form__title">Логин</div>
             <div class="modal-form__oauth-btn-container">
@@ -38,5 +39,46 @@
         </div>
     </div>
 
+    <!--Screen 2-->
+    <section class="section section-2">
+        <div class="sidebar">
+            <div class="sidebar__header"></div>
+            <div class="sidebar__tab-container">
+                <a href="#" class="sidebar__tab sidebar__tab_active sidebar__tab_button">
+                    <i class="icon icon_sign-in sidebar__tab-icon sidebar__tab-icon_active"></i>
+                    Авторизация
+                </a>
+                <a href="#" class="sidebar__tab sidebar__tab_button">
+                    <i class="icon icon_access sidebar__tab-icon"></i>
+                    Регистрация
+                </a>
+                <a href="#" class="sidebar__tab sidebar__tab_button">
+                    <i class="icon icon_users sidebar__tab-icon"></i>
+                    Авторы
+                </a>
+                <a href="#" class="sidebar__tab sidebar__tab_button">
+                    <i class="icon icon_game sidebar__tab-icon"></i>
+                    Играть
+                </a>
+            </div>
+            <a href="#" class="sidebar__link">О проекте</a>
+        </div>
+
+        <div class="auth-form">
+            <h2 class="auth-form__title">Авторизуйтесь на сервисе</h2>
+            <div class="auth-form__input-container">
+                <div class="auth-form__input input">
+                    <input class="input__field input__field_squared" placeholder="Email">
+                </div>
+                <div class="auth-form__input input input_password-show">
+                    <input class="input__field input__field_squared" placeholder="Пароль">
+                </div>
+            </div>
+            <button class="auth-form__button button button_green button_sm button_squared">
+                <i class="icon icon_mail button__icon"></i>
+                Войти через почту
+            </button>
+        </div>
+    </section>
 </body>
 </html>

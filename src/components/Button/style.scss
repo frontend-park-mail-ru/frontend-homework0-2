@@ -22,6 +22,14 @@
     background: $global-color-green;
   }
 
+  &_squared {
+    border-radius: 0;
+  }
+
+  &_sm {
+    height: 32px;
+  }
+
   &__icon {
     margin-right: 8px;
   }

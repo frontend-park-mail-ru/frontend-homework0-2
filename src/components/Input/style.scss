@@ -7,6 +7,7 @@ $local-color-error: #f51a5b;
   font-size: 15px;
   font-weight: 700;
   color: #757575;
+  letter-spacing: -0.02em;
 }
 
 .input {
@@ -42,6 +43,10 @@ $local-color-error: #f51a5b;
     &_error {
       border-color: $local-color-error;
     }
+
+    &_squared {
+      border-radius: 0;
+    }
   }
 
   &__error {
@@ -49,5 +54,6 @@ $local-color-error: #f51a5b;
     font-size: 12px;
     font-weight: 700;
     margin: 7px 0 0;
+    letter-spacing: 0.02em;
   }
 }
