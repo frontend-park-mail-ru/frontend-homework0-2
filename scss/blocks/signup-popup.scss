@@ -3,8 +3,7 @@
 .signup-popup {
   @extend %popup;
   border: 1px solid $border-color;
-  height: fit-content;
-  max-width: 600px;
+  max-width: 450px;
 
   &_main {
     margin: 8px 0 0 0;

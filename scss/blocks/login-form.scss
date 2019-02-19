@@ -2,21 +2,10 @@
   $login-form-margin: 4px;
   display: flex;
   flex-direction: column;
-  &__form-group {
-    margin: $login-form-margin 0;
-    &.form-group_inline {
-      margin: 0;
-    }
-  }
-
-  &__input {
-    margin: $login-form-margin 0;
-  }
 
   &__remember-me-label,
   &__forgot-password-link{
     font-size: $small-font-size;
-
   }
 
   &__submit-btn {

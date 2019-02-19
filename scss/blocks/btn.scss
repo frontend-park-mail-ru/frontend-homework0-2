@@ -67,9 +67,11 @@ $btn-active-transition: 0.2s;
   &:focus {
     outline: none;
   }
-
+  &::-moz-focus-inner {
+    border: 0;
+  }
   &_color_muted {
-    @include btn-color ($muted-color-light, black,
+    @include btn-color ($muted-color-light, $muted-color-dark,
                         $color-hover: darker($muted-color-dark),
                         $color-active: darker(darker($muted-color-dark)),
                         $block: $block);

@@ -1,8 +1,8 @@
 @import "../modules/mixins";
 
 $select-height: 12px;
-$select-padding-top: 7px;
-$select-padding-bottom: 7px;
+$select-padding-top: 8px;
+$select-padding-bottom: 6px;
 $select-padding-sides: 10px;
 $select-border-radius: 3px;
 
@@ -25,7 +25,10 @@ $select-border-radius: 3px;
     @include shadow($shadow-focus);
     z-index: $z-index-shadow;
   }
-
+  :-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
   &::after {
     content: " ";
     @extend .icon-span;
@@ -52,6 +55,7 @@ $select-border-radius: 3px;
   }
 
   &__field {
+    height: 28px;
     @include appearance-none;
     display: inline-block;
     font-size: $select-height;
@@ -61,8 +65,8 @@ $select-border-radius: 3px;
     padding: $select-padding-top $select-padding-sides + 12px
              $select-padding-bottom $select-padding-sides;
     @include firefox {
-      padding: $select-padding-top - 2px $select-padding-sides + 12px
-               $select-padding-bottom + 2px $select-padding-sides;
+      padding: $select-padding-top - 3px $select-padding-sides + 12px
+               $select-padding-bottom + 3px $select-padding-sides;
     }
     & {
       border-width: 0;
