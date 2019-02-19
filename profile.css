@@ -1,0 +1,155 @@
+body {
+    display: grid;
+
+    grid-template-rows: 6fr 4fr;
+    grid-template-columns: 5fr 4fr 5fr;
+    grid-template-areas:
+            ". profile ."
+            ". . .";
+    /*grid-template-columns: 20% 1fr 15%;*/
+    /*grid-gap: px;*/
+    height: 100vh;
+    margin: 0;
+}
+
+.profile {
+    grid-area: profile;
+
+    border: 1px solid gainsboro;
+    border-radius: 2px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: start;;*/
+
+    font-family: sans-serif;
+
+    margin-top: 5px;
+}
+
+.header {
+    height: 15%;
+    font-size: 30px;
+    padding-top: 4%;
+}
+
+.avatar {
+    height: 15%;
+
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+.form {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 90%;
+}
+
+.round {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(20, 20, 20, 0.16);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+}
+
+.nick,
+.name,
+.surname,
+.birth,
+.sex {
+    height: 20%;
+    width: 50%;
+
+    display: flex;
+    justify-content: space-around;
+
+    /*padding-top: 1%;*/
+    margin: 1%;
+}
+
+.nick,
+.name,
+.surname,
+.birth {
+    border-bottom: 1px solid gainsboro;
+}
+
+
+.title {
+    width: 70%;
+    font-weight: bold;
+}
+
+.value {
+    width: 30%;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 40%;
+    width: 45%;
+}
+
+.buttons {
+    height: 20%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.change {
+    background-color: #1fd17b;
+
+    color: white;
+    font-weight: bold;
+    font-size: 90%;
+
+    padding: 0;
+    border: none;
+}
+
+.delete {
+    color: gray;
+    font-weight: bold;
+    font-size: 90%;
+    background-color: lightgrey;
+
+    padding: 0;
+    border: none;
+}
+
+.change > img {
+    Filter: invert(1);
+}
+
+.delete > img {
+    opacity: 0.5;
+}
+
+img {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.btn_title {
+    margin-left: 10%;
+}
