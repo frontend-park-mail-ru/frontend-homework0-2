@@ -3,3 +3,5 @@ $('.menu-icon').on('click', function(e) {
   $('.menu').toggleClass('menu_active');
   $('section').toggleClass('section_active');
 })
+ $('.menu').toggleClass('menu_active');
+ $('section').toggleClass('section_active');

@@ -1,5 +1,6 @@
 	.dialog {
-		width: 50%;
+		width: 30%;
+		min-width: 300px;
         padding: 25px;
         border: 0;
         border-radius: 5px;
@@ -26,18 +27,15 @@
         }
     }
 	
-	.btn, .form_box input {
+	.form_box input {
 		width: 100%;
 		margin: 8px auto;
 		padding: 5px;
 		border-radius: 5px;
 	}
 	
-	.vk, .fb, .ma {
-		text-align: center;
-		height: 40;
-		cursor: pointer;
-		border: none;
+	.vk, .fb, .ma, .vk:hover, .fb:hover, .ma:hover {
+		color: #ffffff;
 	}
 	
 	.vk {
@@ -69,19 +67,6 @@
 		background: white;
 		border: 0;
 		right: -20px;
-	}
-
-	.block {
-		font-weight:bold;
-		padding: 5px;
-		text-align: center;
-		font-family: "Arial";
-	}
-	
-	img {
-		color: rgba(0, 128, 0, 0.49);
-		width: 16;
-		height: 16;
 	}
 	
 	.title {
@@ -122,40 +107,4 @@
 	.text_with_line:after {
 		margin-right: -100%;
 		right: -2px;
-	}
-	
-	.form_box .warning { 
-		font-size: 12px;
-	}
-	
-	.form_box .warning:invalid { 
-		font-size: 14px;
-	}
-	
-	.form_box .warning:valid { 
-		font-size: 12px;
-	}
-
-	.form_box input {
-	  display: block;
-	  border: 1px border #cfcfcf;
-	  font-size: 14px;
-	  color: #444444;
-	  transition: all 0.5s;
-	  -webkit-transition: all 0.5s;
-	  -moz-transition: all 0.5s;
-	}
-	.form_box .req:invalid {
-	  border: 1px solid rgba(255, 45, 84, 255);
-	}
-	.form_box .req:valid {
-	  border: 1px solid green;
-	}
-	.form_box input:focus {
-	  outline: none;
-	  border-color: #07a6e6;
-	}
-	
-	.pic {
-		margin-right: 8px;
 	}

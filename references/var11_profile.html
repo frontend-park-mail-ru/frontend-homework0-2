@@ -1,0 +1,147 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <link rel="stylesheet" href="css/var11_profile.css" type="text/css"/>
+      <link rel="stylesheet" href="css/main_blocks.css" type="text/css"/>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
+         crossorigin="anonymous">
+   </head>
+   <body>
+      <div class = "column2 center">
+         <div class = "header part">
+            Профиль
+         </div>
+         <div class = "column2 part">
+            <div class = "to_row row2">
+               <div class = "with_width column2 ">
+                  <div class ="cell name">
+                     Фамилия
+                  </div>
+                  <div class ="cell">
+                     Иванов
+                  </div>
+               </div>
+               <div class = "with_width column2">
+                  <div class ="cell name">
+                     Имя
+                  </div>
+                  <div class ="cell">
+                     Иван
+                  </div>
+               </div>
+            </div>
+            <div class = "row2">
+               <div class = "column2 with_width">
+                  <div class ="cell name">
+                     Никнейм
+                  </div>
+                  <div class ="cell">
+                     vileven
+                  </div>
+               </div>
+               <div class = "column2 with_width">
+                  <div class ="cell name">
+                  </div>
+                  <div class ="cell">
+                  </div>
+               </div>
+            </div>
+            <div class = "row2">
+               <div class = "column2 with_width">
+                  <div class ="cell name">
+                     Дата рождения
+                  </div>
+                  <div class ="cell">
+                     15.06.1997
+                  </div>
+               </div>
+               <div class = "column2 with_width">
+                  <div class ="cell name">
+                  </div>
+                  <div class ="cell">
+                  </div>
+               </div>
+            </div>
+            <div class = "row2">
+               <div class = "column2 with_width">
+                  <div class ="cell name">
+                     Пол
+                  </div>
+                  <div class ="cell">
+                     Мужской
+                  </div>
+               </div>
+               <div class = "column2 with_width">
+                  <div class ="cell name">
+                  </div>
+                  <div class ="cell">
+                  </div>
+               </div>
+            </div>
+            <div class = "row2">
+               <div class = "column2 with_width">
+                  <div class ="cell name">
+                     Email
+                  </div>
+                  <div class ="cell">
+                     lol@kek
+                  </div>
+               </div>
+               <div class = "column2 with_width">
+                  <div class ="cell name">
+                     Телефон
+                  </div>
+                  <div class ="cell">
+                     +7 (965) 432-**-**
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class = "column2 part">
+            <div class = "row2">
+               <div class ="btn active simmetry"> 
+                  <img src="icons/actions/edit.svg" class = "pic"/>
+                  Изменить
+               </div>
+			   
+               <div class ="btn simmetry" disabled> 
+                  <img src="icons/actions/delete.svg" class = "pic"/>
+                  Удалить
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--
+         -->
+      <script src="js/menu.js"></script>
+      <script src="js/password_visibility.js"></script>
+      <script src="js/input_required.js"></script>
+      <script>
+         $('img.img-svg').each(function(){
+           var $img = $(this);
+           var imgClass = $img.attr('class');
+           var imgURL = $img.attr('src');
+           $.get(imgURL, function(data) {
+             var $svg = $(data).find('svg');
+             if(typeof imgClass !== 'undefined') {
+               $svg = $svg.attr('class', imgClass+' replaced-svg');
+             }
+             $svg = $svg.removeAttr('xmlns:a');
+             if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+               $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+             }
+             $img.replaceWith($svg);
+           }, 'xml');
+         });
+         
+      </script>
+   </body>
+</html>
