@@ -135,7 +135,7 @@ div.name {
 }
 
 /**/
-div.round {
+.round {
     width: 30px;
     height: 30px;
     border-radius: 15px;
