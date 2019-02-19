@@ -1,5 +1,6 @@
 .login-popup {
   @extend %popup;
+
   max-width: 300px;
   @include shadow($shadow);
 
@@ -16,11 +17,12 @@
   }
 
   &__continue-with-text {
-    font-size: 9px;
-    color: $muted-color-dark;
     margin: 8px 0;
+    font-size: 9px;
+
     text-align: center;
     font-weight: bold;
+    color: $muted-color-dark;
   }
 
   &__signup-link {

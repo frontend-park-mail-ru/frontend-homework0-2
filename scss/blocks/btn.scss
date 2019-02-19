@@ -1,9 +1,5 @@
 @import "../modules/mixins";
 
-$btn-hover-transition: 0.5s;
-$btn-active-transition: 0.2s;
-
-
 @mixin btn-color($bg, $color, $bg-hover: darker($bg), $color-hover: $color,
                  $bg-active: darker(darker($bg)), $color-active: $color, $block) {
   // TLDR: set animations (0.5 for hover, 0.2 for click), and colors to those given
@@ -12,34 +8,36 @@ $btn-active-transition: 0.2s;
   $hover-duration: 0.5s;
   $active-duration: 0.2s;
 
-  @include transition(_transition(background-color, $hover-duration),
-          _transition(color, $hover-duration));
+  @include transition(make-transition(background-color, $hover-duration),
+          make-transition(color, $hover-duration));
   background-color: $bg;
   color: $color;
 
-  #{$block}__icon-span {
-    @include transition(_transition(background-color, $hover-duration));
+  #{$block}__icon {
+    @include transition(make-transition(background-color, $hover-duration));
     background-color: $color;
   }
 
   &:hover:not(#{$block}_disabled) {
-    @include transition(_transition(background-color, $hover-duration),
-            _transition(color, $hover-duration));
+    @include transition(make-transition(background-color, $hover-duration),
+            make-transition(color, $hover-duration));
     background-color: $bg-hover;
     color: $color-hover;
-    #{$block}__icon-span {
-      @include transition(_transition(background-color, $hover-duration));
+
+    #{$block}__icon {
+      @include transition(make-transition(background-color, $hover-duration));
       background-color: $color-hover;
     }
   }
 
   &:active:not(#{$block}_disabled) {
-    @include transition(_transition(background-color, $active-duration),
-            _transition(color, $active-duration));
+    @include transition(make-transition(background-color, $active-duration),
+            make-transition(color, $active-duration));
     background-color: $bg-active;
     color: $color-active;
-    #{$block}__icon-span {
-      @include transition(_transition(background-color, $active-duration));
+
+    #{$block}__icon {
+      @include transition(make-transition(background-color, $active-duration));
       background-color: $color-active;
     }
   }
@@ -50,39 +48,50 @@ $btn-active-transition: 0.2s;
   $height: 32px;
   $height-large: 40px;
   $font-size: 16px;
-  @include shadow(0 2px $outline-color);
-  @include btn-color($main-color, white, $block: $block);
-  border: 1px solid $main-color-dark;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: $font-size;
-  font-weight: bold;
-  padding: 5px 15px;
-  height: 32px;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  height: 32px;
+  padding: 5px 15px;
+  font-size: $font-size;
   line-height: $font-size;
+
+  border: 1px solid $main-color-dark;
+  border-radius: 3px;
+
+  @include shadow(0 2px $outline-color);
+  @include btn-color($main-color, white, $block: $block);
+  cursor: pointer;
+  font-weight: bold;
+
   &:focus {
     outline: none;
   }
+
   &::-moz-focus-inner {
     border: 0;
   }
+
+  // modifiers
+  &_size {
+    &_large {
+      height: $height-large;
+
+      #{$block}__text {
+        line-height: $font-size +  abs($height - $height-large) / 2;
+      }
+    }
+  }
+
   &_color_muted {
+    border-color: $border-color;
     @include btn-color ($muted-color-light, $muted-color-dark,
                         $color-hover: darker($muted-color-dark),
                         $color-active: darker(darker($muted-color-dark)),
                         $block: $block);
-    border-color: $muted-color-dark;
-  }
-
-  &_large {
-    height: $height-large;
-    #{$block}__text {
-      line-height: $font-size +  abs($height - $height-large) / 2;
-    }
   }
 
   &_disabled {
@@ -90,20 +99,23 @@ $btn-active-transition: 0.2s;
     cursor: not-allowed;
   }
 
+  // elements
   &__inner {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-content: center;
+    justify-content: center;
     padding-top: 2px;
   }
 
   &__text {
     &_normal {
+      color: black;
       font-weight: normal;
     }
   }
 
-  &__icon-span {
+  &__icon {
     margin-right: 8px;
   }
 

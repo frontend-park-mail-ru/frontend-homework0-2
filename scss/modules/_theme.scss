@@ -1,15 +1,15 @@
-$main-color: #CA9CF4;
-$main-color-dark: #B289D6;
 $border-color: #E0E0E0;
-$outline-color: #F5F5F5;
+$focus-color: lightblue;
+$error-color: #FF1100;
+$green: #28C57D;
+$link-color: #005BD1;
+$main-color-dark: #B289D6;
+$main-color: #CA9CF4;
 $muted-color-dark: #A9A9A9;
 $muted-color-light: #F7F7F7;
-$link-color: #005BD1;
-$error-color: #FF1100;
-$color-focus: lightblue;
-$shadow-color: #676767;
-$green: #28C57D;
 $orange: #FD9E0B;
+$outline-color: #F5F5F5;
+$shadow-color: #676767;
 
 $vk-color: #4A76A8;
 $fb-color: #3B5998;
@@ -19,13 +19,11 @@ $font-stack: Helvetica, Arial, sans-serif;
 $small-font-size: 12px;
 $smaller-font-size: 9px;
 
-
-
 $shadow: 0 0 50px 5px $shadow-color;
-$shadow-tiny: 0 0 50px -5px $shadow-color;
+$shadow-focus: 0 0 50px -12px $focus-color;
 $shadow-outline: 0 2px 0 0 $outline-color;
-$shadow-focus: 0 0 50px -12px $color-focus;
-$shadow-small-focus: 0 0 12px -1px $color-focus;
+$shadow-small-focus: 0 0 12px -1px $focus-color;
+$shadow-tiny: 0 0 50px -5px $shadow-color;
 
 $z-index-scale: 100;
 $z-index-popup: 1 * $z-index-scale;

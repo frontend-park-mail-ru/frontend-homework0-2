@@ -9,36 +9,42 @@ $select-border-radius: 3px;
 
 .select {
   $block: &;
-  @include transition(_transition(box-shadow, 0.2s));
-  align-items: center;
-  border: 1px solid $border-color;
-  border-radius: $select-border-radius;
+  @include transition(make-transition(box-shadow, 0.2s));
+  position: relative;
+
   display: flex;
   flex-direction: row;
+  align-items: center;
+
+  height: $field-height - 2px;
   min-width: fit-content;
   padding: 0;
-  position: relative;
-  height: $field-height - 2px;
+
+  border: 1px solid $border-color;
+  border-radius: $select-border-radius;
 
   &:focus-within {
-    border-color: $color-focus;
-    @include shadow($shadow-focus);
     z-index: $z-index-shadow;
+
+    border-color: $focus-color;
+    @include shadow($shadow-focus);
   }
   :-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #000;
   }
   &::after {
-    content: " ";
-    @extend .icon-span;
-    @extend .icon-span_color_black;
-    @extend .icon-span_type_dropdown;
     position: absolute;
     top: ($field-height - get-icon-span-height(nil)) / 2;
     right: 3px;
-    pointer-events: none;
     z-index: $z-index-input + 1;
+
+    @extend .icon;
+    @extend .icon_color_black;
+    @extend .icon_type_dropdown;
+
+    pointer-events: none; // click falls through to the select
+    content: "";
   }
 
   &_stretched {
@@ -55,22 +61,24 @@ $select-border-radius: 3px;
   }
 
   &__field {
-    height: 28px;
     @include appearance-none;
+
     display: inline-block;
-    font-size: $select-height;
-    background-color: white;
-    border-radius: $select-border-radius;
     flex-grow: 1;
-    padding: $select-padding-top $select-padding-sides + 12px
-             $select-padding-bottom $select-padding-sides;
-    @include firefox {
-      padding: $select-padding-top - 3px $select-padding-sides + 12px
-               $select-padding-bottom + 3px $select-padding-sides;
-    }
+
+    height: $field-height - 2px;
+    line-height: $field-height - 2px;
+    padding: 0 $select-padding-sides + 12px
+             0 $select-padding-sides;
+    font-size: $select-height;
+
+    border-radius: $select-border-radius;
+    background-color: white;
+
     & {
       border-width: 0;
     }
+
     &:focus {
       outline: none;
       border: none;

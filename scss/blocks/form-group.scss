@@ -1,38 +1,42 @@
 .form-group {
   $block: &;
+
   display: flex;
   flex-direction: column;
-  margin: 4px 0;
+
+  padding: 5px 0;
 
   &:last-of-type {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
-  &_align_space-between {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  &_align_center {
-    flex-direction: row;
-    justify-content: center;
-  }
-  &_align_stretch {
-    flex-direction: row;
-    justify-items: stretch;
-    justify-content: stretch;
-    align-items: stretch;
-    align-content: stretch;
-    #{$block}__field {
-      flex-grow: 1;
+  &_align {
+    &_space-between {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &_center {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    &_stretch {
+      flex-direction: row;
+      justify-content: stretch;
+
+      #{$block}__field {
+        flex-grow: 1;
+      }
     }
   }
 
-  &_margin {
+  &_size {
     &_inline {
-      margin: 0;
+      padding: 0;
     }
     &_large {
-      margin-bottom: 8px;
+      padding-bottom: 10px;
     }
   }
 
@@ -48,11 +52,14 @@
       display: none;
     }
   }
+
   &__title {
+    display: block;
+
     font-size: 14px;
     font-weight: bold;
     text-align: center;
-    display: block;
+
     &_align {
       &_left {
         text-align: left;

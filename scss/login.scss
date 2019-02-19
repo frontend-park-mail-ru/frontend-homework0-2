@@ -3,21 +3,22 @@
 @import "modules/generic";
 
 @import "blocks/icon";
-@import "blocks/input";
+@import "blocks/btn";
 @import "blocks/checkbox";
 @import "blocks/form-group";
+@import "blocks/input";
+@import "blocks/sm-icons-list";
 
 @import "blocks/login-popup";
 @import "blocks/login-form";
-@import "blocks/sm-icons-list";
-@import "blocks/btn";
 
 body, html {
     height: 100%;
 }
 .body {
-    background-color: #858585;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: #858585;
 }

@@ -13,22 +13,22 @@
         Для регистрации на ресурсе укажите информацию о себе
     </span>
     <div class="signup-form">
-        <div class="form-group form-group_margin_large signup-form__form-group">
+        <div class="form-group">
             <input type="text" class="input input_status_error input__field" placeholder="Имя">
             <span class="form-group__help-text form-group__help-text_type_error">
                 Заполните обязательное поле
             </span>
         </div>
-        <div class="form-group form-group_margin_large signup-form__form-group">
+        <div class="form-group">
             <input type="text" class="input input__field" placeholder="Фамилия">
             <span class="form-group__help-text form-group__help-text_type_error form-group__help-text_hidden">
                 Заполните обязательное поле
             </span>
         </div>
-        <div class="form-group form-group__margin_inline signup-form__form-group">
+        <div class="form-group form-group__size_inline">
             <div class="form-group__title form-group__title_align_left">
                 <label for="signup__day-select">Дата рождения</label></div>
-            <div class="form-group form-group_align_stretch form-group__margin_inline">
+            <div class="form-group form-group_align_stretch form-group__size_inline">
                 <!-- can't use ::after on a select because.. because? -->
                 <div class="select signup-form__date-select form-group__field">
                     <select class="select__field" id="signup__day-select">
@@ -58,16 +58,16 @@
                 </div>
             </div>
         </div>
-        <div class="form-group form-group__margin_inline signup-form__form-group">
+        <div class="form-group form-group__size_inline signup-form__form-group">
             <div class="form-group__title form-group__title_align_left">
                 <label for="signup__phone-number">Телефон</label>
             </div>
-            <div class="form-group form-group__margin_inline">
+            <div class="form-group form-group__size_inline">
                 <div class="field-group">
                     <div class="select select_with-icon field-group__field
                                 field-group__field_position_prepend field-group__field_stretched_1">
                         <label for="signup__choose-country"
-                               class="icon-span icon-span_type_ru select__chosen-icon"></label>
+                               class="icon icon_type_ru select__chosen-icon"></label>
                         <select id="signup__choose-country" class="select__field">
                             <option value="ru" class="select__option_with-icon
                                                      select__option_icon-type_ru" data-code="+7" selected>
@@ -106,12 +106,12 @@
     </div>
     <hr class="hr signup-popup__hr">
     <div class="signup-popup__double-btn">
-        <button class="btn btn_large signup-popup__singup-btn">
+        <button class="btn btn_size_large signup-popup__singup-btn">
             <span class="btn__inner">
                 <span class="btn__text">Зарегистрироваться</span>
             </span>
         </button>
-        <button class="btn btn_large btn_color_muted signup-popup__cancel-btn">
+        <button class="btn btn_size_large btn_color_muted signup-popup__cancel-btn">
             <span class="btn__inner">
                 <span class="btn__text btn__text_normal">Отменить</span>
             </span>

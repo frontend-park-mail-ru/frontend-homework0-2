@@ -1,13 +1,16 @@
 .menu {
   $block: &;
   $menu-item-height: 55px;
-  margin: 0 auto;
+
   width: 60%;
   min-width: fit-content;
   max-width: 600px;
+  margin: 0 auto;
+
   border-radius: 3px;
-  // border takes up space, making colored elements leaves blank pixels, so I use a shadow-border
-  @include shadow(0 0 0 1px #EBEBEB, 0 2.5px #F5F5F5);
+  // border takes up space, making colored elements leaves blank pixels
+  // so I use a shadow-border
+  @include shadow(0 0 0 1px $border-color, $shadow-outline);
 
   &__title {
     margin:0;
@@ -16,19 +19,23 @@
   }
 
   &__link {
-    color: black;
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
+
+    color: black;
   }
 
   &__item {
     position: relative;
-    height: $menu-item-height;
+
     display: flex;
     align-items: center;
+
+    height: $menu-item-height;
     padding: 0 15px 0 20px;
+
     &:last-child {
       border-bottom-right-radius: 3px;
       border-bottom-left-radius: 3px;
@@ -41,7 +48,7 @@
     right: 10px;
   }
 
-  &__icon {
+  &__icon-bg {
     margin-right: 12px;
   }
 

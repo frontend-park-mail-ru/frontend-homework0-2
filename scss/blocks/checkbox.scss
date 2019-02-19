@@ -2,31 +2,41 @@
 
 .checkbox {
   @include appearance-none();
-  vertical-align: bottom;
   position: relative;
-  background-color: $main-color;
-  margin: 0;
   top: -3px;
-  border-radius: 3px;
-  cursor: pointer;
+  vertical-align: bottom;
+
   height: 14px;
   width: 14px;
+  margin: 0;
+
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: $main-color;
+
   &:checked::before {
     position: absolute;
     left: -15%;
     top: -20%;
+
+    @extend .icon;
     height: 16px;
     width: 16px;
+
     content: "";
+    @extend .icon_color_white;
     @include mask-image($checkmark-icon);
-    @extend .icon-span;
-    @extend .icon-span_color_white;
   }
+
   &:focus {
     outline: none;
   }
-  &_size_small {
-    width: 12px;
-    height: 12px;
+
+  // modifiers
+  &_size {
+    &_small {
+      width: 12px;
+      height: 12px;
+    }
   }
 }

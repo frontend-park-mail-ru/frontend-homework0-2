@@ -24,7 +24,8 @@
 @mixin transition($values...) {
   transition: $values;
 }
-@function _transition($property, $duration, $timing-function: ease, $delay:0s) {
+
+@function make-transition($property, $duration, $timing-function: ease, $delay:0s) {
   @return $property $duration $timing-function $delay;
 }
 

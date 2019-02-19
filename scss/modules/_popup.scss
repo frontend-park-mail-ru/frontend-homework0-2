@@ -5,15 +5,18 @@ $popup-left-padding: 15px;
 
 %popup {
   position: relative;
-  background-color: white;
-  border-radius: 3px;
-  padding: $popup-top-padding $popup-right-padding $popup-bottom-padding $popup-left-padding;
-  min-width: fit-content;
-  min-width: -moz-max-content;
+  z-index: $z-index-popup;
+
   display: flex;
   flex-direction: column;
+
   width: 50%;
-  z-index: $z-index-popup;
+  min-width: fit-content;
+  min-width: -moz-max-content;
+  padding: $popup-top-padding $popup-right-padding $popup-bottom-padding $popup-left-padding;
+
+  border-radius: 3px;
+  background-color: white;
 
   &__close-popup {
       position: absolute;

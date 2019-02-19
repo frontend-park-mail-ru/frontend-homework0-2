@@ -3,31 +3,31 @@
 
 $icons-path: "../../icons";
 
-$eye-icon: $icons-path + "/show.svg";
-$cross-icon: $icons-path + "/close.svg";
-$vk-icon: $icons-path + "/vk.svg";
-$fb-icon: $icons-path + "/fb.svg";
-$ok-icon: $icons-path + "/ok.svg";
-$mailru-icon: $icons-path + "/mailru.svg";
-$dropdown-icon: $icons-path + "/drop_down.svg";
-$signin-icon: $icons-path + "/sign_in.svg";
-$key-icon: $icons-path + "/access.svg";
-$users-icon: $icons-path + "/users.svg";
-$gamepad-icon: $icons-path + "/game1.svg";
-$delete-icon: $icons-path + "/delete.svg";
-$useredit-icon: $icons-path + "/user_edit.svg";
 $checkmark-icon: $icons-path + "/done.svg";
-
+$cross-icon: $icons-path + "/close.svg";
+$delete-icon: $icons-path + "/delete.svg";
+$dropdown-icon: $icons-path + "/drop_down.svg";
+$eye-icon: $icons-path + "/show.svg";
+$fb-icon: $icons-path + "/fb.svg";
+$gamepad-icon: $icons-path + "/game1.svg";
+$key-icon: $icons-path + "/access.svg";
+$mailru-icon: $icons-path + "/mailru.svg";
+$ok-icon: $icons-path + "/ok.svg";
 $ru-png: $icons-path + "/ru.png";
-$icon-span-size: 14px, 14px;
-$icon-span-sizes: (small: (12px, 12px),
+$signin-icon: $icons-path + "/sign_in.svg";
+$useredit-icon: $icons-path + "/user_edit.svg";
+$users-icon: $icons-path + "/users.svg";
+$vk-icon: $icons-path + "/vk.svg";
+
+$icon-size: 14px, 14px;
+$icon-sizes: (small: (12px, 12px),
                    large: (20px, 20px),
                    xlarge: (24px, 24px),
                    xxlarge: (32px, 32px),
                    xxxlarge: (40px, 40px));
 
-$icon-size: 20px, 20px;
-$icon-sizes: (large: (24px, 24px),
+$icon-bg-size: 20px, 20px;
+$icon-bg-sizes: (large: (24px, 24px),
               xlarge: (28px, 28px),
               xxlarge: (36px, 36px),
               xxxlarge: (50px, 50px),
@@ -35,31 +35,31 @@ $icon-sizes: (large: (24px, 24px),
 
 @function get-icon-height($size) {
     @if $size == nil {
+        @return nth($icon-bg-size, 1);
+    }
+    @return nth(map-get($icon-bg-sizes, $size), 1);
+}
+@function get-icon-width($size) {
+    @if $size == nil {
+        @return nth($icon-bg-size, 2);
+    }
+    @return nth(map-get($icon-bg-sizes, $size), 2);
+}
+@function get-icon-span-height($size) {
+    @if $size == nil {
         @return nth($icon-size, 1);
     }
     @return nth(map-get($icon-sizes, $size), 1);
 }
-@function get-icon-width($size) {
+@function get-icon-span-width($size) {
     @if $size == nil {
         @return nth($icon-size, 2);
     }
     @return nth(map-get($icon-sizes, $size), 2);
 }
-@function get-icon-span-height($size) {
-    @if $size == nil {
-        @return nth($icon-span-size, 1);
-    }
-    @return nth(map-get($icon-span-sizes, $size), 1);
-}
-@function get-icon-span-width($size) {
-    @if $size == nil {
-        @return nth($icon-span-size, 2);
-    }
-    @return nth(map-get($icon-span-sizes, $size), 2);
-}
 
 // icons
-.icon-span {
+.icon {
     display: inline-block;
     -webkit-mask-size: contain;
     mask-size: contain;
@@ -67,7 +67,7 @@ $icon-sizes: (large: (24px, 24px),
     width: get-icon-span-width(nil);
 
     &_size{
-        @each $size, $x in $icon-span-sizes {
+        @each $size, $x in $icon-sizes {
            &_#{$size} {
                 height: get-icon-span-height($size);
                 width: get-icon-span-width($size);
@@ -148,13 +148,13 @@ $icon-sizes: (large: (24px, 24px),
     }
 }
 
-.icon {
+.icon-bg {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20px;
     width: 20px;
-    border-radius: 3px;
+    border-radius: 4px;
     border: 1px solid $border-color;
 
     &_shape {
@@ -190,7 +190,7 @@ $icon-sizes: (large: (24px, 24px),
         }
     }
     &_size {
-        @each $size, $_ in $icon-sizes {
+        @each $size, $_ in $icon-bg-sizes {
            &_#{$size} {
                 height: get-icon-height($size);
                 width: get-icon-width($size);
@@ -200,6 +200,10 @@ $icon-sizes: (large: (24px, 24px),
     //flags
     &_btn {
         cursor: pointer;
+        @include transition(make-transition(box-shadow, 0.2s));
+        &:hover {
+            @include shadow($shadow-outline, $shadow-small-focus);
+        }
     }
     &_borderless {
         border: none;

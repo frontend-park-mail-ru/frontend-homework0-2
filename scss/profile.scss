@@ -8,9 +8,10 @@
 @import "blocks/profile-info";
 
 .body {
-  background-color: white;
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  background-color: white;
 }
 

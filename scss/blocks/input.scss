@@ -9,28 +9,35 @@ $input-border-radius: 3px;
 @if $input-height + $input-padding-top + $input-padding-bottom + 2px != $field-height {
   @error("inputs are incorrectly sized!");
 }
+
 .input{
   $block: &;
-  @include transition(_transition(box-shadow, 0.2s));
-  align-items: center;
-  border: 1px solid $border-color;
-  border-radius: $input-border-radius;
-  display: flex;
-  flex-direction: row;
-  min-width: fit-content; // this is important
-  padding: 0;
   position: relative;
   z-index: $z-index-input;
 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  min-width: fit-content;
+  padding: 0;
+
+  border: 1px solid $border-color;
+  border-radius: $input-border-radius;
+
+
+  @include transition(make-transition(box-shadow, 0.2s));
+
   &:focus-within {
+    z-index: $z-index-shadow;
+
     border-color: lightblue;
     @include shadow($shadow-focus);
-    z-index: $z-index-shadow;
   }
 
   &_with-icon {
     & #{$block}__field {
-      padding-right: 5px;
+      padding-right: 5px; // smaller padding
     }
   }
 
@@ -42,7 +49,7 @@ $input-border-radius: 3px;
       }
     }
   }
-  &__icon-span {
+  &__icon {
     margin-left: 0;
     margin-right: 10px;
   }
@@ -51,23 +58,25 @@ $input-border-radius: 3px;
 
     &#{$block} {
     }
+    display: inline-block;
+
+    height: $input-height;
     min-width: 0;
     flex-grow: 1;
-    display: inline-block;
-    line-height: 12px;
-    height: $input-height;
-    border-radius: $input-border-radius;
-    // can't align the text any other way
+    margin: 0; // kinda !important but i feel bad putting it there
     padding: $input-padding-top $input-padding-sides $input-padding-bottom $input-padding-sides;
+    @include firefox {
+      // 16 + 7 = 20 + 3 so size doesn't change, just the alignment
+      height: $input-height - 3px;
+      padding: $input-padding-top $input-padding-sides $input-padding-bottom + 3px $input-padding-sides;
+    }
+
+    line-height: 12px;
+
+    border-radius: $input-border-radius;
     border-width: 0;
     font-size: 12px;
     outline: none;
-    margin: 0; // kinda !important but i feel bad putting it there
-    @include firefox {
-      // 16 + 7 = 20 + 3 so size doesn't change, just the alignment
-      height: $input-height - 4px;
-      padding: $input-padding-top $input-padding-sides $input-padding-bottom + 4px $input-padding-sides;
-    }
     &_prepended {
       padding-left: 0;
     }

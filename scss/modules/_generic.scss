@@ -6,11 +6,13 @@ html, body {
 }
 
 a {
-    text-decoration: none;
     color: $link-color;
+    text-decoration: none;
+
     &:hover {
         text-decoration: underline;
     }
+
     &:focus {
         outline: none;
     }
@@ -21,21 +23,25 @@ label {
 }
 
 .title {
-    font-size: 24px;
-    font-weight: bold;
     display: block;
     text-align: center;
+    font-size: 24px;
+
+    font-weight: bold;
+
     &_size_large {
         font-size: 28px;
     }
 }
 
 .hr {
-    border: 0;
-    border-top: 1px solid $border-color;
     display: block;
     height: 0;
     padding: 0;
+
+    border: 0;
+    border-top: 1px solid $border-color;
+
     &_inline {
         margin: 0;
     }

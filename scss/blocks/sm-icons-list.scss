@@ -5,19 +5,16 @@
   flex-direction: row;
   justify-content: center;
 
-  &__icon {
-    @extend .icon_size_tall;
-    @extend .icon_btn;
+  &__icon-bg {
+    @extend .icon-bg_size_tall;
+    @extend .icon-bg_btn;
     @include shadow($shadow-outline);
     margin: 0 2px;
-    &:hover {
-      @include shadow($shadow-outline, $shadow-small-focus);
-    }
   }
 
-  &__icon-span {
-    @extend .icon-span_color_white;
-    @extend .icon-span_size_small;
+  &__icon {
+    @extend .icon_color_white;
+    @extend .icon_size_small;
   }
 
 }

@@ -2,52 +2,57 @@
 
 .field-group {
   $block: &;
-  @include transition(_transition(box-shadow, 0.2s));
+  @include transition(make-transition(box-shadow, 0.2s));
+
   display: flex;
   flex-direction: row;
   align-content: stretch;
   justify-content: stretch;
+
   height: $field-height;
+
   &:focus-within {
     box-shadow: $shadow-focus;
-    #{$block}__field:not([class*="status_error"]) {
-      border-color: $color-focus;
+
+    #{$block}__field:not([class*="status_error"]) { // there's probably a better way...
+      border-color: $focus-color;
     }
   }
+
+  //elements
   &__field {
     flex-grow: 1;
-    height: $field-height - 2px; // BOOOOOOOOOOOOOOOORDEEEEEEEEEEEEEEEEEEEER
-    @include firefox {
-      .input__field {
-        // I SWEAR THE CRAZIEST THING HAPPENED:
-        // a man in a mask broke in, put a gun to my head
-        // and told me to write nested selectors
-        width: 100%;
-      }
+    height: $field-height - 2px; // 2px for the border
+
+    &:focus-within {
+      box-shadow: none;
     }
+
+    //modifiers
     &_position {
       &_prepend {
+        margin-right: 0;
+
+        border-right-width: 0;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-        border-right-width: 0;
-        margin-right: 0;
       }
+
       &_append {
         margin-left: 0;
+
         border-left-width: 1px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
       }
     }
+
     &_stretched {
       @for $i from 1 through 12 {
         &_#{$i} {
           flex-grow: $i;
         }
       }
-    }
-    &:focus-within {
-      box-shadow: none;
     }
   }
 }

@@ -6,9 +6,10 @@
 @import "blocks/menu";
 
 .body {
-    background-color: white;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-content: center;
+
+    padding: 0;
+    background-color: white;
 }

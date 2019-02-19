@@ -1,7 +1,7 @@
 .update-profile-popup {
-  min-width: 300px;
   @extend %popup;
   max-width: 250px;
+
   @include shadow($shadow);
 
   &__close-popup {
@@ -17,10 +17,11 @@
   }
 
   &__continue-with-text {
-    font-size: 9px;
-    color: $muted-color-dark;
     margin: 8px 0;
+    font-size: 9px;
+
     text-align: center;
+    color: $muted-color-dark;
     font-weight: bold;
   }
 

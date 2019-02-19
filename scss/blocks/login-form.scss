@@ -1,7 +1,4 @@
 .login-form {
-  $login-form-margin: 4px;
-  display: flex;
-  flex-direction: column;
 
   &__remember-me-label,
   &__forgot-password-link{
@@ -9,8 +6,9 @@
   }
 
   &__submit-btn {
-    margin: 0 auto;
     width: 50%;
     max-width: 160px;
+
+    margin: 0 auto;
   }
 }
