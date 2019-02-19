@@ -1,0 +1,105 @@
+<html>
+    <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  
+	  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ 
+	<link rel="stylesheet" href="css/var11_menu.css" type="text/css"/>
+	<link rel="stylesheet" href="css/main_blocks.css" type="text/css"/>
+ 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+	integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
+	crossorigin="anonymous">
+	  
+    </head>
+<body>
+<div class="wrapper">
+  <div class="menu">
+    <a href="#" class="menu-icon"><span><i class="fas fa-bars"></i></span></a>
+    <div class="head ">
+	
+	</div>
+	<nav class="menu-list">
+	<div class ="label active head"> 
+		 <img src="icons/logotypes/mailru.svg" class = "big-img"/>
+		 mail
+	</div>
+	<div class ="btn active element"> 
+		 <img src="icons/actions/sign_in.svg" class = "img-svg"/>
+		 Авторизация
+	</div>
+	<div class ="btn element"> 
+		 <img src="icons/categories/game1.svg"/>
+		 Регистрация
+	</div>
+	<div class ="btn element"> 
+		 <img src="icons/categories/game1.svg"/>
+		 Авторы
+	</div>
+	<div class ="btn element">
+		 <img src="icons/categories/game1.svg"/>
+		 Играть
+	</div>
+	<div class ="label about"> 
+	<a href="https://park.mail.ru/feed/">О проекте</a>
+	</div>
+    </nav>
+  </div>
+  <section>
+	 
+	  <div class="form_box">
+	  <div class = "info">
+      Авторизуйтесь на сервисе
+	  </div>
+		<form>
+            <div class="form-group" required>
+                <input id="email" 
+				type="text"
+				placeholder="Email" class="form-control" required />
+            </div>
+			
+			  <div class="form-group has-feedback" required>
+				<input type="password" class="form-control" id="password"
+				placeholder="Password" required>
+				<i class="glyphicon glyphicon-eye-open form-control-feedback"></i>
+				<label id = "warning">Введите пароль</label>
+			  </div>
+				<div class ="btn active half" id="button" >
+		 <img src="icons/logotypes/mailru.svg" class = "pic"/>
+		 Войти через Почту
+	</div>
+        </form>
+		
+	</div>
+  </section>
+ </div>
+ <script src="js/menu.js"></script>
+ <script src="js/password_visibility.js"></script>
+ <script src="js/input_required.js"></script>
+<script>
+$('img.img-svg').each(function(){
+  var $img = $(this);
+  var imgClass = $img.attr('class');
+  var imgURL = $img.attr('src');
+  $.get(imgURL, function(data) {
+    var $svg = $(data).find('svg');
+    if(typeof imgClass !== 'undefined') {
+      $svg = $svg.attr('class', imgClass+' replaced-svg');
+    }
+    $svg = $svg.removeAttr('xmlns:a');
+    if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+      $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+    }
+    $img.replaceWith($svg);
+  }, 'xml');
+});
+
+</script>
+</body>
+</html>
