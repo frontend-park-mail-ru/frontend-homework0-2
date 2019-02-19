@@ -1,4 +1,6 @@
 .menu {
+  $block: &;
+  $menu-item-height: 55px;
   margin: 0 auto;
   width: 60%;
   min-width: fit-content;
@@ -13,12 +15,20 @@
     text-align: left;
   }
 
+  &__link {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+
   &__item {
     position: relative;
-    height: 55px;
+    height: $menu-item-height;
     display: flex;
     align-items: center;
-    padding: 0 15px 0 50px;
+    padding: 0 15px 0 20px;
     &:last-child {
       border-bottom-right-radius: 3px;
       border-bottom-left-radius: 3px;
@@ -30,20 +40,18 @@
     top: 20px;
     right: 10px;
   }
+
   &__icon {
-    position: absolute;
-    top: 13px;
-    left: 18px;
+    margin-right: 8px;
   }
+
   &__items {
     &_color_white-whitesmoke-chain {
       // there's probably a better way, but I couldn't find it :<
-      .menu__item:nth-of-type(even) {
+      #{$block}__item:nth-of-type(even) {
         background-color: whitesmoke;
       }
     }
   }
-
-
 
 }
