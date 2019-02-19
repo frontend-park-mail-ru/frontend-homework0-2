@@ -1,4 +1,6 @@
 @import "../modules/mixins";
+@import "../modules/theme";
+
 $icons-path: "../../icons";
 
 $eye-icon: $icons-path + "/show.svg";
@@ -17,52 +19,62 @@ $useredit-icon: $icons-path + "/user_edit.svg";
 $checkmark-icon: $icons-path + "/done.svg";
 
 $ru-png: $icons-path + "/ru.png";
+$icon-span-size: 14px, 14px;
+$icon-span-sizes: (small: (12px, 12px),
+                   large: (20px, 20px),
+                   xlarge: (24px, 24px),
+                   xxlarge: (32px, 32px),
+                   xxxlarge: (40px, 40px));
 
-$icon-size: 14px;
-$small-icon-size: 12px;
-$large-icon-size: 20px;
-$xlarge-icon-size: 24px;
-$xxlarge-icon-size: 32px;
-$xxxlarge-icon-size: 40px;
+$icon-size: 20px, 20px;
+$icon-sizes: (large: (24px, 24px),
+              xlarge: (28px, 28px),
+              xxlarge: (36px, 36px),
+              xxxlarge: (50px, 50px),
+              tall: (30px, 24px));
 
-$icon-wrapper-size: 20px;
-$large-icon-wrapper-size: 24px;
-$xlarge-icon-wrapper-size: 28px;
-$xxlarge-icon-wrapper-size: 36px;
-$xxxlarge-icon-wrapper-size: 50px;
-$tall-icon-wrapper-height: 30px;
-$tall-icon-wrapper-width: 20px;
+@function get-icon-height($size) {
+    @if $size == nil {
+        @return nth($icon-size, 1);
+    }
+    @return nth(map-get($icon-sizes, $size), 1);
+}
+@function get-icon-width($size) {
+    @if $size == nil {
+        @return nth($icon-size, 2);
+    }
+    @return nth(map-get($icon-sizes, $size), 2);
+}
+@function get-icon-span-height($size) {
+    @if $size == nil {
+        @return nth($icon-span-size, 1);
+    }
+    @return nth(map-get($icon-span-sizes, $size), 1);
+}
+@function get-icon-span-width($size) {
+    @if $size == nil {
+        @return nth($icon-span-size, 2);
+    }
+    @return nth(map-get($icon-span-sizes, $size), 2);
+}
 
 // icons
 .icon-span {
     display: inline-block;
     -webkit-mask-size: contain;
     mask-size: contain;
-    height: $icon-size;
-    width: $icon-size;
+    height: get-icon-span-height(nil);
+    width: get-icon-span-width(nil);
 
     &_size{
-        &_small {
-        height: $small-icon-size;
-        width: $small-icon-size;
-        }
-        &_large {
-            height: $large-icon-size;
-            width: $large-icon-size;
-        }
-        &_xlarge {
-            height: $xlarge-icon-size;
-            width: $xlarge-icon-size;
-        }
-        &_xxlarge {
-            height: $xxlarge-icon-size;
-            width: $xxlarge-icon-size;
-        }
-        &_xxxlarge {
-            height: $xxxlarge-icon-size;
-            width: $xxxlarge-icon-size;
+        @each $size, $x in $icon-span-sizes {
+           &_#{$size} {
+                height: get-icon-span-height($size);
+                width: get-icon-span-width($size);
+           }
         }
     }
+
     &_color {
         &_green {
             background-color: $green;
@@ -127,7 +139,7 @@ $tall-icon-wrapper-width: 20px;
             background-image: url($ru-png);
             background-repeat: no-repeat;
             background-size: 100%;
-            background-position: 0 30%;
+            background-position: 0 25%;
         }
     }
     //flags
@@ -178,27 +190,11 @@ $tall-icon-wrapper-width: 20px;
         }
     }
     &_size {
-        &_large {
-            width: $large-icon-wrapper-size;
-            height: $large-icon-wrapper-size;
-        }
-        &_xlarge {
-            width: $xlarge-icon-wrapper-size;
-            height: $xlarge-icon-wrapper-size;
-        }
-        &_xxlarge {
-            width: $xxlarge-icon-wrapper-size;
-            height: $xxlarge-icon-wrapper-size;
-        }
-
-        &_xxxlarge {
-            width: $xxxlarge-icon-wrapper-size;
-            height: $xxxlarge-icon-wrapper-size;
-        }
-
-        &_tall {
-            height: $tall-icon-wrapper-height;
-            width: $tall-icon-wrapper-width;
+        @each $size, $_ in $icon-sizes {
+           &_#{$size} {
+                height: get-icon-height($size);
+                width: get-icon-width($size);
+            }
         }
     }
     //flags

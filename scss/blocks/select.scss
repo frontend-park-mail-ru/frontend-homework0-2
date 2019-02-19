@@ -1,21 +1,24 @@
 @import "../modules/mixins";
 
-$select-height: 20px;
-$select-padding-top: 6px;
-$select-padding-bottom: 4px;
+$select-height: 12px;
+$select-padding-top: 7px;
+$select-padding-bottom: 7px;
 $select-padding-sides: 10px;
 $select-border-radius: 3px;
 
-$select-total-height: $select-height + $select-padding-top + $select-padding-bottom;
 
 .select {
+  $block: &;
   @include transition(_transition(box-shadow, 0.2s));
+  align-items: center;
   border: 1px solid $border-color;
   border-radius: $select-border-radius;
-  position: relative;
+  display: flex;
+  flex-direction: row;
   min-width: fit-content;
-  width: -moz-fit-content;
-
+  padding: 0;
+  position: relative;
+  height: $field-height - 2px;
 
   &:focus-within {
     border-color: $color-focus;
@@ -23,15 +26,20 @@ $select-total-height: $select-height + $select-padding-top + $select-padding-bot
     z-index: $z-index-shadow;
   }
 
-  &_stretched {
-    width: 100%;
+  &::after {
+    content: " ";
+    @extend .icon-span;
+    @extend .icon-span_color_black;
+    @extend .icon-span_type_dropdown;
+    position: absolute;
+    top: ($field-height - get-icon-span-height(nil)) / 2;
+    right: 3px;
+    pointer-events: none;
+    z-index: $z-index-input + 1;
   }
 
-
-  &_with-icon {
-    .select__field {
-      padding-left: $select-padding-sides + $icon-size + 3px;
-    }
+  &_stretched {
+    width: 100%;
   }
 
   &_status {
@@ -45,39 +53,29 @@ $select-total-height: $select-height + $select-padding-top + $select-padding-bot
 
   &__field {
     @include appearance-none;
-    width: 100%;
-    width: -moz-fit-content;
-    font-size: 12px;
+    display: inline-block;
+    font-size: $select-height;
     background-color: white;
-    border-width: 0;
     border-radius: $select-border-radius;
-    height: $select-total-height; // it's inline so gotta add the padding
-    padding: $select-padding-top $select-padding-sides + $small-icon-size + 2px
+    flex-grow: 1;
+    padding: $select-padding-top $select-padding-sides + 12px
              $select-padding-bottom $select-padding-sides;
     @include firefox {
-      padding: $select-padding-top - 2px $select-padding-sides + $small-icon-size + 2px
-      $select-padding-bottom + 2px $select-padding-sides;
+      padding: $select-padding-top - 2px $select-padding-sides + 12px
+               $select-padding-bottom + 2px $select-padding-sides;
+    }
+    & {
+      border-width: 0;
     }
     &:focus {
       outline: none;
       border: none;
     }
   }
-  &__dropdown-icon {
-    @extend .icon-span_size_small;
-    position: absolute;
-    top: (($select-total-height - $small-icon-size) / 2);
-    right: 5px;
-    pointer-events: none
-  }
 
   &__chosen-icon {
-    position: absolute;
-    pointer-events: none;
-    top: (($select-total-height - $icon-size) / 2);
-    left: $select-padding-sides;
+    margin-left: 10px;
   }
-
 
   //options are ugly af but can't do much without js
 }

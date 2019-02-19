@@ -1,4 +1,5 @@
 .form-group {
+  $block: &;
   display: flex;
   flex-direction: column;
   margin: 4px 0;
@@ -12,9 +13,18 @@
     justify-content: space-between;
   }
   &_align_center {
-    display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+  &_align_stretch {
+    flex-direction: row;
+    justify-items: stretch;
+    justify-content: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    #{$block}__field {
+      flex-grow: 1;
+    }
   }
 
   &_margin {

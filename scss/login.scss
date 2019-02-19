@@ -12,6 +12,9 @@
 @import "blocks/sm-icons-list";
 @import "blocks/btn";
 
+body, html {
+    height: 100%;
+}
 .body {
     background-color: #858585;
     display: flex;

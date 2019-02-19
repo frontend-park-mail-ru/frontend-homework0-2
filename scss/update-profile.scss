@@ -11,6 +11,10 @@
 @import "blocks/update-profile-popup";
 @import "blocks/update-profile-form";
 
+body, html {
+  height: 100%;
+}
+
 .body {
   background-color: #858585;
   display: flex;

@@ -1,19 +1,25 @@
 // form-related invariant styles
 
-$input-height: 20px;
+$input-height: 18px;
 $input-padding-top: 6px;
 $input-padding-bottom: 4px;
 $input-padding-sides: 10px;
-$input-total-height: $input-height + $input-padding-bottom + $input-padding-top + 2px; // border 2px
 $input-border-radius: 3px;
+
+@if $input-height + $input-padding-top + $input-padding-bottom + 2px != $field-height {
+  @error("inputs are incorrectly sized!");
+}
 .input{
+  $block: &;
   @include transition(_transition(box-shadow, 0.2s));
-  border-radius: $input-border-radius;
-  padding: 0;
+  align-items: center;
   border: 1px solid $border-color;
-  min-width: fit-content; // this is important
-  position: relative;
+  border-radius: $input-border-radius;
   display: flex;
+  flex-direction: row;
+  min-width: fit-content; // this is important
+  padding: 0;
+  position: relative;
   z-index: $z-index-input;
 
   &:focus-within {
@@ -23,8 +29,11 @@ $input-border-radius: 3px;
   }
 
   &_with-icon {
-    padding-right: 20px;
+    & #{$block}__field {
+      padding-right: 5px;
+    }
   }
+
   &_status {
     &_error {
       border-color: $error-color;
@@ -34,17 +43,14 @@ $input-border-radius: 3px;
     }
   }
   &__icon-span {
-    position: absolute;
-    top: ($input-total-height - $icon-size) / 2;
-    right: $input-padding-sides;
-    &.icon_size_small {
-      top: ($input-total-height - $small-icon-size) / 2;
-    }
-    &.icon_size_large {
-      top: ($input-total-height - $large-icon-size) / 2;
-    }
+    margin-left: 0;
+    margin-right: 10px;
   }
+
   &__field {
+
+    &#{$block} {
+    }
     min-width: 0;
     flex-grow: 1;
     display: inline-block;
@@ -98,7 +104,7 @@ $input-border-radius: 3px;
     width: $width;
     height: $height;
     right: - $width - $arrow-length - $input-padding-sides - $padding - 1px;
-    top: $input-total-height - $height - $padding - 1px; //1 px for border
+    top: $field-height - $height - $padding - 1px; //1 px for border
     z-index: $z-index-tooltip;
     background-color: white;
     @include shadow($shadow-tiny);

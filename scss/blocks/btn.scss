@@ -47,25 +47,29 @@ $btn-active-transition: 0.2s;
 
 .btn {
   $block: &;
+  $height: 32px;
+  $height-large: 40px;
+  $font-size: 16px;
   @include shadow(0 2px $outline-color);
   @include btn-color($main-color, white, $block: $block);
   border: 1px solid $main-color-dark;
   border-radius: 3px;
   cursor: pointer;
-  font-size: inherit;
+  font-size: $font-size;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 5px 15px;
   height: 32px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-content: center;
-
+  align-items: center;
+  line-height: $font-size;
   &:focus {
     outline: none;
   }
 
   &_color_muted {
-    @include btn-color ($muted-color-light, $muted-color-dark,
+    @include btn-color ($muted-color-light, black,
                         $color-hover: darker($muted-color-dark),
                         $color-active: darker(darker($muted-color-dark)),
                         $block: $block);
@@ -73,9 +77,9 @@ $btn-active-transition: 0.2s;
   }
 
   &_large {
-    height: 40px;
-    #{$block}__icon-span {
-      @extend .icon-span_size_large;
+    height: $height-large;
+    #{$block}__text {
+      line-height: $font-size +  abs($height - $height-large) / 2;
     }
   }
 

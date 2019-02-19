@@ -28,36 +28,33 @@
         <div class="form-group form-group__margin_inline signup-form__form-group">
             <div class="form-group__title form-group__title_align_left">
                 <label for="signup__day-select">Дата рождения</label></div>
-            <div class="form-group form-group_align_space-between form-group__margin_inline">
-                <div class="select select_stretched signup-form__date-select">
+            <div class="form-group form-group_align_stretch form-group__margin_inline">
+                <!-- can't use ::after on a select because.. because? -->
+                <div class="select signup-form__date-select form-group__field">
                     <select class="select__field" id="signup__day-select">
                         <option value="0" selected>День</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select>
-                    <i class="icon-span icon-span_size_small icon-span_color_black
-                              icon-span_type_dropdown select__dropdown-icon"></i>
+
                 </div>
-                <div class="select select_stretched signup-form__date-select">
+                <div class="select signup-form__date-select form-group__field">
                     <select class="select__field">
                         <option value="0" selected>Месяц</option>
                         <option value="1">Январь</option>
                         <option value="2">Февраль</option>
                         <option value="3">Март</option>
                     </select>
-                    <i class="icon-span icon-span_size_small icon-span_color_black
-                              icon-span_type_dropdown select__dropdown-icon"></i>
+
                 </div>
-                <div class="select select_stretched signup-form__date-select">
-                    <select class="select__field">
+                <div class="select signup-form__date-select form-group__field">
+                    <select class="select__field signup-form__date-select form-group__field">
                         <option value="0" selected>Год</option>
                         <option value="1">2019</option>
                         <option value="2">2018</option>field-group__field_stretched_4
                         <option value="3">2017</option>
                     </select>
-                    <i class="icon-span icon-span_size_small icon-span_color_black
-                              icon-span_type_dropdown select__dropdown-icon"></i>
                 </div>
             </div>
         </div>
@@ -67,10 +64,11 @@
             </div>
             <div class="form-group form-group__margin_inline">
                 <div class="field-group">
-                    <div class="select select_with-icon
+                    <div class="select select_with-icon field-group__field
                                 field-group__field_position_prepend field-group__field_stretched_1">
-                        <span class="icon-span icon-span_type_ru select__chosen-icon"></span>
-                        <select class="select__field">
+                        <label for="signup__choose-country"
+                               class="icon-span icon-span_type_ru select__chosen-icon"></label>
+                        <select id="signup__choose-country" class="select__field">
                             <option value="ru" class="select__option_with-icon
                                                      select__option_icon-type_ru" data-code="+7" selected>
                                 Россия
@@ -84,10 +82,8 @@
                                 Соединенные Штаты Америки
                             </option>
                         </select>
-                        <i class="icon-span icon-span icon-span_color_black
-                                  icon-span_type_dropdown select__dropdown-icon"></i>
                     </div>
-                    <div class="input field-group__field_position_append field-group__field_stretched_8">
+                    <div class="input field-group__field field-group__field_position_append field-group__field_stretched_8">
                         <span class="input__field-appendix input__field-appendix_position_prepend"
                               id="signup__country-code-span">+7</span>
                         <input class="input__field input__field_prepended" type="text" id="signup__phone-number">
