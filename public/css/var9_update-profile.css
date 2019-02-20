@@ -1,0 +1,109 @@
+
+body {
+	background: #808080;	
+}
+
+h2{
+    font-weight:bold;
+}
+
+.wrapper {	
+    margin-top: 80px;
+    margin-bottom: 80px;
+    min-width: 450px;
+    max-width: 450px;
+}
+
+.bs-example{
+    	margin: 20px;
+    }
+
+.center{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.form-signin {    
+    
+    box-shadow: 0 5px 30px 5px rgba(0,0,0,0.25);
+    padding: 15px 20px 20px;
+
+    border-radius: 7px 7px 0 0; 
+
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);  
+    position: relative;
+
+}
+
+.bottom_update {
+    background-color: #FFFFFF;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    border-radius:  0 0 7px 7px; 
+    border: 1px solid rgba(0,0,0,0.1);  
+    padding-right: 20px; 
+    padding-left: 20px;  
+}
+
+.hint {
+  color: red;
+  font-size: 12px;
+  font-weight:bold;
+}
+
+
+.btn_submit {
+  background-color: #FFD700;
+  border: 0px;
+}
+
+.btn {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #000000;
+    font-weight:bold;  
+    font-size: 16px;
+    background-color: #FFFFFF; 
+}
+
+.input-append .btn.dropdown-toggle {
+    float: none;
+}
+.btn_refresh {
+
+    background-color: #FFD700;
+    width: 115px;
+    height: 40px;
+    color: #FFFFFF;
+    border: 1px solid #EAC300 ;
+}
+
+.btn_cancel {
+    background-color: #F7F7F7;
+    width: 115px;
+    height: 40px;
+    border: 1px solid  #EDEDED;
+    color: grey;
+}
+
+
+.dropdown {
+  background-color: #FFFFFF;  
+}
+
+.dropdown-toggle {
+    width: 60px;
+}
+
+.form-control {
+    height: 30px;
+}
+
+
+
+
