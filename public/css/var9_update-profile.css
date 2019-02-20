@@ -8,20 +8,16 @@ h2{
 }
 
 .wrapper {	
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 80px;
     min-width: 450px;
     max-width: 450px;
 }
 
-.bs-example{
-    	margin: 20px;
-    }
-
 .center{
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .form-signin {    
@@ -50,32 +46,31 @@ h2{
 }
 
 .hint {
-  color: red;
-  font-size: 12px;
-  font-weight:bold;
+    color: red;
+    font-size: 12px;
+    font-weight:bold;
 }
 
 
 .btn_submit {
-  background-color: #FFD700;
-  border: 0px;
+    background-color: #FFD700;
+    border: 0px;
 }
 
 .btn {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    #margin-top: 15px;
+    #margin-bottom: 15px;
     text-align: center;
     color: #000000;
-    font-weight:bold;  
-    font-size: 16px;
+    #font-weight:bold;  
+    #font-size: 16px;
     background-color: #FFFFFF; 
 }
 
-.input-append .btn.dropdown-toggle {
-    float: none;
-}
-.btn_refresh {
 
+.btn_refresh {
+    margin-top: 15px;
+    margin-bottom: 15px;
     background-color: #FFD700;
     width: 115px;
     height: 40px;
@@ -84,6 +79,8 @@ h2{
 }
 
 .btn_cancel {
+    margin-top: 15px;
+    margin-bottom: 15px;
     background-color: #F7F7F7;
     width: 115px;
     height: 40px;
@@ -91,17 +88,17 @@ h2{
     color: grey;
 }
 
+.btn_dropout{
+   min-width: 170px; 
+   text-align: left;
+}
 
 .dropdown {
   background-color: #FFFFFF;  
 }
 
-.dropdown-toggle {
-    width: 60px;
-}
-
-.form-control {
-    height: 30px;
+.icon {
+    margin-right: 5px;
 }
 
 
