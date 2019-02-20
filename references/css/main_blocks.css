@@ -11,6 +11,22 @@
 	margin-right: 8px;
 }	
 
+.btn_big {
+	width: 70%;
+	text-align: center;
+	font-weight:bold;
+	font-family: "Arial";
+	height: 50;
+	font-weight: 600;
+	font-size: 15pt;
+	line-height: 50px;
+	border-radius: 10px;
+	margin: 8px auto;
+	cursor: pointer;
+	border: 1px solid rgb(222, 222, 222);
+}
+
+
 .btn {
 	width: 95%;
 	text-align: center;
@@ -54,14 +70,6 @@
 	  color: rgb(255, 255, 255)
 	}
 
-.block {
-		font-weight:bold;
-		padding: 5px;
-		font-family: "Arial";
-		font-size: 12;
-		margin-top: 2px;
-	}
-
 .img-svg path{
 	fill: #ffffff;
 }
@@ -94,6 +102,24 @@ img {
 		display: none;
 		color: rgb(255, 45, 84);
 	}
+	
+	.form_box_big input {
+	  display: block;
+	  border: 1px border #cfcfcf;
+	  font-size: 14px;
+	  height: 7%;
+	  min-width: 400px;
+	  color: #444444;
+	  transition: all 0.5s;
+	  -webkit-transition: all 0.5s;
+	  -moz-transition: all 0.5s;
+	   width: 100%;
+		margin: 8px auto;
+		padding: 15px;
+		border-radius: 10px;
+		 align-items: center;
+		justify-content: center;
+	}
 
 	.form_box input {
 	  display: block;
@@ -103,6 +129,10 @@ img {
 	  transition: all 0.5s;
 	  -webkit-transition: all 0.5s;
 	  -moz-transition: all 0.5s;
+	  width: 100%;
+		margin: 8px auto;
+		padding: 5px;
+		border-radius: 5px;
 	}
 	.form_box .req:invalid {
 	  border: 1px solid rgba(255, 45, 84, 255);
@@ -120,8 +150,15 @@ img {
    pointer-events: all;
  }
 
-.info {
+.big_text {
 	font-size: 20pt;
+}
+ 
+.small_text {
+	font-size: 12pt;
+}
+ 
+.info {
 	font-family: "Arial";
 	font-weight: 1200;
 	color: #000;
@@ -134,11 +171,4 @@ img {
 		background: white;
 		border: 0;
 		right: -20px;
-	}
-
-	input {
-		width: 100%;
-		margin: 8px auto;
-		padding: 5px;
-		border-radius: 5px;
 	}
