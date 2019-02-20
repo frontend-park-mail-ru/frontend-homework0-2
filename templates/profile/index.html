@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+    <!--<style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        .profile-page{
+            margin: 0;
+            padding: 8px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            font-family: Helvetica, Arial, san-serif;
+            font-size: 32px;
+            background-color: #FFFFFF;
+            box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+        }
+
+        .profile-page__main-block {
+            width: 422px;
+            height: 435px;
+            border: 1px solid #E0E0E0;
+            border-radius: 2px;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .profile-page-header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-page-header__text {
+            margin-top: 1px;
+            margin-left: 1px;
+            font-weight: bold;
+        }
+
+        .profile-page-logo-block {
+            width: 100%;
+            height: 88px;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-page__logo-circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #F0F0F0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-page-header__abbreviation {
+            font-size: 33px;
+            margin-top: 4px;
+            font-weight: bold;
+        }
+
+        .profile-page-form {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-page-form-main-part {
+            width: 216px;
+            height: 205px;
+        }
+
+        .profile-page-form-input {
+            height: 41px;
+            border-bottom: 1px solid #E0E0E0;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .profile-page-form-input_w-o-border {
+            border-bottom: none;
+        }
+
+        .profile-page-form-input-left {
+            width: 142px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .profile-page-form-input-right {
+            display: flex;
+            /*justify-content: center;*/
+            align-items: center;
+        }
+
+        .profile-page-form-input__text {
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .profile-page-form_gray-text {
+            font-size: 14px;
+        }
+
+        .profile-page-form-footer {
+            margin-top: 24px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-page-form-buttons {
+            width: 286px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .profile-page-form__change-button {
+            width: 145px;
+            height: 40px;
+            box-sizing: border-box;
+            background-color: #008079;
+            border: 1px solid #00716A;
+            border-radius: 2px;
+            padding: 11px 20px 11px 21px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .profile-page-form__delete-button {
+            width: 133px;
+            height: 40px;
+            box-sizing: border-box;
+            background-color: #F7F7F7;
+            border: 1px solid #E9E9E9;
+            border-radius: 2px;
+            padding: 11px 20px 12px 21px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .profile-page-form__change-icon {
+            width: 15px;
+            height: 16px;
+            background: url("img/change.svg");
+        }
+
+        .profile-page-form__change-text {
+            font-size: 16px;
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+
+        .profile-page-form__delete-icon {
+            width: 14px;
+            height: 15px;
+            background: url("img/delete.svg");
+        }
+
+        .profile-page-form__delete-text {
+            font-size: 16px;
+            color: #A1A1A1;
+            font-weight: bold;
+        }
+
+        .profile-page_shift {
+            margin-left: 2px;
+        }
+    </style>-->
+</head>
+<body class="profile-page">
+    <div class="profile-page__main-block">
+        <div class="profile-page-header">
+            <div class="profile-page-header__text">Профиль</div>
+        </div>
+        <div class="profile-page-logo-block">
+            <div class="profile-page__logo-circle">
+                <div class="profile-page-header__abbreviation">ИИ</div>
+            </div>
+        </div>
+        <form class="profile-page-form">
+            <div class="profile-page-form-main-part">
+                <div class="profile-page-form-input">
+                    <div class="profile-page-form-input-left">
+                        <div class="profile-page-form-input__text">Никнейм</div>
+                    </div>
+                    <div class="profile-page-form-input-right">
+                        <div class="profile-page-form-input__text profile-page-form_gray-text">vileven</div>
+                    </div>
+                </div>
+                <div class="profile-page-form-input">
+                    <div class="profile-page-form-input-left">
+                        <div class="profile-page-form-input__text">Имя</div>
+                    </div>
+                    <div class="profile-page-form-input-right">
+                        <div class="profile-page-form-input__text profile-page-form_gray-text">Иван</div>
+                    </div>
+                </div>
+                <div class="profile-page-form-input">
+                    <div class="profile-page-form-input-left">
+                        <div class="profile-page-form-input__text">Фамилия</div>
+                    </div>
+                    <div class="profile-page-form-input-right">
+                        <div class="profile-page-form-input__text profile-page-form_gray-text">Иванов</div>
+                    </div>
+                </div>
+                <div class="profile-page-form-input">
+                    <div class="profile-page-form-input-left">
+                        <div class="profile-page-form-input__text">Дата рождения</div>
+                    </div>
+                    <div class="profile-page-form-input-right">
+                        <div class="profile-page-form-input__text profile-page-form_gray-text profile-page_shift">15.06.1997</div>
+                    </div>
+                </div>
+                <div class="profile-page-form-input profile-page-form-input_w-o-border">
+                    <div class="profile-page-form-input-left">
+                        <div class="profile-page-form-input__text">Пол</div>
+                    </div>
+                    <div class="profile-page-form-input-right">
+                        <div class="profile-page-form-input__text profile-page-form_gray-text">Мужской</div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="profile-page-form-footer">
+            <div class="profile-page-form-buttons">
+                <button class="profile-page-form__change-button">
+                    <div class="profile-page-form__change-icon"></div>
+                    <div class="profile-page-form__change-text">Изменить</div>
+                </button>
+                <button class="profile-page-form__delete-button">
+                    <div class="profile-page-form__delete-icon"></div>
+                    <div class="profile-page-form__delete-text">Удалить</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

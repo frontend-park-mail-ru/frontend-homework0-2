@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+       <!-- <style type="text/css">
+            html {
+                width: 100%;
+                height: 100%;
+            }
+            .login-page {
+                margin: 0px;
+                padding: 8px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                font-family: Helvetica, Arial, san-serif;
+                font-size: 27px;
+                background-color: #A4A4A4;
+            }
+
+            .login-page-box {
+                width: 420px;
+                height: 443px;
+                /*margin-top: 139px;*/
+                border: 1px solid #F7F7F7;
+                border-radius: 2px;
+                box-sizing: border-box;
+                background-color: #F7F7F7;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            .login-page-main {
+                padding: 20px 20px 0 20px;
+                height: 382px;
+                box-sizing: border-box;
+            }
+
+            .login-page-header {
+                display: flex;
+                justify-content: center;
+                position: relative;
+            }
+
+            .login-page__text {
+                font-size: 33px;
+                font-weight: bold;
+                color: #4A4A4A;
+            }
+
+            .login-page__close-button {
+                width: 15px;
+                height: 15px;
+                margin-top: 1px;
+                position: absolute;
+                right: 0;
+                background-image: url("img/close_big.svg");
+            }
+
+            .login-page-form {
+                margin-top: 30px;
+            }
+
+            .login-page-form-part {
+                width: 100%;
+                height: 40px;
+                box-sizing: border-box;
+                padding: 12px;
+                border: 1px solid #E2E2E2;
+                border-radius: 4px;
+                background-color: #F7F7F7;
+            }
+
+            .login-page-form-part::placeholder {
+                color: #9A9A9A;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            .login-page_password {
+                margin-top: 20px;
+                background: url("img/show.svg") no-repeat scroll 349px 11px;
+            }
+
+            .login-page-form-helper {
+                width: 100%;
+                height: 26px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 12px;
+                padding: 5px 0;
+            }
+            .login-page-storage-password {
+                width: 190px;
+                display: flex;
+                /*justify-content: space-between;*/
+            }
+
+            .login-page-storage-password-box {
+                width: 16px;
+                height: 16px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #4AA19C;
+                background: #4AA19C;
+                border-radius: 4px;
+            }
+
+            .login-page-storage-password__icon {
+                width: 12px;
+                height: 12px;
+                background: url("img/done_perfect.svg");
+            }
+
+            .login-page-form-helper-text {
+                padding-top: 2px;
+                font-size: 15px;
+                /*font-weight: bold;*/
+            }
+
+            .login-page-storage-password_text {
+                margin-left: 8px;
+                color: #4A4A4A;
+            }
+
+            .login-page-forget-password_text {
+                color: #4A88D8;
+            }
+
+            .login-page-form-button-place {
+                height: 70px;
+                box-sizing: border-box;
+                padding: 15px 0;
+                margin-top: 3px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .login-page-form__button {
+                display: flex;
+                width: 180px;
+                box-sizing: border-box;
+                border: 1px solid #4AA19C;
+                border-radius: 4px;
+                background: #4AA19C;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .login-page-form-button__text {
+                color: #F7F7F7;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .login-page-form-helpful-text-place {
+                height: 15px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .login-page-form-helpful__text {
+                color: #9A9A9A;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            .login-page-social-buttons {
+                height: 60px;
+                padding: 10px 0;
+                display: flex;
+                justify-content: center;
+                box-sizing: border-box;
+            }
+
+            .login-page-social-buttons-area {
+                width: 112px;
+                justify-content: space-between;
+                display: flex;
+            }
+
+            .login-page__button {
+                width: 32px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                border: 1px solid;
+                border-radius: 4px;
+            }
+
+            .login-page_vk-button {
+                background: #7C9ABC;
+                border-color: #7C9ABC;
+            }
+
+            .login-page_fb-button {
+                background: #7287B1;
+                border-color: #7287B1;
+            }
+
+            .login-page_cl-button {
+                background: #ECA24F;
+                border-color: #ECA24F;
+            }
+
+            .login-page__social-icon {
+                width: 16px;
+                height: 16px;
+            }
+
+            .login-page_vk-icon {
+                background: url("img/vk.svg");
+            }
+
+            .login-page_fb-icon {
+                background: url("img/fb.svg");
+            }
+            .login-page_cl-icon {
+                background: url("img/ok.svg");
+            }
+
+            .login-page-footer {
+                height: 61px;
+                border-top: 1px solid #E2E2E2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .login-page__reg-text {
+                height: 12px;
+                color: #4A88D8;
+                font-size: 15px;
+            }
+
+        </style>-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    <div class="login-page-box">
+        <div class="login-page-main">
+            <div class="login-page-header">
+                <div class="login-page__text">
+                    Войти
+                </div>
+                <button type="submit" class="login-page__close-button"></button>
+            </div>
+            <form class="login-page-form">
+                <input class="login-page-form-part" type="text" placeholder="Телефон или электронная почта">
+                <input class="login-page-form-part login-page_password" type="text" placeholder="Пароль">
+                <div class="login-page-form-helper">
+                    <div class="login-page-storage-password">
+                        <button class="login-page-storage-password-box">
+                            <div class="login-page-storage-password__icon"></div>
+                        </button>
+                        <div class="login-page-form-helper-text login-page-storage-password_text">Запомнить пароль</div>
+                    </div>
+                    <a href="#" class="login-page-form-helper-text login-page-forget-password_text">Забыли пароль?</a>
+                </div>
+                <div class="login-page-form-button-place">
+                    <button class="login-page-form__button">
+                        <div class="login-page-form-button__text">Войти</div>
+                    </button>
+                </div>
+                <div class="login-page-form-helpful-text-place">
+                    <div class="login-page-form-helpful__text">или продолжить через</div>
+                </div>
+            </form>
+            <div class="login-page-social-buttons">
+                <div class="login-page-social-buttons-area">
+                    <button class="login-page__button login-page_vk-button">
+                        <div class="login-page__social-icon login-page_vk-icon"></div>
+                    </button>
+                    <button class="login-page__button login-page_fb-button">
+                        <div class="login-page__social-icon login-page_fb-icon"></div>
+                    </button>
+                    <button class="login-page__button login-page_cl-button">
+                        <div class="login-page__social-icon login-page_cl-icon"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer class="login-page-footer">
+            <a href="#" class="login-page__reg-text">Зарегистрироваться</a>
+        </footer>
+    </div>
+</body>
+</html>
