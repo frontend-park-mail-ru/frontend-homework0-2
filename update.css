@@ -1,0 +1,229 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr ;
+    grid-template-areas:
+            ". . ."
+            ". table ."
+            ". . .";
+
+    background-color: #868686;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+
+    grid-area: table;
+    border: 1px solid grey;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.25);
+
+    font-family: sans-serif;
+}
+
+.title {
+    height: 20%;
+    width: 100%;
+
+    font-size: 35px;
+}
+
+.login {
+    height: 20%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 20px;
+    margin-top: 10px;
+
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.phone {
+    height: 30%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.name {
+    /*width: 100%;*/
+    margin-bottom: 3px;
+}
+
+input {
+    height: 130%;
+    width: 90%;
+}
+
+#wrong {
+    padding-top: 20px;
+    color: red;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 30%;
+    width: 25%;
+}
+
+.buttons {
+    height: 25%;
+    width: 100%;
+
+    border-top: 1px solid lightgrey;
+
+    /*padding-top: 20px;*/
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.change {
+    background-color: #35eeba;
+
+    color: white;
+    font-weight: bold;
+    font-size: 90%;
+
+    padding: 0;
+    border: none;
+
+    margin-left: 10%;
+}
+
+.delete {
+    color: #868686;
+    font-weight: bold;
+    font-size: 90%;
+    background-color: #f1f1f1;
+
+    padding: 0;
+    border: none;
+
+    margin-right: 35%;
+}
+
+
+.btn_title {
+    margin-left: 20%;
+}
+
+.phone-input {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+
+    /*margin-right: 70px;*/
+}
+
+.select-country {
+    border-top: 1px solid red;
+    border-left: 1px solid red;
+    border-bottom: 1px solid red;
+
+    border-radius: 4px 0px 0px 4px;
+
+    width: 40%;
+    height: 130%;
+
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 10px;
+}
+
+.country-name {
+    margin-left: 5px;
+}
+
+.input-number {
+    width: 50%;
+
+    border: 1px solid red;
+    border-radius: 0px 4px 4px 0px;
+
+    font-size: 16px;
+
+    padding-left: 10px;
+}
+
+.bottom-arrow {
+    width: 10px;
+    padding-right: 5px;
+}
+
+#bubble-text {
+
+    left: 65%;
+    height: 50px;
+    width: 250px;
+
+    border: 1px solid gainsboro;
+    font-size: 13px;
+    position: absolute;
+    top: 300px;
+
+
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+
+    display: flex;
+    flex-direction: column;
+    text-align: start ;
+    justify-content: center;
+}
+
+.shadow-text {
+    padding-bottom: 5px;
+    color: gray;
+}
+
+
