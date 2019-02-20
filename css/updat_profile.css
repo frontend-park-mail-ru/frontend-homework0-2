@@ -8,12 +8,12 @@
 }
 
 .container {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 
     display: grid;
-    grid-template-columns: 1fr 350px 1fr;
-    grid-template-rows: 20% 400px auto;
+    grid-template-columns: auto 350px auto;
+    grid-template-rows: auto 400px auto;
 
     grid-template-areas:
             ". . ."
@@ -21,15 +21,18 @@
             ". . .";
 }
 
+/* Main body*/
 .plate {
     grid-area: plate;
-    height: 360px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 
     border: 1px solid darkgrey;
     border-radius: 4px;
 }
 
-div#title {
+/* body's head */
+.update-head {
     height: 25%;
     padding: 20px 20px 0px 20px;
 
@@ -40,20 +43,19 @@ div#title {
     align-items: center;
 }
 
-div#title div#title-name {
+.update-head-name {
     width: 50%;
 
     display: flex;
     align-items: start;
     flex-direction: column;
-
 }
 
-div#title div.title-name-part {
+.title-text-sz {
     font-size: 30px;
 }
 
-div#title  div#cross-img {
+.cross-block {
     width: 50%;
     height: 100%;
 
@@ -63,14 +65,17 @@ div#title  div#cross-img {
     justify-content: start;
 }
 
-div#title  div#cross-img img {
+img.cancel-cross {
     width: 20px;
 }
 
-div#body {
-    height: 200px;
+/* info form */
+form.user-info {
+    height: 56%;
+
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 20px;
 
     box-sizing: border-box;
 
@@ -80,22 +85,15 @@ div#body {
     justify-content: space-around;
 }
 
-div#body div#body-plate {
-
-    height: 150px;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-div#body div.info-row {
+div.info-row {
     width: 100%;
 }
 
-div#body div#bubble-text {
+.input-title {
+    font-weight: bold;
+}
+
+div#bubble-text {
 
     left: 68%;
     height: 50px;
@@ -104,8 +102,11 @@ div#body div#bubble-text {
     border-radius: 4px;
     font-size: 1.3em;
     position: absolute;
-    top: 280px;
+    top: 317px;
     width: 200px;
+
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 
     display: flex;
     flex-direction: column;
@@ -113,7 +114,7 @@ div#body div#bubble-text {
     justify-content: center;
 }
 
-div#body div#bubble-text::after {
+div#bubble-text::after {
     right: 100%;
     top: 50%;
     border: solid transparent;
@@ -122,30 +123,26 @@ div#body div#bubble-text::after {
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-color: #ffffff;
     border-right-color: gainsboro;
     border-width: 8px;
     margin-top: -8px;
 }
 
-div#body div.input-title {
-    font-weight: bold;
-}
-
-div#body input#login {
+input.login {
+    height: 38px;
     border: 1px solid gainsboro;
     border-radius: 4px;
     box-sizing: border-box;
     width: 100%;
 }
 
-div#body .input-size {
+.input-size {
     height: 34px;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-div#body div#phone-form {
+.phone-input {
 
     width: 100%;
     display: flex;
@@ -154,7 +151,12 @@ div#body div#phone-form {
 
 }
 
-div#body div#select-country {
+input.input-size:focus, input.input-size:active {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.select-country {
     border-top: 1px solid red;
     border-left: 1px solid red;
     border-bottom: 1px solid red;
@@ -171,22 +173,22 @@ div#body div#select-country {
     justify-content: space-between;
 }
 
-div#body div#country {
+div.country-area {
     display: flex;
     align-items: center;
     justify-content: start;
 }
 
-div#body img.bottom-arrow {
+img.bottom-arrow {
     width: 10px;
     transform: rotate(90deg);
 }
 
-div#body div#country-name {
+.country-name {
     margin-left: 5px;
 }
 
-div#body input#input-number {
+input.input-number {
     width: 60%;
 
     border: 1px solid red;
@@ -194,12 +196,13 @@ div#body input#input-number {
 
 }
 
-div#body div#warnin-number {
+label.warnin-text {
     color: red;
 }
 
-div#buttons {
-    height: 70px;
+/* plat's footer */
+div.buttons-block {
+    height: 19%;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -211,21 +214,38 @@ div#buttons {
     align-items: center;
 }
 
-div#buttons button {
-    height: 30px;
+button:focus, button:active {
+    outline: 0;
+    outline-offset: 0;
+}
+
+button.control-btn {
+    height: 50%;
     width: 110px;
     margin-right: 10px;
 
     border-radius: 4px;
 }
 
-div#buttons button#update {
+.update-btn {
     background-color: lightpink;
     color: white;
 }
 
-div#buttons button#cancel {
+.update-btn:active {
+    background-color: #e5a3ad;
+}
+
+.cancel-btn {
     background-color: lightgrey;
     color: gray;
+}
+
+.cancel-btn:active {
+    background-color: #bdbdbd
+}
+
+.shadow-btn:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 

@@ -9,43 +9,52 @@
 <body>
     <div class="container">
         <div class="plate">
-            <div class="header">
-                <div class="header-title">Профиль</div>
-                <div id="profiles-round">
-                    <div class="header-title">ИИ</div>
+
+            <div class="profile-title">
+                <label class="title-text">Профиль</label>
+            </div>
+
+            <div class="name-icon-block">
+                <div class="profiles-round">
+                    <label class="profile-nln">ИИ</label>
                 </div>
             </div>
-            <div class="information">
-                <form>
-                    <div id="info-rows">
-                        <div class="info-row bottom-line">
-                            <div class="col">Никнейм</div><div class="col">vileven</div>
-                        </div>
-                        <div class="info-row bottom-line">
-                            <div class="col">Имя</div><div class="col">Иван</div>
-                        </div>
-                        <div class="info-row bottom-line">
-                            <div class="col">Фамилия</div><div class="col">Иванов</div>
-                        </div>
-                        <div class="info-row bottom-line">
-                            <div class="col">Дата рождения</div><div class="col">05.06.1997</div>
-                        </div>
-                        <div class="info-row">
-                            <div class="col">Пол</div><div class="col">Мужской</div>
-                        </div>
+
+            <form class="information">
+                <div class="info-rows">
+                    <div class="info-row bottom-line">
+                        <label class="col-text">Никнейм</label><label class="col-text">vileven</label>
                     </div>
-                    <div id="buttons">
-                        <button id="change">
-                            <img src="../img/user_edit.svg">
-                            <span>Изменить</span>
-                        </button>
-                        <button id="delete">
-                            <img src="../img/delete.svg">
-                            <span>Удалить</span>
-                        </button>
+
+                    <div class="info-row bottom-line">
+                        <label class="col-text">Имя</label><label class="col-text">Иван</label>
                     </div>
-                </form>
+
+                    <div class="info-row bottom-line">
+                        <label class="col-text">Фамилия</label><label class="col-text">Иванов</label>
+                    </div>
+
+                    <div class="info-row bottom-line">
+                        <label class="col-text">Дата рождения</label><label class="col-text">05.06.1997</label>
+                    </div>
+
+                    <div class="info-row">
+                        <label class="col-text">Пол</label><label class="col-text">Мужской</label>
+                    </div>
+                </div>
+            </form>
+
+            <div class="buttons-block">
+                <button class="buttons change">
+                    <img src="../img/user_edit.svg">
+                    <label>Изменить</label>
+                </button>
+                <button class="buttons delete">
+                    <img src="../img/delete.svg">
+                    <label>Удалить</label>
+                </button>
             </div>
+
         </div>
     </div>
 </body>

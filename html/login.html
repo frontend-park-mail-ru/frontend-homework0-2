@@ -11,43 +11,44 @@
     <div class="iteam-plate">
 
         <div class="header">
-            <div id="title">Вход</div>
+            <h1 class="header-text">Вход</h1>
         </div>
 
-        <div class="form">
-            <div style="width: 100%">
-                <input type="email" id="phone-input" class="log-form" value="Телефон или электронная почта">
-            </div>
-            <div id="full-passwd-form">
-                <input type="text" class="log-form" id="passwd-form" value="Пароль">
-                <div id="show-div"><img src="../img/show.svg"></div>
-            </div>
+        <div class="sign-in">
 
-            <div id="passwd-logic">
-                <div id="rememb-passwd">
-                    <input type="checkbox">
-                    <div id="rememb-passwd-text">Запомнить пароль?</div>
+            <form class="authentication" id="authentication">
+                <input type="email" class="log-form mail-input focus-border" placeholder="Телефон или электронная почта">
+
+                <div class="full-passwd-form focus-border">
+                    <input type="password" class="log-form passwd-form" placeholder="Пароль">
+                    <div class="show-div"><img src="../img/show.svg" class="show-passwd"></div>
                 </div>
-                <a href="#">Забыли пароль?</a>
-            </div>
 
-            <button>Войти</button>
+                <div class="passwd-logic">
+                    <div class="rememb-passwd">
+                        <input type="checkbox">
+                        <label class="default-text-margin">Запомнить пароль?</label>
+                    </div>
+                    <a href="#">Забыли пароль?</a>
+                </div>
 
-            <div id="social-login">
-                <div id="social-text">Или продолжить через</div>
-                <div id="social-refs">
-                    <div class="bg-social-icon" id="vk-bg-color">
-                        <img src="../img/vk.svg">
-                    </div>
-                    <div class="bg-social-icon" id="fb-bg-color">
-                        <img src="../img/fb.svg">
-                    </div>
-                    <div class="bg-social-icon" id="ok-bg-color">
-                        <img src="../img/ok.svg">
+                <button type="submit" form="authentication">Войти</button>
+
+                <div class="social-login">
+                    <label class="grey-text">Или продолжить через</label>
+                    <div class="social-refs">
+                        <div class="bg-social-icon vk-bg-color">
+                            <a href="https://vk.com"><img src="../img/vk.svg"></a>
+                        </div>
+                        <div class="bg-social-icon fb-bg-color">
+                            <a href="https://www.facebook"><img src="../img/fb.svg"></a>
+                        </div>
+                        <div class="bg-social-icon ok-bg-color">
+                            <a href="https://ok"><img src="../img/ok.svg"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
+            </form>
         </div>
 
         <div class="registration">

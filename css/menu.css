@@ -3,13 +3,13 @@
     font-size: 10px;
 }
 
-div.container {
-    width: 100%;
-    height: 100%;
+.container {
+    width: 100vw;
+    height: 100vh;
 
     display: grid;
-    grid-template-columns: 1fr 680px 1fr;
-    grid-template-rows: 50px auto;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 50px 400px auto;
 
     grid-template-areas:
             "headerblock headerblock headerblock"
@@ -20,7 +20,7 @@ div.container {
     grid-area: headerblock;
 }
 
-.headerblock div#header {
+.header-logo-block {
     height: 100%;
     background-color: #ff2953;
     padding-left: 100px;
@@ -28,18 +28,10 @@ div.container {
     display: flex;
     align-items: center;
     justify-content: start;
-
 }
 
-.headerblock img {
+img.header-logo {
     height: 30px;
-}
-
-.headerblock div#logo-name {
-    margin-left: 4px;
-    font-size: 30px;
-    font-family: Arial;
-    color: white;
 }
 
 .menu {
@@ -48,53 +40,45 @@ div.container {
     border: 1px solid gainsboro;
     border-radius: 4px;
 
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+
     display: grid;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.menu div#menu-head {
-    height: 75px;
-    border-bottom: 1px solid gainsboro;
-    color: black;
-}
-
-.menu div#menu-title {
+.menu-title {
     font-size: 40px;
-    /*border-color: black;*/
-    /*border-width: 5px;*/
 }
 
-.menu div.first {
+div.first {
     background-color: white;
 }
 
-.menu div.second {
+div.second {
     background-color: #f5f5f5;
 }
 
-.menu div.menu-row {
-    /*height: 75px;*/
-    height: 65px;
+div.menu-row {
+    height: 100%;
 
     padding-left: 20px;
     padding-right: 20px;
 
     display: flex;
-    flex-direction: row; /* по умолчанию так и стоит */
     align-items: center;
     justify-content: space-between;
 }
 
-.menu div.rows-icon {
+div.rows-icon {
     display: flex;
     align-items: center;
 }
 
-.menu div.rows-icon img {
+div.rows-icon img {
     filter: invert(1);
 }
 
-.menu div.round-area {
+div.round-area {
     width: 30px;
     height: 30px;
     border-radius: 15px;
@@ -106,12 +90,12 @@ div.container {
 
 }
 
-.menu div.rows-title {
+.rows-title {
     margin-left: 20px;
     font-size: 15px;
 }
 
-.menu div.menu-row img.rotate-arrow {
+img.rotate-arrow {
     float: right;
     transform: rotate(90deg);
 }

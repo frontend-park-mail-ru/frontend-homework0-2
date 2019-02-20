@@ -3,32 +3,35 @@
     font-size: 12px;
 }
 
-input {
-    width: 100%;
-    height: 30px;
-    box-sizing: border-box;
-    /*border-radius: 4;*/
+input:active, input:focus, button:active, button:focus {
+    outline: 0;
+    outline-offset: 0;
 }
 
-.clarity {
+input.paddin-text {
+    padding-left: 4px;
+}
+
+.input-border {
     border: 1px solid lightgrey;
     border-radius: 4px;
+}
+
+input {
+    width: 100%;
+    height: 35px;
 }
 
 .grey-text {
     color: darkgrey;
 }
 
-select {
-    background-color: white;
-}
-
-div.container {
-    width: 100%;
-    height: 100%;
+.container {
+    width: 100vw;
+    height: 100vh;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto 420px auto;
     grid-template-rows: 10px 600px auto;
 
     grid-template-areas:
@@ -37,77 +40,71 @@ div.container {
             ". . .";
 }
 
+/* Main body*/
 .plate {
     grid-area: plate;
     background-color: white;
-    padding-top: 20px;
 
     border: 1px solid lightgrey;
     border-radius: 4px;
 
-    display: grid;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+
     grid-template-rows: 1fr 9fr;
-
-    grid-template-areas:
-            "header"
-            "main-body";
-
 }
 
-.header {
-    height: 60px;
-    /*padding-left: 20px;*/
+/* Head */
+.sign-in-title {
+    height: 10%;
 
-    font-size: 30px;
     font-weight: bold;
 
     padding-left: 30px;
     padding-right: 30px;
+
+    display: flex;
+    align-items: center;
 }
 
+.title-text {
+    font-size: 36px;
+}
+
+
+/* info form*/
 .main-body {
-    height: 450px;
+    height: 78%;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
     padding-left: 20px;
     padding-right: 20px;
 }
 
-input#warning-input {
+input.warning-input {
     border: 1px solid red;
     border-radius: 4px;
 }
 
-div#warning-text {
+.warning-text {
     color: red;
 }
 
-.main-body div#iput-content {
-    height: 95%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.main-body div.input-row {
+div.input-row {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-/*.main-body div#select-country {*/
-    /*width: 50%;*/
-/*}*/
-
-.main-body div#date-form {
+.date-form {
     display: flex;
     justify-content: space-around;
 }
 
-.main-body input {
-    height: 35px;
-}
-
-.main-body div.date-select {
+div.date-select {
     width: 33%;
     height: 35px;
     padding-left: 5px;
@@ -120,16 +117,16 @@ div#warning-text {
     justify-content: space-between;
 }
 
-.main-body img.bottom-arrow {
+img.bottom-arrow {
     width: 10px;
     transform: rotate(90deg);
 }
 
-.main-body div#phone-form {
+div.phone-form {
     display: flex;
 }
 
-.main-body div#flag-choise {
+div.flag-choise {
     width: 50%;
 
     padding-left: 5px;
@@ -140,22 +137,20 @@ div#warning-text {
     justify-content: space-between;
 }
 
-.main-body div#country {
+.country-area {
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.main-body div#country-name {
+.country-name {
     margin-left: 4px;
 }
 
-.main-body input#phone-number {
-    padding-left: 10px;
-}
+.buttons-block {
+    height: 12%;
 
-div#buttons {
-    height: 70px;
+    box-sizing: padding-box;
 
     padding-left: 20px;
     padding-right: 20px;
@@ -173,13 +168,29 @@ button {
     margin-left: 10px;
 }
 
-button#register {
+button.register-btn {
     width: 140px;
     background-color: #ff2953;
     color: white;
 }
 
-button#cancel {
+button.register-btn:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+button.register-btn:active {
+    background-color: #e5244a;
+}
+
+button.cancel-btn {
     width: 120px;
     background-color: lightgrey;
+}
+
+button.cancel-btn:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+button.cancel-btn:active {
+    background-color: #bdbdbd;
 }

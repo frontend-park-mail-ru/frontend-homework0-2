@@ -8,79 +8,77 @@
 <body>
     <div class="container">
         <div class="plate">
-            <div class="header">Регистрация</div>
+            <div class="sign-in-title">
+                <label class="title-text">Регистрация</label>
+            </div>
 
-            <form class="main-body">
-                <div id="iput-content">
+            <form class="main-body" id="sign-in-form">
                     <div class="input-row">
-                        <div class="grey-text">Для регистрации на ресурсе укажите информацию
+                        <label class="grey-text">Для регистрации на ресурсе укажите информацию
                             о себе
+                        </label>
+                    </div>
+
+                    <div class="input-row">
+                        <input type="text" placeholder="Имя" class="warning-input paddin-text">
+                        <label class="warning-text"> Заполните обязательное поле</label>
+                    </div>
+
+                    <div class="input-row">
+                        <input type="text" placeholder="Фамилия" class="input-border paddin-text">
+                    </div>
+
+                    <div class="input-row">
+                        <label>Дата рождения</label>
+
+                        <div class="date-form">
+                            <div class="date-select input-border">
+                                <label>День</label>
+                                <img src="../img/play.svg" class="bottom-arrow">
+                            </div>
+
+                            <div class="date-select input-border">
+                                <label>Месяц</label>
+                                <img src="../img/play.svg" class="bottom-arrow">
+                            </div>
+
+                            <div class="date-select input-border">
+                                <label>Год</label>
+                                <img src="../img/play.svg" class="bottom-arrow">
+                            </div>
                         </div>
                     </div>
 
                     <div class="input-row">
-                        <input type="text" value="Имя" id="warning-input" class="grey-text">
-                        <div id="warning-text" class="select-title"> Заполните обязательное поле</div>
-                    </div>
-
-                    <div class="input-row">
-                        <input type="text" value="Фамилия" class="clarity grey-text">
-                    </div>
-
-                    <div class="input-row">
-                        <div><b>Дата рождения</b></div>
-
-                        <div id="date-form">
-                            <div class="date-select clarity">
-                                <div>День</div>
-                                <img src="../img/play.svg" class="bottom-arrow">
-                            </div>
-
-                            <div class="date-select clarity">
-                                <div>Месяц</div>
-                                <img src="../img/play.svg" class="bottom-arrow">
-                            </div>
-
-                            <div class="date-select clarity">
-                                <div>Год</div>
-                                <img src="../img/play.svg" class="bottom-arrow">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="input-row">
-                        <div><b>Телефон</b></div>
-                        <div id="phone-form">
-
-                                <div id="flag-choise" class="clarity">
-                                    <div id="country">
+                        <label>Телефон</label>
+                        <div class="phone-form">
+                                <div class="input-border flag-choise">
+                                    <div class="country-area">
                                         <img src="../img/ru.png">
-                                        <div id="country-name">Россия</div>
+                                        <label class="country-name">Россия</label>
                                     </div>
                                     <img src="../img/play.svg" class="bottom-arrow">
                                 </div>
 
-                            <input value="+7" id="phone-number" class="clarity">
+                            <input placeholder="+7" class="input-border paddin-text">
                         </div>
                     </div>
 
                     <div class="input-row">
-                        <input type="text" value="Пароль" class="clarity grey-text">
+                        <input type="text" placeholder="Пароль" class="input-border paddin-text">
                     </div>
 
                     <div class="input-row">
-                        <input type="text" value="Повторите пароль" class="clarity grey-text">
+                        <input type="text" placeholder="Повторите пароль" class="input-border paddin-text">
                     </div>
-                </div>
             </form>
 
-            <div id="buttons">
-                <button id="register">
-                    <div>Зарегистрироваться</div>
+            <div class="buttons">
+                <button form="sign-in-form" class="register-btn">
+                    <label>Зарегистрироваться</label>
                 </button>
-                <button id="cancel">
-                    <div>Отменить</div>
+                <button class="cancel-btn">
+                    <label>Отменить</label>
                 </button>
             </div>
 

@@ -5,60 +5,53 @@
     <title>Title</title>
     <link rel="stylesheet" href="../css/updat_profile.css">
 </head>
-<body style="height: 100%">
+<body>
     <div class="container">
         <div class="plate">
 
-            <div id="title">
-                <div id="title-name">
-                    <div class="title-name-part">Изменение</div>
-                    <div class="title-name-part">настроек</div>
+            <div class="update-head">
+                <div class="update-head-name">
+                    <div class="title-text-sz">Изменение</div>
+                    <div class="title-text-sz">профиля</div>
                 </div>
 
-                <div id="cross-img">
-                    <img src="../img/close_big.svg">
+                <div class="cross-block">
+                    <img src="../img/close_big.svg" class="">
                 </div>
             </div>
 
-            <div id="body">
-                <div id="body-plate">
-
-                    <div class="info-row">
-                    <div class="input-title">Логин</div>
-                        <div class="log-form">
-                            <input type="text" id="login" class="input-size">
+            <form class="user-info" id="user-info">
+                <div class="info-row">
+                    <label class="input-title">Логин</label>
+                    <div class="log-form">
+                        <input type="text" class="login input-size">
                             <div id="bubble-text">
                                 <div><b>Укажите новый логин</b></div>
                                 <div class="shadow-text">Вы можете изменить свой логин</div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="info-row">
-                        <div class="input-title">Телефон</div>
-
-                        <div id="phone-form">
-                            <div id="select-country" class="input-size">
-                                <div id="country">
-                                    <img src="../img/ru.png">
-                                    <div id="country-name">Росиия</div>
-                                </div>
-                                <img src="../img/play.svg" class="bottom-arrow">
-                            </div>
-
-                            <input type="text" value="+79999999999" id="input-number" class="warning-border input-size">
-                        </div>
-
-                        <div id="warnin-number">Неправильный телефон</div>
                     </div>
                 </div>
-            </div>
 
-            <div id="buttons">
-                <button id="update">Обновить</button>
-                <button id="cancel">Отменить</button>
-            </div>
+                <div class="info-row">
+                    <label class="input-title">Телефон</label>
+                    <div class="phone-input">
+                        <div class="select-country input-size">
+                            <div class="country">
+                                <img src="../img/ru.png">
+                                <div class="country-name">Росиия</div>
+                            </div>
+                            <img src="../img/play.svg" class="bottom-arrow">
+                        </div>
+                        <input type="text" placeholder="+79999999999" class="input-size input-number">
+                    </div>
+                    <label class="warnin-text">Неправильный телефон</label>
+                </div>
+            </form>
 
+            <div class="buttons">
+                <button type="submit" form="user-info" class="update-btn shadow-btn control-btn">Обновить</button>
+                <button type="reset" class="cancel-btn shadow-btn control-btn">Отменить</button>
+            </div>
         </div>
     </div>
 </body>

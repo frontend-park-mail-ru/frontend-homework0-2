@@ -3,13 +3,18 @@
     font-size: 12px;
 }
 
-div.container {
-    width: 100%;
-    height: 100%;
+button:active, button:focus, button:active, button:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
 
     display: grid;
-    grid-template-columns: auto 420px auto;
-    grid-template-rows: 0px 440px auto;
+    grid-template-columns: auto 400px auto;
+    grid-template-rows: auto 440px auto;
 
     grid-template-areas:
             ". . ."
@@ -20,20 +25,15 @@ div.container {
 .plate {
     grid-area: plate;
     background-color: white;
-    /*padding: 20px;*/
     border: 1px solid gainsboro;
 
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+
     border-radius: 4px;
-
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-
-    grid-template-areas:
-            "header"
-            "information";
 }
 
-.header {
+.profile-title {
+    height: 15%;
     grid-area: header;
 
     display: flex;
@@ -42,7 +42,19 @@ div.container {
     justify-content: space-around;
 }
 
-.header div#profiles-round {
+.title-text {
+    font-size: 30px;
+}
+
+.name-icon-block {
+    height: 15%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profiles-round {
     height: 50px;
     width: 50px;
     border-radius: 25px;
@@ -53,12 +65,13 @@ div.container {
     justify-content: center;
 }
 
-.header div.header-title {
-    font-size: 32px;
+.profile-nln {
+    font-size: 26px;
 }
 
 .information {
-    grid-area: information;
+    height: 55%;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -66,30 +79,39 @@ div.container {
     justify-content: space-around;
 }
 
-.information div#info-rows {
-    padding-left: 40px;
-    padding-right: 40px;
+.info-rows {
+    height: 100%;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding-top: 20px;
+    padding-left: 65px;
+    padding-right: 65px;
 }
 
-.information div.info-row {
+div.info-row {
     height: 40px;
 
     display: flex;
     align-items: center;
-    /*justify-content: start;*/
 }
 
-.information div.bottom-line {
+div.bottom-line {
     border-bottom: 1px solid gainsboro;
 }
 
-.information div.col {
+label.col-text {
     width: 50%;
     padding-left: 40px;
 }
 
-.information div#buttons {
-    padding-top: 15px;
+.buttons-block {
+    height: 15%;
+    width: 100%;
+
+    box-sizing: border-box;
+
     padding-left: 20px;
     padding-right: 20px;
 
@@ -98,10 +120,11 @@ div.container {
     justify-content: center;
 }
 
-.information div#buttons button {
+.buttons {
     width: 140px;
     height: 44px;
     margin: 5px;
+
     padding-left: 15px;
     padding-right: 15px;
 
@@ -113,21 +136,37 @@ div.container {
     justify-content: space-around;
 }
 
-.information button#change {
+button.change {
     background-color: #ff2953;
     color: white;
 
 }
 
-.information button#change img{
+button.change:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+button.change:active {
+    background-color: #e5244a;
+}
+
+button.change img{
     filter: invert(1);
 }
 
-.information button#delete {
-    background-color: whitesmoke;
+button.delete {
+    background-color: #f5f5f5;
     color: gray;
 }
 
-.information button#delete img{
+button.delete:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+button.delete:active {
+    background-color: #dcdcdc;
+}
+
+button.delete img{
     opacity: 0.5;
 }
