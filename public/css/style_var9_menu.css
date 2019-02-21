@@ -1,0 +1,121 @@
+body {
+	background: #FFFFFF;	
+}
+
+h2 {
+	text-align: center;
+	font-weight:bold;
+}
+
+.wrapper {
+	max-width: 100vh;
+	max-height: 100vh;
+}
+
+.wrapper_auth {	
+	position: absolute;
+	font-family: Helvetica, Arial, san-serif;
+	margin-top: 150px;
+	margin-left: 500px;
+	margin-bottom: 80px;
+	#float: right;
+}
+
+.form-signin {  
+	max-width: 410px;
+	padding: 15px 20px 20px;
+
+	border-radius: 7px; 
+
+	margin: 0 auto;
+	background-color: #fff;
+	border: 0px;  
+	position: relative;
+}
+
+.form-signin-heading {
+    text-align: left;
+}
+
+.wrapper_menu {	
+	font-family: Helvetica, Arial, san-serif;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	min-width: 340px;
+	box-shadow: 0 5px 30px 5px rgba(0,0,0,0.25);
+	height: 100%;
+	float: left
+}
+
+.form-menu{
+	max-width: 400px;
+	min-height: 95vh;
+	padding: 55px 10px 20px;
+
+	background-color: #F0F0F0;
+	border: 1px solid rgba(0,0,0,0.1);  
+	position: relative;
+}
+
+.hint {
+  color: #6599DE;
+  font-size: 14px;
+  text-align: center;
+  font-weight:bold;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+    color: #000000;
+    background-color: #F0F0F0;
+    font-weight:bold;  
+    font-size: 16px;
+    border: 1px solid #D7D7D7;  
+    
+}
+.btn_yellow {
+    color: #FFFFFF;
+    background-color: #FFD400;
+    border: 0px;
+}
+
+.btn_auth {
+    width: 60%;
+}
+
+ #password + .glyphicon {
+   margin-top: 6px;
+   cursor: pointer;
+   pointer-events: all;
+ }
+ 
+ .form-control {
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+ }
+
+.has-feedback {
+    margin-top: 15px;
+    margin-bottom: 15px;    
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.logo_img {
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.cap_menu {
+    background-color: #FFD400;
+    position: relative;
+    height: 55px;
+    width: 100%; 
+}
