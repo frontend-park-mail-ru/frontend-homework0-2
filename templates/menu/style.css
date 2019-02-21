@@ -9,11 +9,13 @@ html {
     height: 100%;
     font-family: Helvetica, Arial, san-serif, serif;
     font-size: 33px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .menu-page-header {
     height: 56px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 13px 0 11px 84px;
     background-color: #008079;
@@ -29,7 +31,11 @@ html {
 .menu-page-box {
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -37,6 +43,7 @@ html {
     width: 682px;
     height: 331px;
     margin-top: 40px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #E0E0E0;
     border-radius: 4px;
@@ -45,8 +52,13 @@ html {
 .menu-page-main-header {
     width: 100%;
     height: 73px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border-bottom: 1px solid #E0E0E0;
 }
@@ -61,20 +73,35 @@ html {
     width: 100%;
     height: 64px;
     padding: 16px 24px 16px 20px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     /*justify-content: space-between;*/
 }
 .menu-page-part-left {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .menu-page-part-right {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
@@ -91,9 +118,16 @@ html {
 .menu-page-circle-icon {
     height: 32px;
     width: 32px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-color: #2BC75D;
     border-radius: 50%;

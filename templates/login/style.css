@@ -3,6 +3,8 @@ button {
     padding: 0;
     background-color: #FFFFFF;
     border-style: none;
+    -webkit-border-image: none;
+    -o-border-image: none;
     border-image: none;
 }
 
@@ -19,9 +21,16 @@ html {
     padding: 8px;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: Helvetica, Arial, san-serif;
     font-size: 27px;
@@ -34,18 +43,25 @@ html {
 
     border: 1px solid #F7F7F7;
     border-radius: 2px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #F7F7F7;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .login-page-main {
     padding: 20px 20px 0 20px;
     height: 382px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .login-page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: relative;
 }
@@ -72,11 +88,30 @@ html {
 .login-page-form-part {
     width: 100%;
     height: 40px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 12px;
     border: 1px solid #E2E2E2;
     border-radius: 4px;
     background-color: #F7F7F7;
+}
+
+.login-page-form-part::-webkit-input-placeholder {
+    color: #9A9A9A;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-page-form-part:-ms-input-placeholder {
+    color: #9A9A9A;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-page-form-part::-ms-input-placeholder {
+    color: #9A9A9A;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .login-page-form-part::placeholder {
@@ -93,14 +128,21 @@ html {
 .login-page-form-helper {
     width: 100%;
     height: 26px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 12px;
     padding: 5px 0;
 }
 .login-page-storage-password {
     width: 190px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /*justify-content: space-between;*/
 }
@@ -108,9 +150,16 @@ html {
 .login-page-storage-password-box {
     width: 16px;
     height: 16px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border: 1px solid #4AA19C;
     background: #4AA19C;
@@ -141,21 +190,33 @@ html {
 
 .login-page-form-button-place {
     height: 70px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 15px 0;
     margin-top: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .login-page-form__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 180px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #4AA19C;
     border-radius: 4px;
     background: #4AA19C;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -167,7 +228,11 @@ html {
 
 .login-page-form-helpful-text-place {
     height: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -180,23 +245,39 @@ html {
 .login-page-social-buttons {
     height: 60px;
     padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .login-page-social-buttons-area {
     width: 112px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .login-page__button {
     width: 32px;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid;
     border-radius: 4px;
@@ -236,8 +317,14 @@ html {
 .login-page-footer {
     height: 61px;
     border-top: 1px solid #E2E2E2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 

@@ -18,9 +18,16 @@ html {
     padding: 8px;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-family: Helvetica, Arial, san-serif;
     font-size: 32px;
@@ -30,6 +37,7 @@ html {
 .update-page-main-block {
     width: 389px;
     height: 381px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
@@ -39,12 +47,15 @@ html {
 .update-page-main-part {
     width: 100%;
     height: 308px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 22px 19px 20px 20px;
 }
 .update-page-header {
     width: 100%;
     height: 71px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -59,8 +70,14 @@ html {
 .update-page-close-icon-block {
     width: 177px;
     height: 71px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
 }
 
@@ -89,6 +106,7 @@ html {
 .update-page__input {
     width: 100%;
     height: 32px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #E0E0E0;
     border-radius: 4px;
@@ -104,6 +122,8 @@ html {
     margin-top: 2px;
     width: 100%;
     height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -114,22 +134,48 @@ html {
 .update-page_country {
     width: 157px;
     height: 32px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
     border-right: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 7px 8px 8px 12px;
 }
 
 .update-page_number {
     width: 192px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     padding: 11px 10px 10px 12px;
+}
+
+.update-page_number::-webkit-input-placeholder {
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.update-page_number:-ms-input-placeholder {
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.update-page_number::-ms-input-placeholder {
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .update-page_number::placeholder {
@@ -140,8 +186,14 @@ html {
 
 .update-page-country-left {
     width: 76px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -175,16 +227,22 @@ html {
 .update-page-footer {
     width: 100%;
     height: 73px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-top: 1px solid #E0E0E0;
     padding: 20px 123px 20px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .update-page__update-button {
     width: 118px;
     height: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #84C1BE;
     border: 1px solid #84BAB7;
@@ -197,6 +255,7 @@ html {
 .update-page__cancel-button {
     width: 120px;
     height: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #F0F0F0;
     border: 1px solid #D3D3D3;
@@ -218,18 +277,26 @@ html {
     background-color: transparent;
 }
 
-.update-page__dropdown-content .update-page__dropdown-content-element {
+ .update-page__dropdown-content-element {
     width: 158px;
     height: 32px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #FF1100;
     border-top: none;
     border-radius: 4px  ;
     padding: 7px 8px 8px 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background: #FFFFFF;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -251,8 +318,14 @@ html {
 
 .update-page-country-left-ua {
     width: 83px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -263,6 +336,7 @@ html {
     width: 277px;
     height: 68px;
     border: 1px solid #FFFFFF;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background: #2BC75D;
     content: attr(data-tooltip);
@@ -272,6 +346,7 @@ html {
     position: absolute;
     width: 277px;
     height: 68px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 17px 16px 20px 16px ;
     background: #FFFFFF;
@@ -281,6 +356,7 @@ html {
     bottom: 0;
     left: 360px;
     right: 0;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
