@@ -12,7 +12,7 @@
             <div class="update-head">
                 <div class="update-head-name">
                     <div class="title-text-sz">Изменение</div>
-                    <div class="title-text-sz">профиля</div>
+                    <div class="title-text-sz">настроек</div>
                 </div>
 
                 <div class="cross-block">
@@ -21,34 +21,36 @@
             </div>
 
             <form class="user-info" id="user-info">
-                <div class="info-row">
-                    <label class="input-title">Логин</label>
-                    <div class="log-form">
-                        <input type="text" class="login input-size">
-                            <div id="bubble-text">
-                                <div><b>Укажите новый логин</b></div>
-                                <div class="shadow-text">Вы можете изменить свой логин</div>
-                            </div>
-                    </div>
-                </div>
-
-                <div class="info-row">
-                    <label class="input-title">Телефон</label>
-                    <div class="phone-input">
-                        <div class="select-country input-size">
-                            <div class="country">
-                                <img src="../img/ru.png">
-                                <div class="country-name">Росиия</div>
-                            </div>
-                            <img src="../img/play.svg" class="bottom-arrow">
+                <div class="info-rows">
+                    <div class="info-row">
+                        <label class="input-title">Логин</label>
+                        <div class="log-form">
+                            <input type="text" class="login input-size">
+                                <div id="bubble-text">
+                                    <div><b>Укажите новый логин</b></div>
+                                    <div class="shadow-text">Вы можете изменить свой логин</div>
+                                </div>
                         </div>
-                        <input type="text" placeholder="+79999999999" class="input-size input-number">
                     </div>
-                    <label class="warnin-text">Неправильный телефон</label>
+
+                    <div class="info-row">
+                        <label class="input-title">Телефон</label>
+                        <div class="phone-input">
+                            <div class="select-country input-size">
+                                <div class="country-area">
+                                    <img src="../img/ru.png">
+                                    <div class="country-name">Росиия</div>
+                                </div>
+                                <img src="../img/play.svg" class="bottom-arrow">
+                            </div>
+                            <input type="text" placeholder="+79999999999" class="input-size input-number">
+                        </div>
+                        <label class="warnin-text">Неправильный телефон</label>
+                    </div>
                 </div>
             </form>
 
-            <div class="buttons">
+            <div class="buttons-block">
                 <button type="submit" form="user-info" class="update-btn shadow-btn control-btn">Обновить</button>
                 <button type="reset" class="cancel-btn shadow-btn control-btn">Отменить</button>
             </div>
