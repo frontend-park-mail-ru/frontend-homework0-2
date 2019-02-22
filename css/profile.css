@@ -8,13 +8,17 @@ button:active, button:focus, button:active, button:focus {
     outline-offset: 0;
 }
 
+.bold-text {
+    font-weight: bold;
+}
+
 .container {
     width: 100vw;
     height: 100vh;
 
     display: grid;
     grid-template-columns: auto 400px auto;
-    grid-template-rows: auto 440px auto;
+    grid-template-rows: 4px 400px auto;
 
     grid-template-areas:
             ". . ."
@@ -66,11 +70,11 @@ button:active, button:focus, button:active, button:focus {
 }
 
 .profile-nln {
-    font-size: 26px;
+    font-size: 32px;
 }
 
 .information {
-    height: 55%;
+    height: 53%;
     width: 100%;
 
     display: flex;
@@ -81,13 +85,9 @@ button:active, button:focus, button:active, button:focus {
 
 .info-rows {
     height: 100%;
-    width: 100%;
+    width: 200px;
 
     box-sizing: border-box;
-
-    padding-top: 20px;
-    padding-left: 65px;
-    padding-right: 65px;
 }
 
 div.info-row {
@@ -101,13 +101,13 @@ div.bottom-line {
     border-bottom: 1px solid gainsboro;
 }
 
-label.col-text {
-    width: 50%;
-    padding-left: 40px;
+label.col-info-text {
+    position: absolute;
+    margin-left: 140px;
 }
 
 .buttons-block {
-    height: 15%;
+    height: 17%;
     width: 100%;
 
     box-sizing: border-box;
@@ -125,6 +125,8 @@ label.col-text {
     height: 44px;
     margin: 5px;
 
+    font-size: 16px;
+
     padding-left: 15px;
     padding-right: 15px;
 
@@ -133,7 +135,7 @@ label.col-text {
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 button.change {
@@ -169,4 +171,8 @@ button.delete:active {
 
 button.delete img{
     opacity: 0.5;
+}
+
+.button-name {
+    margin: 8px;
 }
