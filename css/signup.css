@@ -1,6 +1,6 @@
 * {
     font-family: Helvetica;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 input:active, input:focus, button:active, button:focus {
@@ -15,6 +15,10 @@ input.paddin-text {
 .input-border {
     border: 1px solid lightgrey;
     border-radius: 4px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 input {
@@ -59,15 +63,16 @@ input {
 
     font-weight: bold;
 
-    padding-left: 30px;
-    padding-right: 30px;
+    border-bottom: 1px solid gainsboro;
+
+    padding-left: 20px;
 
     display: flex;
     align-items: center;
 }
 
 .title-text {
-    font-size: 36px;
+    font-size: 32px;
 }
 
 
@@ -85,18 +90,28 @@ input {
     padding-right: 20px;
 }
 
+.input-label {
+    font-weight: bold;
+}
+
 input.warning-input {
     border: 1px solid red;
     border-radius: 4px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .warning-text {
     color: red;
+    font-size: 12px;
 }
 
 div.input-row {
-    padding-left: 10px;
-    padding-right: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .date-form {
@@ -105,10 +120,13 @@ div.input-row {
 }
 
 div.date-select {
-    width: 33%;
+    /*width: 33%;*/
     height: 35px;
     padding-left: 5px;
     padding-right: 5px;
+
+    flex-grow: 3;
+    box-sizing: border-box;
 
     border: 1px solid silver;
 
@@ -118,7 +136,7 @@ div.date-select {
 }
 
 img.bottom-arrow {
-    width: 10px;
+    width: 8px;
     transform: rotate(90deg);
 }
 
@@ -127,10 +145,12 @@ div.phone-form {
 }
 
 div.flag-choise {
-    width: 50%;
+    width: 40%;
 
     padding-left: 5px;
     padding-right: 5px;
+
+    box-sizing: border-box;
 
     display: flex;
     align-items: center;
@@ -145,6 +165,10 @@ div.flag-choise {
 
 .country-name {
     margin-left: 4px;
+}
+
+.phone-input {
+    width: 60%;
 }
 
 .buttons-block {
@@ -165,11 +189,10 @@ button {
     height: 40px;
 
     border-radius: 4px;
-    margin-left: 10px;
 }
 
 button.register-btn {
-    width: 140px;
+    width: 175px;
     background-color: #ff2953;
     color: white;
 }
@@ -184,6 +207,7 @@ button.register-btn:active {
 
 button.cancel-btn {
     width: 120px;
+    margin-left: 10px;
     background-color: lightgrey;
 }
 
