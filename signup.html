@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <style>
+        html, body {            
+            height: 100%;     
+        }
+
+        .header {
+            font-family: Helvetica, Arial, san-serif;
+            width: 85%;
+            font-size: 203%;
+            text-align: center;
+        }
+
+        .content {
+            height: 100%;
+            background-image: url(https://www.scdn.co/i/generic/hero-lg.jpg);            
+            background-repeat: no-repeat;
+            background-size: 129.6% 100%;                
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }        
+
+        .signup-form {
+            font-family: Helvetica, Arial, san-serif;
+            font-size: 18px;
+            text-align: center;
+            width: 30%;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {            
+            font-size: 18px;
+            padding-left: 10px; 
+            width: 100%;
+            background: white;
+            border: none;
+            border-radius: 6px;
+            color: #1f1e1e;
+            height: 45px;
+        }
+
+        .helvetica {
+            font-family: Helvetica, Arial, san-serif;            
+        }
+
+        .white {
+            color: white;
+        }
+
+        .first-input {
+            margin-bottom: 12px;
+        }
+
+        .btn {
+            text-align: center;
+            width: 80%;
+            font-size: 18px;
+            margin: 20px auto;            
+            background: rgb(216, 60, 68);
+            border-radius: 5px;
+            border: none;
+            height: 45px;            
+        }
+
+        .pass {
+            background-image: url(icons/icons/actions/hide.svg);
+            background-repeat: no-repeat;
+            background-position: 96% center;                        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header white">
+            <h2>Наше невероятно красивое приложение, в котором вы обязаны зарегестрироваться.</h2>
+        </div>
+        <div class="signup-form helvetica">
+            <form class="helvetica">
+                <input class="first-input" type="email" placeholder="Email" required><br>
+                <input class="pass" type="password" placeholder="Пароль" required><br>
+                <button class="white btn helvetica" type="submit">Зарегестрироваться</button>
+            </form>
+            <a class="white" href="#">Или зайти через Facebook</a>
+        </div>
+    </div>
+</body>
+</html>
