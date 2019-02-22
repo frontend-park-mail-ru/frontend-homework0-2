@@ -1,6 +1,6 @@
 * {
     font-family: Helvetica;
-    font-size: 12px;
+    font-size: 14px;
     padding: 0px;
     margin: 0px;
 }
@@ -18,12 +18,10 @@ a {
     width: 100vw;
     height: 100vh;
 
-    background-color: cornsilk;
-
     display: grid;
 
-    grid-template-columns: auto 420px auto;
-    grid-template-rows: auto 460px auto;
+    grid-template-columns: auto 380px auto;
+    grid-template-rows: auto 420px auto;
 
     grid-template-areas:
             ". . ."
@@ -45,13 +43,29 @@ a {
 .profile-title {
     height: 15%;
 
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.cross-img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 15px;
+}
+
+.cross-img:hover {
+    width: 20px;
+}
+
+
+
 .header-text {
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .sign-in {
@@ -76,17 +90,13 @@ a {
 
 input.log-form {
     width: 100%;
-    height: 35px;
+    height: 30px;
     margin: 0px;
 
     border: 1px solid whitesmoke;
 
     border-radius: 4px;
 }
-
-/*div.log-form {*/
-    /*border: 1px solid #ff2953;*/
-/*}*/
 
 input.mail-input {
     height: 45px;
@@ -157,11 +167,77 @@ div.passwd-logic {
     justify-content: start;
 }
 
+/*Custom checkbox*/
+.custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+
+    border-radius: 4px;
+    border: 1px solid gainsboro;
+    background-color: #ffffff;
+}
+
+.custom-checkbox:hover input ~ .checkmark {
+    background-color: #ffffff;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: #ff2953;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .checkmark:after {
+    left: 3px;
+    top: 1px;
+    width: 6px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*Custom checkbox*/
+
 .sign-in button { /*toDo change to normal class without .sign-in*/
     color: #ffffff;
     background-color: #ff2953;
     width: 156px;
     height: 38px;
+    font-size: 14px;
     border-radius: 4px;
     border-width: 1px;
 }
@@ -211,6 +287,15 @@ div.bg-social-icon img {
 .fb-bg-color {background-color: #385899;}
 
 .vk-bg-color {background-color: #4775a8;}
+
+.social-href {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .registration {
     height: 15%;

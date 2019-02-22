@@ -10,8 +10,9 @@
 <div class="container">
     <div class="iteam-plate">
 
-        <div class="header">
-            <h1 class="header-text">Вход</h1>
+        <div class="profile-title">
+            <label class="header-text">Войти</label>
+            <img src="../img/close_big.svg" class="cross-img">
         </div>
 
         <div class="sign-in">
@@ -26,25 +27,29 @@
 
                 <div class="passwd-logic">
                     <div class="rememb-passwd">
-                        <input type="checkbox">
-                        <label class="default-text-margin">Запомнить пароль?</label>
+                        <!--<input type="checkbox">-->
+                        <label class="custom-checkbox">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="default-text-margin">Запомнить пароль</label>
                     </div>
                     <a href="#">Забыли пароль?</a>
                 </div>
 
-                <button type="submit" form="authentication">Войти</button>
+                <button form="authentication">Войти</button>
 
                 <div class="social-login">
                     <label class="grey-text">Или продолжить через</label>
                     <div class="social-refs">
                         <div class="bg-social-icon vk-bg-color">
-                            <a href="https://vk.com"><img src="../img/vk.svg"></a>
+                            <a href="https://vk.com" class="social-href"><img src="../img/vk.svg"></a>
                         </div>
                         <div class="bg-social-icon fb-bg-color">
-                            <a href="https://www.facebook"><img src="../img/fb.svg"></a>
+                            <a href="https://www.facebook" class="social-href"><img src="../img/fb.svg"></a>
                         </div>
                         <div class="bg-social-icon ok-bg-color">
-                            <a href="https://ok"><img src="../img/ok.svg"></a>
+                            <a href="https://ok" class="social-href"><img src="../img/ok.svg"></a>
                         </div>
                     </div>
                 </div>
