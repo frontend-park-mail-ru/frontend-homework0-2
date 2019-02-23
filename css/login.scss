@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+
+$back_color: #848484;
+$back_color_light: #DFDFDF;
+$btn_vk_color: #4F76A7;
+$btn_facebook_color: #415A97;
+$btn_enter_email_color: #FC2C54;
+$error_color: #FC0000;
+$login_block_color: #FFFFFF;
+$btn_font_color: #FFFFFF;
+
+%item__height {
+  height: 6vh;
+  min-width: 250px;
+  min-height: 30px;
+  border-radius: 8px;
+}
+
+%btn_font_color {
+  color: $btn_font_color;
+}
+
+%btn_font_size {
+  font-size: calc(.15vw + 1rem + .10vh);
+  font-weight: bold;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+
+a:active, a:focus {
+  outline: none;
+}
+a::-moz-focus-inner {
+  border: 0;
+}
+
+a {
+  text-decoration:none;
+}
+
+icon {
+  display: flex;
+  padding-right: 2px;
+  //padding: calc(1vh + 1vw);
+}
+
+svg {
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: $back_color;
+}
+
+.login {
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+
+  justify-items: stretch;
+
+  background-color: $login_block_color;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+
+  @media all and (max-width: 575px) {
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    margin: 0.5vh 1vw;
+    max-height: 100px;
+    min-height: 40px;
+  }
+
+  &__title {
+    display: flex;
+    flex-grow: 1;
+    &_centered {
+      margin: auto;
+      padding-bottom: 1vh;
+      padding-top: 1vh;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+
+
+
+  }
+
+  &__separator {
+    display: flex;
+    flex-grow: 1;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    align-items: center;
+
+    &__text {
+      text-align: center;
+      font-size: 1rem;
+      color: $back_color;
+      flex-grow: 0.15;
+    }
+
+    &__line {
+      flex-grow: 2;
+      color: $back_color_light;
+    }
+
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    margin-bottom: 1vh;
+
+    &__item {
+
+
+      @extend %item__height;
+      //@extend %btn_font_size;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      align-content: center;
+      //padding-right: 5px;
+      //padding-left: 1vw;
+      border: 1px solid $back_color_light;
+      //font-weight: normal;
+
+      &_error {
+        border: 1px solid red;
+      }
+
+      &_success {
+        border: 1px solid green;
+      }
+    }
+
+    &__input {
+      @extend %btn_font_size;
+      font-weight: normal;
+      border: none;
+      margin: 0;
+      padding-left: calc(1vw + 5px); // here change
+
+      &__password {
+        min-width: 170px;
+        &_show {
+          padding-right: 2vw;
+        }
+      }
+    }
+  }
+
+}
+
+.btn {
+  @extend %item__height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  border: none;
+  //border: 1px solid red;
+
+  &_vk {
+    background-color: $btn_vk_color;
+  }
+
+  &_facebook {
+    background-color: $btn_facebook_color;
+  }
+
+  &_email {
+    background-color: $btn_enter_email_color;
+  }
+
+  &__title {
+    margin-left: calc(0.5vh + 0.5vw);
+    @extend %btn_font_size;
+    @extend %btn_font_color;
+  }
+
+}
+
+.error-message {
+  //display: flex;
+  padding-left: 1vw;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  color: red;
+  font-size: calc(.15vw + 0.8rem + .10vh);
+}

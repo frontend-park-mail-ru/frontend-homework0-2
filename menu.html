@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/menu.css">
+    <title>Menu</title>
+</head>
+<body>
+<main class="container">
+    <div class="menu">
+        <header class="menu__header">
+            <div class="menu__logo">
+            </div>
+        </header>
+
+        <nav class="menu__nav">
+            <a class="menu__nav__item menu__nav__item_selected" href="#">
+                <div class="menu__nav__item__description">
+                <icon class="menu__nav__item__description__icon">
+                    <img src="img/sign_in.svg" alt=""/>
+                </icon>
+                <span class="menu__nav__item__title">
+                Авторизация
+            </span>
+                </div>
+            </a>
+
+            <a class="menu__nav__item" href="#">
+                <div class="menu__nav__item__description">
+                <icon class="menu__nav__item__description__icon">
+                    <img src="img/access.svg" alt=""/>
+                </icon>
+                <span class="menu__nav__item__description__title">
+                Регистрация
+            </span>
+                </div>
+            </a>
+
+            <a class="menu__nav__item" href="#">
+                <div class="menu__nav__item__description">
+                <icon class="menu__nav__item__description__icon">
+                    <img src="img/users.svg" alt="">
+                </icon>
+                <span class="menu__nav__item__description__title">
+                Авторы
+            </span>
+                </div>
+            </a>
+
+            <a class="menu__nav__item" href="#">
+                <div class="menu__nav__item__description">
+                <icon class="menu__nav__item__description__icon">
+                    <img src="img/game1.svg" alt=""/>
+                </icon>
+                <span class="menu__nav__item__description__title">
+                Играть
+            </span>
+                </div>
+            </a>
+
+            <div class="menu__nav__item_href">
+                <div class="menu__nav__item__description">
+            <a class="menu__nav__item__description__title" href="#">
+                О проекте
+            </a>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <section class="content">
+        <div class="content__item"><h1 class="content__title">
+            Авторизируйтесь на сервисе
+        </h1></div>
+        <form class="content__item form-auth">
+
+            <div class="form-auth__item">
+                <input class="form-auth__item__input" placeholder="Email"/>
+            </div>
+
+            <div class="form-auth__item">
+                <input class="form-auth__item__input" type="password" placeholder="Пароль"/>
+                <icon class="form-auth__item__icon">
+                    <img  src="img/show.svg" alt=""/>
+
+                </icon>
+            </div>
+
+            <button class="form-auth__item form-auth__item__btn" type="submit">
+                <icon class="form-auth__item__btn__icon">
+                    <img src="img/mailru.svg"/>
+                </icon>
+                <span>
+                Войти через почту
+            </span>
+            </button>
+        </form>
+    </section>
+
+</main>
+</body>
+<script type="text/javascript" src="js/menu.js"></script>
+</html>

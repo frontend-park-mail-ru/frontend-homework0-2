@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+
+$white_color: #FFFFFF;
+$font_size_text: calc(1rem + 0.1vh + 0.1vw);
+$font_size_title: calc(1.2rem + 0.2vh + 0.2vw);
+$pink_color: #FC2C54;
+$border_pink_color: #DD284B;
+$font_size_title_small: calc(0.4rem + 0.7vh + 0.7vw);
+$border_radius_element: 7px;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+
+
+.container {
+  overflow: auto;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #4F76A7;
+  background-image: url(../img/hero-lg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.signup {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1024px;
+
+  &__title {
+    color: $white_color;
+    font-size: $font_size_title;
+    font-weight: normal;
+
+    @media all and (max-width: 600px) {
+      font-size: $font_size_title_small;
+    }
+
+    @media all and (max-width: 575px) {
+      font-size: 0;
+      visibility: hidden;
+    }
+    
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__input {
+      width: 100%;
+      font-size: $font_size_text;
+      min-width: 150px;
+      border: none;
+    }
+
+
+    &__item {
+      width: calc(20vh + 20vw);
+      min-width: 250px;
+      height: 4vh;
+
+      background-color: $white_color;
+      display: flex;
+      padding: 10px;
+      border-radius: $border_radius_element;
+      align-items: center;
+      margin-bottom: 5px;
+      margin-top: 5px;
+
+      &__password {
+
+
+
+        &-hide {
+
+        }
+      }
+
+
+    }
+  }
+  &__facebook-url {
+    color: $white_color;
+    font-size: $font_size_text;
+    font-weight: bold;
+  }
+
+}
+
+.btn {
+  width: calc(20vh + 20vw);
+  min-width: 200px;
+  max-width: 300px;
+  margin: 10px;
+  height: 5vh;
+  min-height: 50px;
+  font-weight: bold;
+  font-size: $font_size_text;
+  background-color: $pink_color;
+  border-color: $border_pink_color;
+  border-radius: $border_radius_element;
+  color: $white_color;
+}
