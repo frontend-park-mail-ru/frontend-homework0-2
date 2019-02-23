@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+    <link rel="stylesheet" href="update-profile.css">
+</head>
+<body>
+    <div class="content">    
+        <div class="header mg">
+            <span class="header-text"><strong>Обновление контактных данных</strong></span>
+        </div>    
+        <form class="form-input">            
+            <p class="mg"><strong>Email</strong></p>
+            <input class="input input-error mg" type="email" placeholder="Email" required><br>                            
+            <span class="error mg">Поле не должно быть пустым</span>
+            <p class="mg mg-top"><strong>Телефон</strong></p>
+            <div class="number-input">
+                <div class="country-select mg">
+                    <select>
+                        <option value="0">Россия</option>
+                        <option value="1">Украина</option>
+                    </select>
+                    <div class="select-selected">
+                            <img src="https://img.imgsmail.ru/mail/ru/images/country_icons/ru.png" alt="ru">    
+                        Россия
+                    </div>
+                    <div class="select-items">
+                        <div class="item current">
+                            <img src="https://img.imgsmail.ru/mail/ru/images/country_icons/ru.png" alt="ru">    
+                            Россия
+                        </div>
+                        <div class="item">
+                            <img src="https://img.imgsmail.ru/mail/ru/images/country_icons/ua.png" alt="ua">
+                            Украина
+                        </div>
+                    </div>
+                </div>
+                <input class="input right" value="+79999999999" type="tel" name="tel">
+            </div>
+            <hr class="mg">
+            <div class="btns mg">
+                <button class="btn pink-backgr">Обновить</button>
+                <button class="btn gray-backgr">Отменить</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

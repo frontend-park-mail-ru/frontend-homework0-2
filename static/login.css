@@ -1,0 +1,143 @@
+html, body {            
+    height: 100%;    
+    width: 100%; 
+    font-family: Helvetica, Arial, san-serif;
+    background-color: rgb(133, 133, 133);   
+}        
+
+body {
+    display: flex;
+    align-items: center;                        
+}
+
+@media all and (orientation:landscape) {
+    .content {
+        min-width: 260px;
+        height: 71%;             
+        width: 31%;     
+        margin: auto;       
+        min-height: 440px;
+        background-color: white;
+        border-radius: 8px;
+    }
+}
+
+@media all and (orientation:portrait) {
+    .content {
+        min-width: 260px;
+        height: 50%;             
+        width: 70%;     
+        margin: auto;       
+        min-height: 440px;
+        background-color: white;
+        border-radius: 8px;
+    }
+}
+
+.header {        
+    margin-top: 3%; 
+    text-align: center;                            
+    height: 10%;            
+}
+
+.data {
+    height: 90%;    
+}
+
+.buttons {
+    height: 10%;                        
+}
+
+.header-text {            
+    margin: auto; 
+    font-size: 200%;
+}
+
+.mg {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.btn {                
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    border-style: none; 
+    border-radius: 8px;                                  
+    width: 92%;
+    height: 10.41%;      
+    font-size: 90%;                                                                      
+    margin-top: 2%;    
+    color: white;        
+}
+
+svg {
+    padding-right: 2%;
+}
+
+hr {
+    margin-top: 10%; 
+    margin-bottom: 10%;
+    height: 1px;
+    background-color: gray;
+    border: none;
+    text-align: center;            
+}
+hr::before {
+    content: "или";
+    position: relative;
+    top: -10px;
+    background-color: white;
+    padding: 2px 5px;
+    color: gray;
+}
+
+.input-form {
+    height: 27%;
+}
+
+.input {
+    width: 88.5%;
+    height: 38%;
+    padding-left: 2%; 
+    background: white;    
+    border: 1px solid lightgray;     
+    border-radius: 8px;
+    color: #1f1e1e;
+}
+
+.input-first {
+    margin-bottom: 4%;
+}
+
+.input-error {
+    border-color: red;
+}
+
+.pass {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill-rule='evenodd'%3E%3Cpath d='M8 1.488c-5.302 0-8 5.21-8 6.512 0 1.302 2.791 6.512 8 6.512S16 9.302 16 8c0-1.302-2.698-6.512-8-6.512zm0 10.233A3.731 3.731 0 0 1 4.279 8 3.731 3.731 0 0 1 8 4.279 3.731 3.731 0 0 1 11.721 8 3.731 3.731 0 0 1 8 11.721zM8 6c1.143 0 2 .953 2 2 0 1.143-.952 2-2 2-1.143 0-2-.952-2-2 0-1.142.857-2 2-2z' %3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 96% center;                        
+}
+
+.error {
+    margin-top: 4%; 
+    color: red;
+    font-size: 80%;
+}
+
+.last {
+    margin-top: 8%;
+}
+
+.pink-backgr {
+    background-color: rgb(255, 45, 84);
+}
+
+.light-blue-backgr {
+    background-color: rgb(74, 118, 168);
+}
+
+.dark-blue-backgr {
+    background-color: rgb(59, 89, 152);
+}
