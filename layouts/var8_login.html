@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/var8_login.css">
+</head>
+<body>
+<div class="debug-image" style="background-image: url(../references/var8_login.png)"></div>
+<div class="main-holder">
+    <h1>Логин</h1>
+    <div class="buttons">
+        <button class="button vk"><span class="icon"></span>Войти через Вконтакте</button>
+        <button class="button fb"><span  class="icon"></span>Войти через Facebook</button>
+    </div>
+    <div class="separator">или</div>
+    <form action="">
+        <div class="btn-holder">
+            <input class="button" type="email" title="Email" placeholder="Email">
+            <div class="error-msg">Введите email</div>
+        </div>
+        <div class="btn-holder error">
+            <input class="button" type="password" title="Password" placeholder="Пароль">
+            <div class="right-icon show"></div>
+            <div class="error-msg">Введите пароль</div>
+        </div>
+        <div class="btn-holder">
+            <button class="button mail" type="submit"><span class="icon"></span>Войти через почту</button>
+            <div class="error-msg">Неверный пароль!</div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

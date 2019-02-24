@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #858585;
+}
+
+h1 {
+    margin: 0;
+}
+
+.debug-image {
+    display: none;
+    z-index: 1000;
+    /*opacity: 0.5;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button .icon {
+    padding-right: 1em;
+    margin-right: 0.5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right-icon {
+    position: absolute;
+    height: 1.6em;
+    width: 1.6em;
+    top: calc(1.5em + 1px);
+    right: calc(1.5em + 1px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right-icon.show {
+    background-image: url("../img/icons/actions/show.svg");
+}
+
+.button.vk {
+    background: #4A76A8;
+    border-color: #416894;
+}
+
+.button.vk .icon {
+    background-image: url("../img/icons/social/vk.svg");
+}
+
+.button.fb {
+    background: #3B5998;
+    border-color: #344E86;
+}
+
+.button.fb .icon {
+    background-image: url("../img/icons/social/fb.svg");
+}
+
+.button.mail {
+    background: #CA9CF4;
+    border-color: #B289D6;
+}
+
+.button.mail .icon {
+    background-image: url("../img/icons/social/mail.svg");
+}
+
+.button {
+    width: 23.75em;
+    height: 3em;
+    border-radius: 0.5em;
+    color: white;
+    font-size: 1.6em;
+    padding: 0.625em;
+    border: 1px solid #E0E0E0;
+}
+
+button.button {
+    font-weight: 600;
+}
+
+input.button {
+    color: black;
+}
+
+.main-holder {
+    width: 42em;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3vh;
+    background: white;
+    border-radius: 1em;
+    box-shadow: 0 1em 5em 1em rgba(0, 0, 0, 0.2);
+}
+
+.main-holder h1 {
+    margin-bottom: 0.625em;
+    text-align: center;
+    font-size: 3.2em;
+}
+
+.main-holder .buttons .button:not(:first-child) {
+    margin-top: 1em;
+}
+
+.main-holder .separator {
+    margin: 3em 0;
+    text-align: center;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #9B9B9B;
+}
+
+.main-holder .separator::before,
+.main-holder .separator::after {
+    width: 46%;
+    border-top: solid 1px #E0E0E0;
+    content: '';
+    display: block;
+    height: 1px;
+}
+
+.main-holder form .btn-holder:not(:first-child) {
+    margin-top: 1.4em;
+}
+
+.main-holder .btn-holder {
+    position: relative;
+}
+
+.main-holder .btn-holder.error .button {
+    border-color: #FF1100;
+}
+
+.main-holder .btn-holder .error-msg {
+    display: none;
+    color: #FF1100;
+    font-size: 1.3em;
+    margin-top: 0.5em;
+}
+
+.main-holder .btn-holder.error .error-msg {
+    display: block;
+}
+
+@media (max-height: 550px) {
+    .main-holder {
+        font-size: 1.8vh;
+    }
+}
+
+@media (max-height: 500px) {
+    .main-holder {
+        font-size: 1vw;
+        top: 0;
+        transform: translateX(-50%);
+        margin: 5em 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-holder {
+        font-size: 2vw;
+    }
+}

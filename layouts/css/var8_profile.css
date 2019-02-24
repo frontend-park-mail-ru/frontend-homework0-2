@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.debug-image {
+    display: none;
+    z-index: 1000;
+    /*opacity: 0.5;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button .icon {
+    padding-right: 1em;
+    margin-right: 0.5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button.edit {
+    background: #CA9CF4;
+    border-color: #CA9CF4;
+}
+
+.button.edit .icon {
+    background-image: url("../img/icons/actions/user_edit.svg");
+}
+
+.button.delete {
+    background: #F7F7F7;
+    border-color: #E9E9E9;
+    color: #9C9C9C;
+}
+
+.button.delete .icon {
+    background-image: url("../img/icons/actions/delete.svg");
+}
+
+.button {
+    width: 49%;
+    height: 2.5em;
+    border-radius: 0.3em;
+    color: white;
+    font-size: 1.6em;
+    padding: 0.625em;
+    border: 1px solid #E0E0E0;
+}
+
+button.button {
+    font-weight: 600;
+}
+
+input.button {
+    color: black;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-holder {
+    width: 42.2em;
+    position: absolute;
+    margin: 3em 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3vh;
+    border-radius: 0.4em;
+    border: 1px solid #E0E0E0;
+}
+
+.profile-holder .block {
+    padding: 2em;
+}
+
+.profile-holder .block:not(:last-child) {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.profile-holder .field {
+    font-size: 1.5em;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0.9em 0;
+}
+
+.profile-holder .field .label {
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+@media (max-height: 550px) {
+    .profile-holder {
+        font-size: 1.8vh;
+    }
+}
+
+@media (max-height: 500px) {
+    .profile-holder {
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile-holder {
+        font-size: 2vw;
+    }
+}

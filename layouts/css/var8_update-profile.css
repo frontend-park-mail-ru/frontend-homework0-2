@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #858585;
+}
+
+h1 {
+    margin: 0;
+}
+
+.debug-image {
+    display: none;
+    z-index: 1000;
+    /*opacity: 0.5;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.row {
+    display: flex;
+}
+
+.button {
+    width: 100%;
+    height: 2em;
+    font-size: 1.6em;
+    padding: 0 0.5em;
+    border: 1px solid #E0E0E0;
+    border-radius: 0.2em;
+}
+
+.button.update {
+    background: #CA9CF4;
+    border-color: #CA9CF4;
+    color: white;
+}
+
+.button.cancel {
+    background: #F0F0F0;
+    border-color: #D3D3D3;
+    color: #333333;
+}
+
+button.button {
+    font-weight: 600;
+}
+
+input.button {
+    color: black;
+}
+
+.select {
+    padding: 0;
+    position: relative;
+}
+
+.select .value {
+    height: 100%;
+    padding: 0.35em 0.75em;
+}
+
+.select .value:after {
+    display: block;
+    content: '▲';
+    font-size: 0.6em;
+    position: absolute;
+    top: 1em;
+    right: 0.75em;
+}
+
+.select .options {
+    width: 8em;
+    background-color: #fff;
+    border-radius: 0.2em;
+    margin-top: 0.2em;
+    padding: 0.3em 0;
+    box-shadow: 0 0 3em 0.2em rgba(0, 0, 0, 0.2);
+}
+
+.select .option {
+    padding: 0.4em 1.4em;
+}
+
+.select .option.selected {
+    position: relative;
+    background-color: #EBEBEB;
+}
+
+.select .option.selected:before {
+    display: block;
+    content: '✔';
+    font-size: 0.6em;
+    position: absolute;
+    top: 1em;
+    left: 0.75em;
+    font-weight: bold;
+}
+
+.icon {
+    padding-right: 1em;
+    margin-right: 0.6em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon.ru {
+    background-image: url("../img/icons/flags/ru.png");
+}
+
+.icon.ua {
+    background-image: url("../img/icons/flags/ua.png");
+}
+
+.update-profile-holder {
+    width: 42em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3vh;
+    background: white;
+    border-radius: 0.5em;
+    box-shadow: 0 1em 5em 1em rgba(0, 0, 0, 0.2);
+}
+
+.update-profile-holder .block {
+    padding: 2em;
+}
+
+.update-profile-holder .block:not(:last-child) {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.update-profile-holder h1 {
+    margin-bottom: 0.75em;
+    font-size: 3.2em;
+}
+
+.update-profile-holder .btn-holder {
+    position: relative;
+    margin-bottom: 1.8em;
+}
+
+.update-profile-holder .btn-holder .label {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.27em;
+}
+
+.update-profile-holder .btn-holder.error .button {
+    border-color: #FF1100;
+}
+
+.update-profile-holder .btn-holder .error-msg {
+    display: none;
+    color: #FF1100;
+    font-size: 1.3em;
+    margin-top: 0.5em;
+}
+
+.update-profile-holder .btn-holder.error .error-msg {
+    display: block;
+}
+
+.update-profile-holder .combo-input {
+    display: flex;
+}
+
+.update-profile-holder .combo-input .button {
+    border: 1px solid #E0E0E0;
+    border-left: none;
+    border-radius: 0;
+}
+
+.update-profile-holder .combo-input .button:last-child {
+    border-radius: 0 0.2em 0.2em 0;
+}
+
+.update-profile-holder .combo-input .button:first-child {
+    border-radius: 0.2em 0 0 0.2em;
+    border-left: 1px solid #E0E0E0;
+}
+
+.update-profile-holder .combo-input .select {
+    width: 70% !important;
+    border-color: #848484 !important;
+}
+
+.update-profile-holder .row.submit .button {
+    width: 7.5em;
+    margin-right: 0.5em;
+}
+
+@media (max-height: 550px) {
+    .update-profile-holder {
+        font-size: 1.8vh;
+    }
+}
+
+@media (max-height: 500px) {
+    .update-profile-holder {
+        font-size: 1vw;
+        top: 0;
+        transform: translateX(-50%);
+        margin: 5em 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .update-profile-holder {
+        font-size: 2vw;
+    }
+}

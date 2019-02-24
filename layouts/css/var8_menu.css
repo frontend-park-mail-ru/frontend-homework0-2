@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+
+.debug-image {
+    display: none;
+    z-index: 1000;
+    /*opacity: 0.5;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button {
+    width: 100%;
+    height: 2.8em;
+    border-radius: 0.3em;
+    color: #333333;
+    font-size: 1.8em;
+    border: 1px solid #E0E0E0;
+}
+
+button.button {
+    font-weight: 600;
+}
+
+.button.active {
+    background: #CA9CF4 !important;
+    border-color: #B289D6 !important;
+    color: white !important;
+}
+
+.button.mail {
+    background: #CA9CF4;
+    border-color: #B289D6;
+    color: white;
+}
+
+.button .icon {
+    padding-right: 1em;
+    margin-right: 0.5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button.mail .icon {
+    background-image: url("../img/icons/social/mail.svg");
+}
+
+.icon.sign-in {
+    background-image: url("../img/icons/actions/sign_in.svg");
+}
+
+.icon.access {
+    background-image: url("../img/icons/categories/access.svg");
+}
+
+.icon.game1 {
+    background-image: url("../img/icons/categories/game1.svg");
+}
+
+.icon.users {
+    background-image: url("../img/icons/navigation/users.svg");
+}
+
+.right-icon {
+    position: absolute;
+    height: 1.8em;
+    width: 1.8em;
+    top: 1.8em;
+    right: 1.5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right-icon.show {
+    background-image: url("../img/icons/actions/show.svg");
+}
+
+.menu-holder {
+    width: 26%;
+    font-size: 1.3vh;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #F0F0F0;
+    height: 100vh;
+    box-shadow: 0 1em 5em 1em rgba(0, 0, 0, 0.2);
+}
+
+.menu-holder .logo-holder {
+    height: 6em;
+    background-image: url("../img/icons/logotypes/mail.svg");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    background-color: #CA9CF4;
+    background-size: 30% 60%;
+}
+
+.menu-holder .buttons {
+    margin-top: 24%;
+    padding: 3%;
+    text-align: center;
+}
+
+.menu-holder .buttons .button {
+    margin-bottom: 1.5em;
+    background-color: #F0F0F0;
+    border-color: #D3D3D3;
+    box-shadow: 0 0.1em 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.menu-holder .about-link {
+    color: #045DD1;
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
+.main-holder {
+    width: 40.5em;
+    position: absolute;
+    top: 28%;
+    left: 40%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3vh;
+}
+
+.main-holder h1 {
+    margin-bottom: 0.5em;
+    font-size: 3.5em;
+}
+
+.main-holder .btn-holder {
+    position: relative;
+}
+
+.main-holder .btn-holder:not(:first-child) {
+    margin-top: 2.2em;
+}
+
+.main-holder .btn-holder.error .button {
+    border-color: #FF1100;
+}
+
+.main-holder .btn-holder .error-msg {
+    display: none;
+    color: #FF1100;
+    font-size: 1.3em;
+    margin-top: 0.5em;
+}
+
+.main-holder .btn-holder.error .error-msg {
+    display: block;
+}
+
+.main-holder .button:not(input) {
+    width: 13.4em;
+    margin-top: -0.3em;
+    height: 2.6em;
+    font-size: 1.7em;
+    padding: 0;
+}
+
+.main-holder input.button {
+    height: 2.8em;
+    padding: 0 0.7em;
+}
+
+@media (max-aspect-ratio:5/4) {
+    .menu-holder {
+        display: none;
+    }
+
+    .main-holder {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-aspect-ratio:5/4) and (max-height: 550px) {
+    .main-holder {
+        font-size: 1.8vh;
+    }
+}
+
+@media (max-aspect-ratio:5/4) and (max-height: 500px) {
+    .main-holder {
+        font-size: 1vw;
+        top: 0;
+        transform: translateX(-50%);
+        margin: 5em 0;
+    }
+}
+
+@media (max-aspect-ratio:5/4) and (max-width: 500px) {
+    .main-holder {
+        font-size: 2vw;
+    }
+}
