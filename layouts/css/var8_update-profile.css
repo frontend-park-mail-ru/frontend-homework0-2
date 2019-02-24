@@ -194,8 +194,8 @@ button {
 }
 
 .update-profile-holder .combo-input .select {
-    width: 70% !important;
-    border-color: #848484 !important;
+    width: 70%;
+    border-color: #848484;
 }
 
 .update-profile-holder .row.submit button {
