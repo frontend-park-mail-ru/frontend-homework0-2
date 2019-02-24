@@ -8,28 +8,30 @@
 </head>
 <body>
 <div class="debug-image" style="background-image: url(../references/var8_login.png)"></div>
-<div class="main-holder">
+<main class="main-holder">
     <h1>Логин</h1>
     <div class="buttons">
-        <button class="button vk"><span class="icon"></span>Войти через Вконтакте</button>
-        <button class="button fb"><span  class="icon"></span>Войти через Facebook</button>
+        <button class="vk" tabindex="1"><span class="icon"></span>Войти через Вконтакте</button>
+        <button class="fb" tabindex="2"><span  class="icon"></span>Войти через Facebook</button>
     </div>
     <div class="separator">или</div>
     <form action="">
-        <div class="btn-holder">
-            <input class="button" type="email" title="Email" placeholder="Email">
+        <div class="field-holder">
+            <label class="hidden" for="email">Email</label>
+            <input id="email" type="email" title="Email" placeholder="Email" tabindex="3">
             <div class="error-msg">Введите email</div>
         </div>
-        <div class="btn-holder error">
-            <input class="button" type="password" title="Password" placeholder="Пароль">
-            <div class="right-icon show"></div>
+        <div class="field-holder error">
+            <label class="hidden" for="password">Пароль</label>
+            <input id="password" type="password" title="Password" placeholder="Пароль" tabindex="4">
+            <div class="right-icon show" tabindex="5"></div>
             <div class="error-msg">Введите пароль</div>
         </div>
-        <div class="btn-holder">
-            <button class="button mail" type="submit"><span class="icon"></span>Войти через почту</button>
+        <div class="field-holder">
+            <button class="mail" type="submit" tabindex="5"><span class="icon"></span>Войти через почту</button>
             <div class="error-msg">Неверный пароль!</div>
         </div>
     </form>
-</div>
+</main>
 </body>
 </html>

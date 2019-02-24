@@ -20,7 +20,26 @@ h1 {
     background-position: center;
 }
 
-.button .icon {
+.hidden {
+    display: none;
+}
+
+button {
+    width: 49%;
+    height: 2.5em;
+    border-radius: 0.3em;
+    font-size: 1.6em;
+    padding: 0.625em;
+    border: 1px solid #E0E0E0;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+button .icon {
     padding-right: 1em;
     margin-right: 0.5em;
     background-size: contain;
@@ -28,41 +47,23 @@ h1 {
     background-position: center;
 }
 
-.button.edit {
+button.edit {
     background: #CA9CF4;
     border-color: #CA9CF4;
 }
 
-.button.edit .icon {
+button.edit .icon {
     background-image: url("../img/icons/actions/user_edit.svg");
 }
 
-.button.delete {
+button.delete {
     background: #F7F7F7;
     border-color: #E9E9E9;
     color: #9C9C9C;
 }
 
-.button.delete .icon {
+button.delete .icon {
     background-image: url("../img/icons/actions/delete.svg");
-}
-
-.button {
-    width: 49%;
-    height: 2.5em;
-    border-radius: 0.3em;
-    color: white;
-    font-size: 1.6em;
-    padding: 0.625em;
-    border: 1px solid #E0E0E0;
-}
-
-button.button {
-    font-weight: 600;
-}
-
-input.button {
-    color: black;
 }
 
 .row {

@@ -8,36 +8,36 @@
 </head>
 <body>
 <div class="debug-image" style="background-image: url(../references/var8_update-profile.png)"></div>
-<div class="update-profile-holder">
+<main class="update-profile-holder">
     <form action="">
         <div class="block">
             <h1>Обновление контактных данных</h1>
-            <div class="btn-holder error">
-                <div class="label">Email</div>
-                <input class="button" type="email" title="Email">
+            <div class="field-holder error">
+                <label for="email">Email</label>
+                <input id="email" type="email" title="Email">
                 <div class="error-msg">Поле не должно быть пустым</div>
             </div>
-            <div class="btn-holder">
-                <div class="label">Телефон</div>
+            <div class="field-holder">
+                <label for="phone">Телефон</label>
                 <div class="combo-input">
-                    <div class="select button">
+                    <div class="select input">
                         <div class="value"><span class="icon ru"></span>Россия</div>
                         <div class="options">
                             <div class="option selected"><span class="icon ru"></span>Россия</div>
                             <div class="option"><span class="icon ua"></span>Украина</div>
                         </div>
                     </div>
-                    <input class="button" type="tel" title="Phone" value="+79999999999">
+                    <input id="phone" type="tel" title="Phone" value="+79999999999">
                 </div>
             </div>
         </div>
         <div class="block">
             <div class="row submit">
-                <button type="submit" class="button update">Обновить</button>
-                <button type="button" class="button cancel">Отменить</button>
+                <button type="submit" class="update">Обновить</button>
+                <button type="button" class="cancel">Отменить</button>
             </div>
         </div>
     </form>
-</div>
+</main>
 </body>
 </html>

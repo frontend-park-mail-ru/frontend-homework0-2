@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +8,28 @@
 </head>
 <body>
 <div class="debug-image" style="background-image: url(../references/var8_signup.png)"></div>
-<div class="bg-image"></div>
-<div class="signup-holder">
-    <div class="label">Наше невероятно красивое приложение, в котором вы обязаны зарегистрироваться.</div>
+<main class="signup-holder">
+    <h1>Наше невероятно красивое приложение, в котором вы обязаны зарегистрироваться.</h1>
     <form action="">
-        <div class="btn-holder">
-            <input class="button" type="email" title="Email" placeholder="Email">
+        <div class="field-holder">
+            <label class="hidden" for="email">Email</label>
+            <input id="email" type="email" title="Email" placeholder="Email" tabindex="1">
             <div class="error-msg">Введите email</div>
         </div>
-        <div class="btn-holder">
-            <input class="button" type="password" title="Password" placeholder="Пароль">
-            <div class="right-icon hide"></div>
+        <div class="field-holder">
+            <label class="hidden" for="password">Пароль</label>
+            <input id="password" type="password" title="Password" placeholder="Пароль" tabindex="2">
+            <div class="right-icon hide" tabindex="3"></div>
             <div class="error-msg">Введите пароль</div>
         </div>
-        <div class="btn-holder">
-            <button class="button register" type="submit">Зарегистрироваться</button>
+        <div class="field-holder">
+            <button class="register" type="submit" tabindex="4">Зарегистрироваться</button>
             <div class="error-msg">Неверный пароль!</div>
         </div>
         <div class="link-holder">
-            <a class="fb-link" href="">Или зайти через Facebook</a>
+            <a class="fb-link" href="" tabindex="5">Или зайти через Facebook</a>
         </div>
     </form>
-</div>
+</main>
 </body>
 </html>

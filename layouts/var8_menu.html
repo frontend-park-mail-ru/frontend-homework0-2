@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +8,35 @@
 </head>
 <body>
 <div class="debug-image" style="background-image: url(../references/var8_menu.png)"></div>
-<div class="menu-holder">
+<nav class="menu-holder">
     <div class="logo-holder"></div>
     <div class="buttons">
-        <button class="button active"><span class="icon sign-in"></span>Авторизация</button>
-        <button class="button"><span class="icon access"></span>Регистрация</button>
-        <button class="button"><span class="icon users"></span>Авторы</button>
-        <button class="button"><span class="icon game1"></span>Играть</button>
-        <a class="about-link" href="">О проекте</a>
+        <button class="active" tabindex="1"><span class="icon sign-in"></span>Авторизация</button>
+        <button tabindex="2"><span class="icon access"></span>Регистрация</button>
+        <button tabindex="3"><span class="icon users"></span>Авторы</button>
+        <button tabindex="4"><span class="icon game1"></span>Играть</button>
+        <a class="about-link" href="" tabindex="5">О проекте</a>
     </div>
-</div>
-<div class="main-holder">
+</nav>
+<main class="main-holder">
     <h1>Авторизуйтесь на сервисе</h1>
     <form action="">
-        <div class="btn-holder">
-            <input class="button" type="email" title="Email" placeholder="Email">
+        <div class="field-holder">
+            <label class="hidden" for="email">Email</label>
+            <input id="email" type="email" title="Email" placeholder="Email" tabindex="6">
             <div class="error-msg">Введите email</div>
         </div>
-        <div class="btn-holder">
-            <input class="button" type="password" title="Password" placeholder="Пароль">
-            <div class="right-icon show"></div>
+        <div class="field-holder">
+            <label class="hidden" for="password">Пароль</label>
+            <input id="password" type="password" title="Password" placeholder="Пароль" tabindex="7">
+            <div class="right-icon show" tabindex="8"></div>
             <div class="error-msg">Введите пароль</div>
         </div>
-        <div class="btn-holder">
-            <button class="button mail" type="submit"><span class="icon"></span>Войти через почту</button>
+        <div class="field-holder">
+            <button class="mail" type="submit" tabindex="9"><span class="icon"></span>Войти через почту</button>
             <div class="error-msg">Неверный пароль!</div>
         </div>
     </form>
-</div>
+</main>
 </body>
 </html>
