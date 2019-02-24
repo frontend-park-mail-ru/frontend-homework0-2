@@ -13,12 +13,13 @@ body {
 @media all and (orientation:landscape) {
     .content {
         min-width: 260px;
-        height: 71%;             
-        width: 31%;     
+        height: 72%;             
+        width: 35%;     
         margin: auto;       
         min-height: 440px;
         background-color: white;
         border-radius: 8px;
+        box-shadow: 0 0 40px rgb(110, 110, 110);
     }
 }
 
@@ -31,6 +32,7 @@ body {
         min-height: 440px;
         background-color: white;
         border-radius: 8px;
+        box-shadow: 0 0 40px black
     }
 }
 
@@ -127,7 +129,7 @@ hr::before {
 }
 
 .last {
-    margin-top: 8%;
+    margin-top: 4%;
 }
 
 .pink-backgr {
