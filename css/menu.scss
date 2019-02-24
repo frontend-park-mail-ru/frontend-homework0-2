@@ -57,8 +57,9 @@ a {
   display: flex;
   flex-direction: column;
   min-width: 250px;
-  min-height: 350px;
+  min-height: calc(350px + 10vh);
   box-shadow: 5px 0 10px -5px #333;
+  overflow: auto;
 
   &__logo {
     height: 15vh;
