@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update Profile Page</title>
+    <link rel="stylesheet" href="update.css">
+</head>
+<body>
+    <div class="container">
+        <form class="update_form">
+            <div class="block">
+                <header>
+                    <h1>Обновление<br/> контактных данных</h1>
+                    <img src="../assets/close_big.svg">
+                </header>
+                <main>
+                    <label><b>Email</b></label>
+                    <input type="email">
+                    <span style="margin-bottom: 14px;">Поле не должно быть пустым</span>
+                    <label><b>Телефон</b></label>
+                    <div class="phone_block">
+                        <div class="select_list">
+                            <div class="selected">
+                                <img class="flag" src="../assets/ru.png">
+                                <label>Россия</label>
+                                <img src="../assets/drop_up_small.svg">
+                            </div>
+                            <div class="list">
+                                <div class="option select">
+                                    <img class="flag" src="../assets/done.svg">
+                                    <img class="flag" src="../assets/ru.png">
+                                    <label>Россия</label>
+                                </div>
+                                <div class="option">
+                                    <img class="flag" src="../assets/ua.png">
+                                    <label>Украина</label>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="phone" value="+79999999999">
+                    </div>
+                </main>
+            </div>
+            <div class="block" data-type="buttons">
+                <div class="row">
+                    <button class="change_button">Обновить</button>
+                    <button class="delete_button">Отменить</button>    
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

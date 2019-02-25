@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, .container {
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #0a0a0a7e;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+
+    border: 1px solid gainsboro;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 1px 6px 36px 6px #0a0a0a7e;
+    padding: 12px 20px 20px;
+}
+
+form main, form .social {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+form main > * {
+    margin-bottom: 18px;
+}
+
+form main, form .social > *:last-child {
+    margin-bottom: 0;
+}
+
+form .social > * {
+    margin-bottom: 10px;
+}
+
+.container .login_form {
+    margin: auto;
+}
+
+form header {
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 10px;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+img {
+    margin: 0 12px 1px;
+}
+
+.vk_button {
+    height: 58px;
+    font-size: 18px;
+    width: 100%;
+
+    border-radius: 10px;
+    background: #45688E;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.vk_button:hover {
+    background-color: rgb(73, 118, 167);
+}
+
+.vk_button:active {
+    background-color:rgb(61, 90, 121);
+}
+
+.fb_button {
+    height: 58px;
+    font-size: 18px;
+    width: 100%;
+
+    border-radius: 10px;
+    background: #3b5998;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.fb_button:hover {
+    background-color: #4666aa;
+}
+
+.fb_button:active {
+    background-color: #38538b;
+}
+
+.mail_button {
+    height: 58px;
+    font-size: 18px;
+    width: 100%;
+
+    border-radius: 10px;
+    background: #018176;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.mail_button:hover {
+    background-color: #019185;
+}
+
+.mail_button:active {
+    background-color: #02746a;
+}
+
+.hr-block {
+    padding: 18px 0 42px 0
+}
+
+.hr-text {
+    border: none;
+    border-top: 2px solid rgba(59, 59, 59, 0.418);
+    color: black;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    opacity: .5;
+}
+
+hr:after {
+    background: #fff;
+    content: 'или';
+    padding: 0 4px;
+    position: relative;
+    top: -11px;
+}
+
+input {
+    height: 50px;
+    font-size: 16px;
+
+    border-radius: 10px;
+    padding: 0 10px;
+    border: none;
+    outline: 0;
+    box-shadow: 0 0 0 2px #FFFFFF,
+                0 0 0 4px #dfdddd;
+                margin: 4px;
+}
+
+input:focus,
+button:focus {
+    box-shadow: 0 0 0 2px #FFFFFF,
+                0 0 0 4px rgb(61, 90, 121);
+    outline: none;
+}
+
+input[type="password"] {
+    box-shadow: 0 0 0 2px #FFFFFF,
+                0 0 0 3px red;
+
+                margin: 4px;
+    background-image: url(../assets/show.svg);   
+    background-repeat: no-repeat; 
+    background-size: 20px 42px;
+    background-position: 400px;    
+}
+
+span {
+    padding: 6px 0;
+    color: red;
+    font-size: 14px;
+}

@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, .container {
+    height: 100vh;
+    margin: 0;
+}
+
+.menu_form {
+    width: 364px;
+    background-color: #F0F0F0;
+    height: 100vh;
+    box-shadow: 0 1em 5em 1em rgba(0, 0, 0, 0.2);
+    margin: 10px 0 0 10px;
+}
+
+.logo {
+    background-color: #018176;
+    height: 63px;
+}
+
+.mail_logo {
+    padding: 15px 20px 0;
+    height: 37px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 100px 10px 0 10px;
+}
+
+.signin_form {
+    width: 400px;
+    position: absolute;
+    top: 214px;
+    left: 572px;
+}
+
+.selected_button {
+    height: 54px;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: #018176;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.selected_button:hover {
+    background-color: #019185;
+}
+
+.selected_button:active {
+    background-color: #02746a;
+}
+
+.picture {
+    margin-right: 10px;
+}
+
+.main_button {
+    height: 54px;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #F0F0F0;
+    border-color: #D3D3D3;
+    box-shadow: 0 0.1px 0 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+}
+
+.main_button:hover {
+    background-color: #ffffff;
+}
+
+.main_button:active {
+    background-color: #e7e7e7;
+}
+
+.menu > * {
+    margin-bottom: 28px;
+}
+
+a {
+    text-decoration: none;
+    color: #045DD1;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header h1 {
+    font-size: 34px;
+    margin-top: 10px;
+}
+
+input {
+    height: 50px;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 0 10px;
+    border: none;
+    outline: 0;
+    box-shadow: 0 0 0 2px #FFFFFF,
+                0 0 0 4px #dfdddd;
+    margin: 4px;
+}
+
+input:focus,
+button:focus {
+    box-shadow: 0 0 0 2px #FFFFFF,
+                0 0 0 4px rgb(61, 90, 121);
+    outline: none;
+}
+
+input[type="password"] {
+    background-image: url(../assets/show.svg);
+    background-repeat: no-repeat;
+    background-position: 360px;
+}
+
+.input_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_form > * {
+    margin-bottom: 28px;
+}
+
+button:last-child {
+    width: 234px;
+}

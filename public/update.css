@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, .container {
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #0a0a0a7e;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+
+    border: 1px solid gainsboro;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 1px 6px 36px 6px #0a0a0a7e;
+}
+
+form main, form .social {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+span {
+    padding: 6px 0;
+    color: red;
+    font-size: 15px;
+}
+
+form main > * {
+    margin-bottom: 4px;
+}
+
+form main, form .social > *:last-child {
+    margin-bottom: 0;
+}
+
+form .social > * {
+    margin-bottom: 10px;
+}
+
+.container .update_form {
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 34px;
+    margin-top: 10px;
+}
+
+header img {
+    margin-top: 15px;
+}
+
+input {
+    height: 28px;
+    font-size: 16px;
+
+    border-radius: 4px;
+    padding: 0 10px;
+    border: none;
+    outline: 0;
+    box-shadow: 0 0 0 2px #FFFFFF,
+                0 0 0 4px #dfdddd;
+                margin: 4px;
+}
+
+input:focus,
+button:focus {
+    box-shadow: 0 0 0 2px #FFFFFF,
+                0 0 0 4px rgb(61, 90, 121);
+    outline: none;
+}
+
+input[type="email"] {
+    box-shadow: 0 0 0 2px #FFFFFF,
+                0 0 0 3px red;
+
+                margin: 4px;  
+}
+
+.change_button {
+    height: 38px;
+    font-size: 20px;
+    width: 34%;
+
+    border-radius: 4px;
+    background: #018176;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.change_button:hover {
+    background-color: #019185;
+}
+
+.change_button:active {
+    background-color: #02746a;
+}
+
+.delete_button {
+    height: 38px;
+    font-size: 20px;
+    width: 34%;
+
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    background: #f7f7f7;
+    color: black;
+    cursor: pointer;
+}
+
+.delete_button:hover {
+    background-color: #ffffff;
+}
+
+.delete_button:active {
+    background-color: #e7e7e7;
+}
+
+.phone_block {
+    display: flex;
+    flex-direction: row;
+}
+
+.select_list {
+    display: flex;
+    flex-direction: column;
+    width: 42%;  
+}
+
+input[type="phone"] {
+    width: 58%; 
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0; 
+}
+
+.selected {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    height: 28px;
+    font-size: 16px;
+
+    padding: 0 0 0 8px;
+    border: none;
+    box-shadow: 0 0 0 3px #FFFFFF,
+                0 0 0 4px rgba(26, 25, 25, 0.466);
+    margin: 4px 0 4px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flag {
+    margin-right: 10px;
+}
+
+div label {
+    margin-right: 70px;
+}
+
+.block {
+    padding: 24px 20px 40px;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    top: 59%;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+    width: 150px;
+    box-shadow: -7px 10px 65px -3px rgba(0,0,0,0.34);
+}
+
+.list div * {
+    margin-left: 5px;
+}
+
+.option {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 36px;
+    align-items: center; 
+    
+    margin-top: 4px;
+}
+
+.list > *:last-child {
+    margin-left: 32px;
+}
+
+.select {
+    background-color: lightgray; 
+}
