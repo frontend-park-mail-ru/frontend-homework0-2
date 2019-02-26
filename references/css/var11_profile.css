@@ -1,64 +1,6 @@
-
-
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  position: relative;
-  z-index: 0;
-}
-
-.center {
-  justify-content: center;
-  align-items: center;
-}
-
-.header {
-	font-size: 20pt;
-	font-family: "Arial";
-	padding: 15px;
-	font-weight: 1200;
-	color: #000;
-	margin-right: 12px;
-	font-weight:bold;
-}
-
-.to_row {
-	justify-content: space-between;
-    align-items: stretch;
-}
-
-.with_width {
-	flex: 2 3 30%;
-}
-
 .part {
-	width: 30%;
-	min-width: 300px;
-	border: 1px solid rgb(222, 222, 222);
-}
-
-.delete_svg {
-	fill: yellow;
-}
-
-.row2 {
-  display: flex;
-  margin-bottom: 4px;
-  margin-top: 4px;
-  transition: 0.5s;
-}
-
-.column2 {
-  display: flex;
-  flex-direction: column;
-  transition: 0.5s;
-  margin-right: 12px;
-  padding: 5px;
-}
-
-
-.name {
-	font-weight:bold;
+    width: 30%;
+    min-width: 300px;
+    padding: 15px;
+    border: 1px solid rgb(222, 222, 222);
 }

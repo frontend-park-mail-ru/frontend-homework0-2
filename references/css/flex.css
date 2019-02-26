@@ -1,0 +1,26 @@
+.huge_margins {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.center_flex {
+    align-items: center;
+    justify-content: center;
+}
+
+.row_flex {
+    display: flex;
+    margin-bottom: 4px;
+    margin-top: 4px;
+  }
+
+.column_flex {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.with_width {
+	flex: 2 3 30%;
+}
+

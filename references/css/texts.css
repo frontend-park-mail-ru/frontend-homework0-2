@@ -1,0 +1,34 @@
+.center_text {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.white {
+    color : white;
+}
+
+.standart {
+    font-size: 12pt;
+}
+
+.big {
+    font-size: 25pt;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.huge {
+    width: 100%;
+    padding: 5px;
+    font-size: 40pt;
+    font-weight: 530;
+}
+
+.text {
+    font-family: "Arial";
+}
