@@ -1,0 +1,29 @@
+/* Картинка на заднем плане*/
+
+.image_block {
+    background: url(like.jpg) no-repeat center center;
+    width: inherit;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+/* Для того, чтобы глазик стоял ровно*/
+
+.margin_top {
+    margin-top: 10px;
+}
+
+/* Корректируем цвет ссылки*/
+
+.href a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.href a:hover {
+    text-decoration: none;
+    color: #cacaca;
+}
