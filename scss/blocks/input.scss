@@ -84,12 +84,12 @@ $input-border-radius: 3px;
 
   &__field-appendix {
     display: inline-block;
-    border-radius: $input-border-radius;
-    top: -2px;
     margin: 0;
     height: $input-height; // minus the border
-    font-size: 12px;
     padding: 9px 2px 3px 2px;
+
+    border-radius: $input-border-radius;
+    font-size: 12px;
     pointer-events: none;
     @include firefox {
       // BECAUSE APPARENTLY THIS IS NOT IMPLIED
@@ -103,26 +103,28 @@ $input-border-radius: 3px;
   }
 
   &__tooltip {
-    $width: 200px;
-    $height: 30px;
     $arrow-length: 6px;
     $arrow-width: 4px;
     $padding: 10px;
+
     position: absolute;
-    padding: $padding;
-    width: $width;
-    height: $height;
-    right: - $width - $arrow-length - $input-padding-sides - $padding - 1px;
-    top: $field-height - $height - $padding - 1px; //1 px for border
+    left: calc(100% + #{$arrow-length + 2px});
     z-index: $z-index-tooltip;
+
+    display: table;
+    min-width: 180px;
+    padding: $padding;
+
+    border-radius: 3px;
     background-color: white;
     @include shadow($shadow-tiny);
-    border-radius: 3px;
     pointer-events: none;
+
     &::before {
       position: absolute;
+      top: calc(50% - #{$arrow-width});
       left: - $arrow-length;
-      top: ($height + $padding) / 2;
+
       content: "";
       border-style: solid;
       border-width: $arrow-width $arrow-length $arrow-width 0;
@@ -131,12 +133,16 @@ $input-border-radius: 3px;
   }
 
   &__tooltip-title {
+    display: table-row;
+    max-width: 30px;
+
     font-size: $small-font-size;
     color: black;
-    display: block;
   }
 
   &__tooltip-help {
+    display: table-row;
+
     font-size: $smaller-font-size;
     color: $muted-color-dark;
   }
