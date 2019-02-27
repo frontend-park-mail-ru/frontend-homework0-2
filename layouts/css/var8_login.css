@@ -23,10 +23,6 @@ h1 {
     background-position: center;
 }
 
-.hidden {
-    display: none;
-}
-
 button, input[type=email], input[type=password] {
     width: 100%;
     height: 3em;

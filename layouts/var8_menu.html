@@ -10,25 +10,23 @@
 <div class="debug-image" style="background-image: url(../references/var8_menu.png)"></div>
 <nav class="menu-holder">
     <div class="logo-holder"></div>
-    <div class="buttons">
-        <button class="active" tabindex="1"><span class="icon sign-in"></span>Авторизация</button>
-        <button tabindex="2"><span class="icon access"></span>Регистрация</button>
-        <button tabindex="3"><span class="icon users"></span>Авторы</button>
-        <button tabindex="4"><span class="icon game1"></span>Играть</button>
-        <a class="about-link" href="" tabindex="5">О проекте</a>
-    </div>
+    <ul class="buttons">
+        <li class="button active" tabindex="1"><span class="icon sign-in"></span>Авторизация</li>
+        <li class="button" tabindex="2"><span class="icon access"></span>Регистрация</li>
+        <li class="button" tabindex="3"><span class="icon users"></span>Авторы</li>
+        <li class="button" tabindex="4"><span class="icon game1"></span>Играть</li>
+        <li tabindex="5" class="about-link"><a href="">О проекте</a></li>
+    </ul>
 </nav>
 <main class="main-holder">
     <h1>Авторизуйтесь на сервисе</h1>
     <form action="">
         <div class="field-holder">
-            <label class="hidden" for="email">Email</label>
-            <input id="email" type="email" title="Email" placeholder="Email" tabindex="6">
+            <input id="email" type="email" title="Email" placeholder="Email" tabindex="6" aria-label="email">
             <div class="error-msg">Введите email</div>
         </div>
         <div class="field-holder">
-            <label class="hidden" for="password">Пароль</label>
-            <input id="password" type="password" title="Password" placeholder="Пароль" tabindex="7">
+            <input id="password" type="password" title="Password" placeholder="Пароль" tabindex="7" aria-label="пароль">
             <div class="right-icon show" tabindex="8"></div>
             <div class="error-msg">Введите пароль</div>
         </div>

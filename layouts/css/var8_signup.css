@@ -20,10 +20,6 @@ h1 {
     background-size: 100vw auto;
 }
 
-.hidden {
-    display: none;
-}
-
 body {
     background-image: url("../img/hero-lg.jpg");
     background-repeat: no-repeat;

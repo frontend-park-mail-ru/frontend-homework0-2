@@ -20,10 +20,6 @@ h1 {
     background-position: center;
 }
 
-.hidden {
-    display: none;
-}
-
 button {
     width: 49%;
     height: 2.5em;
