@@ -62,6 +62,10 @@ button {
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
+
+    height: 58px;
+    font-size: 18px;
+    width: 100%;
 }
 
 img {
@@ -69,10 +73,6 @@ img {
 }
 
 .vk_button {
-    height: 58px;
-    font-size: 18px;
-    width: 100%;
-
     border-radius: 10px;
     background: #45688E;
     color: #FFFFFF;
@@ -88,10 +88,6 @@ img {
 }
 
 .fb_button {
-    height: 58px;
-    font-size: 18px;
-    width: 100%;
-
     border-radius: 10px;
     background: #3b5998;
     color: #FFFFFF;
@@ -107,10 +103,6 @@ img {
 }
 
 .mail_button {
-    height: 58px;
-    font-size: 18px;
-    width: 100%;
-
     border-radius: 10px;
     background: #018176;
     color: #FFFFFF;
@@ -175,11 +167,39 @@ input[type="password"] {
     background-image: url(../assets/show.svg);   
     background-repeat: no-repeat; 
     background-size: 20px 42px;
-    background-position: 400px;    
+    background-position: right 14px top 50%;    
 }
 
 span {
     padding: 6px 0;
     color: red;
     font-size: 14px;
+}
+
+@media (max-width: 690px) {
+    form {
+        width: inherit;
+    }
+
+    button {
+        height: 48px;
+        font-size: 16px;
+        padding-right: 20px;
+    }
+
+    .hr-block {
+        padding: 4px 0 20px 0
+    }
+
+    input {
+        height: 40px;
+        font-size: 14px;
+    
+        border-radius: 6px;
+        padding: 0 10px;
+    }
+
+    input[type="password"] {
+        background-size: 16px 32px;  
+    }
 }
