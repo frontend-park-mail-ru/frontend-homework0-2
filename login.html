@@ -11,7 +11,7 @@
     <div class="enter">
         <div></div>
         <div>Войти</div>
-        <img src="image/close_big.svg" alt="">
+        <button class="deleteBack"><img src="image/close_big.svg" alt=""></button>
     </div>
 
     <div class="input" id="in1">
@@ -21,14 +21,17 @@
     <div class="input" id="in2">
         <input type="text" placeholder="  Пароль">
         <div class="eye">
-            <img src="image/show.svg" alt="">
+            <button class="deleteBack"><img src="image/show.svg" alt=""></button>
         </div>
     </div>
 
     <div class="passHelp">
-        <div class="withBox">
+        <div class="withBox" id="withBox">
             <!--<label for="cbox">Запомнить пароль</label>-->
-            <input type="checkbox">
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox-id" checked>
+                <label for="checkbox-id"></label>
+            </div>
             <div class="remPsd">
                 Запомнить пароль
             </div>
@@ -48,15 +51,15 @@
 
     <div id="soc-ref">
         <div id="vk" class="square">
-            <img src="image/vk.svg">
+            <a href=""><img src="image/vk.svg"></a>
         </div>
 
         <div id="fb" class="square">
-            <img src="image/fb.svg">
+            <a href=""><img src="image/fb.svg"></a>
         </div>
 
         <div id="ok" class="square">
-            <img src="image/ok.svg">
+            <a href=""><img src="image/ok.svg"></a>
         </div>
     </div>
 
