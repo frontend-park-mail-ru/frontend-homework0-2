@@ -1,14 +1,14 @@
 body {
+    width: 100vw;
+    height: 100vh;
+
     display: grid;
 
-    grid-template-rows: 6fr 4fr;
-    grid-template-columns: 5fr 4fr 5fr;
+    grid-template-rows: 500px 4fr;
+    grid-template-columns: 5fr 400px 5fr;
     grid-template-areas:
             ". profile ."
             ". . .";
-    /*grid-template-columns: 20% 1fr 15%;*/
-    /*grid-gap: px;*/
-    height: 100vh;
     margin: 0;
 }
 
@@ -21,7 +21,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*justify-content: start;;*/
 
     font-family: sans-serif;
 
