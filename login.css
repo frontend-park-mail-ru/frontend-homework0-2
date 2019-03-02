@@ -255,6 +255,7 @@ label:before {
     height: 20px;
     background: #1fd17b;
     border: 1px solid #e3e3e3;
+    border-radius: 3px;
     border-image: initial;
     vertical-align: middle;
 }
