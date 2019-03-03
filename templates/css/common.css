@@ -1,0 +1,126 @@
+.login-body {
+	background-color: #858585;
+}
+.login-container {
+	background-color: #FFFFFF;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 5px;
+}
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 28em;
+	height: 30em;
+	top: 50%;
+	transform: translate(0, 25%);
+}
+
+.container-wrapper {
+	-webkit-box-shadow: 0px 5px 6px -6px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 5px 6px -6px rgba(0,0,0,0.5);
+	box-shadow: 0px 5px 6px -6px rgba(0,0,0,0.5);
+	border: 1px solid #E0E0E0;
+	border-radius: 3px;
+}
+
+.container-pos {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;  
+}
+
+.input-container {
+	padding: 1px 10px 10px 24px;
+}
+
+.con-w-28 {
+	width: 28em;
+}
+
+.title-font {
+	font-family: Helvetica;
+	font-size: 32px;
+}
+
+.btn {
+	display: inline-flex;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	box-shadow: 0px 5px 6px -6px rgba(0,0,0,0.5);
+	padding: .375rem .75rem;
+	border-radius: .25rem;
+	align-items: center;
+	cursor: pointer;
+}
+
+.btn-3 {
+	width: 130px;
+	height: 40px;
+}
+
+.btn-21 {
+	width: 210px;
+	height: 40px;
+}
+
+
+.btn-red {
+	background-color: #FF2D54;
+}
+
+.btn-gray {
+	background-color: #F7F7F7;
+}
+
+.btn-font {
+	font-family: Helvetica;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.font-size-20 {
+	font-size: 17px;
+}
+
+.font-color-white {
+	color: white;
+}
+
+.font-color-black {
+	color: #333333;
+}
+
+.font-color-gray {
+	color: #9C9C9C;
+}
+
+.comment-text {
+	color: #9B9B9B;
+	font-size: 15px;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.input-form {
+    display: block;
+    width: 89%;
+    height: calc(1.5em + .2rem);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    /*font-weight: bold;*/
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/login.css">
+		<link rel="stylesheet" href="css/icons.css">
+		<title>Log in</title>
+	</head>
+	<body class="login-body">
+		<div class="container login-container">
+		<div class="form-container">
+			<span class="icon icon-size-25 close-icon icon-black icon-button close-button"></span>
+			<form method="POST" novalidate>
+				<h2 class="title-font login-title">Войти</h2>
+				<div class="form-label-group">
+		            <input type="text" class="input-form" name="login" placeholder="Телефон или электронная почта">
+		        </div>
+		        <div class="form-label-group">
+			        <input type="text" class="input-form" name="login" placeholder="Пароль">
+					<span toggle="#password-field" class="icon icon-size-15 show-icon icon-black secret-icon icon-button toggle-password"></span>
+		    	</div>
+		    	<div class="form-label-group">
+			    	<label class="tick-box">Запомнить пароль
+			    		<input type="checkbox" checked="checked" name="remember-me">
+			    		<span class="checkmark "></span>
+			    	</label>
+			    	<a href=# class="link-font">Забыли пароль?</a>
+		    	</div>
+		    </form>
+		    <div class="container-2">
+		    	<button class="btn btn-box-3 btn-color-red" type="submit" name="submit">
+					<div class="success-btn-font">Войти</div>
+				</button>
+				<p class="comment-text">или продолжить через</p>
+				<div class="center-block">
+				    <div class="com-container container-size-5 icon-gb icon-button">
+				    	<span class="icon vk-icon icon-white icon-size-15 social-pos"></span>
+				    </div>
+				    <div class="com-container container-size-5 icon-blue icon-button">
+				    	<span class="icon fb-icon icon-white icon-size-15 social-pos"></span>
+				    </div>
+				    <div class="com-container container-size-5 icon-orange icon-button">
+				    	<span class="icon ok-icon icon-white icon-size-15 social-pos"></span>
+				    </div>
+				</div>
+			</div>
+			</div>
+			<hr/>
+			<div class="center-block register-block">
+				<a href="#" class="link-font">Зарегестрироваться</a>
+			</div>
+		</div>
+	</body>
+</html>

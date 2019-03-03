@@ -1,0 +1,227 @@
+.login-body {
+	background-color: #858585;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 28em;
+    height: 30em;
+    top: 50%;
+   	transform: translate(0, 25%);
+}
+
+.login-container {
+	background-color: #FFFFFF;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 5px;
+}
+
+.form-container {
+    padding: 1px 10px 10px 24px;
+}
+
+.login-title {
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 32px;
+}
+
+.form-signin {
+	width: 100%;
+	max-width: 420px;
+	padding: 15px;
+	margin: auto;
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.input-form {
+    display: block;
+    width: 89%;
+    height: calc(1.5em + .5rem);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 404;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.close-button {
+	position: absolute;
+	right: 5px;
+	top: 10px;
+}
+
+.secret-icon {
+	float: right;
+	margin-right: 25px;
+	margin-top: -32px;
+	position: relative;
+	z-index: 2;
+}
+
+.tick-box {
+	display: block;
+	position: relative;
+	padding-left: 25px;
+	padding-top: 0px;
+	cursor: pointer;
+	font-size: 15px;
+	font-family: Helvetica;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 160px;
+}
+
+.tick-box input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 15px;
+	width: 15px;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+}
+
+.tick-box input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.tick-box input:checked ~ .checkmark {
+  background-color: #E2284A;
+}
+
+.checkmark:after {
+	content: url(../icons/status/done.svg);
+	position: absolute;
+	display: none;
+}
+
+.tick-box .checkmark:after {
+  left: 0px;
+  top: 0px;
+  filter: invert(1);
+  width: 10px;
+  height: 10px;
+  border-width: 0 3px 3px 0;
+}
+
+.container .form-label-group .link-font {
+	display: block;
+	margin-left: auto;
+	width: 9em;
+	margin-top: -19px; 
+}
+
+.link-font {
+	font-family: Helvetica;
+	font-size: 15px;
+	color: blue;
+}
+
+.btn {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: transparent;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+}
+
+.container .btn {
+	margin-left: auto;
+    margin-right: auto;
+    width: 11em;
+    height: 2.5em;
+    display: flex;
+  	align-items: center;
+}
+
+.btn-box-3 {
+	width: 130px;
+	height: 30px; 
+}
+
+.btn-color-red {
+  background-color: #E2284A;
+}
+
+.success-btn-font {
+	font-family: Helvetica;
+	color: white;
+	text-align: center;
+	margin: auto;
+	font-weight: bold;
+}
+
+a { 
+	text-decoration: none;
+}
+
+a:hover { 
+	text-decoration: underline;
+}
+
+.container-2 {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13em;
+}
+
+.center-block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.comment-text {
+	text-align: center;
+	color: #9B9B9B;
+	font-size: smaller;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+
+.com-container {
+	display: block;
+	margin: 0px 5px 10px 5px;
+}
+
+.container-size-5 {
+	width: 33px;
+	height: 42px;
+	border-radius: .25rem;
+}
+
+.social-pos {
+	margin-top: 13px;
+	margin-left: 9px;
+}
+
+hr {
+	color: #ced4;
+}
+
+.register-block {
+	padding: 10px;
+}

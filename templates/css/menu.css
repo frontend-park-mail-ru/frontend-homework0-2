@@ -1,0 +1,154 @@
+.mail-bar {
+	margin: 0;
+	background-color: #E2284A;
+};
+
+.bar {
+	display: block;
+}
+.bar-10 {
+	height: 45px;
+}
+
+.logo-test-container {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%)
+} 
+
+.logo {
+	margin-left: 100px;
+	margin-top: 10px;
+	display: inline-flex; 
+}
+
+.logo-wrapper {
+	padding-left: 7px;
+}
+
+.mail-logo-font {
+	font-family: sans-serif;
+	font-size: 22px;
+	color: white;
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 52em;
+    height: 22em;
+   	transform: translate(0, 15%);
+}
+
+.menu-container {
+	-webkit-box-shadow: 0px 5px 6px -6px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 5px 6px -6px rgba(0,0,0,0.5);
+	box-shadow: 0px 5px 6px -6px rgba(0,0,0,0.5);
+	border: 1px solid #E0E0E0;
+	border-radius: 3px;
+}
+
+.container .menu-list {
+	position: absolute;
+	top: 200%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%) 
+}
+
+.menu-title {
+	font-family: Helvetica;
+	padding-left: 20px;
+}
+
+hr {
+	border: none;
+	background-color: #E0E0E0;
+	height: 1px;
+}
+
+.box-container {
+	display: flex;
+	width: auto;
+	height: 65px;
+}
+
+.box-white {
+	background-color: white;
+}
+
+.box-gray {
+	background-color: #eee;
+}
+
+.circle-box {
+	width: 30px;
+	height: 30px;
+	border-radius: 1rem;
+}
+
+.box-wrapper {
+	padding-left: 22px;
+	align-items: center;
+}
+
+.menu-icon {
+	border-radius: 40px;
+	background-color: #30EE6F;
+}
+
+.menu-icon-wrapper {
+	margin: 6px 6px -8px 8px;
+}
+
+.arrow-icon-wrapper {
+	position: absolute;
+	right: 25px;
+}
+
+.menu-font {
+	font-family: Helvetica;
+	font-size: 15px;
+}
+
+.menu-font-wrapper {
+	padding-left: 10px; 
+}
+
+.item {
+    position: relative;
+	color: #444;
+	padding: 0px;
+	text-align: left;
+	border: none;
+}
+
+.white-pos {
+  background-color: #ffffff;
+  cursor: pointer;
+  width: 100%;
+  outline: none;
+  transition: 0.4s;
+}
+
+.black-pos {
+  background-color: #eee;
+  cursor: pointer;
+  width: 100%;
+  outline: none;
+  transition: 0.4s;
+}
+
+ .col {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.row {
+  clear: both;
+}
+
+

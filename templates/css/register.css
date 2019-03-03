@@ -1,0 +1,145 @@
+.con-h-40 {
+	height: 40em;
+}
+
+.btn-block {
+	position: relative;
+	margin-bottom: 10px;
+}
+.title-block {
+	text-align: left;
+	padding-left: 20px;
+	margin-top: -5px;
+}
+.top-line {
+	border: none;
+	background-color: #E0E0E0;
+	height: 1px;
+	margin-top: -10px;
+}
+
+.required-area {
+	height: 60px;
+}
+
+.input-container {
+    padding: 1px 10px 10px 24px;
+}
+
+.required-area input:invalid {
+	border-color: red;
+}
+
+input:valid ~ .invalid-input {
+	display: none;
+}
+
+.date-block {
+	align-items: center;
+	padding-right: 7px;
+}
+
+.block-size-30 {
+	width: 105%;
+}
+
+.invalid-input {
+	font-size: 14px;
+	color: red;
+	font-family: Helvetica;
+	font-weight: bold;
+	
+}
+
+.info-font {
+	font-size: 14px;
+	font-family: Helvetica;
+	color: black;
+	font-weight: bold;
+}
+
+.select-control {
+	display: inline-block;
+    width: 30%;
+    height: calc(1.5em + 1rem);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 404;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    background: url('../icons/drop_down_big.svg') no-repeat right .5rem center/11px 11px;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+}
+
+.phone-block {
+	display: grid;
+}
+
+.country-code-wrapper {
+	padding-left: 26px; /* image-width */
+    background-repeat: no-repeat;
+    background-size: 100%;
+	background-position: 0 30%;
+}
+
+.russia-img {
+	background-image: url(../icons/countries/ru.png);
+}
+
+.ukraine-img {
+	background-image: url(../icons/countries/ua.png);
+}
+
+.btn-font-pos {
+	margin: auto;
+}
+
+.btn-border {
+	border: 1px solid #ced4da;
+}
+
+.form-phone-group {
+	position: relative;
+    margin-bottom: 1rem;
+	border: 1px solid #E0E0E0;
+	border-radius: 3px;
+	height: 35px;
+	margin-right: 20px; 
+}
+
+.phone-input-form {
+	display: block;
+    width: 50%;
+    height: calc(1.5em + -1px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 404;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0rem .25rem .25rem 0rem;
+    margin: -37px -8px 14px 161px;
+}
+
+.custom-select {
+	display: inline-flex;
+}
+
+.custom-select-wrapper {
+	width: 39%;
+	border: 1px solid #ced4da;
+	border-radius: .25rem 0rem 0rem .25rem;
+	height: 35px;
+}
+
+/*input:valid {border-color: green;}*/
+
+/*input:invalid:not(:placeholder-shown) {border-color: red;}
+input:valid:not(:placeholder-shown) {border-color: green;}*/

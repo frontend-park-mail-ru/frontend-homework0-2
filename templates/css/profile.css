@@ -1,0 +1,92 @@
+.con-h-30 {
+	height: 29.2em;
+}
+
+.info-block {
+	display: grid;
+	align-items: center;
+	justify-content: center
+}
+
+.info-block-wrapper {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.title-wrapper {
+	text-align: center;
+}
+
+.avatar-box {
+	margin: auto;
+	border-radius: 2rem;
+}
+
+.image-50 {
+	width: 50px;
+	height: 50px;
+}
+.info-area-pos {
+    margin-left: 20px;
+}
+.info-area {
+  display: grid;
+  grid-template-columns: 170px 90px;
+  grid-auto-rows: minmax(32px, auto);
+  align-items: center;
+}
+
+.form-font {
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.user-font {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+
+.form-wrapper {
+	font-weight: bold;
+}
+
+.info-block hr {
+	width: 260px;
+	border: none;
+	height: 1px;
+	background-color:  #E0E0E0;
+}
+
+.btn-font {
+	font-family: Helvetica;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.font-color-white {
+	color: white;
+}
+
+.font-color-gray {
+	color: #9C9C9C;
+}
+
+.btn-block {
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+.btn-wrapper {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.btn-icon-pos {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn-title-wrapper {
+	padding-left: 9px;
+}

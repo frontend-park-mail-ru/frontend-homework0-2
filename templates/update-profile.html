@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/update.css">
+    <title>Update Profile</title>
+</head>
+<body class="login-body">
+    <div class="con-w-28 con-h-40 container-wrapper login-container container">
+        <div class="title-container">
+            <div class="title title-font">Изменение настроек</div>
+            <span class="icon icon-black close-big-icon icon-size-20 cross-icon-pos"></span>
+        </div>
+        <div class="input-container">
+            <form method="POST" novalidate>
+                <label for="validationLogin" class="info-font">Логин</label>
+                <div class="form-label-group required-area">
+                    <input type="text" class="input-form" id="validationLogin" name="ulogin" placeholder="Имя" required>
+                    <div class="invalid-input">
+                        <div class="attention-msg attention-pos">
+                            <div class="attention-font">Укажите новый логин</div>
+                            <div class="attention-comment-font">Вы можете изменить свой логин</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone-block">
+                    <label for="validationPhone" class="info-font">Телефон</label>
+                    <div class="custom-select custom-select-wrapper">
+                        <span class="country-code-wrapper russia-img"></span>
+                        <div class="option-font">Россия</div>
+                        <span class="icon arrow-down-icon icon-size-15 icon-black "></span>
+                    </div>
+                    <input type="tel" name="phone" id="validationPhone" class="phone-input-form" minlength="18" maxlength="18" required>
+                    <div class="invalid-input">Неправильный телефон</div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
