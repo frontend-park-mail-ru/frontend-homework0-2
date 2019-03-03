@@ -270,3 +270,14 @@ input:disabled + label:before {
     background: #eee;
     color: #aaa;
 }
+#vk > a,
+#ok > a,
+#fb > a {
+    height: 30px;
+    width: 30px;
+}
+
+a > img {
+    padding-left: 7px;
+    padding-top: 7px;
+}
