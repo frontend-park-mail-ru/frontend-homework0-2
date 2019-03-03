@@ -270,3 +270,11 @@ button.arrow {
 
     width: 30px;
 }
+
+.change:hover {
+    background-color: #26af34; /* Green */
+}
+
+.delete:hover {
+    background-color: darkgray; /* Green */
+}

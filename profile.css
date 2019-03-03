@@ -148,3 +148,11 @@ img {
 .btn_title {
     margin-left: 10%;
 }
+
+.change:hover {
+    background-color: #26af34; /* Green */
+}
+
+.delete:hover {
+    background-color: darkgray; /* Green */
+}

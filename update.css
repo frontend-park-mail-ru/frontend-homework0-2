@@ -231,3 +231,10 @@ button.arrow {
     background-color: white;
 }
 
+.change:hover {
+    background-color: #63af7e; /* Green */
+}
+
+.delete:hover {
+    background-color: darkgray; /* Green */
+}

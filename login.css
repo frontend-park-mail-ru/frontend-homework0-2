@@ -211,65 +211,19 @@ h1 {
     align-items: center;
 }
 
-.checkbox {
-    width: 20px;
-    height: 20px;
+/*.checkbox {*/
+    /*width: 20px;*/
+    /*height: 20px;*/
 
-    display: flex;
-    align-items: center;
-    justify-items: center;
-}
-
-/* прячем input checkbox */
-input[type="checkbox"] {
-    display: none;
-}
-
-/* стили для метки */
-label {
-    color: white;
-    cursor: default;
-    font-weight: normal;
-    line-height: 30px;
-    padding: 10px 0;
-    vertical-align: middle;
-    margin-bottom: 5px;
-    margin-right: 5px;
-}
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-items: center;*/
+/*}*/
 
 .remPsd {
     margin-left: 5px;
 }
 
-/* формируем внешний вид чекбокса в псевдоэлементе before */
-label:before {
-    content: " ";
-    color: white;
-    display: inline-block;
-    font: 20px/30px Arial;
-    margin-right: 15px;
-    position: relative;
-    text-align: center;
-    text-indent: 0px;
-    width: 20px;
-    height: 20px;
-    background: #1fd17b;
-    border: 1px solid #e3e3e3;
-    border-radius: 3px;
-    border-image: initial;
-    vertical-align: middle;
-}
-
-/* вариации внешнего вида в зав-ти от статуса checkbox */
-/* checked */
-input:checked + label:before {
-    content: "✔";
-}
-/* disabled */
-input:disabled + label:before {
-    background: #eee;
-    color: #aaa;
-}
 #vk > a,
 #ok > a,
 #fb > a {
@@ -280,4 +234,40 @@ input:disabled + label:before {
 a > img {
     padding-left: 7px;
     padding-top: 7px;
+}
+
+.button:hover {
+    background-color: #26af34; /* Green */
+}
+
+.option {
+    display: block;
+    margin-bottom: 0.25em;
+}
+
+.check__input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    width: 10px;
+    height: 10px;
+
+    margin-left: -1.2em;
+}
+
+.check__box {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background-image: url(image/cbox.svg);
+    margin-left: -1.2em;
+}
+
+.check {
+    padding-left: 1.2em;
+}
+
+.check__input:checked + .check__box {
+    background-image: url(image/cboxc.svg);
 }
