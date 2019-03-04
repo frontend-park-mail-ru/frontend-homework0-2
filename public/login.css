@@ -1,23 +1,20 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-}
-
-body, .container {
-    height: 100vh;
-    margin: 0;
+    height: 100%;
+    background-color: #0a0a0a7e;
 }
 
 .container {
+    height: 100vh;
+    margin: 0;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: #0a0a0a7e;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
     width: 450px;
 
     border: 1px solid gainsboro;
@@ -30,6 +27,7 @@ form {
 form main, form .social {
     display: flex;
     flex-direction: column;
+    height: max-content;
     margin-bottom: 18px;
 }
 
@@ -63,16 +61,21 @@ button {
     align-items: flex-end;
     justify-content: center;
 
+    min-height: 48px;
     height: 58px;
     font-size: 18px;
     width: 100%;
 }
 
-img {
-    margin: 0 12px 1px;
+.vk_button img, .mail_button img {
+    margin: 0px 12px 2px;
 }
 
-.vk_button {
+.fb_button img {
+    margin: 0px 12px 2px;
+}
+
+.vk_button, .fb_button {
     border-radius: 10px;
     background: #45688E;
     color: #FFFFFF;
@@ -88,10 +91,7 @@ img {
 }
 
 .fb_button {
-    border-radius: 10px;
     background: #3b5998;
-    color: #FFFFFF;
-    cursor: pointer;
 }
 
 .fb_button:hover {
@@ -118,7 +118,7 @@ img {
 }
 
 .hr-block {
-    padding: 18px 0 42px 0
+    margin: 40px 0 42px 0;
 }
 
 .hr-text {
@@ -149,25 +149,22 @@ input {
     outline: 0;
     box-shadow: 0 0 0 2px #FFFFFF,
                 0 0 0 4px #dfdddd;
-                margin: 4px;
+    margin: 4px;
 }
 
-input:focus,
-button:focus {
+input:focus, button:focus {
     box-shadow: 0 0 0 2px #FFFFFF,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
+    cursor: pointer;
 }
 
 input[type="password"] {
     box-shadow: 0 0 0 2px #FFFFFF,
                 0 0 0 3px red;
-
-                margin: 4px;
-    background-image: url(../assets/show.svg);   
-    background-repeat: no-repeat; 
+    margin: 4px;
     background-size: 20px 42px;
-    background-position: right 14px top 50%;    
+    background: url(../assets/show.svg) no-repeat right 14px top 50%;      
 }
 
 span {
@@ -176,19 +173,19 @@ span {
     font-size: 14px;
 }
 
-@media (max-width: 690px) {
+@media (min-width: 50px) and (max-width: 690px) {
     form {
         width: inherit;
     }
 
     button {
-        height: 48px;
+        min-height: 48px;
         font-size: 16px;
         padding-right: 20px;
     }
 
     .hr-block {
-        padding: 4px 0 20px 0
+        margin: 4px 0 20px 0
     }
 
     input {
@@ -202,4 +199,132 @@ span {
     input[type="password"] {
         background-size: 16px 32px;  
     }
+
+    form .social {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        margin: -10px 0 20px 0;
+    }
+}
+
+@media (min-width: 50px) and (max-width: 690px) and (orientation: landscape) {
+    .container .login_form {
+        margin: 5px 0 10px 0;
+    }
+
+    form {
+        width: inherit;
+    }
+
+    button {
+        min-height: 48px;
+        width: inherit;
+        align-items: center;
+    }
+
+    .mail_button {
+        width: 100%;
+    }
+
+    .hr-block {
+        margin: 4px 0px 20px 0;
+    }
+
+    input {
+        height: 40px;
+        font-size: 15px;
+        border-radius: 6px;
+        padding: 0 10px;
+    }
+
+    input[type="password"] {
+        background-size: 16px 32px;  
+    }
+
+    form .social {
+        display: flex;
+        flex-direction: row;
+        height: max-content;
+        margin: -10px 0 24px 0;
+    }
+    
+    form .social > * {
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 691px) and (max-width: 1024px) {
+    form {
+        width: 450px;
+    }
+
+    button {
+        height: 58px;
+        font-size: 18px;
+        padding-right: 20px;
+    }
+
+    .hr-block {
+        margin: 36px 0 36px 0
+    }
+
+    input {
+        height: 40px;
+        font-size: 18px;
+    
+        border-radius: 8px;
+        padding: 0 10px;
+    }
+
+    input[type="password"] {
+        background-size: 16px 32px;  
+    }
+}
+
+@media (min-width: 691px) and (max-width: 1024px) and (orientation: landscape) {
+    form {
+        width: inherit;
+    }
+
+    button {
+        height: 48px;
+        width: inherit;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .mail_button {
+        width: 100%;
+    }
+
+    .hr-block {
+        margin: 4px 0 20px 0
+    }
+
+    input {
+        height: 40px;
+        font-size: 15px;
+        border-radius: 6px;
+        padding: 0 10px;
+    }
+
+    input[type="password"] {
+        background-size: 16px 32px;  
+    }
+
+    form .social {
+        display: flex;
+        flex-direction: row;
+        height: max-content;
+        margin: -10px 0 15px 0;
+    }
+
+    form .social:last-child {
+        margin-bottom: 0;
+    }
+
+    header h1 {
+        margin-top: 0;
+    }    
 }
