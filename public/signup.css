@@ -1,7 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
+    height: 100%;
     margin: 0;
+    background-color: #0a0a0a7e;
 }
 
 .container {
@@ -9,13 +10,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    background-image: url("../assets/hero-lg.jpg");
-    background-repeat: no-repeat;
+    background: url("../assets/hero-lg.jpg") no-repeat;
     background-size: cover;
     background-position-y: bottom;
-
-    height: 100vh;
+    min-height: 100vh;
     margin: 10px 10px 0 10px;
 }
 
@@ -25,6 +23,7 @@ header {
     color: white;
     padding-left: 100px;
     padding-right: 100px;
+    height: max-content;
 }
 
 .content {
@@ -32,13 +31,11 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: max-content;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
     width: 450px;
-
     padding: 12px 20px 20px;
 }
 
@@ -46,6 +43,7 @@ form main {
     display: flex;
     flex-direction: column;
     margin-bottom: 18px;
+    height: max-content;
 }
 
 form main > * {
@@ -61,6 +59,7 @@ button {
     flex-direction: row;
     justify-content: center;
 
+    min-height: 48px;
     height: 54px;
     font-size: 18px;
     width: 60%;
@@ -91,7 +90,7 @@ input {
     outline: 0;
     box-shadow: 0 0 0 2px #FFFFFF,
                 0 0 0 4px #dfdddd;
-                margin: 4px;
+    margin: 4px;
 }
 
 input:focus,
@@ -104,8 +103,7 @@ button:focus {
 input[type="password"] {
     background-image: url(../assets/hide.svg);   
     background-repeat: no-repeat; 
-    /* background-size: 24px 42px; */
-    background-position: 410px;
+    background-position: right 14px top 50%; 
 }
 
 a {
@@ -113,9 +111,135 @@ a {
     flex-direction: row;
     justify-content: center;
 
-    height: 54px;
     font-size: 16px;
     color: white;
-    margin: 15px;
+    margin: 15px 0 0 0;
 }
 
+@media (min-width: 50px) and (max-width: 690px) {
+    .content {
+        width: 100%;
+    }
+
+    header {
+        font-size: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    button {
+        min-height: 48px;
+        font-size: 16px;
+        width: 80%;
+    }
+
+    input {
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 50px) and (max-width: 690px) and (orientation: landscape) {
+    .content {
+        width: 100%;
+    }
+
+    header {
+        font-size: 22px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    form main {
+        margin-bottom: 10px;
+    }
+
+    form main > * {
+        margin-bottom: 15px;
+    }
+
+    button {
+        min-height: 48px;
+        font-size: 16px;
+    }
+
+    input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    p {
+        margin: 5px 0;
+    }
+}
+
+@media (min-width: 691px) and (max-width: 760px) {
+    .content {
+        width: 100%;
+    }
+
+    header {
+        font-size: 28px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    button {
+        min-height: 48px;
+        font-size: 16px;
+    }
+
+    input {
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 691px) and (max-width: 760px) and (orientation: landscape) {
+    .content {
+        width: 100%;
+    }
+
+    header {
+        font-size: 28px;
+    }
+
+    form {
+        width: 90%;
+        padding: 20px 0;
+    }
+
+    form main {
+        margin-bottom: 10px;
+    }
+
+    form main > * {
+        margin-bottom: 15px;
+    }
+
+    button {
+        min-height: 48px;
+        font-size: 16px;
+    }
+
+    input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    p {
+        margin: 5px 0;
+    }
+}
