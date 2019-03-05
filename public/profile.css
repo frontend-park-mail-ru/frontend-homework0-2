@@ -1,13 +1,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-}
-
-body, .container {
-    height: 100vh;
-    margin: 0;
+    height: 100%;
 }
 
 .container {
+    height: 100vh;
+    margin: 0;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,15 +14,11 @@ body, .container {
 }
 
 .profile_form {
-    display: flex;
-    flex-direction: column;
     width: 450px;
 
     border: 1px solid gainsboro;
     background-color: #ffffff;
     border-radius: 6px;
-    /* box-shadow: 1px 1px 4px 0px #c5c5c5; */
-    /* padding: 12px 20px 20px; */
     margin: 10px;
 }
 
@@ -41,13 +36,13 @@ header h1 {
     margin-bottom: 6px; 
 }
 
-.cell {
+.data {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 
-.row {
+.data_inline {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -62,7 +57,7 @@ div[data-type="buttons"] {
     padding-bottom: 12px;
 }
 
-.change_button {
+button {
     height: 46px;
     font-size: 20px;
     width: 49%;
@@ -82,15 +77,9 @@ div[data-type="buttons"] {
 }
 
 .delete_button {
-    height: 46px;
-    font-size: 20px;
-    width: 49%;
-
     border: 1px solid #e9e9e9;
-    border-radius: 4px;
     background: #f7f7f7;
     color: #9b9b9b;
-    cursor: pointer;
 }
 
 .delete_button:hover {
@@ -99,4 +88,82 @@ div[data-type="buttons"] {
 
 .delete_button:active {
     background-color: #e7e7e7;
+}
+
+@media (min-width: 50px) and (max-width: 690px) {
+    .profile_form {
+        width: 80%;
+    }
+    
+    .data_inline {
+        flex-direction: column;
+        padding: 0 0;
+    }
+
+    .data {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    button {
+        height: 48px;
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 50px) and (max-width: 690px) and (orientation: landscape) {
+    .data_inline {
+        flex-direction: row;
+    }
+
+    .block {
+        padding: 16px 20px 0;
+    }
+
+    button {
+        height: 48px;
+        font-size: 16px;
+        width: 49%;
+    }
+}
+
+@media (min-width: 691px) and (max-width: 1024px) {
+    .profile_form {
+        width: 80%;
+    }
+    
+    .data_inline {
+        flex-direction: column;
+        padding: 0 0;
+    }
+
+    .data {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    button {
+        height: 48px;
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 691px) and (max-width: 1024px) and (orientation: landscape) {
+    .data_inline {
+        flex-direction: row;
+    }
+
+    .block {
+        padding: 24px 28px 0;
+    }
+
+    button {
+        height: 48px;
+        font-size: 16px;
+        width: 49%;
+    }
 }
