@@ -271,3 +271,7 @@ a > img {
 .check__input:checked + .check__box {
     background-image: url(image/cboxc.svg);
 }
+
+button {
+    cursor: pointer;
+}

@@ -156,3 +156,7 @@ img {
 .delete:hover {
     background-color: darkgray; /* Green */
 }
+
+button {
+    cursor: pointer;
+}

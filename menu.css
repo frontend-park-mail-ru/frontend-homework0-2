@@ -156,4 +156,7 @@ div.name {
     margin-right: 4%;
 }
 
+button {
+    cursor: pointer;
+}
 
