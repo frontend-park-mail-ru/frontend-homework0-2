@@ -1,8 +1,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
 }
 
-body, .container {
+.container {
     height: 100vh;
     margin: 0;
 }
@@ -30,7 +31,7 @@ body, .container {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 100%;
+    height: 100vh;
     padding: 100px 10px 0 10px;
 }
 
@@ -41,7 +42,7 @@ body, .container {
     left: 572px;
 }
 
-.selected_button {
+button {
     height: 54px;
     font-size: 18px;
     width: 100%;
@@ -67,19 +68,11 @@ body, .container {
 }
 
 .main_button {
-    height: 54px;
-    font-size: 18px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     background-color: #F0F0F0;
     border-color: #D3D3D3;
     box-shadow: 0 0.1px 0 0 rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     color: black;
-    cursor: pointer;
 }
 
 .main_button:hover {
@@ -121,17 +114,14 @@ input {
     margin: 4px;
 }
 
-input:focus,
-button:focus {
+input:focus, button:focus {
     box-shadow: 0 0 0 2px #FFFFFF,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
 }
 
 input[type="password"] {
-    background-image: url(../assets/show.svg);
-    background-repeat: no-repeat;
-    background-position: 360px;
+    background: url(../assets/show.svg) no-repeat right 14px top 50%;
 }
 
 .input_form {
@@ -145,4 +135,137 @@ input[type="password"] {
 
 button:last-child {
     width: 234px;
+}
+
+@media (min-width: 50px) and (max-width: 690px) {
+    .signin_form {
+        left: 0;
+        width: inherit;
+        top: 140px;
+        margin: 0 24px 0 70px;
+    }
+
+    header h1 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    input {
+        height: 40px;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+
+    button {
+        height: 48px;
+        font-size: 14px;
+    }
+
+    .menu_form {
+        width: 50%;
+        /* height: 55%; */
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -45%;
+        margin: 16px 0 0 32px;
+    
+        /* плавный переход смещения панели */
+        transition: left 0.3s;
+        /* поверх других элементов */
+        z-index: 2000;
+    }
+    
+    /**
+     * Скрытый чекбокс (флажок)
+     * невидим и недоступен :)
+     * имя селектора атрибут флажка
+     */
+    
+     [id='nav-toggle'] {
+        position: absolute;
+        display: none;
+    }
+    
+    
+    
+    /**
+     * Кнопка переключения панели
+     * тег <label>
+     */
+    
+     .nav-toggle {
+        /* абсолютно позиционируем */
+        position: absolute;
+        /* относительно левого края панели */
+        left: 81%;
+        /* отступ от верхнего края панели */
+        top: 12px;
+        /* внутренние отступы */
+        padding: 0.5em;
+        /* цвет текста */
+        color: #dadada;
+        /* вид курсора */
+        cursor: pointer;
+        /* размер шрифта */
+        font-size: 1.2em;
+        line-height: 1;
+        /* всегда поверх других элементов страницы */
+        z-index: 2001;
+    }
+    
+    /* определяем текст кнопки 
+     * символ Unicode (TRIGRAM FOR HEAVEN)
+    */
+    
+    .nav-toggle:after {
+        content: '\2630';
+        text-decoration: none;
+    }
+    
+    /**
+     * Когда флажок установлен, открывается панель
+     * используем псевдокласс:checked
+     */
+    
+     [id='nav-toggle']:checked ~ .menu_form {
+        left: 0;
+        box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+        -moz-box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+        -webkit-box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+        overflow-y: auto;
+        height: 55%;
+    }
+    
+    /* 
+     * смещение контента страницы
+     * на размер ширины панели,
+     * фишка необязательная, на любителя
+    */
+    
+    [id='nav-toggle']:checked ~ .signin_form {
+        transform: translateX(360px);
+    }
+    
+    /*
+     * изменение символа переключателя,
+     * привычный крестик (MULTIPLICATION X), 
+     * вы можете испльзовать любой другой значок
+    */
+    
+    [id='nav-toggle']:checked ~ .menu_form > .nav-toggle:after {
+        content: '\2715';
+    }
+    
+    .menu_form > main > button {
+        line-height: 2.5;
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: opacity .5s .1s, transform .5s .1s;
+    }
+    
+    [id='nav-toggle']:checked ~ .menu_form > main > button {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
