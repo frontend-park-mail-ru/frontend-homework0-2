@@ -1,0 +1,217 @@
+html, body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 2px;
+    overflow:  hidden;
+}
+
+
+#container {
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+}
+
+nav {
+    background: #f3f3f3;
+    height: 100%;
+    width: 350px;
+    /* min-width: 350px; */
+    max-width: 350px;
+    margin-right: 250px;
+    display: flex;
+    flex-direction: column;
+
+    /* shadows */
+    -webkit-box-shadow: -15px 21px 49px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: -15px 21px 49px -3px rgba(0,0,0,0.5);
+    box-shadow: -15px 21px 49px -3px rgba(0, 0, 0, 0.5); 
+}
+
+#heading {
+    background-color: rgb(202, 156, 244);
+    padding-left: 10px;
+    height: 45px;
+    margin-bottom: 120px;
+}
+
+#heading img {   
+    height: 100%;
+    width: 30%;
+    min-width: 60px;
+}
+
+#navList {
+    /* display: -webkit-flex; 
+    display: flex;    
+    flex-direction: column; */
+    padding: 5px;
+}
+
+button {
+    outline: none; 
+}
+
+#navList button {
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 4px;   
+    height: 50px;
+    min-height: 50px;
+    color: black;    
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button img { 
+    margin-right: 10px;
+}
+
+#navList .active {
+    background-color: rgb(202, 156, 244);
+    color: white;
+}
+
+#about {
+    text-align: center;
+    color: blue;
+}
+
+main {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;   
+    width: 500px;
+    /* min-width: 500px; */
+    justify-content: center;
+}
+
+main h2 {
+    font-weight: bold;
+    width: 80%;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 4px;
+    outline: none; 
+}
+
+#submit {
+    width: 50%;
+    background-color: rgb(202, 156, 244);
+    border: none;
+    border-radius: 4px;   
+    height: 45px;
+    color: white;    
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 210px;
+}
+
+.input-area { 
+    margin-bottom: 8px;
+}
+
+input[name=password] {
+    background: url('../images/eye.svg') no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+}
+
+
+@media (max-width: 560px) {
+    #container {
+        min-width: 400px;
+        justify-content: center;
+    }
+    main {
+        width: 350px;
+    }
+    nav {
+        display: none;
+    }
+}
+
+@media (min-width: 560px) and (max-width: 870px) {
+    #container {
+        min-width: 660px;
+        justify-content: center;
+    }
+    main {
+        width: 550px;
+    }
+    nav {
+        display: none;
+    }
+}
+
+
+
+@media (min-width:870px) and (max-width: 1100px) {
+    main {
+        width: 420px;
+    }
+    nav {
+        width: 270px;
+        margin-right: 150px;
+    }
+}
+
+/* 
+
+
+@media screen and (min-width:870px) and (max-width: 1100px) {
+    main {
+        width: 420px;
+    }
+    nav {
+        width: 270px;
+        margin-right: 150px;
+    }
+}
+
+
+
+@media screen and (min-width:560px) and (max-width: 870px) {
+    #container {
+        min-width: 660px;
+        justify-content: center;
+    }
+    main {
+        width: 550px;
+    }
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #container {
+        min-width: 460px;
+        justify-content: center;
+    }
+    main {
+        width: 350px;
+    }
+    nav {
+        display: none;
+    }
+} */
+
+

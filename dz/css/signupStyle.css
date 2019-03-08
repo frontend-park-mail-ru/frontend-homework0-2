@@ -1,0 +1,132 @@
+html {     
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%; 
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background: url(../images/hero-lg.jpg);
+    background-size: cover;
+}
+
+#container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;    
+    width: 1100px;
+}
+
+h2 {
+    color: white;
+    text-align: center;    
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+    #container { 
+        max-width: 890px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    #signup {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #container { 
+        max-width: 470px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    form {
+        max-width: 340px;
+    }
+    #signup {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #container { 
+        max-width: 420px;
+    }
+    h2 {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #container { 
+    max-width: 370px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+}
+
+form {
+    display: -webkit-flex;
+    display: flex;  
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 670px;
+}
+
+button {
+    outline: none; 
+}
+
+input {
+    width: 50%;
+    border: none;
+    border-radius: 4px;  
+    min-width: 230px;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    outline: none; 
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+input[name=password] {
+    background: url('../images/eye-crossed.svg') no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+    background-color: white;
+    background-size: 22px;
+}
+
+#signup {
+    width: 40%;
+    background-color: rgb(202, 156, 244);
+    border: none;
+    border-radius: 4px;
+    color: white; 
+    margin-bottom: 10px;   
+    height: 40px; 
+    font-weight:bold;
+    min-width: 160px;  
+}
+
+.linedText {
+    text-decoration: underline;
+    color: white; 
+    text-align: center;       
+}

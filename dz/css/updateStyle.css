@@ -1,0 +1,240 @@
+html, body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {   
+    font-weight: 700;
+    font-size: 35px;
+    margin: auto;
+    padding: 30px 0px 0px 30px;
+}
+
+#close {
+    padding: 0px 15px 15px;    
+}
+
+#close img {
+    width: 30px
+}
+
+#container {
+    width: 510px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: 1px solid rgb(204, 204, 204);
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main {  
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-bottom: lightgray;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+main label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    outline: none; 
+}
+
+#email {
+    margin-bottom: 25px;
+}
+
+#phone { 
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;    
+}
+
+.select {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    -webkit-box-shadow: inset 10px -4px 116px 2px rgba(0,0,0,0.24);
+    -moz-box-shadow: inset 10px -4px 116px 2px rgba(0,0,0,0.24);
+    box-shadow: inset 1px 0px 18px 2px rgba(0, 0, 0, 0.12);
+}
+
+.select > div {    
+    margin-left: 15px;
+    margin-right: 10px;
+}  
+
+.select span {
+    margin-right: 50px;
+}
+
+.select > img {
+    margin: auto;
+}
+
+input[name=email] {
+    border-color: red;
+}
+
+input[name=phone] {   
+    border-radius: 0px 4px 4px 0px;
+    height: 40px;
+}
+
+.alert {
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#phoneInput {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin-bottom: 15px;    
+    align-items: center;
+    height: 39px;
+}
+
+#selectList {
+    width: 110px;
+    height: 70px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: 1px solid rgb(204, 204, 204);
+    display: -webkit-flex;
+    flex-direction: column;
+    padding: 0px;
+    display: none;
+}
+
+#lineDiv {
+    width: 100%;
+    height: 12px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    text-align: center; 
+    margin-bottom: 20px;    
+}
+
+#buttons {  
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-direction: row;
+    width: 70%;
+    padding-bottom: 15px; 
+    transform: translate(5%, 0%);
+}
+
+button {    
+    font-weight:bold;
+    width: 100%;
+    border: none;
+    border-radius: 4px;  
+    margin-bottom: 5px;
+    height: 40px;
+    margin-right: 5px;
+    font-size: 18px;
+    outline: none; 
+}
+
+#update {
+    background-color: rgb(202, 156, 244);
+    color: white;    
+}
+
+#cancel {
+    background-color: rgb(228, 228, 228);
+    color: rgb(172, 172, 172);    
+}
+
+#selectBox {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    width: 70%;    
+    border-radius: 4px 0px 0px 4px;
+    border: 1px solid lightgray;
+    height: 38px;
+}
+
+#options {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    top: 71%;
+    border-radius: 9px;
+    border: 1px solid lightgray;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+    width: 165px;
+    -webkit-box-shadow: -7px 10px 65px -3px rgba(0,0,0,0.34);
+    -moz-box-shadow: -7px 10px 65px -3px rgba(0,0,0,0.34);
+    box-shadow: -7px 10px 65px -3px rgba(0,0,0,0.34);
+}
+
+#options div * {
+    margin-left: 5px;
+}
+
+.option {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    height: 34px;
+    align-items: center;    
+    margin-top: 5px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.selected {
+    background-color: lightgray;    
+}
+
+@media (max-width: 430px) {
+    #container {
+        width: 100%;
+        min-width: 350px;
+        margin: auto;
+    }
+    #options {
+        top: 74%;
+    }
+} 
+
+@media (min-width: 430px) and (max-width: 510px) {
+    #container {
+        width: 100%;
+    }
+} 
