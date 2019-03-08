@@ -1,7 +1,10 @@
 {
     "version": 2,
     "name": "hw0-2",
-    "alias": "hw0-2"
+    "alias": "hw0-2",
+    "github": {
+        "enabled": false
+    }
 }
   
   
