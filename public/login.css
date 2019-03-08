@@ -6,6 +6,7 @@ body {
 
 .container {
     height: 100vh;
+    min-width: 260px;
     margin: 0;
 
     display: flex;
@@ -43,7 +44,7 @@ form .social > * {
     margin-bottom: 10px;
 }
 
-.container .login_form {
+.login_form {
     margin: auto;
 }
 
@@ -280,51 +281,4 @@ span {
     input[type="password"] {
         background-size: 16px 32px;  
     }
-}
-
-@media (min-width: 691px) and (max-width: 1024px) and (orientation: landscape) {
-    form {
-        width: inherit;
-    }
-
-    button {
-        height: 48px;
-        width: inherit;
-        align-items: center;
-        font-size: 16px;
-    }
-
-    .mail_button {
-        width: 100%;
-    }
-
-    .hr-block {
-        margin: 4px 0 20px 0
-    }
-
-    input {
-        height: 40px;
-        font-size: 15px;
-        border-radius: 6px;
-        padding: 0 10px;
-    }
-
-    input[type="password"] {
-        background-size: 16px 32px;  
-    }
-
-    form .social {
-        display: flex;
-        flex-direction: row;
-        height: max-content;
-        margin: -10px 0 15px 0;
-    }
-
-    form .social:last-child {
-        margin-bottom: 0;
-    }
-
-    header h1 {
-        margin-top: 0;
-    }    
 }
