@@ -15,7 +15,7 @@ body {
     background-position-y: bottom;
     min-height: 100vh;
     min-width: 250px;
-    margin: 10px 10px 0 10px;
+    margin: 12px 12px 0 12px;
 }
 
 header {
@@ -37,13 +37,13 @@ header {
 
 form {
     width: 450px;
-    padding: 12px 20px 20px;
+    padding: 15px 20px 20px;
 }
 
 form main {
     display: flex;
     flex-direction: column;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     height: max-content;
 }
 
@@ -94,8 +94,7 @@ input {
     margin: 4px;
 }
 
-input:focus,
-button:focus {
+input:focus, button:focus {
     box-shadow: 0 0 0 2px #FFFFFF,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
@@ -114,7 +113,7 @@ a {
 
     font-size: 16px;
     color: white;
-    margin: 15px 0 0 0;
+    margin: 16px 0 0 0;
 }
 
 @media (min-width: 50px) and (max-width: 690px) {
@@ -160,11 +159,11 @@ a {
     }
 
     form main {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 
     form main > * {
-        margin-bottom: 15px;
+        margin-bottom: 16px;
     }
 
     button {
@@ -178,7 +177,7 @@ a {
     }
 
     p {
-        margin: 5px 0;
+        margin: 4px 0;
     }
 }
 
@@ -223,11 +222,11 @@ a {
     }
 
     form main {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 
     form main > * {
-        margin-bottom: 15px;
+        margin-bottom: 16px;
     }
 
     button {
@@ -241,6 +240,6 @@ a {
     }
 
     p {
-        margin: 5px 0;
+        margin: 4px 0;
     }
 }

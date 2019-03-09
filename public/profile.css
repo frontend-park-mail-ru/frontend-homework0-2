@@ -20,11 +20,11 @@ body {
     border: 1px solid gainsboro;
     background-color: #ffffff;
     border-radius: 6px;
-    margin: 10px;
+    margin: 8px;
 }
 
 .block {
-    padding: 24px 20px 0;
+    padding: 25px 20px 0;
     border-bottom: 1px solid #c5c5c5;
 }
 
@@ -34,7 +34,7 @@ header h1 {
 
 .title {
     font-weight: bold;
-    margin-bottom: 6px; 
+    margin-bottom: 8px; 
 }
 
 .data {
@@ -51,17 +51,17 @@ header h1 {
 }
 
 div[data-type="info"] {
-    padding-bottom: 28px;
+    padding-bottom: 30px;
 }
 
 div[data-type="buttons"] {
-    padding-bottom: 12px;
+    padding-bottom: 15px;
 }
 
 button {
     height: 46px;
     font-size: 20px;
-    width: 49%;
+    width: 200px;
 
     border-radius: 4px;
     background: #018176;
@@ -110,7 +110,7 @@ button {
         height: 48px;
         font-size: 16px;
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 }
 
@@ -120,7 +120,7 @@ button {
     }
 
     .block {
-        padding: 16px 20px 0;
+        padding: 15px 20px 0;
     }
 
     button {
@@ -149,7 +149,7 @@ button {
         height: 48px;
         font-size: 16px;
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 }
 
@@ -159,7 +159,7 @@ button {
     }
 
     .block {
-        padding: 24px 28px 0;
+        padding: 25px 30px 0;
     }
 
     button {

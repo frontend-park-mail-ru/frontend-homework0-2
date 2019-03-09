@@ -14,7 +14,7 @@ body {
     background-color: #F0F0F0;
     height: 100vh;
     box-shadow: 0 1em 5em 1em rgba(0, 0, 0, 0.2);
-    margin: 10px 0 0 10px;
+    margin: 8px 0 0 8px;
 }
 
 .logo {
@@ -64,7 +64,7 @@ button {
 }
 
 .picture {
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .main_button {
@@ -99,7 +99,7 @@ a:hover {
 
 header h1 {
     font-size: 34px;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 input {
@@ -143,7 +143,7 @@ button:last-child {
     display: none;
 }
 
-@media (min-width: 50px) and (max-width: 690px) {
+@media (min-width: 50px) and (max-width: 800px) {
     .sign_in_form {
         width: inherit;
         top: 25%;
@@ -152,7 +152,7 @@ button:last-child {
 
     header h1 {
         font-size: 28px;
-        margin-top: 10px;
+        margin-top: 8px;
     }
 
     input {
@@ -181,7 +181,7 @@ button:last-child {
     .menu_form .logo {
         width: 100%;
         padding: 0;
-        margin: 10px 0;
+        margin: 8px 0;
         text-shadow: rgba(255, 255, 255, .1) -1px -1px 1px, 
                      rgba(0, 0, 0, .5) 1px 1px 1px;
         font-size: 1.3em;
@@ -202,7 +202,7 @@ button:last-child {
         font-size: 1.3em;
         line-height: 1.3em;
         z-index: 2001;
-        margin: 10px 0;
+        margin: 8px 0;
         padding: 15px 20px 0;
         height: 37px;
     }
@@ -229,7 +229,7 @@ button:last-child {
 }
 
 
-@media (min-width: 691px) and (max-width: 1024px) {
+@media (min-width: 801px) and (max-width: 1024px) {
     .sign_in_form {
         width: inherit;
         top: 25%;
@@ -238,7 +238,7 @@ button:last-child {
 
     header h1 {
         font-size: 28px;
-        margin-top: 10px;
+        margin-top: 8px;
     }
 
     input {

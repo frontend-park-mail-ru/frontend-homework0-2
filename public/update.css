@@ -29,11 +29,11 @@ form main, form .social {
     display: flex;
     flex-direction: column;
     /* height: max-content; */
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 span {
-    padding: 6px 0;
+    padding: 5px 0;
     color: red;
     font-size: 15px;
 }
@@ -47,7 +47,7 @@ form main, form .social > *:last-child {
 }
 
 form .social > * {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .container .update_form {
@@ -63,11 +63,11 @@ header {
 
 header h1 {
     font-size: 34px;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 header img {
-    margin-top: 15px;
+    margin-top: 16px;
 }
 
 input {
@@ -80,7 +80,7 @@ input {
     outline: 0;
     box-shadow: 0 0 0 2px #FFFFFF,
                 0 0 0 4px #dfdddd;
-    margin: 4px;
+    margin: 4px 4px 4px 12px;
 }
 
 input:focus, button:focus {
@@ -99,7 +99,7 @@ input[type="email"] {
 button {
     height: 38px;
     font-size: 20px;
-    width: 34%;
+    width: 140px;
 
     border-radius: 4px;
     background: #018176;
@@ -152,7 +152,7 @@ input[type="phone"] {
     height: 28px;
     font-size: 16px;
 
-    padding: 0 0 0 8px;
+    padding: 0 0 0 10px;
     border: none;
     box-shadow: 0 0 0 3px #FFFFFF,
                 0 0 0 4px rgba(26, 25, 25, 0.466);
@@ -163,15 +163,15 @@ input[type="phone"] {
 }
 
 .flag {
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
 div label {
-    margin-right: 70px;
+    margin-right: 72px;
 }
 
 .block {
-    padding: 24px 20px 40px;
+    padding: 25px 20px 40px;
     border-bottom: 1px solid #c5c5c5;
 }
 
@@ -184,11 +184,11 @@ div label {
     z-index: 100;
     width: 150px;
     box-shadow: -7px 10px 65px -3px rgba(0,0,0,0.34);
-    margin: 16px -2px;
+    margin: 16px -4px;
 }
 
 .list div * {
-    margin-left: 5px;
+    margin-left: 4px;
 }
 
 .option {
@@ -230,7 +230,7 @@ div label {
     input[type="phone"] {
         min-width: 80px;
         width: min-content;
-        margin-left: 20px;
+        margin-left: 24px;
         padding-left: 5px;
     }
 
@@ -245,7 +245,7 @@ div label {
     button {
         height: 32px;
         font-size: 16px;
-        width: 38%;
+        width: 120px;
         border-radius: 4px;
         background: #018176;
         color: #FFFFFF;
@@ -284,7 +284,7 @@ div label {
     input[type="phone"] {
         min-width: 210px;
         width: min-content;
-        margin-left: 4px;
+        margin-left: 8px;
         padding-left: 15px;
     }
 
@@ -299,7 +299,7 @@ div label {
     button {
         height: 32px;
         font-size: 16px;
-        width: 38%;
+        width: 140px;
         border-radius: 4px;
         background: #018176;
         color: #FFFFFF;
