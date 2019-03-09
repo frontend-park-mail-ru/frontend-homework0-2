@@ -32,11 +32,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 100vh;
     padding: 100px 10px 0 10px;
 }
 
-.signin_form {
+.sign_in_form {
     width: 400px;
     position: absolute;
     top: 214px;
@@ -138,12 +137,17 @@ button:last-child {
     width: 234px;
 }
 
+
+#nav-toggle {
+    position: absolute;
+    display: none;
+}
+
 @media (min-width: 50px) and (max-width: 690px) {
-    .signin_form {
-        left: 0;
+    .sign_in_form {
         width: inherit;
-        top: 140px;
-        left: 90px;
+        top: 25%;
+        left: 20%;
     }
 
     header h1 {
@@ -163,147 +167,73 @@ button:last-child {
     }
 
     .menu_form {
-        width: 50%;
         position: fixed;
         top: 0;
         bottom: 0;
-        left: -45%;
-        margin: 16px 0 0 16px;
-    
-        /* плавный переход смещения панели */
-        transition: left 0.3s;
-        /* поверх других элементов */
-        z-index: 2000;
-    }
-    
-    /**
-     * Скрытый чекбокс (флажок)
-     * невидим и недоступен :)
-     * имя селектора атрибут флажка
-     */
-    
-     [id='nav-toggle'] {
-        position: absolute;
-        display: none;
-    }
-    
-    
-    
-    /**
-     * Кнопка переключения панели
-     * тег <label>
-     */
-    
-     .nav-toggle {
-        /* абсолютно позиционируем */
-        position: absolute;
-        /* относительно левого края панели */
-        left: 80%;
-        /* margin-left: 142px; */
-        /* отступ от верхнего края панели */
-        top: 12px;
-        /* внутренние отступы */
-        padding: 0.5em;
-        /* цвет текста */
-        color: #dadada;
-        /* вид курсора */
-        cursor: pointer;
-        /* размер шрифта */
-        font-size: 1.2em;
-        line-height: 1;
-        /* всегда поверх других элементов страницы */
-        z-index: 2001;
-    }
+        left: -364px;
+        margin: 0;
 
-    [id='nav-toggle']:checked ~ .menu_form .logo {
-        opacity: 1;
-        transform: scale(1, 1);
+        transition: left 0.3s;
+        z-index: 2000;
+        box-shadow: none;
     }
 
     .menu_form .logo {
-        width: 90%;
+        width: 100%;
         padding: 0;
         margin: 10px 0;
-        text-align: center;
-        text-shadow: rgba(255, 255, 255, .1) -1px -1px 1px, rgba(0, 0, 0, .5) 1px 1px 1px;
+        text-shadow: rgba(255, 255, 255, .1) -1px -1px 1px, 
+                     rgba(0, 0, 0, .5) 1px 1px 1px;
         font-size: 1.3em;
         line-height: 1.3em;
-        opacity: 0;
-        transform: scale(0.1, 0.1);
-        -ms-transform: scale(0.1, 0.1);
-        -moz-transform: scale(0.1, 0.1);
-        -webkit-transform: scale(0.1, 0.1);
-        transform-origin: 0% 0%;
-        -ms-transform-origin: 0% 0%;
-        -moz-transform-origin: 0% 0%;
-        -webkit-transform-origin: 0% 0%;
-        transition: opacity 0.8s, transform 0.8s;
-        -ms-transition: opacity 0.8s, -ms-transform 0.8s;
-        -moz-transition: opacity 0.8s, -moz-transform 0.8s;
-        -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
     }
-    
-    /* определяем текст кнопки 
-     * символ Unicode (TRIGRAM FOR HEAVEN)
-    */
-    
+
+    .menu_form > main > button {
+        line-height: 2.5;
+    }
+
+    .nav-toggle {
+        position: absolute;
+        left: 100%;
+        top: 0;
+
+        color: #dadada;
+        cursor: pointer;
+        font-size: 1.3em;
+        line-height: 1.3em;
+        z-index: 2001;
+        margin: 10px 0;
+        padding: 15px 20px 0;
+        height: 37px;
+    }
+
     .nav-toggle:after {
         content: '\2630';
         text-decoration: none;
     }
-    
-    /**
-     * Когда флажок установлен, открывается панель
-     * используем псевдокласс:checked
-     */
-    
-     [id='nav-toggle']:checked ~ .menu_form {
+
+    #nav-toggle:checked ~ .menu_form {
         left: 0;
-        box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+        box-shadow: 4px 0 20px 0 rgba(0, 0, 0, 0.5);
         overflow-y: auto;
-        height: 55%;
     }
-    
-    /* 
-     * смещение контента страницы
-     * на размер ширины панели,
-     * фишка необязательная, на любителя
-    */
-    
-    [id='nav-toggle']:checked ~ .signin_form {
-        transform: translateX(360px);
+
+    #nav-toggle:checked ~ .menu_form .nav-toggle {
+        left: auto;
+        right: 0;
     }
-    
-    /*
-     * изменение символа переключателя,
-     * привычный крестик (MULTIPLICATION X), 
-     * вы можете испльзовать любой другой значок
-    */
-    
-    [id='nav-toggle']:checked ~ .menu_form > .nav-toggle:after {
+
+    #nav-toggle:checked ~ .menu_form .nav-toggle:after {
         content: '\2715';
-    }
-    
-    .menu_form > main > button {
-        line-height: 2.5;
-        opacity: 0;
-        transform: translateX(-50%);
-        transition: opacity .5s .1s, transform .5s .1s;
-    }
-    
-    [id='nav-toggle']:checked ~ .menu_form > main > button {
-        opacity: 1;
-        transform: translateX(0);
     }
 }
 
 
 @media (min-width: 691px) and (max-width: 1024px) {
-    .signin_form {
-        left: 0;
+    .sign_in_form {
         width: inherit;
-        top: 140px;
-        left: 90px;
+        top: 25%;
+        left: 50%;
     }
 
     header h1 {
@@ -320,113 +250,5 @@ button:last-child {
     button {
         height: 48px;
         font-size: 14px;
-    }
-
-    .menu_form {
-        width: 50%;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: -45%;
-        margin: 16px 0 0 16px;
-    
-        /* плавный переход смещения панели */
-        transition: left 0.3s;
-        /* поверх других элементов */
-        z-index: 2000;
-    }
-    
-    /**
-     * Скрытый чекбокс (флажок)
-     * невидим и недоступен :)
-     * имя селектора атрибут флажка
-     */
-    
-     [id='nav-toggle'] {
-        position: absolute;
-        display: none;
-    }
-    
-    
-    
-    /**
-     * Кнопка переключения панели
-     * тег <label>
-     */
-    
-     .nav-toggle {
-        /* абсолютно позиционируем */
-        position: absolute;
-        /* относительно левого края панели */
-        left: 80%;
-        /* margin-left: 142px; */
-        /* отступ от верхнего края панели */
-        top: 12px;
-        /* внутренние отступы */
-        padding: 0.5em;
-        /* цвет текста */
-        color: #dadada;
-        /* вид курсора */
-        cursor: pointer;
-        /* размер шрифта */
-        font-size: 1.2em;
-        line-height: 1;
-        /* всегда поверх других элементов страницы */
-        z-index: 2001;
-    }
-    
-    /* определяем текст кнопки 
-     * символ Unicode (TRIGRAM FOR HEAVEN)
-    */
-    
-    .nav-toggle:after {
-        content: '\2630';
-        text-decoration: none;
-    }
-    
-    /**
-     * Когда флажок установлен, открывается панель
-     * используем псевдокласс:checked
-     */
-    
-     [id='nav-toggle']:checked ~ .menu_form {
-        left: 0;
-        box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
-        -moz-box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
-        -webkit-box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
-        overflow-y: auto;
-        height: 55%;
-    }
-    
-    /* 
-     * смещение контента страницы
-     * на размер ширины панели,
-     * фишка необязательная, на любителя
-    */
-    
-    [id='nav-toggle']:checked ~ .signin_form {
-        transform: translateX(360px);
-    }
-    
-    /*
-     * изменение символа переключателя,
-     * привычный крестик (MULTIPLICATION X), 
-     * вы можете испльзовать любой другой значок
-    */
-    
-    [id='nav-toggle']:checked ~ .menu_form > .nav-toggle:after {
-        content: '\2715';
-    }
-    
-    .menu_form > main > button {
-        line-height: 2.5;
-        opacity: 0;
-        transform: translateX(-50%);
-        transition: opacity .5s .1s, transform .5s .1s;
-    }
-    
-    [id='nav-toggle']:checked ~ .menu_form > main > button {
-        opacity: 1;
-        transform: translateX(0);
     }
 }
