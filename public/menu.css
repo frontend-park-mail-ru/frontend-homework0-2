@@ -133,7 +133,7 @@ input[type="password"] {
     margin-bottom: 28px;
 }
 
-button:last-child {
+button b {
     width: 234px;
 }
 
