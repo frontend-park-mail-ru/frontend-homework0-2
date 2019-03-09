@@ -1,348 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HW-0.2-signup</title>
+    <title>HW-0.2-sign-up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type="text/css">
-     /* http://meyerweb.com/eric/tools/css/reset/ 
-        v2.0 | 20110126
-        License: none (public domain)
-        */
-
-        html, body, div, span, applet, object, iframe,
-        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-        a, abbr, acronym, address, big, cite, code,
-        del, dfn, em, img, ins, kbd, q, s, samp,
-        small, strike, strong, sub, sup, tt, var,
-        b, u, i, center,
-        dl, dt, dd, ol, ul, li,
-        fieldset, form, label, legend,
-        table, caption, tbody, tfoot, thead, tr, th, td,
-        article, aside, canvas, details, embed, 
-        figure, figcaption, footer, header, hgroup, 
-        menu, nav, output, ruby, section, summary,
-        time, mark, audio, video {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-        }
-        /* HTML5 display-role reset for older browsers */
-        article, aside, details, figcaption, figure, 
-        footer, header, hgroup, menu, nav, section {
-            display: block;
-        }
-        ol, ul {
-            list-style: none;
-        }
-        blockquote, q {
-            quotes: none;
-        }
-        blockquote:before, blockquote:after,
-        q:before, q:after {
-            content: '';
-            content: none;
-        }
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-
-
-        body {
-            font-family: Helvetica, Arial, san-serif;
-            background: white;
-            line-height: 1;
-        }
-
-        .signup-panel {
-            width: 420px;
-            height: 652px;
-            background-color: white;
-            border: 1px solid rgb(224,224,224);
-            border-radius: 6px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 8px;
-        }
-
-        .panel-header {
-            font-size: 32px;
-            font-weight: bold;
-            margin-left: 4%;
-            margin-top: 4%;
-        }
-
-        hr {
-            margin-top: 4%;
-            display: block;
-            height: 1px;
-            border: 0;
-            border-top: 1px solid rgb(224,224,224);
-            padding: 0;
-        }
-
-        .info-requester {
-            color: rgb(153,153,153);
-            line-height: 20px;
-            font-size: 15px;
-            margin: 4%;
-            margin-bottom: 6%;
-        }
-
-        .userblock-line {
-            width: 376px;
-            height: 38px;
-            padding-left: 2%;
-            font-size: 14px;
-            display: block;
-            margin-left: 16px;
-            margin-right: 16px;
-            margin-top: 4%;
-            margin-bottom: 4%;
-            border: 1px solid rgb(224,224,224);
-            border-radius: 4px;
-        }
-
-        .small-label {
-            font-size: 14px;
-            font-weight: bold;
-            margin: 4%;
-        }
-
-        .date-row {
-            display: flex;
-            margin-left: 4%;
-            margin-top: 4%;
-            margin-top: 4px;
-        }
-
-        .userblock-day {
-            display: flex;
-            align-items: center;
-            width: 124px;
-            height: 38px;
-            border-radius: 4px;
-            border: 1px solid rgb(224,224,224);
-            font-size: 14px;
-        }
-
-        .day {
-            display: flex;
-            padding-left: 12px;
-        }
-
-        .dropdown-days {
-            display: flex;
-            margin: 8%;
-        }
-
-        .userblock-month {
-            display: flex;
-            align-items: center;
-            width: 132px;
-            height: 38px;
-            border-radius: 4px;
-            border: 1px solid rgb(224,224,224);
-            font-size: 14px;
-        }
-
-        .month {
-            display: flex;
-            padding: 12px; 
-        }
-
-        .userblock-year {
-            display: flex;
-            align-items: center;
-            width: 118px;
-            height: 38px;
-            border-radius: 4px;
-            border: 1px solid rgb(224,224,224);
-            font-size: 14px;
-        }
-
-        .year {
-            display: flex;
-            padding: 12px;
-        }
-
-        .phone-block {
-            margin-top: 4%;
-        }
-
-        .phone-row {
-            display: flex;
-            margin-left: 4%;
-            margin-top: 4px;
-        }
-
-        .country-code-block {
-            display: flex;
-            align-items: center;
-            display: flex;
-            width: 156px;
-            height: 40px;
-            border: 1px solid rgb(224,224,224);
-            border-radius: 4px 0px 0px 4px;
-            border-right: none;
-        }
-
-        .flag-icon {
-            width: 16px;
-            height: 11px;
-            padding: 13px;
-        }
-
-        .country-name {
-            margin-right: 36px;
-            font-size: 14px;
-        }
-
-        .dropdown-arrow {
-            display: flex;
-            margin-right: 4px;
-            margin-left: auto; 
-            cursor: pointer;
-        }
-
-        .userblock-phone {
-            width: 226px;
-            height: 40px;
-            border: 1px solid rgb(224,224,224);
-            border-radius: 0px 4px 4px 0px;
-            font-size: 14px;
-        }
-
-        .phone-code {
-            display: flex;
-            padding: 12px;
-        }
-
-        .password-block {
-            margin-bottom: 8%;
-        }
-
-        .panel-bottom {
-            margin-top: 12%;
-        }
-
-        .buttons-row {
-            display: flex;
-            margin: 4%;
-        }
-
-        .signup-btn {
-            display: block;
-            cursor: pointer;
-            background-color: rgb(255,212,0);
-            color: white;
-            font-size: 16px;
-            width: 200px;
-            height: 40px;
-            border-radius: 4px;
-            border: 1px solid rgb(224,186,0);
-            margin-right: 2%;
-        }
-
-        .cancel-btn {
-            display: block;
-            cursor: pointer;
-            background-color: rgb(240,240,240);
-            color: black;
-            font-size: 16px;
-            width: 118px;
-            height: 40px;
-            border-radius: 4px;
-            border: 1px solid rgb(211,211,211)
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
-    <div class="background">
-        <div class="signup-panel">
-            <div>
-                <h1 class="panel-header">Регистрация</h1>
+    <main class="sign-up">
+        <h1 class="sign-up__header">Регистрация</h1>
+        <hr class="hr"/>
+        <div class="sign-up__info-requester">Для регистарции на ресурсе укажите инфомацию о себе</div>
+        <input class="sign-up__row sign-up__row_invalid" type="text" placeholder="Имя">
+        <div class="validation">Заполните обязательное поле</div>
+        <input class="sign-up__row" type="text" placeholder="Фамилия">
+
+        <h2 class="sign-up__title">Дата рождения</h2>
+        <div class="date">
+            <div class="unit date-unit date-unit_day">
+                <span class="unit__placeholder">День</span>
+                <svg class="unit__dropdown" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
+                </svg>
             </div>
-            <hr/>
-            <div class="info-requester">
-                <span>Для регистарции на ресурсе укажите инфомацию о себе</span>
+            <div class="unit date-unit date-unit_month">
+                <span class="unit__placeholder">Месяц</span>
+                <svg class="unit__dropdown" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
+                </svg>
             </div>
-            <div class="info-container">
-                <div class="name-row">
-                    <input class="userblock-line" type="text" placeholder="Имя" name="uname">
-                </div>
-                <div class="surname-row">
-                    <input class="userblock-line" type="text" placeholder="Фамилия" name="uname">
-                </div>
-                <div class="date-block">
-                    <label class="small-label">Дата рождения</label>
-                    <div class="date-row">
-                        <div class="userblock-day">
-                            <span class="day">День</span>
-                            <div class="dropdown-arrow">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
-                                </svg>  
-                            </div> 
-                        </div>
-                        <div class="userblock-month">
-                            <span class="month">Месяц</span>
-                            <div class="dropdown-arrow">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
-                                </svg>  
-                            </div> 
-                        </div>
-                        <div class="userblock-year">
-                            <span class="year">Год</span>
-                            <div class="dropdown-arrow">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
-                                </svg>  
-                            </div> 
-                    </div>
-                </div>
-                <div class="phone-block">
-                    <label class="small-label">Телефон</label>
-                    <div class="phone-row">
-                        <div class="country-code-block">
-                            <img class="flag-icon" src="https://img.imgsmail.ru/mail/ru/images/country_icons/ru.png">
-                            <span class="country-name">Россия</span>
-                            <div class="dropdown-arrow">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
-                                </svg>  
-                            </div>  
-                        </div>
-                        <div class="userblock-phone">
-                            <span class="phone-code">+7</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="password-block">
-                    <div>
-                        <input class="userblock-line" type="password" placeholder="Пароль">
-                    </div>
-                    <div>
-                        <input class="userblock-line" type="password" placeholder="Повторите пароль">
-                    </div>
-                </div>
-            </div>
-            <div class="panel-bottom">
-                <hr/>
-                <div class="buttons-row">
-                    <button class="signup-btn">Зарегистрироваться</button>
-                    <button class="cancel-btn">Отменить</button>
-                </div>
+            <div class="unit date-unit date-unit_year">
+                <span class="unit__placeholder">Год</span>
+                <svg class="unit__dropdown" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
+                </svg>
             </div>
         </div>
-    </div>
-    
+
+        <h2 class="sign-up__title">Телефон</h2>
+        <div class="phone">
+            <div class="unit phone-unit phone-unit_country-code">
+                <img class="flag-icon" src="https://img.imgsmail.ru/mail/ru/images/country_icons/ru.png">
+                <span class="unit__placeholder">Россия</span>
+                <svg class="unit__dropdown" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
+                </svg>
+            </div>
+            <div class="unit phone-unit phone-unit_number">
+                <span class="unit__placeholder">+7</span>
+            </div>
+        </div>
+
+        <div class="password">
+            <input class="sign-up__row sign-up__row_password" type="password" placeholder="Пароль">
+            <input class="sign-up__row sign-up__row_password" type="password" placeholder="Повторите пароль">
+        </div>
+
+        <hr class="hr"/>
+
+        <div class="buttons">
+            <button class="btn btn_sign-up">Зарегистрироваться</button>
+            <button class="btn btn_cancel">Отменить</button>
+        </div>
+    </main>
 </body>
 </html>

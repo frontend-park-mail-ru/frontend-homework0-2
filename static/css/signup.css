@@ -1,0 +1,171 @@
+body {
+    font-family: Helvetica, Arial, san-serif;
+    background: white;
+}
+
+.sign-up {
+    width: 420px;
+    height: 652px;
+    background-color: white;
+    border: 1px solid rgb(224,224,224);
+    border-radius: 6px;
+    margin: 8px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.sign-up__header {
+    display: flex;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 16px;
+}
+
+.hr {
+    width: 100%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(224,224,224);
+    padding: 0;
+    margin: 0;
+}
+
+.sign-up__info-requester {
+    display: flex;
+    color: rgb(153,153,153);
+    line-height: 20px;
+    font-size: 15px;
+    margin: 8px 16px;
+}
+
+.sign-up__row {
+    display: flex;
+    width: 376px;
+    height: 38px;
+    padding-left: 2%;
+    font-size: 14px;
+    margin: 16px 16px 0 16px;
+    border: 1px solid rgb(224,224,224);
+    border-radius: 4px;
+}
+.sign-up__row_invalid {
+    border: 1px solid red;
+    margin-bottom: 4px;
+}
+.validation {
+    font-size: 12px;
+    color: red;
+    padding-left: 16px;
+}
+.sign-up__row_password {
+    margin: 0 16px 16px 16px;
+}
+.sign-up__title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 16px 16px 2px 16px;
+}
+
+.date {
+    display: flex;
+    margin-left: 4%;
+    margin-top: 4px;
+}
+.unit {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    border: 1px solid rgb(224,224,224);
+}
+.date-unit {
+    height: 38px;
+    border-radius: 4px;
+}
+.phone-unit {
+    height: 40px;
+}
+.date-unit_day {
+    width: 124px;
+}
+.date-unit_month {
+    width: 132px;
+}
+.date-unit_year {
+    width: 118px;
+}
+
+.unit__placeholder {
+    padding-left: 12px;
+}
+
+.unit__dropdown {
+    display: flex;
+    margin-right: 4px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+
+.phone {
+    display: flex;
+    /*margin-top: 4%;*/
+    margin-left: 4%;
+    margin-top: 4px;
+}
+.phone-unit {
+    display: flex;
+    height: 40px;
+    border: 1px solid rgb(224,224,224);
+    font-size: 14px;
+    align-items: center;
+}
+.phone-unit_country-code {
+    width: 156px;
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+}
+
+.phone-unit_number {
+    width: 226px;
+    border-radius: 0 4px 4px 0;
+}
+
+.flag-icon {
+    width: 16px;
+    height: 11px;
+    padding: 13px;
+}
+
+
+.password {
+    margin: 16px 0 16px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+}
+
+.btn {
+    display: flex;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 4px;
+    justify-content: center;
+}
+.btn_sign-up {
+    background-color: rgb(255,212,0);
+    color: white;
+    width: 200px;
+    border: 1px solid rgb(224,186,0);
+    margin-right: 2%;
+}
+
+.btn_cancel {
+    background-color: rgb(240,240,240);
+    color: black;
+    width: 118px;
+    border: 1px solid rgb(211,211,211)
+}

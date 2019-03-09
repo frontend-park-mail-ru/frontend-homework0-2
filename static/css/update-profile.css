@@ -1,0 +1,184 @@
+body {
+    font-family: Helvetica, Arial, san-serif;
+    background: rgb(133,133,133);
+}
+
+.settings {
+    width: 388px;
+    height: 380px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 8px 52px rgb(70, 70, 70);
+}
+    .header {
+        display: flex;
+        margin: 0 32px;
+    }
+    .settings__header {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .settings__btn-close {
+        display: flex;
+        cursor: pointer;
+        margin-top: 22px;
+        margin-left: auto;
+    }
+    .settings-unit {
+        display: flex;
+        margin: 0 auto 0 20px;
+        flex-direction: column;
+    }
+        .settings-unit__title {
+            margin: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .settings-unit-content {
+            display: flex;
+            align-items: center;
+        }
+            .settings-unit-content_phone {
+            margin-bottom: 1px;
+        }
+
+    .settings__login {
+        width: 340px;
+        height: 32px;
+        padding-left: 2%;
+        font-size: 14px;
+        display: block;
+        margin-top: 4px;
+        margin-bottom: 4%;
+        margin-right: 4px;
+        border: 1px solid rgb(224,224,224);
+        border-radius: 4px;
+    }
+    .settings__country-code {
+        display: flex;
+        width: 156px;
+        height: 34px;
+        font-size: 14px;
+        margin-top: 4px;
+        border: 1px solid rgb(255,17,0);
+        border-right: none;
+        border-radius: 4px 0px 0px 4px;
+    }
+    .settings__number {
+        width: 192px;
+        height: 32px;
+        font-size: 14px;
+        margin-top: 4px;
+        margin-right: 19px;
+        border: 1px solid rgb(255,17,0);
+        border-radius: 0px 4px 4px 0px;
+    }
+
+.flag-icon {
+    width: 16px;
+    height: 11px;
+    padding: 11px;
+}
+
+.dropdown-arrow {
+    margin: 6%;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: black;
+    padding: 8px;
+}
+
+.country-name {
+    margin-top: 10px;
+    margin-right: 36px;
+}
+
+.invalid-number {
+    color: rgb(255,17,0);
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 48px;
+}
+
+.hr {
+    margin: 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(224,224,224);
+    padding: 0;
+}
+
+.buttons {
+    display: flex;
+    margin: 12px auto 0 20px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    width: 120px;
+    height: 32px;
+    border-radius: 4px;
+}
+    .btn_renew {
+        background-color: rgb(255,234,132);
+        color: white;
+        border: 1px solid rgb(240,221,132);
+    }
+    .btn_cancel {
+        background-color: rgb(240,240,240);
+        color: rgb(51,51,51);
+        border: 1px solid rgb(211,211,211);
+        margin-left: 8px;
+    }
+
+.dialog-window {
+    margin-top: -24px;
+    margin-left: 4px;
+    box-shadow: 1px 2px 5px rgb(70, 70, 70);
+}
+    .dialog-window__corner {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        border-bottom: none;
+        border-right: none;
+        transform: rotate(-45deg);
+        background: linear-gradient(135deg, white 0%, white 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
+    }
+    .dialog-content {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 12px;
+        z-index: -1;
+        width: 276px;
+        height: 72px;
+        background: white;
+        margin-top: -30px;
+        margin-left: 7px;
+        border-radius: 4px;
+        box-shadow: 1px 2px 32px rgb(70, 70, 70);
+        line-height: 20px;
+    }
+        .dialog-content__header {
+            font-size: 16px;
+        }
+        .dialog-content__text {
+            font-size: 12px;
+            color: rgb(117,117,117)
+        }

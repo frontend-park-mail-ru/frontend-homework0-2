@@ -1,0 +1,109 @@
+body {
+    font-family: Helvetica, Arial, san-serif;
+    background: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    width: 420px;
+    height: 432px;
+
+    background-color: white;
+    border: 1px solid rgb(224,224,224);
+    border-radius: 6px;
+}
+
+.profile__header {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.profile__avatar {
+    width: 48px;
+    height: 48px;
+    margin: 20px auto 0 auto;
+    border-radius: 50%;
+    background: rgb(240,240,240);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.row {
+    width: 248px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(224,224,224);
+}
+.row_lower {
+    border-bottom: none;
+}
+
+.row__title {
+    width: 130px;
+    font-weight: bold;
+    font-size: 14px
+}
+
+.row__content {
+    margin-left: 22px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 18px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    width: 146px;
+    height: 40px;
+    border-radius: 4px;
+}
+.btn_change {
+    background-color: rgb(255,212,0);
+    color: white;
+    border: 1px solid rgb(224,186,0);
+    margin-right: 8px;
+}
+
+.btn_delete {
+    background-color: rgb(247,247,247);
+    color: rgb(156,156,156);
+    border: 1px solid rgb(233,233,233)
+}
+
+.btn__icon {
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+}
+.btn__icon_light {
+    fill: white;
+}
+.btn__icon_dark {
+    fill:rgb(156,156,156);
+}
