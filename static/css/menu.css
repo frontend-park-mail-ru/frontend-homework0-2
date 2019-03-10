@@ -1,9 +1,6 @@
 body {
-    font-family: Helvetica, Arial, san-serif;
     background: white;
-    line-height: 1;
 }
-
 .container-header {
     display: flex;
     height: 60px;

@@ -4,22 +4,26 @@
     <meta charset="utf-8">
     <title>HW-0.2-update-profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/update-profile.css">
 </head>
 <body>
     <div class="container">
         <div class="settings">
-            <header class="header">
-                <h1 class="settings__header">Изменение настроек</h1>
-                <svg class="settings__btn-close" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+            <button class="settings__btn-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M7.983 6.455l4.34-4.34a1.105 1.105 0 0 1 1.562 1.562l-4.34 4.34 4.34 4.34a1.08 1.08 0 1 1-1.528 1.528l-4.34-4.34-4.34 4.34a1.105 1.105 0 0 1-1.562-1.562l4.34-4.34-4.34-4.34a1.08 1.08 0 1 1 1.528-1.528l4.34 4.34z"/>
                 </svg>
-            </header>
+            </button>
+
+            <h1 class="settings__header">Изменение настроек</h1>
 
             <div class="settings-unit">
                 <h2 class="settings-unit__title">Логин</h2>
                 <div class="settings-unit-content">
-                    <input class="settings__login" type="text" placeholder="">
+                    <label>
+                        <input class="settings__login" type="text" placeholder="">
+                    </label>
                     <div class="dialog-window">
                         <div class="dialog-window__corner"></div>
                         <div class="dialog-content">
@@ -40,7 +44,9 @@
                             <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
                         </svg>
                     </div>
-                    <input class="settings__number" type="text" placeholder="+79999999999">
+                    <label>
+                        <input class="settings__number" type="text" placeholder="+79999999999">
+                    </label>
                 </div>
                 <div class="invalid-number">Неправильный телефон</div>
             </div>

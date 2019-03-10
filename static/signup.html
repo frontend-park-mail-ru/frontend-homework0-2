@@ -4,16 +4,21 @@
     <meta charset="utf-8">
     <title>HW-0.2-sign-up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
     <main class="sign-up">
         <h1 class="sign-up__header">Регистрация</h1>
         <hr class="hr"/>
-        <div class="sign-up__info-requester">Для регистарции на ресурсе укажите инфомацию о себе</div>
-        <input class="sign-up__row sign-up__row_invalid" type="text" placeholder="Имя">
+        <div class="sign-up__info-requester">Для регистрации на ресурсе укажите инфомацию о себе</div>
+        <label>
+            <input class="sign-up__row sign-up__row_invalid" type="text" placeholder="Имя">
+        </label>
         <div class="validation">Заполните обязательное поле</div>
-        <input class="sign-up__row" type="text" placeholder="Фамилия">
+        <label>
+            <input class="sign-up__row" type="text" placeholder="Фамилия">
+        </label>
 
         <h2 class="sign-up__title">Дата рождения</h2>
         <div class="date">
@@ -48,12 +53,19 @@
             </div>
             <div class="unit phone-unit phone-unit_number">
                 <span class="unit__placeholder">+7</span>
+                <label>
+                    <input class="input-number">
+                </label>
             </div>
         </div>
 
         <div class="password">
-            <input class="sign-up__row sign-up__row_password" type="password" placeholder="Пароль">
-            <input class="sign-up__row sign-up__row_password" type="password" placeholder="Повторите пароль">
+            <label>
+                <input class="sign-up__row sign-up__row_password" type="password" placeholder="Пароль">
+            </label>
+            <label>
+                <input class="sign-up__row sign-up__row_password" type="password" placeholder="Повторите пароль">
+            </label>
         </div>
 
         <hr class="hr"/>
