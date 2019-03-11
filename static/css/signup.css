@@ -1,16 +1,16 @@
 .sign-up {
     width: 420px;
     height: 652px;
-    background-color: white;
-    border: 1px solid rgb(224,224,224);
-    border-radius: 6px;
+    background: var(--main-bg-color);
+    border: 1px solid var(--border-gray-color);
+    border-radius: var(--border-radius-size);
     margin: 8px auto 0 auto;
     display: flex;
     flex-direction: column;
 }
 .sign-up__header {
     display: flex;
-    font-size: 32px;
+    font-size: var(--header-font-size);
     font-weight: bold;
     margin: 16px;
 }
@@ -20,7 +20,7 @@
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid rgb(224,224,224);
+    border-top: 1px solid var(--border-gray-color);
     padding: 0;
     margin: 0;
 }
@@ -38,25 +38,25 @@
     width: 376px;
     height: 38px;
     padding-left: 2%;
-    font-size: 14px;
+    font-size: var(--main-font-size);
     margin: 16px 16px 0 16px;
-    border: 1px solid rgb(224,224,224);
-    border-radius: 4px;
+    border: 1px solid var(--border-gray-color);
+    border-radius: var(--border-radius-size);
 }
 .sign-up__row_invalid {
-    border: 1px solid red;
+    border: 1px solid var(--invalid-red-color);
     margin-bottom: 4px;
 }
 .validation {
     font-size: 12px;
-    color: red;
+    color: var(--invalid-red-color);
     padding-left: 16px;
 }
 .sign-up__row_password {
     margin: 0 16px 16px 16px;
 }
 .sign-up__title {
-    font-size: 14px;
+    font-size: var(--main-font-size);
     font-weight: bold;
     margin: 16px 16px 2px 16px;
 }
@@ -69,12 +69,12 @@
 .unit {
     display: flex;
     align-items: center;
-    font-size: 14px;
-    border: 1px solid rgb(224,224,224);
+    font-size: var(--main-font-size);
+    border: 1px solid var(--border-gray-color);
 }
 .date-unit {
     height: 38px;
-    border-radius: 4px;
+    border-radius: var(--border-radius-size);
 }
 .phone-unit {
     height: 40px;
@@ -109,19 +109,19 @@
 .phone-unit {
     display: flex;
     height: 40px;
-    border: 1px solid rgb(224,224,224);
-    font-size: 14px;
+    border: 1px solid var(--border-gray-color);
+    font-size: var(--main-font-size);
     align-items: center;
 }
 .phone-unit_country-code {
     width: 156px;
-    border-radius: 4px 0 0 4px;
+    border-radius: var(--border-radius-size) 0 0 var(--border-radius-size);
     border-right: none;
 }
 
 .phone-unit_number {
     width: 226px;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 var(--border-radius-size) var(--border-radius-size) 0;
 }
 .input-number {
     background: transparent;
@@ -130,14 +130,13 @@
     width: 184px;
     height: 38px;
     margin-left: 4px;
-    font-size: 14px;
+    font-size: var(--main-font-size);
 }
 .flag-icon {
     width: 16px;
     height: 11px;
     padding: 13px;
 }
-
 
 .password {
     margin: 16px 0 16px 0;
@@ -152,23 +151,23 @@
 .btn {
     display: flex;
     cursor: pointer;
-    font-size: 16px;
+    font-size: var(--button-font-size);
     height: 40px;
-    border-radius: 4px;
+    border-radius: var(--border-radius-size);
     justify-content: center;
     align-items: center;
 }
 .btn_sign-up {
-    background-color: rgb(255,212,0);
+    background-color: var(--yellow-color);
     color: white;
     width: 200px;
-    border: 1px solid rgb(224,186,0);
+    border: 1px solid var(--btn-border-yellow-color);
     margin-right: 2%;
 }
 
 .btn_cancel {
-    background-color: rgb(240,240,240);
+    background-color: var(--btn-bg-gray-color);
     color: black;
     width: 118px;
-    border: 1px solid rgb(211,211,211)
+    border: 1px solid var(--btn-border-gray-color);
 }

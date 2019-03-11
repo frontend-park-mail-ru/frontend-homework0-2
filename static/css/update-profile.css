@@ -7,8 +7,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background-color: white;
-    border-radius: 4px;
+    background-color: var(--main-bg-color);
+    border-radius: var(--border-radius-size);
     box-shadow: 0 8px 52px rgb(70, 70, 70);
 }
 
@@ -17,7 +17,7 @@
         width: 200px;
         margin: 16px 20px 32px 20px;
         flex-wrap: wrap;
-        font-size: 32px;
+        font-size: var(--header-font-size);
         font-weight: bold;
     }
     .settings__btn-close {
@@ -36,7 +36,7 @@
     }
         .settings-unit__title {
             margin: 0;
-            font-size: 14px;
+            font-size: var(--main-font-size);
             font-weight: bold;
         }
         .settings-unit-content {
@@ -51,32 +51,32 @@
         width: 340px;
         height: 32px;
         padding-left: 2%;
-        font-size: 14px;
-        display: block;
+        font-size: var(--main-font-size);
+        display: flex;
         margin-top: 4px;
         margin-bottom: 4%;
         margin-right: 4px;
-        border: 1px solid rgb(224,224,224);
-        border-radius: 4px;
+        border: 1px solid var(--border-gray-color);
+        border-radius: var(--border-radius-size);
     }
     .settings__country-code {
         display: flex;
         width: 156px;
         height: 34px;
-        font-size: 14px;
+        font-size: var(--main-font-size);
         margin-top: 4px;
         border: 1px solid rgb(255,17,0);
         border-right: none;
-        border-radius: 4px 0px 0px 4px;
+        border-radius: var(--border-radius-size) 0 0 var(--border-radius-size);
     }
     .settings__number {
         width: 192px;
         height: 32px;
-        font-size: 14px;
+        font-size: var(--main-font-size);
         margin-top: 4px;
         margin-right: 19px;
-        border: 1px solid rgb(255,17,0);
-        border-radius: 0px 4px 4px 0px;
+        border: 1px solid var(--invalid-red-color);
+        border-radius: 0 var(--border-radius-size) var(--border-radius-size) 0;
     }
 
 .flag-icon {
@@ -96,7 +96,7 @@
 }
 
 .invalid-number {
-    color: rgb(255,17,0);
+    color: var(--invalid-red-color);
     font-size: 12px;
     margin-top: 8px;
     margin-bottom: 48px;
@@ -107,7 +107,7 @@
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid rgb(224,224,224);
+    border-top: 1px solid var(--border-gray-color);
     padding: 0;
 }
 
@@ -120,10 +120,10 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 16px;
+    font-size: var(--button-font-size);
     width: 120px;
     height: 32px;
-    border-radius: 4px;
+    border-radius: var(--border-radius-size);
 }
 .btn_renew {
     background-color: rgb(255,234,132);
@@ -131,9 +131,9 @@
     border: 1px solid rgb(240,221,132);
 }
 .btn_cancel {
-    background-color: rgb(240,240,240);
+    background-color: var(--btn-bg-gray-color);
     color: rgb(51,51,51);
-    border: 1px solid rgb(211,211,211);
+    border: 1px solid var(--btn-border-gray-color);
     margin-left: 8px;
 }
 
@@ -160,10 +160,10 @@
     z-index: -1;
     width: 276px;
     height: 72px;
-    background: white;
+    background: var(--main-bg-color);
     margin-top: -30px;
     margin-left: 7px;
-    border-radius: 4px;
+    border-radius: var(--border-radius-size);
     box-shadow: 1px 2px 32px rgb(70, 70, 70);
     line-height: 20px;
 }
