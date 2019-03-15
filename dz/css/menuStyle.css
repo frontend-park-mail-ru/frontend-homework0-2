@@ -14,7 +14,7 @@ html, body {
 }
 
 nav {
-    background: #f3f3f3;
+    background: rgb(243, 243, 243);
     height: 100%;
     width: 350px;
     max-width: 350px;
