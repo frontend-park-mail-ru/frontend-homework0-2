@@ -35,7 +35,6 @@ h2 {
     }
 }
 
-
 @media (min-width: 760px) and (max-width: 1200px) {
     #container { 
         max-width: 890px;

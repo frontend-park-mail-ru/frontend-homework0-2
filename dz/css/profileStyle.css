@@ -111,8 +111,6 @@ button img {
     color: rgb(172, 172, 172);    
 }
 
-
-
 @media (max-width: 375px) {
     #container {
         width: 100%;
