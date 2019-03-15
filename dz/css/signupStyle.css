@@ -29,7 +29,14 @@ h2 {
     margin-bottom: 25px;
 }
 
-@media screen and (max-width: 1200px) {
+@media (min-width: 1200px) {
+    #password img {
+        right: 165px;
+    }
+}
+
+
+@media (min-width: 760px) and (max-width: 1200px) {
     #container { 
         max-width: 890px;
     }
@@ -39,9 +46,12 @@ h2 {
     #signup {
         font-size: 12px;
     }
+    #password img {
+        right: 165px;
+    }
 }
 
-@media screen and (max-width: 760px) {
+@media (min-width: 500px) and (max-width: 760px) {
     #container { 
         max-width: 470px;
     }
@@ -54,23 +64,38 @@ h2 {
     #signup {
         font-size: 12px;
     }
+    #password img {
+        right: 50px;
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media (min-width: 380px) and (max-width: 500px) {
     #container { 
         max-width: 420px;
     }
     h2 {
         font-size: 19px;
     }
+    form {
+        max-width: 270px;
+    }
+    #password img {
+        right: 15px;
+    }
 }
 
-@media screen and (max-width: 380px) {
+@media (max-width: 380px) {
     #container { 
     max-width: 370px;
     }
     h2 {
         font-size: 15px;
+    }
+    form {
+        max-width: 270px;
+    }
+    #password img {
+        right: 15px;
     }
 }
 
@@ -105,12 +130,21 @@ input {
     align-items: center;
 }
 
-input[name=password] {
-    background: url('../images/eye-crossed.svg') no-repeat;
-    background-position-x: 95%;
-    background-position-y: center;
+#password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+
+}
+
+#password img {
+    position: absolute;
+    z-index: 100;
+    padding: 0px 0px 0px 10px;
     background-color: white;
-    background-size: 22px;
+    top: 10px;
 }
 
 #signup {

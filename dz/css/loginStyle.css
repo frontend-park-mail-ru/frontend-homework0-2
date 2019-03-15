@@ -93,9 +93,20 @@ input {
 
 input[name=password] {
     border-color: red;
-    background: url('../images/eye.svg') no-repeat;
-    background-position-x: 95%;
-    background-position-y: center;
+}
+
+#password {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#password img {
+    position: absolute;
+    z-index: 100;
+    right: 35px;
+    padding: 0px 0px 0px 10px;
+    background-color: white;
 }
 
 .alert {

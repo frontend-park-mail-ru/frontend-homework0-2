@@ -17,7 +17,6 @@ nav {
     background: #f3f3f3;
     height: 100%;
     width: 350px;
-    /* min-width: 350px; */
     max-width: 350px;
     margin-right: 250px;
     display: flex;
@@ -43,9 +42,6 @@ nav {
 }
 
 #navList {
-    /* display: -webkit-flex; 
-    display: flex;    
-    flex-direction: column; */
     padding: 5px;
 }
 
@@ -87,7 +83,6 @@ main {
     display: flex;
     flex-direction: column;   
     width: 500px;
-    /* min-width: 500px; */
     justify-content: center;
 }
 
@@ -129,11 +124,24 @@ input {
 }
 
 input[name=password] {
-    background: url('../images/eye.svg') no-repeat;
-    background-position-x: 95%;
-    background-position-y: center;
+    width: 100%;
 }
 
+#password {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 80%;
+}
+
+#password img {
+    position: absolute;
+    z-index: 100;
+    right: 15px;
+    padding: 0px 0px 0px 10px;
+    background-color: white;
+}
 
 @media (max-width: 560px) {
     #container {
@@ -173,45 +181,5 @@ input[name=password] {
     }
 }
 
-/* 
-
-
-@media screen and (min-width:870px) and (max-width: 1100px) {
-    main {
-        width: 420px;
-    }
-    nav {
-        width: 270px;
-        margin-right: 150px;
-    }
-}
-
-
-
-@media screen and (min-width:560px) and (max-width: 870px) {
-    #container {
-        min-width: 660px;
-        justify-content: center;
-    }
-    main {
-        width: 550px;
-    }
-    nav {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    #container {
-        min-width: 460px;
-        justify-content: center;
-    }
-    main {
-        width: 350px;
-    }
-    nav {
-        display: none;
-    }
-} */
 
 
