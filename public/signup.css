@@ -51,7 +51,7 @@ form main input[type="password"] {
     margin-bottom: 12px;
 }
 
-button {
+.mail_button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -69,11 +69,11 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.mail_button:hover {
     background-color:#019185;
 }
 
-button:active {
+.mail_button:active {
     background-color:#02746a;
 }
 
@@ -90,7 +90,7 @@ input {
     margin: 4px;
 }
 
-input:focus, button:focus {
+input:focus, .mail_button:focus {
     box-shadow: 0 0 0 2px #FFFFFF,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
@@ -127,7 +127,7 @@ a {
         width: 90%;
     }
 
-    button {
+    .mail_button {
         min-height: 48px;
         font-size: 16px;
         width: 80%;
@@ -162,7 +162,7 @@ a {
         margin-bottom: 16px;
     }
 
-    button {
+    .mail_button {
         min-height: 48px;
         font-size: 16px;
     }
@@ -192,7 +192,7 @@ a {
         width: 90%;
     }
 
-    button {
+    .mail_button {
         min-height: 48px;
         font-size: 16px;
     }
@@ -225,7 +225,7 @@ a {
         margin-bottom: 16px;
     }
 
-    button {
+    .mail_button {
         min-height: 48px;
         font-size: 16px;
     }

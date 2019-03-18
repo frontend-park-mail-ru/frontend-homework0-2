@@ -184,10 +184,6 @@ button b {
         line-height: 1.3em;
     }
 
-    .menu_form > main > button {
-        line-height: 2.5;
-    }
-
     .nav-toggle {
         position: absolute;
         left: 100%;
