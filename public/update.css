@@ -13,7 +13,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    
 }
 
 form {
@@ -25,10 +24,11 @@ form {
     box-shadow: 1px 6px 36px 6px #0a0a0a7e;
 }
 
-form main, form .social {
+form main {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
+    margin-bottom: 0;
 }
 
 span {
@@ -37,16 +37,8 @@ span {
     font-size: 15px;
 }
 
-form main > * {
+form main .main_item {
     margin-bottom: 4px;
-}
-
-form main, form .social > *:last-child {
-    margin-bottom: 0;
-}
-
-form .social > * {
-    margin-bottom: 12px;
 }
 
 .container .update_form {
@@ -186,21 +178,17 @@ div label {
     margin: 16px -4px;
 }
 
-.list div * {
-    margin-left: 4px;
-}
-
 .option {
-    width: 100%;
     display: flex;
     flex-direction: row;
     height: 36px;
     align-items: center; 
     
     margin-top: 4px;
+    margin-left: 4px;
 }
 
-.list > *:last-child {
+.list .last {
     margin-left: 32px;
 }
 

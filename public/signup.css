@@ -47,11 +47,11 @@ form main {
     height: max-content;
 }
 
-form main > * {
+form main input {
     margin-bottom: 24px;
 }
 
-form main > *:last-child {
+form main input[type="password"] {
     margin-bottom: 12px;
 }
 
@@ -162,7 +162,7 @@ a {
         margin-bottom: 12px;
     }
 
-    form main > * {
+    form main input {
         margin-bottom: 16px;
     }
 
@@ -225,7 +225,7 @@ a {
         margin-bottom: 12px;
     }
 
-    form main > * {
+    form main input {
         margin-bottom: 16px;
     }
 

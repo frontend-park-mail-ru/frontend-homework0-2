@@ -32,15 +32,15 @@ form main, form .social {
     margin-bottom: 16px;
 }
 
-form main > * {
+form .main_item {
     margin-bottom: 16px;
 }
 
-form main, form .social > *:last-child {
+form main .last, form .social .main .last {
     margin-bottom: 0;
 }
 
-form .social > * {
+form .social .social_item {
     margin-bottom: 12px;
 }
 
@@ -250,7 +250,7 @@ span {
         margin: -8px 0 24px 0;
     }
     
-    form .social > * {
+    form .social .social_item {
         margin-bottom: 0px;
     }
 }

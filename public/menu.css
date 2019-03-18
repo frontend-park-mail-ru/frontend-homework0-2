@@ -83,7 +83,7 @@ button {
     background-color: #e7e7e7;
 }
 
-.menu > * {
+.menu .menu_item {
     margin-bottom: 28px;
 }
 
@@ -129,7 +129,7 @@ input[type="password"] {
     flex-direction: column;
 }
 
-.input_form > * {
+.input_form input {
     margin-bottom: 28px;
 }
 
