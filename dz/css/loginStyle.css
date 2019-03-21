@@ -3,14 +3,14 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {   
+.title {   
     font-weight: 700;
     font-size: 30px;
     margin: auto;
     margin-bottom: 25px;
 }
 
-#container {
+.container {
     width: 370px;
     position: fixed;
     top: 50%;
@@ -27,12 +27,12 @@ h2 {
     box-shadow: -15px 21px 49px -3px rgba(0,0,0,0.5); 
 }
 
-form {
+.main-block {
     margin: auto;
     text-align: center
 }
 
-#lineDiv {
+.line-block {
     width: 100%;
     height: 12px;
     border-bottom: 1px solid gray;
@@ -40,14 +40,14 @@ form {
     margin-bottom: 35px;
 }
 
-#lineSpan {
+.line-content {
     font-size: 10px; 
     color: gray; 
     background-color: white; 
     padding: 4px;   
 }
 
-button {    
+.btn {    
     font-weight:bold;   
     width: 100%;   
     border: none;
@@ -61,15 +61,15 @@ button {
     outline: none; 
 }
 
-button img { 
+.btn img { 
     margin-right: 10px;
 }
 
-#vkontakteButton {
+.vkontakteButton {
     background-color: rgb(74, 118, 168);
 }
 
-#facebookButton {  
+.facebookButton {  
     background-color: rgb(59, 89, 152);
 }
 
@@ -77,11 +77,11 @@ button img {
     margin-bottom: 30px;
 }
 
-#submit {
+.submit {
     background-color: rgb(202, 156, 244);
 }
 
-input {
+.input-default {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -91,17 +91,17 @@ input {
     outline: none; 
 }
 
-input[name=password] {
+.input-alert {
     border-color: red;
 }
 
-#password {
+.password-block {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-#password img {
+.password-block img {
     position: absolute;
     z-index: 100;
     right: 35px;
@@ -121,11 +121,11 @@ input[name=password] {
 }
 
 @media (max-width: 460px) {
-    #container {
+    .container {
         width: 100%;
         min-width: 260px;
     }
-    form {
+    .main-block {
         margin: 10px;
     }
 } 

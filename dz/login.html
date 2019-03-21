@@ -8,28 +8,28 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/loginStyle.css"/>
 </head>
 <body>
-    <div id="container">
-		<form>
-            <h2>Логин</h2>
+    <div class="container">
+		<form class="main-block">
+            <h2 class="title">Логин</h2>
             <div class="button-social">
-                <button id="vkontakteButton"><img src="images/vk.svg" />Войти через Вконтакте</button>
-                <button id="facebookButton"><img src="images/fb.svg" />Войти через Facebook</button>
+                <button class="btn vkontakteButton"><img src="images/vk.svg" />Войти через Вконтакте</button>
+                <button class="btn facebookButton"><img src="images/fb.svg" />Войти через Facebook</button>
             </div>
-            <div id="lineDiv">
-                <span id="lineSpan">
+            <div class="line-block">
+                <span class="line-content">
                     или
                 </span>
             </div>
             <div class="data-input">
                 <div class="input-area">
-                    <input name="Email" placeholder="Email">
-                    <div id = "password">
+                    <input name="Email" placeholder="Email" class="input-default">
+                    <div class = "password-block">
                         <img src="images/eye.svg" />
-                        <input name="password" placeholder="Пароль" type="password">
+                        <input name="password" placeholder="Пароль" type="password" class="input-default input-alert">
                     </div>
                     <span class="alert">Введите пароль</span>
                 </div>
-                    <button id="submit"><img src="images/mailru.svg" />Войти через почту</button>
+                    <button class="btn submit"><img src="images/mailru.svg" />Войти через почту</button>
             </div>
 		</form>
 	</div>    
