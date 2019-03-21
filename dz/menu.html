@@ -8,28 +8,28 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/menuStyle.css"/>
 </head>
 <body>
-    <div id="container">
-        <nav>
-            <header id="heading"><img src="images/logo-mail.svg" /></header>
-            <div id="navList"> 
-                <button class="active"><img src="images/sign_in.svg" />Авторизация</button> 
-                <button><img src="images/access.svg" />Регистрация</button>
-                <button><img src="images/users.svg" />Авторы</button>
-                <button><img src="images/game1.svg" />Играть</button>
+    <div class="container">
+        <nav class="nav-default">
+            <header class="title"><img src="images/logo-mail.svg" /></header>
+            <div class="nav-items"> 
+                <button class="btn active"><img src="images/sign_in.svg" />Авторизация</button> 
+                <button class="btn"><img src="images/access.svg" />Регистрация</button>
+                <button class="btn"><img src="images/users.svg" />Авторы</button>
+                <button class="btn"><img src="images/game1.svg" />Играть</button>
             </div>   
-        <span id="about">О проекте</span>    
+        <span class="about">О проекте</span>    
         </nav>
-        <main>
+        <main class="main-block">
             <h2>Авторизуйтесь на сервисе</h2>
             <div class="data-input">
                 <div class="input-area">
-                    <input placeholder="Email" name="email">
-                    <div id = "password">
+                    <input class="input-default" placeholder="Email" name="email">
+                    <div class="password-block">
                         <img src="images/eye.svg" />
-                        <input name="password" placeholder="Пароль" type="password">
+                        <input class="input-default" name="password" placeholder="Пароль" type="password">
                     </div>
                 </div>
-                <button id="submit"><img src="images/mailru.svg" />Войти через почту</button>
+                <button class="btn submit"><img src="images/mailru.svg" />Войти через почту</button>
             </div>
         </main>
     </div>

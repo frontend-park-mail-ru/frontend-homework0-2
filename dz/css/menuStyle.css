@@ -7,13 +7,13 @@ html, body {
 }
 
 
-#container {
+.container {
     display: -webkit-flex;
     display: flex;
     height: 100%;
 }
 
-nav {
+.nav-default {
     background: rgb(243, 243, 243);
     height: 100%;
     width: 350px;
@@ -28,28 +28,28 @@ nav {
     box-shadow: -15px 21px 49px -3px rgba(0, 0, 0, 0.5); 
 }
 
-#heading {
+.title {
     background-color: rgb(202, 156, 244);
     padding-left: 10px;
     height: 45px;
     margin-bottom: 120px;
 }
 
-#heading img {   
+.title img {   
     height: 100%;
     width: 30%;
     min-width: 60px;
 }
 
-#navList {
+.nav-items {
     padding: 5px;
 }
 
-button {
+.btn {
     outline: none; 
 }
 
-#navList button {
+.nav-items .btn {
     width: 100%;
     background-color: rgb(243, 243, 243);
     border: 1px solid rgb(202, 202, 202);
@@ -64,21 +64,21 @@ button {
     align-items: center;
 }
 
-button img { 
+.btn img { 
     margin-right: 10px;
 }
 
-#navList .active {
+.nav-items .active {
     background-color: rgb(202, 156, 244);
     color: white;
 }
 
-#about {
+.about {
     text-align: center;
     color: blue;
 }
 
-main {
+.main-block {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;   
@@ -86,14 +86,14 @@ main {
     justify-content: center;
 }
 
-main h2 {
+.main-block h2 {
     font-weight: bold;
     width: 80%;
     font-size: 32px;
     margin-bottom: 20px;
 }
 
-input {
+.input-default {
     width: 80%;
     padding: 12px 20px;
     margin: 10px 0;
@@ -103,7 +103,7 @@ input {
     outline: none; 
 }
 
-#submit {
+.submit {
     width: 50%;
     background-color: rgb(202, 156, 244);
     border: none;
@@ -127,7 +127,7 @@ input[name=password] {
     width: 100%;
 }
 
-#password {
+.password-block {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -135,7 +135,7 @@ input[name=password] {
     width: 80%;
 }
 
-#password img {
+.password-block img {
     position: absolute;
     z-index: 100;
     right: 15px;
@@ -144,27 +144,27 @@ input[name=password] {
 }
 
 @media (max-width: 560px) {
-    #container {
+    .container {
         min-width: 400px;
         justify-content: center;
     }
-    main {
+    .main-block {
         width: 350px;
     }
-    nav {
+    .nav-default {
         display: none;
     }
 }
 
 @media (min-width: 560px) and (max-width: 870px) {
-    #container {
+    .container {
         min-width: 660px;
         justify-content: center;
     }
-    main {
+    .main-block {
         width: 550px;
     }
-    nav {
+    .nav-default {
         display: none;
     }
 }
@@ -172,10 +172,10 @@ input[name=password] {
 
 
 @media (min-width:870px) and (max-width: 1100px) {
-    main {
+    .main-block {
         width: 420px;
     }
-    nav {
+    .nav-default {
         width: 270px;
         margin-right: 150px;
     }
