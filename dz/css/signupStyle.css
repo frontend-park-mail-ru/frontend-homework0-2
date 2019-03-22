@@ -10,7 +10,7 @@ body {
     background-size: cover;
 }
 
-#container {
+.container {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ body {
     width: 1100px;
 }
 
-h2 {
+.title {
     color: white;
     text-align: center;    
     font-size: 50px;
@@ -30,75 +30,75 @@ h2 {
 }
 
 @media (min-width: 1200px) {
-    #password img {
+    .password-block img {
         right: 165px;
     }
 }
 
 @media (min-width: 760px) and (max-width: 1200px) {
-    #container { 
+    .container { 
         max-width: 890px;
     }
-    h2 {
+    .title {
         font-size: 35px;
     }
-    #signup {
+    .signup {
         font-size: 12px;
     }
-    #password img {
+    .password-block img {
         right: 165px;
     }
 }
 
 @media (min-width: 500px) and (max-width: 760px) {
-    #container { 
+    .container { 
         max-width: 470px;
     }
-    h2 {
+    .title {
         font-size: 22px;
     }
-    form {
+    .main-block {
         max-width: 340px;
     }
-    #signup {
+    .signup {
         font-size: 12px;
     }
-    #password img {
+    .password-block img {
         right: 50px;
     }
 }
 
 @media (min-width: 380px) and (max-width: 500px) {
-    #container { 
+    .container { 
         max-width: 420px;
     }
-    h2 {
+    .title {
         font-size: 19px;
     }
-    form {
+    .main-block {
         max-width: 270px;
     }
-    #password img {
+    .password-block img {
         right: 15px;
     }
 }
 
 @media (max-width: 380px) {
-    #container { 
+    .container { 
     max-width: 370px;
     }
-    h2 {
+    .title {
         font-size: 15px;
     }
-    form {
+    .main-block {
         max-width: 270px;
     }
-    #password img {
+    .password-block img {
         right: 15px;
     }
 }
 
-form {
+.main-block {
     display: -webkit-flex;
     display: flex;  
     flex-direction: column; 
@@ -112,7 +112,7 @@ button {
     outline: none; 
 }
 
-input {
+.input-default {
     width: 50%;
     border: none;
     border-radius: 4px;  
@@ -122,14 +122,14 @@ input {
     outline: none; 
 }
 
-.input-area {
+.input-block {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
 
-#password {
+.password-block {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +138,7 @@ input {
 
 }
 
-#password img {
+.password-block img {
     position: absolute;
     z-index: 100;
     padding: 0 0 0 10px;
@@ -146,7 +146,7 @@ input {
     top: 10px;
 }
 
-#signup {
+.signup {
     width: 40%;
     background-color: rgb(202, 156, 244);
     border: none;
@@ -158,7 +158,7 @@ input {
     min-width: 160px;  
 }
 
-.linedText {
+.lined-text {
     text-decoration: underline;
     color: white; 
     text-align: center;       
