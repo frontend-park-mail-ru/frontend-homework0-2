@@ -3,22 +3,7 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {   
-    font-weight: 700;
-    font-size: 35px;
-    margin: auto;
-    padding: 30px 0 0 30px;
-}
-
-#close {
-    padding: 0 15px 15px;    
-}
-
-#close img {
-    width: 30px
-}
-
-#container {
+.container {
     width: 510px;
     position: fixed;
     left: 50%;
@@ -33,13 +18,28 @@ h2 {
     padding: 0;
 }
 
-header {
+.title-block {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-main {  
+.title {   
+    font-weight: 700;
+    font-size: 35px;
+    margin: auto;
+    padding: 30px 0 0 30px;
+}
+
+.close-block {
+    padding: 0 15px 15px;    
+}
+
+.close-block img {
+    width: 30px
+}
+
+.main-block {  
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
@@ -50,24 +50,25 @@ main {
     border-bottom-width: 1px;
 }
 
-main label {
+.bold-text {
     font-weight: bold;
 }
 
-input {
+.input-default {
     width: 100%;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 4px;
     outline: none; 
+    height: 40px;
 }
 
-#email {
+.email-block {
     margin-bottom: 25px;
 }
 
-#phone { 
+.phone-block { 
     display: -webkit-flex;
     display: flex;
     flex-direction: column;    
@@ -85,12 +86,12 @@ input {
     box-shadow: inset 1px 0px 18px 2px rgba(0, 0, 0, 0.12);
 }
 
-.select > div {    
+.icon-item {    
     margin-left: 15px;
     margin-right: 10px;
 }  
 
-.select span {
+.select-text {
     margin-right: 50px;
 }
 
@@ -98,13 +99,13 @@ input {
     margin: auto;
 }
 
-input[name=email] {
+.input-alert {
     border-color: red;
 }
 
-input[name=phone] {   
+.input-round {   
     border-radius: 0 4px 4px 0;
-    height: 40px;
+    /* height: 40px; */
 }
 
 .alert {
@@ -113,7 +114,7 @@ input[name=phone] {
     font-weight: bold;
 }
 
-#phoneInput {
+.phone-input-block {
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
@@ -123,7 +124,7 @@ input[name=phone] {
     height: 39px;
 }
 
-#selectList {
+.select-list {
     width: 110px;
     height: 70px;
     background: rgb(255, 255, 255);
@@ -135,7 +136,7 @@ input[name=phone] {
     display: none;
 }
 
-#buttons {  
+.button-block {  
     display: -webkit-inline-flex;
     display: inline-flex;
     flex-direction: row;
@@ -144,7 +145,7 @@ input[name=phone] {
     transform: translate(5%, 0%);
 }
 
-button {    
+.btn {    
     font-weight:bold;
     width: 100%;
     border: none;
@@ -156,17 +157,17 @@ button {
     outline: none; 
 }
 
-#update {
+.update {
     background-color: rgb(202, 156, 244);
     color: white;    
 }
 
-#cancel {
+.cancel {
     background-color: rgb(228, 228, 228);
     color: rgb(172, 172, 172);    
 }
 
-#selectBox {
+.select-block {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
@@ -176,7 +177,7 @@ button {
     height: 38px;
 }
 
-#options {
+.options-block {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
@@ -192,7 +193,7 @@ button {
     box-shadow: -7px 10px 65px -3px rgba(0,0,0,0.34);
 }
 
-#options div * {
+.option-item {
     margin-left: 5px;
 }
 
@@ -215,18 +216,18 @@ button {
 }
 
 @media (max-width: 430px) {
-    #container {
+    .container {
         width: 100%;
         min-width: 350px;
         margin: auto;
     }
-    #options {
+    .options-block {
         top: 74%;
     }
 } 
 
 @media (min-width: 430px) and (max-width: 510px) {
-    #container {
+    .container {
         width: 100%;
     }
 } 
