@@ -108,7 +108,7 @@
 }
 
 .checkmark:after {
-	content: url(../icons/status/done.svg);
+	content: url(../icons/done.svg);
 	position: absolute;
 	display: none;
 }

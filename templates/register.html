@@ -8,7 +8,7 @@
 		<title>Register</title>
 	</head>
 	<body>
-	<div class="con-w-28 con-h-40 container-wrapper container-pos">
+	<div class="con-w-28 container-wrapper container-pos">
 		<form method="POST" novalidate>
 			<div class="title-block">
 				<h1 class="title-font title-wrapper">Регистрация</h1>
@@ -17,11 +17,11 @@
 			<div class="input-container">
 				<p class="comment-text">Для регистрации на ресурсе укажите информацию о себе</p>
 				<div class="form-label-group required-area">
-			        <input type="text" class="input-form" name="ufirstname" placeholder="Имя" required>
+			        <input type="text" class="input-form input-form_size" name="ufirstname" placeholder="Имя" required>
 			        <div class="invalid-input">Заполните обязательное поле</div>
 			    </div>
 		        <div class="form-label-group">
-		            <input type="text" class="input-form" name="ulastname" placeholder="Фамилия">
+		            <input type="text" class="input-form input-form_size" name="ulastname" placeholder="Фамилия">
 		        </div>
 
 		        <label for="validationDate" class="info-font">Дата рождения</label>
@@ -41,24 +41,6 @@
 		        			<option value="10">10</option>
 		        			<option value="11">11</option>
 		        			<option value="12">12</option>
-		        			<option value="13">13</option>
-		        			<option value="14">14</option>
-		        			<option value="15">15</option>
-		        			<option value="17">17</option>
-		        			<option value="18">18</option>
-		        			<option value="19">19</option>
-		        			<option value="20">20</option>
-		        			<option value="21">21</option>
-		        			<option value="22">22</option>
-		        			<option value="23">23</option>
-		        			<option value="24">24</option>
-		        			<option value="25">25</option>
-		        			<option value="26">26</option>
-		        			<option value="27">27</option>
-		        			<option value="28">28</option>
-		        			<option value="29">29</option>
-		        			<option value="30">30</option>
-		        			<option value="31">31</option>
 		        		</select>
 		        		<select id="validationDate" name="mounth" class="select-control">
 		        			<option value="">Месяц</option>
@@ -77,10 +59,6 @@
 		        		</select>
 		        		<select id="validationDate" name="year" class="select-control">
 		        			<option label="year" value="" selected disabled>Год</option>
-		        			<option value="2005">2005</option>
-		        			<option value="2004">2004</option>
-		        			<option value="2003">2003</option>
-		        			<option value="2002">2002</option>
 		        			<option value="2001">2001</option>
 		        			<option value="2000">2000</option>
 		        			<option value="1999">1999</option>
@@ -93,44 +71,23 @@
 		        			<option value="1992">1992</option>
 		        			<option value="1991">1991</option>
 		        			<option value="1990">1990</option>
-		        			<option value="1989">1989</option>
-		        			<option value="1988">1988</option>
-		        			<option value="1987">1987</option>
-		        			<option value="1986">1986</option>
-		        			<option value="1985">1985</option>
-		        			<option value="1984">1984</option>
-		        			<option value="1983">1983</option>
-		        			<option value="1982">1982</option>
-		        			<option value="1981">1981</option>
-		        			<option value="1980">1980</option>
 		        		</select>
 		        	</div>
 		        </div>
 		        <div class="phone-block">
 			        <label for="validationPhone" class="info-font">Телефон</label>
 			        	<div class="custom-select custom-select-wrapper">
-			        		<span class="country-code-wrapper russia-img"></span>
-			        		<div class="option-font">Россия</div>
-			        		<span class="icon arrow-down-icon icon-size-15 icon-black ">
+					        <span class="russia-icon country-img"></span>
+			        		<div class="option-font option-font_pos">Россия</div>
+					        <span class="icon arrow-down-icon icon-size-15 icon-black icon-drop-down_pos"></span>
 			        	</div>
-			        <!-- <div class="form-phone-group"> -->
-			        	<input type="tel" name="phone" class="phone-input-form" minlength="18" maxlength="18">
-			        	<!-- <select id="validationPhone" name="country" class="select-control">
-			        		<option class="country-code-wrapper russia-img" value="ru">
-			        			Россия
-			        		</option>
-			        		<option class="country-code-wrapper ukraine-img" value="ua">
-			        			Украина
-			        		</option>
-			        	</select>
-				        <input type="tel" class="input-form" name="phone" placeholder="Телефон"  pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18"> -->
-				    <!-- </div> -->
+			        	<input type="tel" name="phone" class="phone-input-form" minlength="18" maxlength="18" value="+7">
 			    </div>
-			    <div class="form-label-group">
-			        <input type="password" class="input-form" name="login" placeholder="Пароль">
+			    <div class="form-label-group password_pos">
+			        <input type="password" class="input-form input-form_size" name="login" placeholder="Пароль">
 		    	</div>
-		    	<div class="form-label-group required-area">
-			        <input type="password" class="input-form" name="login" placeholder="Повторите пароль">
+		    	<div class="form-label-group password_pos required-area">
+			        <input type="password" class="input-form input-form_size" name="login" placeholder="Повторите пароль">
 		    	</div>
 			</div>
 			<hr class="top-line">

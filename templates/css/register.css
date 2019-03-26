@@ -1,21 +1,16 @@
-.con-h-40 {
-	height: 40em;
+.con-h-41 {
+	height: 41em;
 }
 
 .btn-block {
 	position: relative;
-	margin-bottom: 10px;
+	margin-top: 3%;
+	margin-bottom: 2%;
 }
 .title-block {
 	text-align: left;
 	padding-left: 20px;
 	margin-top: -5px;
-}
-.top-line {
-	border: none;
-	background-color: #E0E0E0;
-	height: 1px;
-	margin-top: -10px;
 }
 
 .required-area {
@@ -41,21 +36,6 @@ input:valid ~ .invalid-input {
 
 .block-size-30 {
 	width: 105%;
-}
-
-.invalid-input {
-	font-size: 14px;
-	color: red;
-	font-family: Helvetica;
-	font-weight: bold;
-	
-}
-
-.info-font {
-	font-size: 14px;
-	font-family: Helvetica;
-	color: black;
-	font-weight: bold;
 }
 
 .select-control {
@@ -87,10 +67,6 @@ input:valid ~ .invalid-input {
     background-repeat: no-repeat;
     background-size: 100%;
 	background-position: 0 30%;
-}
-
-.russia-img {
-	background-image: url(../icons/countries/ru.png);
 }
 
 .ukraine-img {
@@ -128,15 +104,15 @@ input:valid ~ .invalid-input {
     margin: -37px -8px 14px 161px;
 }
 
-.custom-select {
-	display: inline-flex;
-}
-
 .custom-select-wrapper {
 	width: 39%;
 	border: 1px solid #ced4da;
 	border-radius: .25rem 0rem 0rem .25rem;
 	height: 35px;
+}
+
+.password_pos {
+	padding-top: 10px;
 }
 
 /*input:valid {border-color: green;}*/

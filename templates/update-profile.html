@@ -8,34 +8,51 @@
     <title>Update Profile</title>
 </head>
 <body class="login-body">
-    <div class="con-w-28 con-h-40 container-wrapper login-container container">
+    <div class="con-w-28 container-wrapper login-container container-shadow container">
         <div class="title-container">
-            <div class="title title-font">Изменение настроек</div>
-            <span class="icon icon-black close-big-icon icon-size-20 cross-icon-pos"></span>
+            <div class="title title-font title-wrapper">Изменение настроек</div>
+            <span class="icon icon-button icon-black close-big-icon icon-size-20 cross-icon_pos"></span>
         </div>
+
         <div class="input-container">
             <form method="POST" novalidate>
                 <label for="validationLogin" class="info-font">Логин</label>
                 <div class="form-label-group required-area">
-                    <input type="text" class="input-form" id="validationLogin" name="ulogin" placeholder="Имя" required>
-                    <div class="invalid-input">
+                    <input type="text" class="input-form input-form_upd-size" id="validationLogin" name="ulogin" required>
+                    <div class="note-block note-block_wrapper">
+                        <span class="icon back-btn-icon icon-white icon-size-25 back-btn-icon_pos"></span>
                         <div class="attention-msg attention-pos">
                             <div class="attention-font">Укажите новый логин</div>
                             <div class="attention-comment-font">Вы можете изменить свой логин</div>
                         </div>
                     </div>
                 </div>
+                <label for="validationPhone" class="info-font">Телефон</label>
                 <div class="phone-block">
-                    <label for="validationPhone" class="info-font">Телефон</label>
                     <div class="custom-select custom-select-wrapper">
-                        <span class="country-code-wrapper russia-img"></span>
-                        <div class="option-font">Россия</div>
-                        <span class="icon arrow-down-icon icon-size-15 icon-black "></span>
+                        <span class="russia-icon country-img"></span>
+                        <!--<span class="country-code-wrapper russia-img"></span>-->
+                        <div class="option-font option-font_pos">Россия</div>
+                        <span class="icon arrow-down-icon icon-size-15 icon-black icon-drop-down_pos"></span>
                     </div>
-                    <input type="tel" name="phone" id="validationPhone" class="phone-input-form" minlength="18" maxlength="18" required>
-                    <div class="invalid-input">Неправильный телефон</div>
+                    <div class="custom-select">
+                        <div class="phone-input__font option-font">+79999999999</div>
+                    </div>
+                    <!--<input type="tel" name="phone" id="validationPhone" class="phone-input-form" minlength="18" maxlength="18" required>-->
                 </div>
+                <div class="invalid-input invalid-input_block-padding">Неправильный телефон</div>
             </form>
+        </div>
+        <hr class="top-line">
+        <div class="submit-container">
+            <div class="btn-block btn-block-wrapper">
+                <button type="button" class="btn btn-pink btn-3 btn-border">
+                    <div class="btn-font font-color-white font-size-20 btn-font-pos">Обновить</div>
+                </button>
+                <button type="button" class="btn btn-3 btn-gray btn-border btn-shadow">
+                    <div class="btn-font font-color-black font-size-20 btn-font-pos">Отменить</div>
+                </button>
+            </div>
         </div>
     </div>
 </body>

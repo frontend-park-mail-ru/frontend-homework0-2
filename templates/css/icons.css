@@ -9,6 +9,15 @@
 
 /*****************************************************************/
 
+.russia-icon {
+	-webkit-background-image:  url("../icons/countries/ru.png");
+	background-image:  url("../icons/countries/ru.png");
+}
+.back-btn-icon {
+	-webkit-mask-image: url("../icons/drop_previous_big.svg");
+	mask-image: url("../icons/drop_previous_big.svg");
+}
+
 .mailru-icon {
 	-webkit-mask-image: url("../icons/mailru.svg");
 	mask-image: url("../icons/mailru.svg");

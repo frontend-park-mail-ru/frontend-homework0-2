@@ -1,7 +1,99 @@
+.con-h-30 {
+    height: 395px;
+}
 .update-container {
     background-color: white;
     height: 10em;
     display: flex;
     align-items: center;
     justify-content: center
+}
+
+.note-block {
+    display: flex;
+    margin-left: 26em;
+    margin-top: -56px;
+    width: 19em;
+}
+.input-form_upd-size {
+    width: 89%;
+    height: 1.5em;
+}
+.note-block_wrapper {
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 6px -6px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 6px -6px rgba(0,0,0,0.5);
+    box-shadow: 0px 11px 27px -6px rgba(0,0,0,0.5);
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+}
+
+.attention-msg {
+    padding: 15px;
+}
+.attention-font {
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.attention-comment-font {
+    font-size: 13px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: #858585;
+}
+
+.back-btn-icon_pos {
+    margin-left: -18px;
+    margin-top: 1.3em;
+}
+/*.option-font {*/
+    /*text-align: center;*/
+    /*font-family: Helvetica, serif;*/
+    /*font-size: 10px;*/
+/*}*/
+
+.title-container {
+    display: flex;
+    padding: 22px;
+}
+
+.title {
+    width: 50%;
+}
+.cross-icon_pos {
+    margin-left: auto;
+}
+
+.phone-block {
+    display: flex;
+    width: 95%;
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+.custom-select-wrapper {
+    height: 35px;
+    border-right: 1px solid red;
+    width: 45%;
+}
+
+.phone-input__font {
+    padding-left: 10px;
+}
+
+.invalid-input_block-padding {
+    padding-bottom: 3em;
+}
+
+.submit-container {
+}
+
+.btn-font-pos {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-block {
+    margin: 5%;
 }
