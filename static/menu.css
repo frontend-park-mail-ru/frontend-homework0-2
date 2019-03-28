@@ -1,74 +1,86 @@
-html, body {            
-    height: 100%;    
-    width: 100%; 
-    font-family: Helvetica, Arial, san-serif;   
+:root {
+    --main-bg-color: rgb(240, 240, 240);
+    --pinl-color: rgb(255, 45, 84);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica, Arial, san-serif;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
 }
 
 .logo {
     display: flex;
     align-items: center;
     background-clip: padding-box;
-    width: 98%;            
-    height: 8.5%;   
-    max-height: 70px;            
+    width: 98%;
+    height: 8.5%;
+    max-height: 70px;
     padding-left: 1%;
     margin-bottom: 25%;
 }
 
-.menu-btn {                    
-    border-style: none; 
-    border-radius: 4px;                     
+.menu-btn {
+    border-style: none;
+    border-radius: 4px;
     text-align: center;
     width: 94%;
     height: 9.5%;
-    font-size: 90%;                                 
-    padding: 1% 10px;                    
+    font-size: 90%;
+    padding: 1% 10px;
     margin-bottom: 5%;
     margin-left: 2%;
     margin-right: 2%;
     max-height: 60px;
-    background-color: rgb(240, 240, 240);
+    background-color: var(--main-bg-color);
+    cursor: pointer;
 }
 
 .login-form {
-    width: 40%;      
-    position: relative; 
-    top: 27%;     
+    width: 360px;
+    position: relative;
+    top: 27%;
     left: 17%;
 }
 
-@media all and (orientation:landscape) {            
+@media all and (orientation:landscape) {
     .menu {
-        display: flex;            
-        flex-direction: column;            
-        float: left;
-        width: 26%; 
-        height: 100%;                     
-        background-color: rgb(240, 240, 240);
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2.6;
+        height: 100%;
+        background-color: var(--main-bg-color);
         box-shadow: 0 0 40px rgb(110, 110, 110);
         border-radius: 8px;
     }
 
-    .login {           
-        float: right;                     
-        width: 73%;
+    .login {
+        flex-grow: 7.3;
         height: 100%;
+    }
+
+    .content {
+        display: flex;
     }
 }
 
-@media all and (orientation:portrait) {            
+@media all and (orientation:portrait) {
     .menu {
-        display: flex;            
-        flex-direction: column;                            
-        width: 100%; 
-        height: 30%;                     
-        background-color: rgb(240, 240, 240);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 30%;
+        background-color: var(--main-bg-color);
         box-shadow: 0 0 40px rgb(110, 110, 110);
         border-radius: 8px;
     }
 
-    .login {                            
-        padding-top: 10%;                            
+    .login {
         width: 100%;
         height: 50%;
     }
@@ -95,41 +107,47 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}        
+}
 
-.header-icon {                        
-    float: left;
+.header-icon {
+    margin-left: 2%;
 }
 
 .header-text {
-    padding: 5.8% 2%;
-    float: left;
+    padding: 0.8rem 2%;
+    margin-left: 0;
+    margin-right: auto;
     font-size: 195%;
 }
 
-input {                         
+.form-input {
+    display: flex;
     font-size: 90%;
-    padding-left: 10px; 
+    padding-left: 10px;
     width: 100%;
-    background: white;    
-    border-color: lightgrey;
-    border-style: ridge;         
+    background: white;
+    border: 1px solid lightgrey;
     border-radius: 6px;
     color: #1f1e1e;
     height: 45px;
-}        
+}
 
-.white {
+.input {
+    width: 95%;
+}
+
+.eye-btn {
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.color-white {
     color: white;
 }
 
-.black {
+.color-black {
     color: black;
 }
-
-.first-input {
-    margin-bottom: 12px;
-}        
 
 .login-form h2 {
     margin-top: 0;
@@ -141,52 +159,56 @@ input {
     margin-bottom: 4%;
 }
 
-.btn {      
+.btn {
     display: flex;
-    float: left;
-    align-items: center;    
+    align-items: center;
     width: 62%;
     font-size: 100%;
-    margin: 3% auto;                            
+    margin-top: 3%;
+    margin-right: auto;
     padding-left: 5%;
     border-radius: 8px;
     border: none;
-    height: 45px;            
+    height: 45px;
+    cursor: pointer;
 }
 
 .btn-txt {
     padding-left: 10pt;
 }
 
-.mail {              
-    padding-right: 5px;    
+.mail {
+    padding-right: 5px;
 }
 
-.pass {
+.eye-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill-rule='evenodd'%3E%3Cpath d='M8 1.488c-5.302 0-8 5.21-8 6.512 0 1.302 2.791 6.512 8 6.512S16 9.302 16 8c0-1.302-2.698-6.512-8-6.512zm0 10.233A3.731 3.731 0 0 1 4.279 8 3.731 3.731 0 0 1 8 4.279 3.731 3.731 0 0 1 11.721 8 3.731 3.731 0 0 1 8 11.721zM8 6c1.143 0 2 .953 2 2 0 1.143-.952 2-2 2-1.143 0-2-.952-2-2 0-1.142.857-2 2-2z' %3E%3C/path%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: 96% center;                        
-}                      
+    background-position: 96% center;
+}
 
-.menu-item {              
-    width: 95%; 
-    margin-bottom: 16px;           
+.menu-item {
+    width: 95%;
+    margin-bottom: 16px;
 }
 
 .pink-backgr {
-    background-color: rgb(255, 45, 84);
+    background-color: var(--pinl-color);
 }
 
 .white-backgr {
     background-color: white;
-}  
+}
 
-.border {            
-    border: 2px;
-    border-style: ridge;
+.border {
+    border: 2px ridge;
 }
 
 .link-about {
     font-size: 16px;
     text-decoration: none;
+}
+
+.no-border {
+    border: none;
 }
