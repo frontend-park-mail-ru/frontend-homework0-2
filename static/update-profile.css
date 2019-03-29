@@ -44,7 +44,7 @@ body {
 @media all and (orientation:portrait) {
     .content {
         height: 400px;
-        width: 350px;
+        width: 360px;
         margin: auto;
         background-color: white;
         border-radius: 8px;
