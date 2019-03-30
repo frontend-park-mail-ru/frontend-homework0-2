@@ -85,7 +85,7 @@ body {
 
 @media (max-width: 380px) {
     .container { 
-    max-width: 370px;
+        max-width: 370px;
     }
     .title {
         font-size: 15px;
@@ -135,7 +135,6 @@ button {
     justify-content: center;
     width: 100%;
     position: relative;
-
 }
 
 .password-block img {
