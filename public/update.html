@@ -11,42 +11,42 @@
     <div class="container">
         <form class="update_form">
             <div class="block">
-                <header>
-                    <h1>Обновление<br/> контактных данных</h1>
+                <header class="update-head">
+                    <h1 class="update-title">Обновление<br/> контактных данных</h1>
                     <img src="../assets/close_big.svg">
                 </header>
-                <main>
-                    <label class="main_item"><b>Email</b></label>
-                    <input class="main_item" type="email">
-                    <span class="main_item" style="margin-bottom: 14px;">Поле не должно быть пустым</span>
-                    <label class="main_item"><b>Телефон</b></label>
+                <main class="main_area">
+                    <label class="lbl main_item"><b>Email</b></label>
+                    <input class="inpt main_item" type="email">
+                    <span class="main_item warn" style="margin-bottom: 14px;">Поле не должно быть пустым</span>
+                    <label class="lbl main_item"><b>Телефон</b></label>
                     <div class="phone_block main_item">
                         <div class="select_list">
                             <div class="selected">
                                 <img class="flag" src="../assets/ru.png">
-                                <label>Россия</label>
+                                <label class="lbl">Россия</label>
                                 <img src="../assets/drop_up_small.svg">
                             </div>
                             <div class="list">
                                 <div class="option select">
                                     <img class="flag" src="../assets/done.svg">
                                     <img class="flag" src="../assets/ru.png">
-                                    <label>Россия</label>
+                                    <label class="lbl">Россия</label>
                                 </div>
                                 <div class="option last">
                                     <img class="flag" src="../assets/ua.png">
-                                    <label>Украина</label>
+                                    <label class="lbl">Украина</label>
                                 </div>
                             </div>
                         </div>
-                        <input type="phone" value="+79999999999">
+                        <input type="phone" value="+79999999999" class="inpt">
                     </div>
                 </main>
             </div>
             <div class="block buttons">
                 <div class="buttons_inline">
-                    <button class="change_button">Обновить</button>
-                    <button class="delete_button">Отменить</button>    
+                    <button class="change_button btn">Обновить</button>
+                    <button class="delete_button btn">Отменить</button>    
                 </div>
             </div>
         </form>

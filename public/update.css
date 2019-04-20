@@ -8,7 +8,7 @@ body {
     min-width: 250px;
 }
 
-form {
+.update_form {
     width: 450px;
 
     border: 1px solid gainsboro;
@@ -17,20 +17,20 @@ form {
     box-shadow: 1px 6px 36px 6px #0a0a0a7e;
 }
 
-form main {
+.update_form .main_area {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
     margin-bottom: 0;
 }
 
-span {
+.warn {
     padding: 5px 0;
     color: red;
     font-size: 15px;
 }
 
-form main .main_item {
+.update_form main .main_item {
     margin-bottom: 4px;
 }
 
@@ -38,23 +38,23 @@ form main .main_item {
     margin: auto;
 }
 
-header {
+.update-head {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-header h1 {
+.update-head h1 {
     font-size: 34px;
     margin-top: 12px;
 }
 
-header img {
+.update-head img {
     margin-top: 16px;
 }
 
-input {
+.inpt {
     height: 28px;
     font-size: 16px;
 
@@ -67,7 +67,13 @@ input {
     margin: 4px 4px 4px 12px;
 }
 
-input:focus, button:focus {
+.inpt:focus {
+    box-shadow: 0 0 0 2px #FFFFFF,
+                0 0 0 4px rgb(61, 90, 121);
+    outline: none;
+}
+
+.btn:focus {
     box-shadow: 0 0 0 2px #FFFFFF,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
@@ -80,7 +86,7 @@ input[type="email"] {
     margin: 4px;  
 }
 
-button {
+.btn {
     height: 38px;
     font-size: 20px;
     width: 140px;
@@ -150,7 +156,7 @@ input[type="phone"] {
     margin-right: 12px;
 }
 
-div label {
+div .lbl {
     margin-right: 72px;
 }
 
@@ -194,7 +200,7 @@ div label {
         width: inherit;
     }
 
-    header h1 {
+    .update-title {
         font-size: 28px;
     }
 
@@ -214,7 +220,7 @@ div label {
         padding-left: 5px;
     }
 
-    div label {
+    div .lbl {
         margin-right: 40px;
     }
 
@@ -222,7 +228,7 @@ div label {
         padding: 30px 20px 40px;
     }
 
-    button {
+    .btn {
         height: 32px;
         font-size: 16px;
         width: 120px;
@@ -232,7 +238,13 @@ div label {
         cursor: pointer;
     }
 
-    input {
+    .delete_button {
+        border: 1px solid #e9e9e9;
+        background: #f7f7f7;
+        color: black;
+    }
+
+    .inpt {
         padding: 0;
         font-size: 14px;
     }
@@ -268,7 +280,7 @@ div label {
         padding-left: 15px;
     }
 
-    div label {
+    div .lbl {
         margin-right: 60px;
     }
 
@@ -276,7 +288,7 @@ div label {
         padding: 30px 20px 40px;
     }
 
-    button {
+    .btn {
         height: 32px;
         font-size: 16px;
         width: 140px;
@@ -286,7 +298,13 @@ div label {
         cursor: pointer;
     }
 
-    input {
+    .delete_button {
+        border: 1px solid #e9e9e9;
+        background: #f7f7f7;
+        color: black;
+    }
+
+    .inpt {
         padding: 0;
         font-size: 16px;
     }
@@ -301,7 +319,7 @@ div label {
         width: inherit;
     }
 
-    header h1 {
+    header .update-title {
         font-size: 28px;
         margin-top: 4px;
     }
