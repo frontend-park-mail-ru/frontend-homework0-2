@@ -6,11 +6,11 @@ body {
 
 .container {
     justify-content: center;
-    background: url("../assets/hero-lg.jpg") no-repeat;
+    background: url("../assets/hero-lg.jpg") 100% 100% no-repeat;
     background-size: cover;
     background-position-y: bottom;
-    min-height: 100vh;
-    min-width: 250px;
+    min-height: 420px;
+    min-width: 300px;
     margin: 12px 12px 0 12px;
 }
 
@@ -21,6 +21,7 @@ body {
     padding-left: 100px;
     padding-right: 100px;
     height: max-content;
+    margin-top: 120px;
 }
 
 .content {
@@ -136,7 +137,6 @@ body {
     .mail_button {
         min-height: 48px;
         font-size: 16px;
-        width: 80%;
     }
 
     .main_input {
