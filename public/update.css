@@ -161,7 +161,7 @@ div .lbl {
 }
 
 .block {
-    padding: 25px 20px 40px;
+    padding: 10px 20px 40px;
     border-bottom: 1px solid #c5c5c5;
 }
 
@@ -193,6 +193,10 @@ div .lbl {
 
 .select {
     background-color: lightgray; 
+}
+
+.buttons {
+    padding: 20px;
 }
 
 @media (min-width: 50px) and (max-width: 690px) {
