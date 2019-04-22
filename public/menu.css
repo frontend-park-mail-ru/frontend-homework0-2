@@ -139,7 +139,7 @@
     width: 234px;
 }
 
-#nav-toggle {
+.nav-input {
     position: absolute;
     display: none;
 }
@@ -209,18 +209,18 @@
         text-decoration: none;
     }
 
-    #nav-toggle:checked ~ .menu_form {
+    .nav-input:checked ~ .menu_form {
         left: 0;
         box-shadow: 4px 0 20px 0 rgba(0, 0, 0, 0.5);
         overflow-y: auto;
     }
 
-    #nav-toggle:checked ~ .menu_form .nav-toggle {
+    .nav-input:checked ~ .menu_form .nav-toggle {
         left: auto;
         right: 0;
     }
 
-    #nav-toggle:checked ~ .menu_form .nav-toggle:after {
+    .nav-input:checked ~ .menu_form .nav-toggle:after {
         content: '\2715';
     }
 }
