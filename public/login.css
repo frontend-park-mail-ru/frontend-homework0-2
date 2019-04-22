@@ -66,8 +66,8 @@ form .social .social_item {
 
 .vk_button, .fb_button {
     border-radius: 10px;
-    background: #45688E;
-    color: #FFFFFF;
+    background: #45688e;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -94,7 +94,7 @@ form .social .social_item {
 .mail_button {
     border-radius: 10px;
     background: #018176;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -128,7 +128,7 @@ hr:after {
     top: -11px;
 }
 
-.inpt {
+.input-form {
     height: 50px;
     font-size: 16px;
 
@@ -136,27 +136,27 @@ hr:after {
     padding: 0 10px;
     border: none;
     outline: 0;
-    box-shadow: 0 0 0 2px #FFFFFF,
+    box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 4px #dfdddd;
     margin: 4px;
 }
 
-.inpt:focus {
-    box-shadow: 0 0 0 2px #FFFFFF,
+.input-form:focus {
+    box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
     cursor: pointer;
 }
 
 .btn:focus {
-    box-shadow: 0 0 0 2px #FFFFFF,
+    box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
     cursor: pointer;
 }
 
-.inpt[type="password"] {
-    box-shadow: 0 0 0 2px #FFFFFF,
+.input-form[type="password"] {
+    box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 3px red;
     margin: 4px;
     background-size: 20px 42px;
@@ -184,7 +184,7 @@ hr:after {
         margin: 4px 0 20px 0
     }
 
-    .inpt {
+    .input-form {
         height: 40px;
         font-size: 14px;
     
@@ -192,7 +192,7 @@ hr:after {
         padding: 0 10px;
     }
 
-    .inpt[type="password"] {
+    .input-form[type="password"] {
         background-size: 16px 32px;  
     }
 
@@ -227,14 +227,14 @@ hr:after {
         margin: 4px 0px 20px 0;
     }
 
-    .inpt {
+    .input-form {
         height: 40px;
         font-size: 15px;
         border-radius: 6px;
         padding: 0 10px;
     }
 
-    .inpt[type="password"] {
+    .input-form[type="password"] {
         background-size: 16px 32px;  
     }
 
@@ -265,7 +265,7 @@ hr:after {
         margin: 36px 0 36px 0
     }
 
-    .inpt {
+    .input-form {
         height: 40px;
         font-size: 18px;
     
@@ -273,7 +273,7 @@ hr:after {
         padding: 0 10px;
     }
 
-    .inpt[type="password"] {
+    .input-form[type="password"] {
         background-size: 16px 32px;  
     }
 }

@@ -54,7 +54,7 @@ body {
     margin-top: 16px;
 }
 
-.inpt {
+.input-form {
     height: 28px;
     font-size: 16px;
 
@@ -62,25 +62,25 @@ body {
     padding: 0 10px;
     border: none;
     outline: 0;
-    box-shadow: 0 0 0 2px #FFFFFF,
+    box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 4px #dfdddd;
     margin: 4px 4px 4px 12px;
 }
 
-.inpt:focus {
-    box-shadow: 0 0 0 2px #FFFFFF,
+.input-form:focus {
+    box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
 }
 
 .btn:focus {
-    box-shadow: 0 0 0 2px #FFFFFF,
+    box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
 }
 
 input[type="email"] {
-    box-shadow: 0 0 0 2px #FFFFFF,
+    box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 3px red;
 
     margin: 4px;  
@@ -93,7 +93,7 @@ input[type="email"] {
 
     border-radius: 4px;
     background: #018176;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -144,7 +144,7 @@ input[type="phone"] {
 
     padding: 0 0 0 10px;
     border: none;
-    box-shadow: 0 0 0 3px #FFFFFF,
+    box-shadow: 0 0 0 3px #ffffff,
                 0 0 0 4px rgba(26, 25, 25, 0.466);
     margin: 4px 0 4px;
     display: inline-flex;
@@ -238,7 +238,7 @@ div .lbl {
         width: 120px;
         border-radius: 4px;
         background: #018176;
-        color: #FFFFFF;
+        color: #ffffff;
         cursor: pointer;
     }
 
@@ -248,7 +248,7 @@ div .lbl {
         color: black;
     }
 
-    .inpt {
+    .input-form {
         padding: 0;
         font-size: 14px;
     }
@@ -298,7 +298,7 @@ div .lbl {
         width: 140px;
         border-radius: 4px;
         background: #018176;
-        color: #FFFFFF;
+        color: #ffffff;
         cursor: pointer;
     }
 
@@ -308,7 +308,7 @@ div .lbl {
         color: black;
     }
 
-    .inpt {
+    .input-form {
         padding: 0;
         font-size: 16px;
     }
