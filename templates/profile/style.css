@@ -3,140 +3,101 @@ html {
     height: 100%;
 }
 
-.profile-page{
+.profile-page {
     margin: 0;
-    padding: 8px;
-    width: 100%;
+    padding-top: 8px;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: Helvetica, Arial, san-serif;
     font-size: 32px;
-    background-color: #FFFFFF;
-    -webkit-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
-    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+    -webkit-box-pack: center;
+    display: -webkit-box;
 }
 
 .profile-page__main-block {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
     width: 422px;
-    height: 435px;
     border: 1px solid #E0E0E0;
     border-radius: 2px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     padding: 20px;
+    box-sizing: border-box;
 }
 
-.profile-page-header {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
+.profile-page__title {
+    display: inline-flex;
     justify-content: center;
-}
-
-.profile-page-header__text {
-    margin-top: 1px;
-    margin-left: 1px;
     font-weight: bold;
-}
-
-.profile-page-logo-block {
-    width: 100%;
-    height: 88px;
-    padding: 20px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
 }
 
 .profile-page__logo-circle {
     width: 48px;
     height: 48px;
+    margin: 20px 0;
     border-radius: 50%;
     background-color: #F0F0F0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
+    position: relative;
 }
 
-.profile-page-header__abbreviation {
+.profile-page__logo-circle:after {
+    content: 'ИИ';
     font-size: 33px;
-    margin-top: 4px;
     font-weight: bold;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
 }
 
-.profile-page-form {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
+.profile-page__form {
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-}
-
-.profile-page-form-main-part {
+    flex-direction: column;
     width: 216px;
-    height: 205px;
 }
 
 .profile-page-form-input {
-    height: 41px;
+    height: 40px;
     border-bottom: 1px solid #E0E0E0;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
-.profile-page-form-input_w-o-border {
+.profile-page-form-input:last-child {
     border-bottom: none;
+}
+
+.profile-page-form-input__type {
+    width: 142px;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.profile-page-form-input__value {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 .profile-page-form-input-left {
     width: 142px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
 .profile-page-form-input-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    /*justify-content: center;*/
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -149,86 +110,51 @@ html {
     font-size: 14px;
 }
 
-.profile-page-form-footer {
+.profile-page-form__footer {
     margin-top: 24px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
 }
 
-.profile-page-form-buttons {
-    width: 286px;
-    height: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+.profile-page__container-button {
+    margin-right: 8px;
 }
 
-.profile-page-form__change-button {
-    width: 145px;
+.profile-page-button {
     height: 40px;
-    -webkit-box-sizing: border-box;
+    padding: 10px;
     box-sizing: border-box;
     background-color: #008079;
     border: 1px solid #00716A;
     border-radius: 2px;
-    padding: 11px 20px 11px 21px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    cursor: pointer;
 }
 
-.profile-page-form__delete-button {
-    width: 133px;
-    height: 40px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+.profile-page-button_gray {
     background-color: #F7F7F7;
     border: 1px solid #E9E9E9;
-    border-radius: 2px;
-    padding: 11px 20px 12px 21px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
 }
 
-.profile-page-form__change-icon {
+.profile-page__button-text {
+margin-left: 10px;
+font-size: 16px;
+color: #FFFFFF;
+font-weight: bold;
+}
+
+.profile-page__button-text_gray {
+color: #A1A1A1;
+}
+
+.profile-page-change-icon {
     width: 15px;
     height: 16px;
-    background: url("img/change.svg");
+    background: url("img/change.svg") no-repeat center;
 }
 
-.profile-page-form__change-text {
-    font-size: 16px;
-    color: #FFFFFF;
-    font-weight: bold;
-}
-
-.profile-page-form__delete-icon {
+.profile-page-delete-icon {
     width: 14px;
     height: 15px;
-    background: url("img/delete.svg");
-}
-
-.profile-page-form__delete-text {
-    font-size: 16px;
-    color: #A1A1A1;
-    font-weight: bold;
-}
-
-.profile-page_shift {
-    margin-left: 2px;
+    background: url("img/delete.svg") no-repeat center;
 }

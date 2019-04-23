@@ -11,7 +11,6 @@ html {
     font-family: Helvetica, Arial, san-serif, serif;
     font-size: 33px;
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
 }
 
 .menu-page__header {
@@ -19,7 +18,6 @@ html {
     box-sizing: border-box;
     padding: 12px 0 12px 84px;
     background-color: #008079;
-    -webkit-box-sizing: border-box;
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -36,19 +34,14 @@ html {
     display: flex;
     justify-content: center;
     padding-top: 40px;
-    -webkit-box-pack: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -ms-flex-pack: center;
 }
 
 .menu-page-menu {
-    display: inline-block;
+    display: inline-table;
     width: 682px;
     box-sizing: border-box;
     border: 1px solid #E0E0E0;
     border-radius: 4px;
-    -webkit-box-sizing: border-box;
 }
 
 .menu-page-menu__header {
@@ -59,11 +52,6 @@ html {
     border-bottom: 1px solid #E0E0E0;
     font-weight: bold;
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
 }
 
 .menu-page-menu-row {
