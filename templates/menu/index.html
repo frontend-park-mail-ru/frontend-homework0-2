@@ -29,7 +29,7 @@
         .menu-page-header__logotype {
             width: 96px;
             height: 32px;
-            background: url("img/logo.svg") no-repeat;
+            background: url("img/Logo.svg") no-repeat;
             margin-bottom: 2px;
         }
 
@@ -88,7 +88,7 @@
         .menu-page-part__drop-down-icon {
             width: 10px;
             height: 8px;
-            background:  url("img/drop_down.svg");
+            background:  url("img/DropDown.svg");
         }
 
         .menu-page-part_gray {
@@ -109,25 +109,25 @@
         .menu-page__access-icon {
             width: 15px;
             height: 15px;
-            background: url("img/access.svg") no-repeat;
+            background: url("img/Access.svg") no-repeat;
         }
 
         .menu-page__game-icon {
             width: 16px;
             height: 14px;
-            background: url("img/game1.svg") no-repeat;
+            background: url("img/Game.svg") no-repeat;
         }
 
         .menu-page__sign-in-icon {
             width: 16px;
             height: 16px;
-            background: url("img/sign_in.svg") no-repeat;
+            background: url("img/SignIn.svg") no-repeat;
         }
 
         .menu-page__users-icon {
             width: 16px;
             height: 16px;
-            background: url("img/users.svg") no-repeat;
+            background: url("img/Users.svg") no-repeat;
         }
 
         .menu-page-part__text {
@@ -138,57 +138,31 @@
     </style>-->
 </head>
 <body class="menu-page">
-    <header class="menu-page-header">
-        <div class="menu-page-header__logotype"></div>
+    <header class="menu-page__header">
+        <div class="menu-page-logotype"></div>
     </header>
-    <div class="menu-page-box">
-        <div class="menu-page-main">
-            <div class="menu-page-main-header">
-                <div class="menu-page-main-header__text">Меню</div>
+    <div class="menu-page__box">
+        <div class="menu-page-menu">
+            <div class="menu-page-menu__header">Меню</div>
+            <div class="menu-page-menu-row">
+                    <div class="menu-page-circle-icon menu-page-circle-icon_sign-in"></div>
+                    <div class="menu-page-menu-row__text">Авторизация</div>
+                    <div class="menu-page-menu-row__drop-down"></div>
             </div>
-            <div class="menu-page-part">
-                <div class="menu-page-part-left">
-                    <div class="menu-page-circle-icon">
-                        <div class="menu-page__sign-in-icon"></div>
-                    </div>
-                    <div class="menu-page-part__text">Авторизация</div>
-                </div>
-                <div class="menu-page-part-right">
-                    <div class="menu-page-part__drop-down-icon"></div>
-                </div>
+            <div class="menu-page-menu-row menu-page-menu-row_gray">
+                <div class="menu-page-circle-icon menu-page-circle-icon_access"></div>
+                <div class="menu-page-menu-row__text">Регистрация</div>
+                <div class="menu-page-menu-row__drop-down"></div>
             </div>
-            <div class="menu-page-part menu-page-part_gray">
-                <div class="menu-page-part-left">
-                    <div class="menu-page-circle-icon">
-                        <div class="menu-page__access-icon"></div>
-                    </div>
-                    <div class="menu-page-part__text">Регистрация</div>
-                </div>
-                <div class="menu-page-part-right">
-                    <div class="menu-page-part__drop-down-icon"></div>
-                </div>
+            <div class="menu-page-menu-row">
+                <div class="menu-page-circle-icon menu-page-circle-icon_users"></div>
+                <div class="menu-page-menu-row__text">Авторы</div>
+                <div class="menu-page-menu-row__drop-down"></div>
             </div>
-            <div class="menu-page-part">
-                <div class="menu-page-part-left">
-                    <div class="menu-page-circle-icon">
-                        <div class="menu-page__users-icon"></div>
-                    </div>
-                    <div class="menu-page-part__text">Авторы</div>
-                </div>
-                <div class="menu-page-part-right">
-                    <div class="menu-page-part__drop-down-icon"></div>
-                </div>
-            </div>
-            <div class="menu-page-part menu-page-part_gray">
-                <div class="menu-page-part-left">
-                    <div class="menu-page-circle-icon">
-                        <div class="menu-page__game-icon"></div>
-                    </div>
-                    <div class="menu-page-part__text">Играть</div>
-                </div>
-                <div class="menu-page-part-right">
-                    <div class="menu-page-part__drop-down-icon"></div>
-                </div>
+            <div class="menu-page-menu-row menu-page-menu-row_gray">
+                <div class="menu-page-circle-icon menu-page-circle-icon_game"></div>
+                <div class="menu-page-menu-row__text">Играть</div>
+                <div class="menu-page-menu-row__drop-down"></div>
             </div>
         </div>
     </div>

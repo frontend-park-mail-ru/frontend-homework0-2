@@ -5,160 +5,138 @@ html {
 .menu-page {
     margin: 0;
     padding: 8px;
-    width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
     font-family: Helvetica, Arial, san-serif, serif;
     font-size: 33px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
-.menu-page-header {
+.menu-page__header {
     height: 56px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 13px 0 11px 84px;
+    padding: 12px 0 12px 84px;
     background-color: #008079;
+    -webkit-box-sizing: border-box;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
-.menu-page-header__logotype {
+.menu-page-logotype {
     width: 96px;
     height: 32px;
-    background: url("img/logo.svg") no-repeat;
-    margin-bottom: 2px;
+    background: url("img/Logo.svg") no-repeat center;
+    background-size: contain;
 }
 
-.menu-page-box {
-    width: 100%;
-    height: 100%;
+.menu-page__box {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    -webkit-box-pack: center;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
 }
 
-.menu-page-main {
+.menu-page-menu {
+    display: inline-block;
     width: 682px;
-    height: 331px;
-    margin-top: 40px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #E0E0E0;
     border-radius: 4px;
+    -webkit-box-sizing: border-box;
 }
 
-.menu-page-main-header {
-    width: 100%;
-    height: 73px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
+.menu-page-menu__header {
+    height: 72px;
+    padding: 3px 0 0 20px;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     border-bottom: 1px solid #E0E0E0;
-}
-
-.menu-page-main-header__text {
     font-weight: bold;
-    margin-left: 19px;
-    margin-top: 3px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
 }
 
-.menu-page-part {
-    width: 100%;
+.menu-page-menu-row {
     height: 64px;
     padding: 16px 24px 16px 20px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    /*justify-content: space-between;*/
-}
-.menu-page-part-left {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.menu-page-part-right {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
-
-.menu-page-part__drop-down-icon {
-    width: 10px;
-    height: 8px;
-    background:  url("img/drop_down.svg");
-}
-
-.menu-page-part_gray {
-    background-color: #F5F5F5;
+    text-align: center;
+    position: relative;
 }
 
 .menu-page-circle-icon {
     height: 32px;
     width: 32px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     background-color: #2BC75D;
     border-radius: 50%;
+    box-sizing: border-box;
+    position: relative;
+    background-size: contain;
 }
 
-.menu-page__access-icon {
+.menu-page-circle-icon:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    content: '';
+    z-index: 1;
+}
+
+.menu-page-menu-row__text {
+    margin-left: 12px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-page-menu-row__drop-down {
+    width: 10px;
+    height: 8px;
+    background:  url("img/DropDown.svg") no-repeat center;
+    position: absolute;
+    transform: translate(-100%, -50%);
+    left: calc(100% - 24px);
+    top: 50%;
+}
+
+.menu-page-menu-row_gray {
+    background-color: #F5F5F5;
+}
+
+.menu-page-circle-icon_sign-in:after {
+    width: 16px;
+    height: 16px;
+    background: url("img/SignIn.svg") no-repeat center;
+}
+
+.menu-page-circle-icon_access:after {
     width: 15px;
     height: 15px;
-    background: url("img/access.svg") no-repeat;
+    background: url("img/Access.svg") no-repeat center;
 }
 
-.menu-page__game-icon {
+.menu-page-circle-icon_users:after {
+    width: 16px;
+    height: 16px;
+    background: url("img/Users.svg") no-repeat center;
+}
+
+.menu-page-circle-icon_game:after {
     width: 16px;
     height: 14px;
-    background: url("img/game1.svg") no-repeat;
-}
-
-.menu-page__sign-in-icon {
-    width: 16px;
-    height: 16px;
-    background: url("img/sign_in.svg") no-repeat;
-}
-
-.menu-page__users-icon {
-    width: 16px;
-    height: 16px;
-    background: url("img/users.svg") no-repeat;
-}
-
-.menu-page-part__text {
-    margin-left: 12px;
-    margin-top: 1px;
-    font-size: 15px;
+    background: url("img/Game.svg") no-repeat center;
 }
