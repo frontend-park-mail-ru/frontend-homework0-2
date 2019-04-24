@@ -4,348 +4,16 @@
     <meta charset="UTF-8">
     <title>Update profile</title>
     <link href="style.css" rel="stylesheet">
-   <!-- <style>
-        button {
-            background-color: #FFFFFF;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-        }
-        a {
-            text-decoration: none;
-        }
-
-        html {
-            width: 100%;
-            height: 100%;
-        }
-
-        .update-page{
-            margin: 0;
-            padding: 8px;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            box-sizing: border-box;
-            align-items: center;
-            font-family: Helvetica, Arial, san-serif;
-            font-size: 32px;
-            background-color: #858585;
-        }
-
-        .update-page-main-block {
-            width: 389px;
-            height: 381px;
-            box-sizing: border-box;
-            border: 1px solid #FFFFFF;
-            border-radius: 4px;
-            background-color: #FFFFFF;
-        }
-
-        .update-page-main-part {
-            width: 100%;
-            height: 308px;
-            box-sizing: border-box;
-            padding: 22px 19px 20px 20px;
-        }
-        .update-page-header {
-            width: 100%;
-            height: 71px;
-            display: flex;
-        }
-
-        .update-page__title{
-            width: 171px;
-            height: 100%;
-            color: #000000;
-            font-weight: bold;
-            line-height: 1.16;
-        }
-
-        .update-page-close-icon-block {
-            width: 177px;
-            height: 71px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-start;
-        }
-
-        .update-page__close-icon {
-            width: 14px;
-            height: 14px;
-            background: url("img/close_big.svg");
-        }
-
-        .update-page-login-input-block {
-            margin-top: 25px;
-            width: 100%;
-            font-size: 0;
-        }
-
-        .update-page-input-block-text {
-
-        }
-
-        .update-page__login-text {
-            color: #000000;
-            font-weight: bold;
-            font-size: 15px;
-        }
-
-        .update-page__input {
-            width: 100%;
-            height: 32px;
-            box-sizing: border-box;
-            border: 1px solid #E0E0E0;
-            border-radius: 4px;
-            margin-top: 3px;
-        }
-
-        .update-page-number-input-block {
-            margin-top: 24px;
-            width: 100%;
-        }
-
-        .update-page-number-input {
-            margin-top: 2px;
-            width: 100%;
-            height: 32px;
-            display: flex;
-        }
-
-        .update-page-number-part {
-            border: 1px solid #FF1100;
-        }
-
-        .update-page_country {
-            width: 157px;
-            height: 32px;
-            box-sizing: border-box;
-            border-bottom-left-radius: 4px;
-            border-top-left-radius: 4px;
-            border-right: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 7px 8px 8px 12px;
-        }
-
-        .update-page_number {
-            width: 192px;
-            box-sizing: border-box;
-            border-bottom-right-radius: 4px;
-            border-top-right-radius: 4px;
-            padding: 11px 10px 10px 12px;
-        }
-
-        .update-page_number::placeholder {
-            color: #000000;
-            font-weight: bold;
-            font-size: 15px;
-        }
-
-        .update-page-country-left {
-            width: 76px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .update-page__russia-flag {
-            width: 16px;
-            height: 11px;
-            background: url("img/ru.png");
-        }
-
-        .update-page__russia-text {
-            color: #000000;
-            font-weight: bold;
-            font-size: 14px;
-            margin-top: 2px;
-        }
-
-        .update-page-country-right {
-            width: 6px;
-            height: 5px;
-            background: url("img/done.svg");
-        }
-
-        .update-page-number__error-text {
-            width: 100%;
-            color: #FF2C1D;
-            font-weight: bold;
-            font-size: 12px;
-            margin-top: 9px;
-        }
-
-        .update-page-footer {
-            width: 100%;
-            height: 73px;
-            box-sizing: border-box;
-            border-top: 1px solid #E0E0E0;
-            padding: 20px 123px 20px 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .update-page__update-button {
-            width: 118px;
-            height: 100%;
-            box-sizing: border-box;
-            background-color: #84C1BE;
-            border: 1px solid #84BAB7;
-            border-radius: 4px;
-            color: #FFFFFF;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .update-page__cancel-button {
-            width: 120px;
-            height: 100%;
-            box-sizing: border-box;
-            background-color: #F0F0F0;
-            border: 1px solid #D3D3D3;
-            border-radius: 4px;
-            color: #363636;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .update-page__dropdown {
-            position: relative;
-            display: inline-block;
-            z-index: 1;
-        }
-
-        .update-page__dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: transparent;
-        }
-
-        .update-page__dropdown-content .update-page__dropdown-content-element {
-            width: 158px;
-            height: 32px;
-            box-sizing: border-box;
-            border: 1px solid #FF1100;
-            border-top: none;
-            border-radius: 4px  ;
-            padding: 7px 8px 8px 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #FFFFFF;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        }
-
-        .update-page__dropdown:hover .update-page__dropdown-content {
-            display: block;
-        }
-
-        .update-page__ua-flag {
-            width: 16px;
-            height: 11px;
-            background: url("img/ua.png");
-        }
-
-        .update-page__ua-text {
-            color: #000000;
-            font-weight: bold;
-            font-size: 14px;
-        }
-
-        .update-page-country-left-ua {
-            width: 83px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .update-page__input:hover::after {
-            left: 0;
-            top: 2em;
-            position: absolute;
-            width: 277px;
-            height: 68px;
-            border: 1px solid #FFFFFF;
-            box-sizing: border-box;
-            background: #2BC75D;
-            content: attr(data-tooltip);
-        }
-
-        .update-page__input-helper-text {
-            position: absolute;
-            width: 277px;
-            height: 68px;
-            box-sizing: border-box;
-            padding: 17px 16px 20px 16px ;
-            background: #FFFFFF;
-            border-radius: 4px;
-            display: block;
-            top: -15px;
-            bottom: 0;
-            left: 360px;
-            right: 0;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .update-page-input-container:hover .update-page__helper-content {
-            visibility: visible;
-        }
-
-
-        .update-page-input-container {
-            position: relative;
-        }
-
-        .update-page__input-helper-text-title {
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        .update-page__input-helper-text-content {
-            margin-top: 5px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #999999;
-        }
-
-
-        .update-page__input-triangle {
-            /*background-color: #FFFFFF;*/
-            position: absolute;
-            /*border-top: 8px solid transparent;*/
-            /*border-right: 8px solid #FFFFFF;*/
-            /*border-bottom: 8px solid transparent;*/
-            top: 11px;
-            left: 348px;
-            color: #FFFFFF;
-            font-size: 16px;
-            z-index: 2;
-            text-shadow: -8px 0 20px rgba(0,0,0,0.2);
-        }
-
-        .update-page__helper-content {
-            visibility: hidden;
-        }
-    </style>-->
 </head>
 <body class="update-page">
-    <div class="update-page-main-block">
-        <div class="update-page-main-part">
-            <div class="update-page-header">
-                <div class="update-page__title">Изменение настроек</div>
-                <div class="update-page-close-icon-block">
-                    <button class="update-page__close-icon"></button>
-                </div>
+    <div class="update-page__main-block">
+        <div class="update-page__form">
+            <div class="update-page__title">Изменение настроек</div>
+            <div class="update-page__close-icon-container">
+                <div class="update-page__close-icon"></div>
             </div>
-            <div class="update-page-login-input-block">
-                <div class="update-page-input-block-text">
-                    <div class="update-page__login-text">Логин</div>
-                </div>
+            <div class="update-page__input-container">
+                <div class="update-page__input-text">Логин</div>
                 <div class="update-page-input-container">
                     <input class="update-page__input" type="text">
                     <div class="update-page__helper-content">
@@ -357,37 +25,39 @@
                     </div>
                 </div>
             </div>
-            <div class="update-page-number-input-block">
-                <div class="update-page-input-block-text">
-                    <div class="update-page__login-text">Телефон</div>
-                </div>
-                <div class="update-page-number-input">
-                    <div class="update-page__dropdown">
-                        <button class="update-page-number-part update-page_country">
-                            <div class="update-page-country-left">
-                                <div class="update-page__russia-flag"></div>
-                                <div class="update-page__russia-text">Россия</div>
-                            </div>
-                            <div class="update-page-country-right"></div>
+            <div class="update-page__input-container">
+                <div class="update-page__input-text">Телефон</div>
+                <div class="update-page__number-inputs-container">
+                    <div class="update-page-dropdown">
+                        <button class="update-page__number-input update-page__number-input_country">
+                                <div class="update-page-russia-icon"></div>
+                                <div class="update-page__country-title">Россия</div>
+                                <div class="update-page__dropdown-icon-container">
+                                    <div class="update-page-dropdown-icon"></div>
+                                </div>
                         </button>
                         <div class="update-page__dropdown-content">
-                            <a href="#" class="update-page__dropdown-content-element">
-                                <div class="update-page-country-left-ua">
-                                    <div class="update-page__ua-flag"></div>
-                                    <div class="update-page__ua-text">Украина</div>
+                            <a class="update-page__dropdown-drop update-page__dropdown-drop_country" href="#">
+                                <div class="update-page-ua-icon"></div>
+                                <div class="update-page__country-title">Украина</div>
+                                <div class="update-page__dropdown-icon-container">
+                                    <div class="update-page-dropdown-icon"></div>
                                 </div>
-                                <div class="update-page-country-right"></div>
                             </a>
                         </div>
                     </div>
-                    <input class="update-page-number-part update-page_number" placeholder="+79999999999">
+                    <input class="update-page__number-input update-page_number" placeholder="+79999999999">
                 </div>
-                <div class="update-page-number__error-text">Неправильный телефон</div>
+                <div class="update-page__error-text-container">
+                    <div class="update-page__error-text">Неправильный телефон</div>
+                </div>
             </div>
         </div>
-        <footer class="update-page-footer">
-            <button class="update-page__update-button">Обновить</button>
-            <button class="update-page__cancel-button">Отменить</button>
+        <footer class="update-page__footer">
+            <div class="update-page-button">Обновить</div>
+            <div class="update-page__cancel-button-container">
+                <div class="update-page-button update-page-button_gray">Отменить</div>
+            </div>
         </footer>
     </div>
 </body>
