@@ -56,7 +56,7 @@
                 margin-top: 1px;
                 position: absolute;
                 right: 0;
-                background-image: url("img/close_big.svg");
+                background-image: url("img/CloseBig.svg");
             }
 
             .login-page-form {
@@ -81,7 +81,7 @@
 
             .login-page_password {
                 margin-top: 20px;
-                background: url("img/show.svg") no-repeat scroll 349px 11px;
+                background: url("img/Show.svg") no-repeat scroll 349px 11px;
             }
 
             .login-page-form-helper {
@@ -114,7 +114,7 @@
             .login-page-storage-password__icon {
                 width: 12px;
                 height: 12px;
-                background: url("img/done_perfect.svg");
+                background: url("img/DonePerfect.svg");
             }
 
             .login-page-form-helper-text {
@@ -216,14 +216,14 @@
             }
 
             .login-page_vk-icon {
-                background: url("img/vk.svg");
+                background: url("img/Vk.svg");
             }
 
             .login-page_fb-icon {
-                background: url("img/fb.svg");
+                background: url("img/Fb.svg");
             }
             .login-page_cl-icon {
-                background: url("img/ok.svg");
+                background: url("img/Ok.svg");
             }
 
             .login-page-footer {
@@ -244,50 +244,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="login-page">
-    <div class="login-page-box">
-        <div class="login-page-main">
-            <div class="login-page-header">
-                <div class="login-page__text">
-                    Войти
-                </div>
-                <button type="submit" class="login-page__close-button"></button>
+    <div class="login-page__main-container">
+        <div class="login-page__form">
+            <div class="login-page__title">Войти</div>
+            <div class="login-page__close-button-container">
+                <div class="login-page-close-button"></div>
             </div>
-            <form class="login-page-form">
-                <input class="login-page-form-part" type="text" placeholder="Телефон или электронная почта">
-                <input class="login-page-form-part login-page_password" type="text" placeholder="Пароль">
-                <div class="login-page-form-helper">
-                    <div class="login-page-storage-password">
-                        <button class="login-page-storage-password-box">
-                            <div class="login-page-storage-password__icon"></div>
-                        </button>
-                        <div class="login-page-form-helper-text login-page-storage-password_text">Запомнить пароль</div>
+            <div class="login-page__input-container">
+                <input class="login-page__input" type="text" placeholder="Телефон или электронная почта">
+            </div>
+            <div class="login-page__input-container">
+                <input class="login-page__input" type="text" placeholder="Пароль">
+                <div class="login-page-eye-button"></div>
+            </div>
+            <div class="login-page__helper-container">
+                <div class="login-page__storage-password">
+                    <div class="login-page-check-box"></div>
+                    <div class="login-page__storage-text-container">
+                        <div class="login-page__storage-text">Запомнить пароль</div>
                     </div>
-                    <a href="#" class="login-page-form-helper-text login-page-forget-password_text">Забыли пароль?</a>
                 </div>
-                <div class="login-page-form-button-place">
-                    <button class="login-page-form__button">
-                        <div class="login-page-form-button__text">Войти</div>
-                    </button>
-                </div>
-                <div class="login-page-form-helpful-text-place">
-                    <div class="login-page-form-helpful__text">или продолжить через</div>
-                </div>
-            </form>
+                <a href="#" class="login-page__storage-text login-page__storage-text_ref">Забыли пароль?</a>
+            </div>
+            <div class="login-page__entry-container">
+                <button class="login-page-entry-button"></button>
+            </div>
+            <div class="login-page-form-helpful__text">или продолжить через</div>
             <div class="login-page-social-buttons">
-                <div class="login-page-social-buttons-area">
-                    <button class="login-page__button login-page_vk-button">
-                        <div class="login-page__social-icon login-page_vk-icon"></div>
-                    </button>
-                    <button class="login-page__button login-page_fb-button">
-                        <div class="login-page__social-icon login-page_fb-icon"></div>
-                    </button>
-                    <button class="login-page__button login-page_cl-button">
-                        <div class="login-page__social-icon login-page_cl-icon"></div>
-                    </button>
+                <div class="login-page__social-button-container">
+                    <div class="login-page-social-button login-page-social-button_vk"></div>
+                </div>
+                <div class="login-page__social-button-container">
+                    <div class="login-page-social-button login-page-social-button_fb"></div>
+                </div>
+                <div class="login-page__social-button-container">
+                    <div class="login-page-social-button login-page-social-button_cl"></div>
                 </div>
             </div>
         </div>
-        <footer class="login-page-footer">
+        <footer class="login-page__footer">
             <a href="#" class="login-page__reg-text">Зарегистрироваться</a>
         </footer>
     </div>

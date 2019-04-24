@@ -89,27 +89,6 @@ html {
     align-items: center;
 }
 
-.profile-page-form-input-left {
-    width: 142px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.profile-page-form-input-right {
-    display: flex;
-    align-items: center;
-}
-
-.profile-page-form-input__text {
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.profile-page-form_gray-text {
-    font-size: 14px;
-}
-
 .profile-page-form__footer {
     margin-top: 24px;
     display: flex;
@@ -137,24 +116,24 @@ html {
 }
 
 .profile-page__button-text {
-margin-left: 10px;
-font-size: 16px;
-color: #FFFFFF;
-font-weight: bold;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 .profile-page__button-text_gray {
-color: #A1A1A1;
+    color: #A1A1A1;
 }
 
 .profile-page-change-icon {
     width: 15px;
     height: 16px;
-    background: url("img/change.svg") no-repeat center;
+    background: url("img/Change.svg") no-repeat center;
 }
 
 .profile-page-delete-icon {
     width: 14px;
     height: 15px;
-    background: url("img/delete.svg") no-repeat center;
+    background: url("img/Delete.svg") no-repeat center;
 }

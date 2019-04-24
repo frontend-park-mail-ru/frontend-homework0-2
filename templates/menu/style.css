@@ -61,6 +61,7 @@ html {
     display: flex;
     text-align: center;
     position: relative;
+    cursor: pointer;
 }
 
 .menu-page-circle-icon {
