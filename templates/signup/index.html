@@ -249,88 +249,88 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body class="sign-up-page">
-    <div class="sign-up-page-main-block">
-        <header class="sign-up-page-main-block-header">
-            <div class="sign-up-page-main-block-header__text">Регистрация</div>
-        </header>
-        <form class="sign-up-page-form">
-            <div class="sign-up-page-form-helper-text-block">
-                <div class="sign-up-page-form__helper-text">Для регистрации на ресурсе укажите информацию о себе</div>
+    <div class="sign-up-page__main-block">
+        <header class="sign-up-page__header">Регистрация</header>
+        <form class="sign-up-page__form">
+            <div class="sign-up-page__helper-text">Для регистрации на ресурсе укажите информацию о себе</div>
+            <div class="sign-up-page__input-block">
+                <input class="sign-up-page-input sign-up-page-input_error" placeholder="Имя">
+                <div class="sign-up-page__text-error">Заполните обязательное поле</div>
             </div>
-            <div class="sign-up-page-form-input-block">
-                <input class="sign-up-page-form__input" placeholder="Имя">
-                <div class="sign-up-page-form__input-name-error">Заполните обязательное поле</div>
+            <div class="sign-up-page__input-block">
+                <input class="sign-up-page-input" placeholder="Фамилия">
             </div>
-            <input class="sign-up-page-form__input sign-up-page_surname-input" placeholder="Фамилия">
-            <div class="sign-up-page-form-bd-input-block">
+            <div class="sign-up-page__container-drop">
                 <div class="sign-up-page-title-input">Дата рождения</div>
-                <div class="sign-up-page-bd-input-block">
+                <div class="sign-up-page__bd-input-block">
                     <div class="sign-up-page-dropdown">
-                        <button class="sign-up-bd__part sign-up-bd_day-part">
-                            <div class="sign-up-bd__part-text">День</div>
-                            <div class="sign-up-bd__part-icon"></div>
+                        <button class="sign-up-page__dropdown-part sign-up-page__dropdown-part_day">
+                            <div class="sign-up-page__dropdown-text">День</div>
+                            <div class="sign-up-page-dropdown-icon"></div>
                         </button>
-                        <div class="sign_up__dropdown-content">
-                            <a class="sign-up-page-dropdown-content sign-up-page-dropdown-content_day" href="#">1</a>
-                            <a class="sign-up-page-dropdown-content sign-up-page-dropdown-content_day" href="#">2</a>
+                        <div class="sign-up-page__dropdown-content">
+                            <a class="sign-up-page__dropdown-drop sign-up-page__dropdown-drop_day" href="#">1</a>
+                            <a class="sign-up-page__dropdown-drop sign-up-page__dropdown-drop_day" href="#">2</a>
                         </div>
                     </div>
                     <div class="sign-up-page-dropdown">
-                        <button class="sign-up-bd__part sign-up-bd_month-part">
-                            <div class="sign-up-bd__part-text">Месяц</div>
-                            <div class="sign-up-bd__part-icon"></div>
+                        <button class="sign-up-page__dropdown-part sign-up-page__dropdown-part_month">
+                            <div class="sign-up-page__dropdown-text">Месяц</div>
+                            <div class="sign-up-page-dropdown-icon"></div>
                         </button>
-                        <div class="sign_up__dropdown-content">
-                            <a class="sign-up-page-dropdown-content sign-up-page-dropdown-content_month" href="#">1</a>
-                            <a class="sign-up-page-dropdown-content sign-up-page-dropdown-content_month" href="#">2</a>
+                        <div class="sign-up-page__dropdown-content">
+                            <a class="sign-up-page__dropdown-drop sign-up-page__dropdown-drop_month" href="#">1</a>
+                            <a class="sign-up-page__dropdown-drop sign-up-page__dropdown-drop_month" href="#">2</a>
                         </div>
                     </div>
                     <div class="sign-up-page-dropdown">
-                        <button class="sign-up-bd__part sign-up-bd_year-part">
-                            <div class="sign-up-bd__part-text">Год</div>
-                            <div class="sign-up-bd__part-icon"></div>
+                        <button class="sign-up-page__dropdown-part sign-up-page__dropdown-part_year">
+                            <div class="sign-up-page__dropdown-text">Год</div>
+                            <div class="sign-up-page-dropdown-icon"></div>
                         </button>
-                        <div class="sign_up__dropdown-content">
-                            <a class="sign-up-page-dropdown-content sign-up-page-dropdown-content_year" href="#">1998</a>
-                            <a class="sign-up-page-dropdown-content sign-up-page-dropdown-content_year" href="#">1999</a>
+                        <div class="sign-up-page__dropdown-content">
+                            <a class="sign-up-page__dropdown-drop sign-up-page__dropdown-drop_year" href="#">1998</a>
+                            <a class="sign-up-page__dropdown-drop sign-up-page__dropdown-drop_year" href="#">1999</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="sign-up-page-form-number-block">
-                <div class="sign-up-page-title-input sign-up-page_number-text">Телефон</div>
-                <div class="sign-up-page-number-input-block">
-                    <div class="sign-up-page-dropdown-country">
-                        <button class="sign-up-number__part sign-up-number_left-part">
-                            <div class="sign-up__left-left-number-part">
-                                <div class="sign-up-page__russia-icon"></div>
-                                <div class="sign-up-bd__part-text">Россия</div>
-                            </div>
-                            <div class="sign-up__left-right-number-part">
-                                <div class="sign-up-bd__part-icon"></div>
+            <div class="sign-up-page__number-form">
+                <div class="sign-up-page-title-input">Телефон</div>
+                <div class="sign-up-page__number-inputs-block">
+                    <div class="sign-up-page-dropdown sign-up-page-dropdown_country">
+                        <button class="sign-up-page__number-input sign-up-page__number-input_country">
+                            <div class="sign-up-page-russia-icon"></div>
+                            <div class="sign-up-page__country-title">Россия</div>
+                            <div class="sign-up-page__dropdown-icon-container">
+                                <div class="sign-up-page-dropdown-icon"></div>
                             </div>
                         </button>
-                        <div class="sign_up__dropdown-content">
-                            <a class="sign-up-page-dropdown-content sign-up-page-dropdown-content_country" href="#">
-                                <div class="sign-up__left-left-number-part">
-                                    <div class="sign-up-page__ua-icon"></div>
-                                    <div class="sign-up-bd__part-text">Украина</div>
-                                </div>
-                                <div class="sign-up__left-right-number-part">
-                                    <div class="sign-up-bd__part-icon"></div>
+                        <div class="sign-up-page__dropdown-content">
+                            <a class="sign-up-page__dropdown-drop sign-up-page__dropdown-drop_country" href="#">
+                                <div class="sign-up-page-ua-icon"></div>
+                                <div class="sign-up-page__country-title">Украина</div>
+                                <div class="sign-up-page__dropdown-icon-container">
+                                    <div class="sign-up-page-dropdown-icon"></div>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <input class="sign-up-number__part sign-up-number_right-part" placeholder="+7">
+                    <input class="sign-up-page__number-input sign-up-page__number-input_number" placeholder="+7">
                 </div>
             </div>
-            <input class="sign-up-page-form__input sign-up-page-form_pas-input" placeholder="Пароль">
-            <input class="sign-up-page-form__input sign-up-page-form_pas-input" placeholder="Повторите пароль">
+            <div class="sign-up-page__pas-input-container">
+                <input class="sign-up-page-input" placeholder="Пароль" type="password">
+            </div>
+            <div class="sign-up-page__pas-input-container">
+                <input class="sign-up-page-input" placeholder="Повторите пароль" type="password">
+            </div>
         </form>
-        <div class="sign-up-page-footer">
-            <button class="sign-up-page__register-button">Зарегистрироваться</button>
-            <button class="sign-up-page__cancel-button">Отменить</button>
+        <div class="sign-up-page__footer">
+            <div class="sign-up-page-button">Зарегистрироваться</div>
+            <div class="sign-up-page__cancel-button-container">
+                <div class="sign-up-page-button sign-up-page-button_gray">Отменить</div>
+            </div>
         </div>
     </div>
 </body>
