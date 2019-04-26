@@ -106,7 +106,7 @@ html, body {
     margin-bottom: 8px;
 }
 
-input[name=password] {
+.full-width {
     width: 100%;
 }
 
