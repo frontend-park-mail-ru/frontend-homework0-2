@@ -1,13 +1,10 @@
 @import url('common.css');
 
 html, body {
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 2px;
     overflow:  hidden;
 }
-
 
 .container {
     display: -webkit-flex;
@@ -21,13 +18,6 @@ html, body {
     width: 350px;
     max-width: 350px;
     margin-right: 250px;
-    display: flex;
-    flex-direction: column;
-
-    /* shadows */
-    -webkit-box-shadow: -15px 21px 49px -3px rgba(0,0,0,0.5);
-    -moz-box-shadow: -15px 21px 49px -3px rgba(0,0,0,0.5);
-    box-shadow: -15px 21px 49px -3px rgba(0, 0, 0, 0.5); 
 }
 
 .title {
@@ -62,8 +52,6 @@ html, body {
     font-weight: bold;
     margin-bottom: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .btn img { 
@@ -72,7 +60,7 @@ html, body {
 
 .nav-items .active {
     background-color: var(--main-btn-color);
-    color: white;
+    color: var(--bg-color);
 }
 
 .about {
@@ -81,9 +69,6 @@ html, body {
 }
 
 .main-block {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;   
     width: 500px;
     justify-content: center;
 }
@@ -111,13 +96,11 @@ html, body {
     border: none;
     border-radius: 4px;   
     height: 45px;
-    color: white;    
+    color: var(--bg-color);    
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 17px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-width: 210px;
 }
 
@@ -142,7 +125,7 @@ input[name=password] {
     z-index: 100;
     right: 15px;
     padding: 0px 0px 0px 10px;
-    background-color: white;
+    background-color: var(--bg-color);
 }
 
 @media (max-width: 560px) {
@@ -170,8 +153,6 @@ input[name=password] {
         display: none;
     }
 }
-
-
 
 @media (min-width:870px) and (max-width: 1100px) {
     .main-block {

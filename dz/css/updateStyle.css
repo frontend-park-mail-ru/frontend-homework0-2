@@ -1,29 +1,11 @@
 @import url('common.css');
 
-html, body {
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .container {
     width: 510px;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     background: var(--bg-color);
     border-radius: 8px;
     border: 1px solid var(--border-color);
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
     padding: 0;
-}
-
-.title-block {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .title {   
@@ -42,12 +24,12 @@ html, body {
 }
 
 .main-block {  
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
     padding: 25px;
+}
+
+.main-border {
     margin-bottom: 25px;
-    border-bottom: lightgray;
+    border-bottom: var(--lightgray);
     border-bottom-style: solid;
     border-bottom-width: 1px;
 }
@@ -70,12 +52,6 @@ html, body {
     margin-bottom: 25px;
 }
 
-.phone-block { 
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;    
-}
-
 .select {
     width: 100%;
     height: 40px;
@@ -83,6 +59,9 @@ html, body {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
+}
+
+.select-shadow {
     -webkit-box-shadow: inset 10px -4px 116px 2px rgba(0,0,0,0.24);
     -moz-box-shadow: inset 10px -4px 116px 2px rgba(0,0,0,0.24);
     box-shadow: inset 1px 0px 18px 2px rgba(0, 0, 0, 0.12);
@@ -102,40 +81,24 @@ html, body {
 }
 
 .input-alert {
-    border-color: red;
+    border-color: var(--alert-color);
 }
 
 .input-round {   
     border-radius: 0 4px 4px 0;
-    /* height: 40px; */
 }
 
 .alert {
-    color: red;
+    color: var(--alert-color);
     font-size: 13px;
     font-weight: bold;
 }
 
 .phone-input-block {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
     padding: 0;
     margin-bottom: 15px;    
     align-items: center;
     height: 39px;
-}
-
-.select-list {
-    width: 110px;
-    height: 70px;
-    background: var(--bg-color);
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    display: -webkit-flex;
-    flex-direction: column;
-    padding: 0;
-    display: none;
 }
 
 .button-block {  
@@ -156,12 +119,11 @@ html, body {
     height: 40px;
     margin-right: 5px;
     font-size: 18px;
-    outline: none; 
 }
 
 .update {
     background-color: var(--main-btn-color);
-    color: white;    
+    color: var(--bg-color);    
 }
 
 .cancel {
@@ -170,26 +132,23 @@ html, body {
 }
 
 .select-block {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
     width: 70%;    
     border-radius: 4px 0 0 4px;
-    border: 1px solid lightgray;
+    border: 1px solid var(--lightgray);
     height: 38px;
 }
 
 .options-block {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
     top: 71%;
     border-radius: 9px;
-    border: 1px solid lightgray;
-    background-color: white;
+    border: 1px solid var(--lightgray);
+    background-color: var(--bg-color);
     position: absolute;
     z-index: 100;
     width: 165px;
+}
+
+.options-shadow {
     -webkit-box-shadow: -7px 10px 65px -3px rgba(0,0,0,0.34);
     -moz-box-shadow: -7px 10px 65px -3px rgba(0,0,0,0.34);
     box-shadow: -7px 10px 65px -3px rgba(0,0,0,0.34);
@@ -201,9 +160,6 @@ html, body {
 
 .option {
     width: 100%;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
     height: 34px;
     align-items: center;    
     margin-top: 5px;
@@ -214,7 +170,7 @@ html, body {
 }
 
 .selected {
-    background-color: lightgray;    
+    background-color: var(--lightgray);    
 }
 
 @media (max-width: 430px) {

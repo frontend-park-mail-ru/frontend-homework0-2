@@ -1,9 +1,9 @@
-/* html, body {
+html, body {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+.center {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -14,7 +14,28 @@
     display: -webkit-flex;
     display: flex;
     flex-direction: column; 
-} */
+}
+
+.flex-row {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row; 
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.with-shadow {
+    -webkit-box-shadow: -15px 21px 49px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: -15px 21px 49px -3px rgba(0,0,0,0.5);
+    box-shadow: -15px 21px 49px -3px rgba(0, 0, 0, 0.5); 
+}
+
+button {
+    outline: none; 
+}
 
 :root {
     --main-btn-color: rgb(202, 156, 244);
@@ -24,5 +45,7 @@
     --fb-btn-color: rgb(59, 89, 152);
     --nav-bg-color: rgb(243, 243, 243);
     --del-btn-color: rgb(228, 228, 228);
-    --del-btn-text-color: rgb(172, 172, 172);   
+    --del-btn-text-color: rgb(172, 172, 172); 
+    --alert-color: rgb(209, 0, 0); 
+    --lightgray: lightgray; 
 }

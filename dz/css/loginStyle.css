@@ -1,8 +1,11 @@
 @import url('common.css');
 
-html, body {
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+.container {
+    width: 370px;
+    background: var(--bg-color);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);    
+    padding: 20px;
 }
 
 .title {   
@@ -10,23 +13,6 @@ html, body {
     font-size: 30px;
     margin: auto;
     margin-bottom: 25px;
-}
-
-.container {
-    width: 370px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);	
-    background: var(--bg-color);
-    border-radius: 8px;
-    border: 1px solid var(--border-color);    
-    padding: 20px;
-
-    /* shadows */
-    -webkit-box-shadow: -15px 21px 49px -3px rgba(0,0,0,0.5);
-    -moz-box-shadow: -15px 21px 49px -3px rgba(0,0,0,0.5);
-    box-shadow: -15px 21px 49px -3px rgba(0,0,0,0.5); 
 }
 
 .main-block {
@@ -37,7 +23,7 @@ html, body {
 .line-block {
     width: 100%;
     height: 12px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--border-color);
     text-align: center; 
     margin-bottom: 35px;
 }
@@ -45,7 +31,7 @@ html, body {
 .line-content {
     font-size: 10px; 
     color: gray; 
-    background-color: white; 
+    background-color: var(--bg-color); 
     padding: 4px;   
 }
 
@@ -55,12 +41,9 @@ html, body {
     border: none;
     border-radius: 4px;   
     height: 40px;
-    color: white;
+    color: var(--bg-color);
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 10px;
-    outline: none; 
 }
 
 .btn img { 
@@ -88,13 +71,13 @@ html, body {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 1px solid gray;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     outline: none; 
 }
 
 .input-alert {
-    border-color: red;
+    border-color: var(--alert-color);
 }
 
 .password-block {
@@ -108,11 +91,11 @@ html, body {
     z-index: 100;
     right: 35px;
     padding: 0 0 0 10px;
-    background-color: white;
+    background-color: var(--bg-color);
 }
 
 .alert {
-    color: red;   
+    color: var(--alert-color);   
     font-size: 12px;
     font-weight: bold;
     float: left;
