@@ -1,3 +1,5 @@
+@import url('common.css');
+
 html, body {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +16,7 @@ html, body {
 }
 
 .nav-default {
-    background: rgb(243, 243, 243);
+    background: var(--nav-bg-color);
     height: 100%;
     width: 350px;
     max-width: 350px;
@@ -29,7 +31,7 @@ html, body {
 }
 
 .title {
-    background-color: rgb(202, 156, 244);
+    background-color: var(--main-btn-color);
     padding-left: 10px;
     height: 45px;
     margin-bottom: 120px;
@@ -51,8 +53,8 @@ html, body {
 
 .nav-items .btn {
     width: 100%;
-    background-color: rgb(243, 243, 243);
-    border: 1px solid rgb(202, 202, 202);
+    background-color: var(--nav-bg-color);
+    border: 1px solid var(--border-color);
     border-radius: 4px;   
     height: 50px;
     min-height: 50px;
@@ -69,7 +71,7 @@ html, body {
 }
 
 .nav-items .active {
-    background-color: rgb(202, 156, 244);
+    background-color: var(--main-btn-color);
     color: white;
 }
 
@@ -98,14 +100,14 @@ html, body {
     padding: 12px 20px;
     margin: 10px 0;
     box-sizing: border-box;
-    border: 1px solid rgb(202, 202, 202);
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     outline: none; 
 }
 
 .submit {
     width: 50%;
-    background-color: rgb(202, 156, 244);
+    background-color: var(--main-btn-color);
     border: none;
     border-radius: 4px;   
     height: 45px;

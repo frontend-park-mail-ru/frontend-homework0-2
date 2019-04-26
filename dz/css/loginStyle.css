@@ -1,3 +1,5 @@
+@import url('common.css');
+
 html, body {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,9 +18,9 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);	
-    background: rgb(255, 255, 255);
+    background: var(--bg-color);
     border-radius: 8px;
-    border: 1px solid rgb(204, 204, 204);    
+    border: 1px solid var(--border-color);    
     padding: 20px;
 
     /* shadows */
@@ -66,11 +68,11 @@ html, body {
 }
 
 .vkontakteButton {
-    background-color: rgb(74, 118, 168);
+    background-color: var(--vk-btn-color);
 }
 
 .facebookButton {  
-    background-color: rgb(59, 89, 152);
+    background-color: var(--fb-btn-color);
 }
 
 .button-social {
@@ -78,7 +80,7 @@ html, body {
 }
 
 .submit {
-    background-color: rgb(202, 156, 244);
+    background-color: var(--main-btn-color);
 }
 
 .input-default {

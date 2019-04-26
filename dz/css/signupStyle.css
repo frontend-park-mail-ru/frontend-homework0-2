@@ -1,3 +1,5 @@
+@import url('common.css');
+
 html {     
     font-family: Arial, Helvetica, sans-serif;
     height: 100%; 
@@ -147,7 +149,7 @@ button {
 
 .signup {
     width: 40%;
-    background-color: rgb(202, 156, 244);
+    background-color: var(--main-btn-color);
     border: none;
     border-radius: 4px;
     color: white; 

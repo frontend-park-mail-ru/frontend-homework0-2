@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -14,7 +14,7 @@ html, body {
     display: -webkit-flex;
     display: flex;
     flex-direction: column; 
-}
+} */
 
 :root {
     --main-btn-color: rgb(202, 156, 244);
@@ -23,9 +23,6 @@ html, body {
     --vk-btn-color: rgb(74, 118, 168); 
     --fb-btn-color: rgb(59, 89, 152);
     --nav-bg-color: rgb(243, 243, 243);
-    --nav-border-color: rgb(202, 202, 202);
     --del-btn-color: rgb(228, 228, 228);
-    --del-btn-text-color: rgb(172, 172, 172);  
-    --cncl-btn-color: rgb(228, 228, 228);
-    --cncl-btn-text-color: rgb(172, 172, 172);  
+    --del-btn-text-color: rgb(172, 172, 172);   
 }
