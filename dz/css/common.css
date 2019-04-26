@@ -27,6 +27,12 @@ html, body {
     align-items: center;
 }
 
+.inline-flex-row {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-direction: row;    
+}
+
 .with-shadow {
     -webkit-box-shadow: -15px 21px 49px -3px rgba(0,0,0,0.5);
     -moz-box-shadow: -15px 21px 49px -3px rgba(0,0,0,0.5);
