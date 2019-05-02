@@ -5,19 +5,31 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
     background-color: var(--main-bg-color);
     border-radius: var(--border-radius-size);
+    -webkit-box-shadow: 0 8px 52px rgb(70, 70, 70);
     box-shadow: 0 8px 52px rgb(70, 70, 70);
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
     font-size: var(--main-font-size);
 }
 
 .login__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 16px auto;
     font-size: var(--header-font-size);
@@ -29,8 +41,10 @@
 .login__btn-close {
     position: absolute;
     margin: 16px 16px 16px 388px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    background: transparent;
+    background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
@@ -38,51 +52,74 @@
 }
 
 .login-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin: 0 16px;
 }
 
 .login-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 38px;
     width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-top: 18px;
     border: 1px solid var(--border-gray-color);
     border-radius: var(--border-radius-size);
 }
-    .login-row_password {
-        justify-content: space-between;
-    }
-    .login-row-label {
-        width: 100%;
-        height: 100%;
-        align-items: center;
-    }
-    .login-row__input {
-        height: 100%;
-        width: 100%;
-        border: none;
-        outline: none;
-        padding-left: 12px;
-        background: transparent;
-        font-size: var(--main-font-size);
-    }
-    .login-row__eye-icon {
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-        margin-right: 12px;
-    }
+.login-row_password {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.login-row-label {
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.login-row__input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 12px;
+    background: transparent;
+    font-size: var(--main-font-size);
+}
+.login-row__eye-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 12px;
+}
 
-    .login-password-row {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        margin-top: 12px;
-    }
+.login-password-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 12px;
+}
 
 .login__password-remind {
     text-decoration: none;
@@ -93,6 +130,8 @@
     display: none;
 }
 .login__custom-checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     cursor: pointer;
     width: 12px;
@@ -109,7 +148,11 @@
 }
 
 .checkbox:checked + .login__custom-checkbox::before {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     content: '✓';
     color: white;
@@ -119,8 +162,14 @@
 }
 
 .login__btn-enter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-top: 20px;
     cursor: pointer;
@@ -134,11 +183,18 @@
 }
 .login__btn-enter:hover {
     color: rgb(255,212,0);
-    background: lemonchiffon;
+    background-color: lemonchiffon;
 }
 .login-providers {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 .continue-login {
@@ -150,12 +206,22 @@
 }
 
 .login-providers-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 .provider {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 30px;
     height: 40px;
@@ -163,27 +229,31 @@
     border-radius: var(--border-radius-size);
     margin: 0  1% 1% 1%;
 }
-    .provider_vk {
-        background: rgb(74,118,168);
-        border: 1px solid rgb(65,104,148);
+.provider_vk {
+    background: rgb(74,118,168);
+    border: 1px solid rgb(65,104,148);
 
-    }
-    .provider_fb {
-        background: rgb(59,89,152);
-        border: 1px solid rgb(52,78,134);
-    }
-    .provider_ok {
-        background: rgb(238,130,8);
-        border: 1px solid rgb(209,114,7);
-    }
+}
+.provider_fb {
+    background: rgb(59,89,152);
+    border: 1px solid rgb(52,78,134);
+}
+.provider_ok {
+    background: rgb(238,130,8);
+    border: 1px solid rgb(209,114,7);
+}
 
-    .provider__icon {
-        display: flex;
-        fill: white;
-    }
+.provider__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    fill: white;
+}
 
 .hr {
     margin-top: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 1px;
     border: 0;
@@ -193,7 +263,11 @@
 }
 
 .register {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-decoration: none;
     color: rgb(12,98,211);

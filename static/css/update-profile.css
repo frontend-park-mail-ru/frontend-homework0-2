@@ -5,79 +5,100 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
     background-color: var(--main-bg-color);
     border-radius: var(--border-radius-size);
+    -webkit-box-shadow: 0 8px 52px rgb(70, 70, 70);
     box-shadow: 0 8px 52px rgb(70, 70, 70);
 }
 
-    .settings__header {
-        display: flex;
-        width: 200px;
-        margin: 16px 20px 32px 20px;
-        flex-wrap: wrap;
-        font-size: var(--header-font-size);
-        font-weight: bold;
-    }
-    .settings__btn-close {
-        position: absolute;
-        margin: 16px 0 0 353px;
-        display: flex;
-        background: transparent;
-        border: none;
-        outline: none;
-        cursor: pointer;
-    }
-    .settings-unit {
-        display: flex;
-        margin: 0 auto 0 20px;
-        flex-direction: column;
-    }
-        .settings-unit__title {
-            margin: 0;
-            font-size: var(--main-font-size);
-            font-weight: bold;
-        }
-        .settings-unit-content {
-            display: flex;
-            align-items: center;
-        }
-            .settings-unit-content_phone {
-            margin-bottom: 1px;
-        }
+.settings__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+    margin: 16px 20px 32px 20px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: var(--header-font-size);
+    font-weight: bold;
+}
+.settings__btn-close {
+    position: absolute;
+    margin: 16px 0 0 353px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.settings-unit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto 0 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.settings-unit__title {
+    margin: 0;
+    font-size: var(--main-font-size);
+    font-weight: bold;
+}
+.settings-unit-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.settings-unit-content_phone {
+    margin-bottom: 1px;
+}
 
-    .settings__login {
-        width: 340px;
-        height: 32px;
-        padding-left: 2%;
-        font-size: var(--main-font-size);
-        display: flex;
-        margin-top: 4px;
-        margin-bottom: 4%;
-        margin-right: 4px;
-        border: 1px solid var(--border-gray-color);
-        border-radius: var(--border-radius-size);
-    }
-    .settings__country-code {
-        display: flex;
-        width: 156px;
-        height: 34px;
-        font-size: var(--main-font-size);
-        margin-top: 4px;
-        border: 1px solid rgb(255,17,0);
-        border-right: none;
-        border-radius: var(--border-radius-size) 0 0 var(--border-radius-size);
-    }
-    .settings__number {
-        width: 192px;
-        height: 32px;
-        font-size: var(--main-font-size);
-        margin-top: 4px;
-        margin-right: 19px;
-        border: 1px solid var(--invalid-red-color);
-        border-radius: 0 var(--border-radius-size) var(--border-radius-size) 0;
-    }
+.settings__login {
+    width: 340px;
+    height: 32px;
+    padding-left: 2%;
+    font-size: var(--main-font-size);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 4px;
+    margin-bottom: 4%;
+    margin-right: 4px;
+    border: 1px solid var(--border-gray-color);
+    border-radius: var(--border-radius-size);
+}
+.settings__country-code {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 156px;
+    height: 34px;
+    font-size: var(--main-font-size);
+    margin-top: 4px;
+    border: 1px solid rgb(255,17,0);
+    border-right: none;
+    border-radius: var(--border-radius-size) 0 0 var(--border-radius-size);
+}
+.settings__number {
+    width: 192px;
+    height: 32px;
+    font-size: var(--main-font-size);
+    margin-top: 4px;
+    margin-right: 19px;
+    border: 1px solid var(--invalid-red-color);
+    border-radius: 0 var(--border-radius-size) var(--border-radius-size) 0;
+}
 
 .flag-icon {
     width: 16px;
@@ -112,12 +133,20 @@
 }
 
 .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 12px auto 0 20px;
 }
 .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
     font-size: var(--button-font-size);
@@ -140,6 +169,7 @@
 .dialog-window {
     margin-top: -24px;
     margin-left: 4px;
+    -webkit-box-shadow: 1px 2px 5px rgb(70, 70, 70);
     box-shadow: 1px 2px 5px rgb(70, 70, 70);
 }
 .dialog-window__corner {
@@ -148,13 +178,24 @@
     height: 14px;
     border-bottom: none;
     border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    background: -webkit-linear-gradient(315deg, white 0%, white 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(315deg, white 0%, white 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
     background: linear-gradient(135deg, white 0%, white 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
 }
 .dialog-content {
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-left: 12px;
     z-index: -1;
@@ -164,6 +205,7 @@
     margin-top: -30px;
     margin-left: 7px;
     border-radius: var(--border-radius-size);
+    -webkit-box-shadow: 1px 2px 32px rgb(70, 70, 70);
     box-shadow: 1px 2px 32px rgb(70, 70, 70);
     line-height: 20px;
 }

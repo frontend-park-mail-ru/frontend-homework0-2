@@ -2,21 +2,31 @@ body {
     background: var(--main-bg-color);;
 }
 .container-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 60px;
     background-color: var(--yellow-color);
     margin: 10px 2px;
 }
 .container-header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-left: 80px;
     cursor: pointer;
 }
 
 .container-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -25,7 +35,12 @@ body {
     height: 332px;
 
     margin-top: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
     background-color: var(--main-bg-color);
@@ -41,24 +56,36 @@ body {
 .menu-row {
     width: 680px;
     height: 61px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 .menu-row_light {
-    background: white;
+    background-color: white;
 }
 .menu-row_dark {
-    background: rgb(245,245,245);
+    background-color: rgb(245,245,245);
 }
 
 .circle {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background: rgb(40,199,93);
+    background-color: rgb(40,199,93);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-left: 16px;
     cursor: pointer;
@@ -72,6 +99,8 @@ body {
     cursor: pointer;
 }
 .menu-row__dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: 16px;
     margin-left: auto;

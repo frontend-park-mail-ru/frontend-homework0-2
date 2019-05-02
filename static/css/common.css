@@ -1,6 +1,8 @@
 body {
     font-family: Helvetica, Arial, san-serif;
     background: rgb(133,133,133);
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     -webkit-user-select: none;
 }
