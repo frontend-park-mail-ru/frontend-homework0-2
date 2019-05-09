@@ -4,7 +4,7 @@
     min-width: 250px;
 }
 
-.profile_form {
+.profile-form {
     width: 450px;
 
     border: 1px solid gainsboro;
@@ -13,27 +13,27 @@
     margin: 8px;
 }
 
-.block {
+.profile-form__block {
     padding: 25px 20px 0;
     border-bottom: 1px solid #c5c5c5;
 }
 
-header .header_name {
+header .profile-form__header {
     margin-top: 0;
 }
 
-.title {
+.block-inline__title {
     font-weight: bold;
     margin-bottom: 8px; 
 }
 
-.data {
+.block-inline__data {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 
-.data_inline {
+.block-inline {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -48,7 +48,7 @@ div[data-type="buttons"] {
     padding-bottom: 15px;
 }
 
-.btn {
+.submit-button {
     height: 46px;
     font-size: 20px;
     width: 200px;
@@ -82,21 +82,21 @@ div[data-type="buttons"] {
 }
 
 @media (min-width: 50px) and (max-width: 690px) {
-    .profile_form {
+    .profile-form {
         width: 350px;
     }
     
-    .data_inline {
+    .block-inline {
         flex-direction: column;
         padding: 0 0;
     }
 
-    .data {
+    .block-inline__data {
         width: 100%;
         margin-top: 20px;
     }
 
-    .btn {
+    .submit-button {
         height: 48px;
         font-size: 16px;
         width: 100%;
@@ -105,15 +105,15 @@ div[data-type="buttons"] {
 }
 
 @media (min-width: 50px) and (max-width: 690px) and (orientation: landscape) {
-    .data_inline {
+    .block-inline {
         flex-direction: row;
     }
 
-    .block {
+    .profile-form__block {
         padding: 15px 20px 0;
     }
 
-    .btn {
+    .submit-button {
         height: 48px;
         font-size: 16px;
         width: 200px;
@@ -121,17 +121,17 @@ div[data-type="buttons"] {
 }
 
 @media (min-width: 691px) and (max-width: 1024px) {
-    .data_inline {
+    .block-inline {
         flex-direction: column;
         padding: 0 0;
     }
 
-    .data {
+    .block-inline__data {
         width: 100%;
         margin-top: 20px;
     }
 
-    .btn {
+    .submit-button {
         height: 48px;
         font-size: 16px;
         width: 100%;
@@ -140,15 +140,15 @@ div[data-type="buttons"] {
 }
 
 @media (min-width: 691px) and (max-width: 1024px) and (orientation: landscape) {
-    .data_inline {
+    .block-inline {
         flex-direction: row;
     }
 
-    .block {
+    .profile-form__block {
         padding: 25px 30px 0;
     }
 
-    .btn {
+    .submit-button {
         height: 48px;
         font-size: 16px;
         width: 250px;
