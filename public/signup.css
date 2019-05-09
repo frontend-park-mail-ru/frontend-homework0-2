@@ -14,7 +14,7 @@ body {
     margin: 12px 12px 0 12px;
 }
 
-.signup_title {
+.signup-content__title {
     text-align: center;
     font-size: 52px;
     color: white;
@@ -24,7 +24,7 @@ body {
     margin-top: 120px;
 }
 
-.content {
+.signup-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,27 +32,27 @@ body {
     height: max-content;
 }
 
-.signup_form {
+.signup-content__form {
     width: 450px;
     padding: 15px 20px 20px;
 }
 
-.signup_form .main_form {
+.signup-content__form .signup-form__inputs {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
     height: max-content;
 }
 
-.main_form input {
+.signup-form__inputs input {
     margin-bottom: 24px;
 }
 
-.main_form input[type="password"] {
+.signup-form__inputs input[type="password"] {
     margin-bottom: 12px;
 }
 
-.mail_button {
+.signup-form__button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -70,15 +70,15 @@ body {
     cursor: pointer;
 }
 
-.mail_button:hover {
+.signup-form__button:hover {
     background-color:#019185;
 }
 
-.mail_button:active {
+.signup-form__button:active {
     background-color:#02746a;
 }
 
-.main_input {
+.signup-form__input {
     height: 48px;
     font-size: 16px;
 
@@ -91,25 +91,25 @@ body {
     margin: 4px;
 }
 
-.main_input:focus {
+.signup-form__input:focus {
     box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
 }
 
-.mail_button:focus {
+.signup-form__button:focus {
     box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
 }
 
-.main_input[type="password"] {
+.signup-form__input[type="password"] {
     background-image: url(../assets/hide.svg);   
     background-repeat: no-repeat; 
     background-position: right 14px top 50%; 
 }
 
-.fb_link {
+.signup-form__link {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -120,128 +120,128 @@ body {
 }
 
 @media (min-width: 50px) and (max-width: 690px) {
-    .content {
+    .signup-content {
         width: 100%;
     }
 
-    .signup_title {
+    .signup-content__title {
         font-size: 24px;
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    .signup_form {
+    .signup-content__form {
         width: 90%;
     }
 
-    .mail_button {
+    .signup-form__button {
         min-height: 48px;
         font-size: 16px;
     }
 
-    .main_input {
+    .signup-form__input {
         height: 40px;
         font-size: 14px;
     }
 }
 
 @media (min-width: 50px) and (max-width: 690px) and (orientation: landscape) {
-    .content {
+    .signup-content {
         width: 100%;
     }
 
-    .signup_title {
+    .signup-content__title {
         font-size: 22px;
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .signup_form {
+    .signup-content__form {
         width: 90%;
     }
 
-    .signup_form .main_form {
+    .signup-content__form .signup-form__inputs {
         margin-bottom: 12px;
     }
 
-    .main_form input {
+    .signup-form__inputs input {
         margin-bottom: 16px;
     }
 
-    .mail_button {
+    .signup-form__button {
         min-height: 48px;
         font-size: 16px;
     }
 
-    .main_input {
+    .signup-form__input {
         height: 40px;
         font-size: 14px;
     }
 
-    .signup_title p {
+    .signup-content__title p {
         margin: 4px 0;
     }
 }
 
 @media (min-width: 691px) and (max-width: 760px) {
-    .content {
+    .signup-content {
         width: 100%;
     }
 
-    .signup_title {
+    .signup-content__title {
         font-size: 28px;
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    .signup_form {
+    .signup-content__form {
         width: 90%;
     }
 
-    .mail_button {
+    .signup-form__button {
         min-height: 48px;
         font-size: 16px;
     }
 
-    .main_input {
+    .signup-form__input {
         height: 40px;
         font-size: 14px;
     }
 }
 
 @media (min-width: 691px) and (max-width: 760px) and (orientation: landscape) {
-    .content {
+    .signup-content {
         width: 100%;
     }
 
-    .signup_title{
+    .signup-content__title{
         font-size: 28px;
     }
 
-    .signup_form {
+    .signup-content__form {
         width: 90%;
         padding: 20px 0;
     }
 
-    .signup_form .main_form {
+    .signup-content__form .signup-form__inputs {
         margin-bottom: 12px;
     }
 
-    .main_form input {
+    .signup-form__inputs input {
         margin-bottom: 16px;
     }
 
-    .mail_button {
+    .signup-form__button {
         min-height: 48px;
         font-size: 16px;
     }
 
-    .main_input {
+    .signup-form__input {
         height: 40px;
         font-size: 14px;
     }
 
-    .signup_title p {
+    .signup-content__title p {
         margin: 4px 0;
     }
 }
