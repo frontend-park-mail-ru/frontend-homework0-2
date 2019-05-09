@@ -9,44 +9,44 @@
 </head>
 <body>
     <div class="container">
-        <form class="update_form">
-            <div class="block">
-                <header class="update-head">
-                    <h1 class="update-title">Обновление<br/> контактных данных</h1>
+        <form class="update-form">
+            <div class="update-form__block">
+                <header class="update-block__head">
+                    <h1 class="update-block__title">Обновление<br/> контактных данных</h1>
                     <img src="../assets/close_big.svg">
                 </header>
-                <main class="main_area">
-                    <label class="lbl main_item"><b>Email</b></label>
-                    <input class="input-form main_item" type="email">
-                    <span class="main_item warn" style="margin-bottom: 14px;">Поле не должно быть пустым</span>
-                    <label class="lbl main_item"><b>Телефон</b></label>
-                    <div class="phone_block main_item">
-                        <div class="select_list">
-                            <div class="selected">
-                                <img class="flag" src="../assets/ru.png">
-                                <label class="lbl">Россия</label>
+                <main class="update-form__main">
+                    <label class="update-form__label update-form__item"><b>Email</b></label>
+                    <input class="update-form__input update-form__item" type="email">
+                    <span class="update-form__item warn" style="margin-bottom: 14px;">Поле не должно быть пустым</span>
+                    <label class="update-form__label update-form__item"><b>Телефон</b></label>
+                    <div class="update-form__phone-block update-form__item">
+                        <div class="update-form__select">
+                            <div class="update-form__select__selected">
+                                <img class="select__image" src="../assets/ru.png">
+                                <label class="update-form__label">Россия</label>
                                 <img src="../assets/drop_up_small.svg">
                             </div>
-                            <div class="list">
-                                <div class="option select">
-                                    <img class="flag" src="../assets/done.svg">
-                                    <img class="flag" src="../assets/ru.png">
-                                    <label class="lbl">Россия</label>
+                            <div class="update-form__list">
+                                <div class="list__option select">
+                                    <img class="select__image" src="../assets/done.svg">
+                                    <img class="select__image" src="../assets/ru.png">
+                                    <label class="update-form__label">Россия</label>
                                 </div>
-                                <div class="option last">
-                                    <img class="flag" src="../assets/ua.png">
-                                    <label class="lbl">Украина</label>
+                                <div class="list__option last">
+                                    <img class="select__image" src="../assets/ua.png">
+                                    <label class="update-form__label">Украина</label>
                                 </div>
                             </div>
                         </div>
-                        <input type="phone" value="+79999999999" class="input-form">
+                        <input type="phone" value="+79999999999" class="update-form__input">
                     </div>
                 </main>
             </div>
-            <div class="buttons">
-                <div class="buttons_inline">
-                    <button class="change_button btn">Обновить</button>
-                    <button class="delete_button btn">Отменить</button>    
+            <div class="update-form__buttons">
+                <div class="buttons-inline">
+                    <button class="change_button update-form__button">Обновить</button>
+                    <button class="delete_button update-form__button">Отменить</button>    
                 </div>
             </div>
         </form>

@@ -8,7 +8,7 @@ body {
     min-width: 250px;
 }
 
-.update_form {
+.update-form {
     width: 450px;
 
     border: 1px solid gainsboro;
@@ -17,7 +17,7 @@ body {
     box-shadow: 1px 6px 36px 6px #0a0a0a7e;
 }
 
-.update_form .main_area {
+.update-form .update-form__main {
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
@@ -29,31 +29,31 @@ body {
     font-size: 15px;
 }
 
-.update_form main .main_item {
+.update-form main .update-form__item {
     margin-bottom: 4px;
 }
 
-.container .update_form {
+.container .update-form {
     margin: auto;
 }
 
-.update-head {
+.update-block__head {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-.update-head h1 {
+.update-block__head h1 {
     font-size: 34px;
     margin-top: 12px;
 }
 
-.update-head img {
+.update-block__head img {
     margin-top: 16px;
 }
 
-.input-form {
+.update-form__input {
     height: 28px;
     font-size: 16px;
 
@@ -66,13 +66,13 @@ body {
     margin: 4px 4px 4px 12px;
 }
 
-.input-form:focus {
+.update-form__input:focus {
     box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
 }
 
-.btn:focus {
+.update-form__button:focus {
     box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
@@ -85,7 +85,7 @@ input[type="email"] {
     margin: 4px;  
 }
 
-.btn {
+.update-form__button {
     height: 38px;
     font-size: 20px;
     width: 140px;
@@ -118,12 +118,12 @@ input[type="email"] {
     background-color: #e7e7e7;
 }
 
-.phone_block {
+.update-form__phone-block {
     display: flex;
     flex-direction: row;
 }
 
-.select_list {
+.update-form__select {
     width: 170px;  
     position: relative;
 }
@@ -135,7 +135,7 @@ input[type="phone"] {
     border-top-left-radius: 0; 
 }
 
-.selected {
+.update-form__select__selected {
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
     height: 28px;
@@ -151,20 +151,20 @@ input[type="phone"] {
     align-items: center;
 }
 
-.flag {
+.select__image {
     margin-right: 12px;
 }
 
-div .lbl {
+div .update-form__label {
     margin-right: 72px;
 }
 
-.block {
+.update-form__block {
     padding: 10px 20px 40px;
     border-bottom: 1px solid #c5c5c5;
 }
 
-.list {
+.update-form__list {
     top: 55%;
     border-radius: 4px;
     border: 1px solid lightgray;
@@ -176,7 +176,7 @@ div .lbl {
     margin: 16px -4px;
 }
 
-.option {
+.list__option {
     display: flex;
     flex-direction: row;
     height: 36px;
@@ -186,7 +186,7 @@ div .lbl {
     margin-left: 4px;
 }
 
-.list .last {
+.update-form__list .last {
     margin-left: 32px;
 }
 
@@ -194,25 +194,25 @@ div .lbl {
     background-color: lightgray; 
 }
 
-.buttons {
+.update-form__buttons {
     padding: 20px;
 }
 
 @media (min-width: 50px) and (max-width: 690px) {
-    .update_form {
+    .update-form {
         width: inherit;
     }
 
-    .update-title {
+    .update-block__title {
         font-size: 28px;
     }
 
-    .select_list {
+    .update-form__select {
         width: 122px;
         font-size: 14px;
     }
 
-    .selected {
+    .update-form__select__selected {
         font-size: 14px;
     }
 
@@ -223,15 +223,15 @@ div .lbl {
         padding-left: 5px;
     }
 
-    div .lbl {
+    div .update-form__label {
         margin-right: 40px;
     }
 
-    .block {
+    .update-form__block {
         padding: 30px 20px 40px;
     }
 
-    .btn {
+    .update-form__button {
         height: 32px;
         font-size: 16px;
         width: 120px;
@@ -247,32 +247,32 @@ div .lbl {
         color: black;
     }
 
-    .input-form {
+    .update-form__input {
         padding: 0;
         font-size: 14px;
     }
 
-    .list {
+    .update-form__list {
         width: 140px;
     }
 }
 
 @media (min-width: 50px) and (max-width: 690px) and (orientation: landscape) {
-    .block {
+    .update-form__block {
         padding: 15px 20px 40px;
     }
 
-    .buttons {
+    .update-form__buttons {
         padding: 25px 20px 40px;
     }
 }
 
 @media (min-width: 691px) and (max-width: 1024px) {
-    .select_list {
+    .update-form__select {
         font-size: 16px;
     }
 
-    .selected {
+    .update-form__select__selected {
         width: 160px;
     }
 
@@ -283,15 +283,15 @@ div .lbl {
         padding-left: 15px;
     }
 
-    div .lbl {
+    div .update-form__label {
         margin-right: 60px;
     }
 
-    .block {
+    .update-form__block {
         padding: 30px 20px 40px;
     }
 
-    .btn {
+    .update-form__button {
         height: 32px;
         font-size: 16px;
         width: 140px;
@@ -307,31 +307,31 @@ div .lbl {
         color: black;
     }
 
-    .input-form {
+    .update-form__input {
         padding: 0;
         font-size: 16px;
     }
 
-    .list {
+    .update-form__list {
         width: 140px;
     }
 }
 
 @media (min-width: 691px) and (max-width: 1024px) and (orientation: landscape) {
-    .update_form {
+    .update-form {
         width: inherit;
     }
 
-    header .update-title {
+    header .update-block__title {
         font-size: 28px;
         margin-top: 4px;
     }
     
-    .block {
+    .update-form__block {
         padding: 15px 20px 40px;
     }
 
-    .buttons {
+    .update-form__buttons {
         padding: 20px 20px 20px;
     }
 }
