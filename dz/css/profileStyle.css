@@ -39,7 +39,7 @@
     margin-bottom: 25px;
 }
 
-.columnData {  
+.column-data {  
     margin-right: 150px;
 }
 
@@ -83,7 +83,7 @@
     .container {
         width: 100%;
     }
-    .columnData {
+    .column-data {
         margin-right: 100px;
     }
 } 

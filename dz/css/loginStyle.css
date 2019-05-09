@@ -48,11 +48,11 @@
     margin-right: 10px;
 }
 
-.vkontakteButton {
+.vkontakte-button {
     background-color: var(--vk-btn-color);
 }
 
-.facebookButton {  
+.facebook-button {  
     background-color: var(--fb-btn-color);
 }
 
