@@ -8,7 +8,7 @@ body {
     min-width: 260px;
 }
 
-.login_form {
+.login-form {
     width: 450px;
     border: 1px solid gainsboro;
     background-color: #ffffff;
@@ -17,14 +17,14 @@ body {
     padding: 10px 20px 20px;
 }
 
-form .main_form, form .social {
+form .login-form__inputs, form .login-form__buttons {
     display: flex;
     flex-direction: column;
     height: max-content;
     margin-bottom: 16px;
 }
 
-form .main_item {
+form .login-form__input {
     margin-bottom: 16px;
 }
 
@@ -32,23 +32,23 @@ form main .last, form .last {
     margin-bottom: 0;
 }
 
-form .social .social_item {
+form .login-form__buttons .login-form__button {
     margin-bottom: 12px;
 }
 
-.login_form {
+.login-form {
     margin: auto;
 }
 
-.form_header {
+.login-form__header {
     text-align: center;
 }
 
-.form_header h1 {
+.login-form__header h1 {
     margin-top: 12px;
 }
 
-.btn {
+.submit-button {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -58,6 +58,13 @@ form .social .social_item {
     height: 58px;
     font-size: 18px;
     width: 100%;
+}
+
+.submit-button:focus {
+    box-shadow: 0 0 0 2px #ffffff,
+                0 0 0 4px rgb(61, 90, 121);
+    outline: none;
+    cursor: pointer;
 }
 
 .vk_button img, .mail_button img, .fb_button img {
@@ -106,11 +113,11 @@ form .social .social_item {
     background-color: #02746a;
 }
 
-.hr-block {
+.login-form__hr-block {
     margin: 40px 0 40px 0;
 }
 
-.hr-text {
+.hr-block__text {
     border: none;
     border-top: 2px solid rgba(59, 59, 59, 0.418);
     color: black;
@@ -128,7 +135,7 @@ hr:after {
     top: -11px;
 }
 
-.input-form {
+.form-input {
     height: 50px;
     font-size: 16px;
 
@@ -141,21 +148,14 @@ hr:after {
     margin: 4px;
 }
 
-.input-form:focus {
+.form-input:focus {
     box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
     cursor: pointer;
 }
 
-.btn:focus {
-    box-shadow: 0 0 0 2px #ffffff,
-                0 0 0 4px rgb(61, 90, 121);
-    outline: none;
-    cursor: pointer;
-}
-
-.input-form[type="password"] {
+.form-input[type="password"] {
     box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 3px red;
     margin: 4px;
@@ -163,28 +163,28 @@ hr:after {
     background: url(../assets/show.svg) no-repeat right 14px top 50%;      
 }
 
-.main_form .last {
+.login-form__inputs .last {
     padding: 5px 0;
     color: red;
     font-size: 14px;
 }
 
 @media (min-width: 50px) and (max-width: 690px) {
-    .login_form {
+    .login-form {
         width: inherit;
     }
 
-    .btn {
+    .submit-button {
         min-height: 48px;
         font-size: 16px;
         padding-right: 20px;
     }
 
-    .hr-block {
+    .login-form__hr-block {
         margin: 4px 0 20px 0
     }
 
-    .input-form {
+    .form-input {
         height: 40px;
         font-size: 14px;
     
@@ -192,11 +192,11 @@ hr:after {
         padding: 0 10px;
     }
 
-    .input-form[type="password"] {
+    .form-input[type="password"] {
         background-size: 16px 32px;  
     }
 
-    form .social {
+    form .login-form__buttons {
         display: flex;
         flex-direction: column;
         height: max-content;
@@ -205,15 +205,15 @@ hr:after {
 }
 
 @media (min-width: 50px) and (max-width: 690px) and (orientation: landscape) {
-    .container .login_form {
+    .container .login-form {
         margin: 4px 0 12px 0;
     }
 
-    .login_form {
+    .login-form {
         width: inherit;
     }
 
-    .btn {
+    .submit-button {
         min-height: 48px;
         width: inherit;
         align-items: center;
@@ -223,49 +223,49 @@ hr:after {
         width: 100%;
     }
 
-    .hr-block {
+    .login-form__hr-block {
         margin: 4px 0px 20px 0;
     }
 
-    .input-form {
+    .form-input {
         height: 40px;
         font-size: 15px;
         border-radius: 6px;
         padding: 0 10px;
     }
 
-    .input-form[type="password"] {
+    .form-input[type="password"] {
         background-size: 16px 32px;  
     }
 
-    form .social {
+    form .login-form__buttons {
         display: flex;
         flex-direction: row;
         height: max-content;
         margin: -8px 0 24px 0;
     }
     
-    form .social .social_item {
+    form .login-form__buttons .login-form__button {
         margin-bottom: 0px;
     }
 }
 
 @media (min-width: 691px) and (max-width: 1024px) {
-    .login_form {
+    .login-form {
         width: 450px;
     }
 
-    .btn {
+    .submit-button {
         height: 58px;
         font-size: 18px;
         padding-right: 20px;
     }
 
-    .hr-block {
+    .login-form__hr-block {
         margin: 36px 0 36px 0
     }
 
-    .input-form {
+    .form-input {
         height: 40px;
         font-size: 18px;
     
@@ -273,7 +273,7 @@ hr:after {
         padding: 0 10px;
     }
 
-    .input-form[type="password"] {
+    .form-input[type="password"] {
         background-size: 16px 32px;  
     }
 }
