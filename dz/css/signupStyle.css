@@ -30,7 +30,7 @@ body {
 
 @media (min-width: 760px) and (max-width: 1200px) {
     .container { 
-        max-width: 890px;
+        max-width: 780px;
     }
     .title {
         font-size: 35px;
@@ -63,7 +63,7 @@ body {
 
 @media (min-width: 380px) and (max-width: 500px) {
     .container { 
-        max-width: 420px;
+        max-width: 340px;
     }
     .title {
         font-size: 19px;
@@ -78,7 +78,7 @@ body {
 
 @media (max-width: 380px) {
     .container { 
-        max-width: 370px;
+        max-width: 270px;
     }
     .title {
         font-size: 15px;
