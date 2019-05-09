@@ -87,8 +87,8 @@
 .password-block img {
     position: absolute;
     z-index: 100;
-    right: 35px;
-    padding: 0 0 0 10px;
+    padding: 0 10px 0 0;
+    margin: -1px;
     background-color: var(--bg-color);
 }
 
