@@ -5,7 +5,7 @@
     display: block;
 }
 
-.menu_form {
+.menu-form {
     width: 370px;
     background-color: #f0f0f0;
     height: 100vh;
@@ -13,17 +13,17 @@
     margin: 8px 0 0 8px;
 }
 
-.logo {
+.menu-form__logo {
     background-color: #018176;
     height: 63px;
 }
 
-.mail_logo {
+.mail-logo {
     padding: 15px 20px 0;
     height: 37px;
 }
 
-.menu {
+.menu-form__buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,14 +31,14 @@
     padding: 100px 10px 0 10px;
 }
 
-.sign_in_form {
+.signin-form {
     width: 400px;
     position: absolute;
     top: 214px;
     left: 572px;
 }
 
-.btn {
+.submit-button {
     height: 54px;
     font-size: 18px;
     width: 100%;
@@ -51,19 +51,19 @@
     cursor: pointer;
 }
 
-.selected_button:hover {
+.menu-form__button__selected:hover {
     background-color: #019185;
 }
 
-.selected_button:active {
+.menu-form__button__selected:active {
     background-color: #02746a;
 }
 
-.picture {
+.button__picture {
     margin-right: 8px;
 }
 
-.main_button {
+.main-button {
     background-color: #f0f0f0;
     border-color: #d3d3d3;
     box-shadow: 0 0.1px 0 0 rgba(0, 0, 0, 0.1);
@@ -71,34 +71,34 @@
     color: black;
 }
 
-.main_button:hover {
+.main-button:hover {
     background-color: #ffffff;
 }
 
-.main_button:active {
+.main-button:active {
     background-color: #e7e7e7;
 }
 
-.menu .menu_item {
+.menu-form__buttons .menu-form__button {
     margin-bottom: 28px;
 }
 
-.link {
+.menu-form__link {
     text-decoration: none;
     color: #045dd1;
     font-size: 16px;
 }
 
-.link:hover {
+.menu-form__link:hover {
     text-decoration: underline;
 }
 
-.sign_in_header h1 {
+.signin-form__header h1 {
     font-size: 34px;
     margin-top: 8px;
 }
 
-.input-form {
+.signin-form__input {
     height: 50px;
     font-size: 16px;
     border-radius: 4px;
@@ -110,64 +110,64 @@
     margin: 4px;
 }
 
-.input-form:focus {
+.signin-form__input:focus {
     box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
 }
 
-.btn:focus {
+.submit-button:focus {
     box-shadow: 0 0 0 2px #ffffff,
                 0 0 0 4px rgb(61, 90, 121);
     outline: none;
 }
 
-.input-form[type="password"] {
+.signin-form__input[type="password"] {
     background: url(../assets/show.svg) no-repeat right 14px top 50%;
 }
 
-.input_form {
+.signin-form__inputs {
     display: flex;
     flex-direction: column;
 }
 
-.input_form input {
+.signin-form__inputs input {
     margin-bottom: 28px;
 }
 
-.btn b {
+.submit-button b {
     width: 234px;
 }
 
-.nav-input {
+.nav-checkbox {
     position: absolute;
     display: none;
 }
 
 @media (min-width: 50px) and (max-width: 800px) {
-    .sign_in_form {
+    .signin-form {
         width: inherit;
         top: 25%;
         left: 20%;
     }
 
-    .sign_in_header h1 {
+    .signin-form__header h1 {
         font-size: 28px;
         margin-top: 8px;
     }
 
-    .input-form {
+    .signin-form__input {
         height: 40px;
         font-size: 14px;
         border-radius: 4px;
     }
 
-    .btn {
+    .submit-button {
         height: 48px;
         font-size: 14px;
     }
 
-    .menu_form {
+    .menu-form {
         position: fixed;
         top: 0;
         bottom: 0;
@@ -179,7 +179,7 @@
         box-shadow: none;
     }
 
-    .menu_form .logo {
+    .menu-form .menu-form__logo {
         width: 100%;
         padding: 0;
         margin: 8px 0;
@@ -209,42 +209,42 @@
         text-decoration: none;
     }
 
-    .nav-input:checked ~ .menu_form {
+    .nav-checkbox:checked ~ .menu-form {
         left: 0;
         box-shadow: 4px 0 20px 0 rgba(0, 0, 0, 0.5);
         overflow-y: auto;
     }
 
-    .nav-input:checked ~ .menu_form .nav-toggle {
+    .nav-checkbox:checked ~ .menu-form .nav-toggle {
         left: auto;
         right: 0;
     }
 
-    .nav-input:checked ~ .menu_form .nav-toggle:after {
+    .nav-checkbox:checked ~ .menu-form .nav-toggle:after {
         content: '\2715';
     }
 }
 
 
 @media (min-width: 801px) and (max-width: 1024px) {
-    .sign_in_form {
+    .signin-form {
         width: inherit;
         top: 25%;
         left: 50%;
     }
 
-    .sign_in_header h1 {
+    .signin-form__header h1 {
         font-size: 28px;
         margin-top: 8px;
     }
 
-    .input-form {
+    .signin-form__input {
         height: 40px;
         font-size: 14px;
         border-radius: 4px;
     }
 
-    .btn {
+    .submit-button {
         height: 48px;
         font-size: 14px;
     }

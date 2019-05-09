@@ -9,42 +9,42 @@
 </head>
 <body>
     <div class="container">
-        <input class="input-form nav-input" type="checkbox" id="nav-toggle" hidden>
-        <form class="menu_form">
-            <div class="logo">
+        <input class="nav-checkbox" type="checkbox" id="nav-toggle" hidden>
+        <form class="menu-form">
+            <div class="menu-form__logo">
                 <label for="nav-toggle" class="nav-toggle" onclick></label>
-                <img class="mail_logo" src="../assets/mail.svg">
+                <img class="mail-logo" src="../assets/mail.svg">
             </div>
-            <main class="menu">
-                <button class="btn selected_button menu_item">
-                    <img class="picture" src="../assets/sign_in.svg">
+            <main class="menu-form__buttons">
+                <button class="submit-button menu-form__button menu-form__button__selected">
+                    <img class="button__picture" src="../assets/sign_in.svg">
                     <b>Авторизация</b>
                 </button>
-                <button class="btn main_button menu_item">
-                    <img class="picture" src="../assets/access.svg">
+                <button class="submit-button main-button menu-form__button">
+                    <img class="button__picture" src="../assets/access.svg">
                     <b>Регистрация</b>
                 </button>
-                <button class="btn main_button menu_item">
-                    <img class="picture" src="../assets/users.svg">
+                <button class="submit-button main-button menu-form__button">
+                    <img class="button__picture" src="../assets/users.svg">
                     <b>Авторы</b>
                 </button>
-                <button class="btn main_button menu_item">
-                    <img class="picture" src="../assets/game1.svg">
+                <button class="submit-button main-button menu-form__button">
+                    <img class="button__picture" src="../assets/game1.svg">
                     <b>Игры</b>
                 </button>
-                <a class="link" href="#"><b>О проекте</b></a>
+                <a class="menu-form__link" href="#"><b>О проекте</b></a>
             </main>
         </form>
-        <form class="sign_in_form">
-            <header class="sign_in_header">
+        <form class="signin-form">
+            <header class="signin-form__header">
                 <h1>Авторизуйтесь на<br/> сервисе</h1>
             </header>
-            <main class="input_form">
-                <input class="input-form" type="email" placeholder="Email">
-                <input class="input-form" type="password" placeholder="Пароль">
+            <main class="signin-form__inputs">
+                <input class="signin-form__input" type="email" placeholder="Email">
+                <input class="signin-form__input" type="password" placeholder="Пароль">
             </main>
-            <button class="btn selected_button">
-                <img class="picture" src="../assets/mailru.svg">
+            <button class="submit-button menu-form__button__selected">
+                <img class="button__picture" src="../assets/mailru.svg">
                 <b>Войти через почту</b>
             </button>
         </form>
