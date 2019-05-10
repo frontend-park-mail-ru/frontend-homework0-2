@@ -23,7 +23,7 @@ body {
 }
 
 @media (min-width: 1200px) {
-    .password-block img {
+    .password-block-img {
         right: 165px;
     }
 }
@@ -56,7 +56,7 @@ body {
     .signup {
         font-size: 12px;
     }
-    .password-block img {
+    .password-block-img {
         right: 50px;
     }
 }
@@ -71,7 +71,7 @@ body {
     .main-block {
         max-width: 270px;
     }
-    .password-block img {
+    .password-block-img {
         right: 15px;
     }
 }
@@ -86,7 +86,7 @@ body {
     .main-block {
         max-width: 270px;
     }
-    .password-block img {
+    .password-block-img {
         right: 15px;
     }
 }
