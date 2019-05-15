@@ -75,17 +75,17 @@
 
 .arrow-down-icon {
 	-webkit-mask-image: url("../icons/drop_down.svg");
-	mask-image: url("../icons/drop_down.svg");	
+	mask-image: url("../icons/drop_down.svg");
 }
 
 .user-edit-icon {
 	-webkit-mask-image: url("../icons/user_edit.svg");
-	mask-image: url("../icons/user_edit.svg");		
+	mask-image: url("../icons/user_edit.svg");
 }
 
 .delete-icon {
 	-webkit-mask-image: url("../icons/delete.svg");
-	mask-image: url("../icons/delete.svg");	
+	mask-image: url("../icons/delete.svg");
 }
 
 /*****************************************************************/
@@ -95,9 +95,9 @@
 	height: 10px;
 }
 
-.icon-size-15 {
-	width: 15px;
-	height: 15px;
+.icon-size-16 {
+	width: 16px;
+	height: 16px;
 }
 
 .icon-size-20 {

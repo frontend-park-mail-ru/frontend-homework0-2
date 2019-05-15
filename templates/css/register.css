@@ -4,8 +4,8 @@
 
 .btn-block {
 	position: relative;
-	margin-top: 3%;
-	margin-bottom: 2%;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 .title-block {
 	text-align: left;
@@ -18,7 +18,7 @@
 }
 
 .input-container {
-    padding: 1px 10px 10px 24px;
+    padding: 1px 10px 10px 25px;
 }
 
 .required-area input:invalid {
@@ -31,7 +31,7 @@ input:valid ~ .invalid-input {
 
 .date-block {
 	align-items: center;
-	padding-right: 7px;
+	padding-right: 5px;
 }
 
 .block-size-30 {
@@ -40,22 +40,20 @@ input:valid ~ .invalid-input {
 
 .select-control {
 	display: inline-block;
-    width: 30%;
-    height: calc(1.5em + 1rem);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 404;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    background: url('../icons/drop_down_big.svg') no-repeat right .5rem center/11px 11px;
-    -webkit-appearance: none;
+	width: 30%;
+	height: 40px;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: normal;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	background: url('../icons/drop_down_big.svg') no-repeat right .5rem center/11px 11px;
+	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 	background-color: #fff;
-	border: 1px solid #ced4da;
-	border-radius: .25rem;
 }
 
 .phone-block {
@@ -63,9 +61,9 @@ input:valid ~ .invalid-input {
 }
 
 .country-code-wrapper {
-	padding-left: 26px; /* image-width */
-    background-repeat: no-repeat;
-    background-size: 100%;
+	padding-left: 25px; /* image-width */
+	background-repeat: no-repeat;
+	background-size: 100%;
 	background-position: 0 30%;
 }
 
@@ -83,39 +81,34 @@ input:valid ~ .invalid-input {
 
 .form-phone-group {
 	position: relative;
-    margin-bottom: 1rem;
+	margin-bottom: 1rem;
 	border: 1px solid #E0E0E0;
 	border-radius: 3px;
-	height: 35px;
-	margin-right: 20px; 
+	height: 34px;
+	margin-right: 20px;
 }
 
 .phone-input-form {
 	display: block;
-    width: 50%;
-    height: calc(1.5em + -1px);
+    width: 180px;
+    height: 28px;
     padding: .375rem .75rem;
     font-size: 1rem;
-    font-weight: 404;
+    font-weight: normal;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
-    border-radius: 0rem .25rem .25rem 0rem;
-    margin: -37px -8px 14px 161px;
+    border-radius: 0 .25rem .25rem 0;
+    margin: -42px -8px 14px 161px;
 }
 
 .custom-select-wrapper {
-	width: 39%;
+	width: 160px;
 	border: 1px solid #ced4da;
 	border-radius: .25rem 0rem 0rem .25rem;
-	height: 35px;
+	height: 40px;
 }
 
 .password_pos {
 	padding-top: 10px;
 }
-
-/*input:valid {border-color: green;}*/
-
-/*input:invalid:not(:placeholder-shown) {border-color: red;}
-input:valid:not(:placeholder-shown) {border-color: green;}*/

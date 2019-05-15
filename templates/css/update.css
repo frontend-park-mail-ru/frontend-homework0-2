@@ -1,5 +1,5 @@
-.con-h-30 {
-    height: 395px;
+.con-h-394 {
+    height: 394px;
 }
 .update-container {
     background-color: white;
@@ -45,13 +45,8 @@
 
 .back-btn-icon_pos {
     margin-left: -18px;
-    margin-top: 1.3em;
+    margin-top: 20px;
 }
-/*.option-font {*/
-    /*text-align: center;*/
-    /*font-family: Helvetica, serif;*/
-    /*font-size: 10px;*/
-/*}*/
 
 .title-container {
     display: flex;

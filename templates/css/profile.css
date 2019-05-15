@@ -1,5 +1,6 @@
-.con-h-30 {
-	height: 29.2em;
+.profile {
+	height: 450px;
+	width: 404px;
 }
 
 .info-block {
@@ -55,15 +56,15 @@
 
 .btn-font {
 	font-family: Helvetica;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: bold;
 }
 
-.font-color-white {
+.color_white {
 	color: white;
 }
 
-.font-color-gray {
+.color_gray {
 	color: #9C9C9C;
 }
 
@@ -74,8 +75,8 @@
 }
 
 .btn-wrapper {
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 4px;
+	margin-right: 4px;
 }
 
 .btn-icon-pos {
@@ -84,5 +85,10 @@
 }
 
 .btn-title-wrapper {
-	padding-left: 9px;
+	padding-left: 10px;
+}
+
+.btn_secondary {
+	border: 1px solid var(--color-grey-lgh);
+
 }

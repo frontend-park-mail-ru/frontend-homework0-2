@@ -2,6 +2,11 @@
 	margin: 0;
 	background-color: #E2284A;
 }
+:root {
+	--color-black: rgba(0,0,0,0.5);
+	--color-red: #FF2D54;
+	--color-grey-lgh: #ced4da;
+}
 
 .bar {
 	display: block;
@@ -15,12 +20,12 @@
 	position: absolute;
 	top: 50%;
 	transform: translate(0, -50%)
-} 
+}
 
 .logo {
 	margin-left: 100px;
 	margin-top: 10px;
-	display: inline-flex; 
+	display: inline-flex;
 }
 
 .logo-wrapper {
@@ -43,10 +48,10 @@
 }
 
 .menu-container {
-	-webkit-box-shadow: 0px 5px 6px -6px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 5px 6px -6px rgba(0,0,0,0.5);
-	box-shadow: 0px 5px 6px -6px rgba(0,0,0,0.5);
-	border: 1px solid #E0E0E0;
+	-webkit-box-shadow: 0px 5px 6px -6px var(--color-black);
+	-moz-box-shadow: 0px 5px 6px -6px var(--color-black);
+	box-shadow: 0px 5px 6px -6px var(--color-black);
+	border: 1px solid var(--color-grey-lgh);
 	border-radius: 3px;
 }
 
@@ -55,7 +60,7 @@
 	top: 200%;
 	left: 50%;
 	margin-right: -50%;
-	transform: translate(-50%, -50%) 
+	transform: translate(-50%, -50%)
 }
 
 .menu-title {
@@ -114,11 +119,11 @@ hr {
 }
 
 .menu-font-wrapper {
-	padding-left: 10px; 
+	padding-left: 10px;
 }
 
 .item {
-    position: relative;
+	position: relative;
 	color: #444;
 	padding: 0px;
 	text-align: left;
@@ -126,7 +131,7 @@ hr {
 }
 
 .white-pos {
-  background-color: #ffffff;
+  background-color: white;
   cursor: pointer;
   width: 100%;
   outline: none;

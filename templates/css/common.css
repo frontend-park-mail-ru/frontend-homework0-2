@@ -1,16 +1,28 @@
+:root {
+	--color-black: rgba(0,0,0,0.5);
+	--color-red: #FF2D54;
+	--color-grey-lgh: #ced4da;
+}
+
+body {
+	font-size: 14px;
+	font-family: Helvetica, sans-serif;
+}
+
 .login-body {
 	background-color: #858585;
 }
+
 .login-container {
-	background-color: #FFFFFF;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background-color: white;
+	box-shadow: 0 0 10px var(--color-black);
 	border-radius: 5px;
 }
+
 .container {
 	margin-left: auto;
 	margin-right: auto;
 	width: 28em;
-	/*height: 30em;*/
 	top: 50%;
 	transform: translate(0, 47%);
 }
@@ -21,15 +33,15 @@
 }
 
 .container-shadow {
-	-webkit-box-shadow: 0 0 40px -5px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0 0 40px -5px rgba(0,0,0,0.5);
-	box-shadow: 0 0 40px -5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 40px -5px  var(--color-black);
+	-moz-box-shadow: 0 0 40px -5px  var(--color-black);
+	box-shadow: 0 0 40px -5px  var(--color-black);
 }
 
 .container-pos {
 	display: block;
 	margin-left: auto;
-	margin-right: auto;  
+	margin-right: auto;
 }
 
 .input-container {
@@ -37,19 +49,20 @@
 }
 
 .invalid-input {
-	font-size: 14px;
+	font-size: 12px;
 	color: red;
 	font-family: Helvetica;
 	font-weight: bold;
+	padding-top: 5px;
 }
 
-.con-w-28 {
-	width: 28em;
+.container_width_420 {
+	width: 420px;
 }
 
 .title-font {
 	font-family: Helvetica;
-	font-size: 32px;
+	font-size: 36px;
 	font-weight: bold;
 }
 
@@ -70,26 +83,25 @@
 	user-select: none;
 	background-color: transparent;
 	border: 1px solid transparent;
-	box-shadow: 0px 5px 6px -6px rgba(0,0,0,0.5);
 	padding: .375rem .75rem;
 	border-radius: .25rem;
 	align-items: center;
 	cursor: pointer;
 }
 
-.btn-3 {
+.size_large {
 	width: 130px;
 	height: 40px;
 }
 
-.btn-21 {
+.size_xlarge {
 	width: 210px;
 	height: 40px;
 }
 
 
 .btn-red {
-	background-color: #FF2D54;
+	background-color: var(--color-red);
 }
 
 .btn-gray {
@@ -106,30 +118,30 @@
 
 .btn-font {
 	font-family: Helvetica;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: bold;
 }
 
-.font-size-20 {
-	font-size: 17px;
+.font_size-16 {
+	font-size: 16px;
 }
 
-.font-color-white {
+.color_white {
 	color: white;
 }
 
-.font-color-black {
+.color_dark {
 	color: #333333;
 }
 
-.font-color-gray {
+.color_gray {
 	color: #9C9C9C;
 }
 
 .option-font {
 	text-align: center;
 	font-family: Helvetica, serif;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 .option-font_pos {
@@ -138,7 +150,7 @@
 
 .comment-text {
 	color: #9B9B9B;
-	font-size: 15px;
+	font-size: 16px;
 	font-family: Helvetica;
 	font-weight: bold;
 }
@@ -154,7 +166,7 @@
     font-size: 1rem;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
+    border: 1px solid var(--color-grey-lgh);
     border-radius: .25rem;
 }
 

@@ -1,24 +1,29 @@
 .login-body {
 	background-color: #858585;
 }
+:root {
+	--color-black: rgba(0,0,0,0.5);
+	--color-red: #FF2D54;
+	--color-grey-lgh: #ced4da;
+}
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 28em;
-    height: 30em;
-    top: 50%;
-   	transform: translate(0, 25%);
+	margin-left: auto;
+	margin-right: auto;
+	width: 28em;
+	height: 30em;
+	top: 50%;
+	transform: translate(0, 25%);
 }
 
 .login-container {
 	background-color: #FFFFFF;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	box-shadow: 0 0 10px var(--color-black);
 	border-radius: 5px;
 }
 
 .form-container {
-    padding: 1px 10px 10px 24px;
+	padding: 1px 10px 10px 25px;
 }
 
 .login-title {
@@ -35,21 +40,20 @@
 }
 
 .form-label-group {
-    position: relative;
-    margin-bottom: 1rem;
+	position: relative;
+	margin-bottom: 20px;
 }
 
 .input-form {
-    display: block;
-    width: 89%;
-    height: calc(1.5em + .5rem);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 404;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
+	display: block;
+	width: 89%;
+	height: calc(1.5em + .5rem);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	background-color: white;
+	background-clip: padding-box;
+	border: 1px solid var(--color-grey-lgh);
+	border-radius: .25rem;
 }
 
 .close-button {
@@ -59,10 +63,8 @@
 }
 
 .secret-icon {
-	float: right;
-	margin-right: 25px;
-	margin-top: -32px;
-	position: relative;
+	margin: -28px 0 0 89%;
+	position: absolute;
 	z-index: 2;
 }
 
@@ -70,7 +72,7 @@
 	display: block;
 	position: relative;
 	padding-left: 25px;
-	padding-top: 0px;
+	padding-top: 0;
 	cursor: pointer;
 	font-size: 15px;
 	font-family: Helvetica;
@@ -95,7 +97,7 @@
 	left: 0;
 	height: 15px;
 	width: 15px;
-	border: 1px solid #ced4da;
+	border: 1px solid var(--color-grey-lgh);
 	border-radius: .25rem;
 }
 
@@ -126,7 +128,7 @@
 	display: block;
 	margin-left: auto;
 	width: 9em;
-	margin-top: -19px; 
+	margin-top: -20px;
 }
 
 .link-font {
@@ -136,29 +138,27 @@
 }
 
 .btn {
-    width: 14px;
-    height: 14px;
-    cursor: pointer;
-    display: inline-block;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    background-color: transparent;
-	border: 1px solid #ced4da;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	display: inline-block;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	background-color: transparent;
+	border: 1px solid var(--color-grey-lgh);
 	border-radius: .25rem;
 }
 
 .container .btn {
 	margin-left: auto;
-    margin-right: auto;
-    width: 11em;
-    height: 2.5em;
-    display: flex;
-  	align-items: center;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
 }
 
 .btn-box-3 {
-	width: 130px;
-	height: 30px; 
+	width: 180px;
+	height: 40px;
 }
 
 .btn-color-red {
@@ -171,21 +171,22 @@
 	text-align: center;
 	margin: auto;
 	font-weight: bold;
+	font-size: 16px;
 }
 
-a { 
+a {
 	text-decoration: none;
 }
 
-a:hover { 
+a:hover {
 	text-decoration: underline;
 }
 
 .container-2 {
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 13em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 208px;
 }
 
 .center-block {
@@ -204,24 +205,26 @@ a:hover {
 
 .com-container {
 	display: block;
-	margin: 0px 5px 10px 5px;
+	margin: 0px 4px 12px 4px;
 }
 
 .container-size-5 {
-	width: 33px;
+	width: 32px;
 	height: 42px;
 	border-radius: .25rem;
 }
 
 .social-pos {
-	margin-top: 13px;
-	margin-left: 9px;
+	margin-top: 12px;
+	margin-left: 8px;
 }
 
-hr {
-	color: #ced4;
+.dividing-line {
+	border: none;
+	background-color: var(--color-grey-lgh);
+	height: 1px;
 }
 
 .register-block {
-	padding: 10px;
+	height: 10%;
 }
