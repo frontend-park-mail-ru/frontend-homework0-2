@@ -156,7 +156,7 @@
 	align-items: center;
 }
 
-.btn-box-3 {
+.btn-box-small {
 	width: 180px;
 	height: 40px;
 }
@@ -182,7 +182,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-.container-2 {
+.container-large {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -208,7 +208,7 @@ a:hover {
 	margin: 0px 4px 12px 4px;
 }
 
-.container-size-5 {
+.container-xsmall {
 	width: 32px;
 	height: 42px;
 	border-radius: .25rem;

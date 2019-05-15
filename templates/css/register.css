@@ -34,7 +34,7 @@ input:valid ~ .invalid-input {
 	padding-right: 5px;
 }
 
-.block-size-30 {
+.block-large {
 	width: 105%;
 }
 
