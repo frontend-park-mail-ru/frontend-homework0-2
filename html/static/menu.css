@@ -1,0 +1,141 @@
+.sidenav {
+    width:450px;
+    position: fixed;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.sidenav__header {
+    background-color: #005ff9;
+    height: 70px;
+    padding-left: 10px;
+}
+
+.sidenav__body {
+    background-color: #ffffff;
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.sidenav__body__opened {
+    background-color: #005ff9;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 20px;
+    height: 70px;
+    width: 100%;
+}
+
+.sidenav__body__button {
+    border: 1px solid #BBBBBB;
+    margin-bottom: 20px;
+    height: 70px;
+    width: 100%;
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.main__form {
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+@media (min-width: 1275px) {
+    .main__form {
+        left: 60%;
+        top: 40%;
+    }
+}
+
+@media (max-width: 1275px) and (min-width: 1050px) {
+    .main__form {
+        left: 750px;
+        top: 40%;
+    }
+}
+
+.main__form__input {
+    border: 1px solid #BBBBBB;
+    border-radius: 2px;
+    height: 60px;
+    width: 500px;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+
+@media (max-width: 1050px) {
+    .main__form {
+        left: 50%;
+    }
+    
+    @media (max-height: 600px) {
+        .main__form {
+            top: 450px;
+        }
+    }
+
+    @media (min-height: 600px) {
+        .main__form {
+            top: 500px;
+        }
+    }
+    
+    .sidenav {
+        width: 90%;
+        height: 320px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .sidenav__body {
+        padding-top: 10px;
+        height: 40px;
+    }
+
+    .sidenav__body__button {
+        margin-bottom: 10px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .sidenav__body__opened {
+        margin-bottom: 10px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .main__form__input {
+        height: 20px;
+        width: 90%;
+    }
+
+    .main__form__header {
+        font-size: 19px;
+    }
+}
+
+.main__form__header {
+    font-weight: normal;
+}
+
+.main__form__button {
+    height: 40px;
+    width: 250px;
+    font-size: 20px;
+    background-color: #005ff9;
+    color: #ffffff;
+    padding-left: 40px;
+}
+
+.main__form__image {
+    position: absolute;
+    left: 20px;
+    height: 24px;
+}

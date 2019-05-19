@@ -1,0 +1,92 @@
+html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("images/hero-lg.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.signup {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup__title {
+    color: #ffffff;
+}
+
+@media (min-width: 1150px) {
+    .signup__title{
+        font-size: 50px;
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1150px) and (min-width: 400px) {
+    .signup__title{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .signup__title{
+        font-size: 20px;
+    }
+}
+
+.signup__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup__form__input {
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    font-size: 15px;
+}
+
+@media (min-width: 400px) {
+    .signup__form__input{
+        width: 350px;
+    }
+}
+
+@media (max-width: 400px) {
+    .signup__form__input{
+        width: 90%;
+    }
+}
+
+.signup__form__button {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #005ff9;
+    color: #ffffff;
+    font-size: 14px;
+    border-width: 0px;
+}
+
+.signup__form__eye {
+    padding: 0 0 0 10px;
+    margin-top: -45px;
+    margin-left: 80%;
+    margin-bottom: 30px;
+    height: 20px;
+}
+

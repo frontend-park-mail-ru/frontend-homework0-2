@@ -1,0 +1,137 @@
+html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #888888;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.login {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    
+}
+
+.login__divider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 40px;
+    margin-top: 24px;
+}
+
+.login__divider__left {
+    float:left;
+}
+
+.login__divider__right {
+    float:right;
+}
+
+.login__form__input {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    font-size: 15px;
+    width: 90%;
+}
+
+.login__form {
+    width: 90%;
+}
+
+.login__form__error {
+    color: red;
+}
+
+@media (min-width: 525px) {
+    .login {
+        width: 500px;
+    }
+    .login__divider__left {
+        width:45%;
+    }
+    .login__divider__right {
+        width:45%;
+    }
+
+    .login__form__error {
+        margin-left: -415px;
+        position: fixed;
+    }
+}
+
+@media (max-width: 525px) {
+    .login {
+        width: 90%;
+    }
+    .login__divider__left {
+        width:40%;
+    }
+    .login__divider__right {
+        width:40%;
+    }
+}
+
+
+button {
+    border: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 50px;
+    width: 90%;
+}
+
+.vk {
+    background-color: #597da3;
+}
+
+.fb {
+    background-color: #3b5998;
+}
+.mail {
+    margin-top: 20px;
+    background-color: #005ff9;
+}
+
+.login__button__image {
+    padding: 0 0 0 10px;
+    margin-top: -45px;
+    margin-right: 225px;
+    margin-bottom: 30px;
+    height: 20px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.login__form__input__eye {
+    position: unset;
+    z-index: 100;
+    padding: 0 0 0 25px;
+    top: 10px;
+    margin-top: -45px;
+    margin-left: 80%;
+    margin-bottom: 40px;
+    height: 20px;
+}
+
+

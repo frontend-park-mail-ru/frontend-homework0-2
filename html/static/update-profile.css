@@ -1,0 +1,146 @@
+body {
+    background-color: #888888;
+}
+
+.update {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-color: #ffffff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(svg/close_big.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 35px;
+    background-position: right 20px top 15px;
+}
+
+@media (min-width: 525px) { 
+    .update {
+        width: 500px;
+    }
+}
+
+@media (max-width: 525px) { 
+    .update {
+        width: 100%;
+    }
+}
+
+.update__header {
+    padding-left: 20px;
+    font-weight: normal;
+    width: 350px;
+}
+
+@media (max-width: 400px) { 
+    .update__header {
+        padding-top: 50px;
+    }
+}
+
+
+.update__form {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.update__form__input {
+    border: 1px solid #BBBBBB;
+    border-radius: 2px;
+    height: 30px;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.login__form__error {
+    color: red;
+}
+
+.update__form__phone {
+    display: flex;
+}
+
+.update__form__phone__select {
+    padding-left: 10px;
+    padding-top: 8px;
+    height: 24px;
+    border-radius: 1px;
+    border: 1px solid black;
+    background-image: url(svg/drop_up_small.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 35px;
+    background-position: right 0px top;
+    flex-basis: 40%;
+}
+
+.update__form__phone__menu {
+    padding-top: 5px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    position: fixed;
+    transform: translate(0%, -50%);
+    width: 150px;
+    height: 80px;
+    border-radius: 5px;
+    border: 1px solid #BBBBBB;
+}
+
+@media (min-width: 400px) { 
+    .update__form__phone__menu {
+        top: 315px;
+    }
+}
+
+
+@media (max-width: 400px) { 
+    .update__form__phone__menu {
+        top: 365px;
+    }
+}
+
+.update__form__phone__menu__item {
+    padding-left: 30px;
+    padding-top: 8px;
+}
+
+.update__form__phone__menu__selectedItem {
+    background-color: #BBBBBB;
+    height: 30px;
+    padding-left: 30px;
+    padding-top: 8px;
+    background-image: url(svg/done.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 35px;
+    background-position: 5px;
+}
+
+.update__form__phone__input {
+    flex-basis: 60%;
+}
+
+.update__buttons {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.update__buttons__update {
+    height: 40px;
+    width: 110px;
+    margin-right: 10px;
+    display: block;
+    background-color: #005ff9;
+    color: #ffffff;
+}
+
+.update__buttons__delete {
+    background-color: #F7F3F3;
+    width: 110px;
+}
+
