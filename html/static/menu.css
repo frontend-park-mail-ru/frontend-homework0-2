@@ -1,18 +1,18 @@
 .sidenav {
-    width:450px;
+    width: 450px;
     position: fixed;
     height: 100%;
     background-color: var(--background-white);
     box-shadow: var(--shadow);
 }
 
-.sidenav__header {
+.sidenav-header {
     background-color: var(--mail-blue);
     height: 70px;
     padding-left: 10px;
 }
 
-.sidenav__body {
+.sidenav-body {
     background-color: var(--background-silver);
     padding: 20px;
     height: 100%;
@@ -20,7 +20,7 @@
     padding-top: 130px;
 }
 
-.sidenav__body__opened {
+.sidenav-body__opened {
     background-color: var(--mail-blue);
     color: var(--background-white);
     font-weight: bold;
@@ -30,7 +30,7 @@
     width: 100%;
 }
 
-.sidenav__body__button {
+.sidenav-body__button {
     border: 1px solid var(--border-gray);
     margin-bottom: 20px;
     height: 70px;
@@ -40,20 +40,20 @@
     font-size: 17px;
 }
 
-.main__form {
+.main-form {
     transform: translate(-50%, -50%);
     position: fixed;
 }
 
-.main__form__image {
+.main-form__image {
     position: absolute;
     margin-top: -68px;
-    margin-left: 90%;
+    margin-left: 480px;
     height: 28px;
 }
 
 @media (min-width: 1275px) {
-    .main__form {
+    .main-form {
         left: 60%;
         top: 40%;
     }
@@ -61,13 +61,13 @@
 }
 
 @media (max-width: 1275px) and (min-width: 1050px) {
-    .main__form {
+    .main-form {
         left: 750px;
         top: 40%;
     }
 }
 
-.main__form__input {
+.main-form__input {
     border: 1px solid var(--border-gray);
     border-radius: 2px;
     height: 60px;
@@ -79,23 +79,24 @@
 }
 
 @media (max-width: 1050px) {
-    .main__form {
+    .main-form {
         left: 50%;
     }
 
-    .main__form__image {
+    .main-form__image {
         margin-top: -46px;
         height: 20px;
+        margin-left: 220px;
     }
     
     @media (max-height: 600px) {
-        .main__form {
+        .main-form {
             top: 450px;
         }
     }
 
     @media (min-height: 600px) {
-        .main__form {
+        .main-form {
             top: 500px;
         }
     }
@@ -107,38 +108,38 @@
         transform: translate(-50%, 0%);
     }
 
-    .sidenav__body {
+    .sidenav-body {
         padding-top: 10px;
         height: 220px;
     }
 
-    .sidenav__body__button {
-        margin-bottom: 10px;
+    .sidenav-body__button {
+        margin-bottom: 12px;
         height: 40px;
         font-size: 12px;
     }
 
-    .sidenav__body__opened {
-        margin-bottom: 10px;
+    .sidenav-body__opened {
+        margin-bottom: 12px;
         height: 40px;
         font-size: 12px;
     }
 
-    .main__form__input {
+    .main-form__input {
         height: 20px;
         width: 90%;
     }
 
-    .main__form__header {
+    .main-form__header {
         font-size: 19px;
     }
 }
 
-.main__form__header {
+.main-form__header {
     font-weight: normal;
 }
 
-.main__form__button {
+.main-form__button {
     height: 40px;
     width: 250px;
     font-size: 20px;
@@ -147,13 +148,13 @@
     padding-left: 40px;
 }
 
-.main__form__button__image {
+.main-form__button-image {
     position: fixed;
     left: 20px;
     height: 24px;
 }
 
-.sidenav__body__anchor {
+.sidenav-body__anchor {
     color: var(--mail-blue);
     text-decoration: blink;
 }

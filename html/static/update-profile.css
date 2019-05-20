@@ -27,61 +27,61 @@ body {
     }
 }
 
-.update__header {
+.update-header {
     padding-left: 20px;
     font-weight: normal;
     width: 350px;
 }
 
 @media (max-width: 400px) { 
-    .update__header {
+    .update-header {
         padding-top: 50px;
     }
 }
 
 
-.update__form {
-    margin-bottom: 30px;
+.update-form {
+    margin-bottom: 28px;
     padding: 20px;
 }
 
-.update__form__input {
+.update-form__input {
+    padding-left: 10px; 
     border: 1px solid var(--border-gray);
     border-radius: 2px;
     height: 30px;
     width: 100%;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
 }
 
 .error {
     border: 1px solid var(--red-error);
 }
 
-.login__form__error {
+.login-form__error {
     color: var(--red-error);
 }
 
-.update__form__phone {
+.update-form__phone {
     display: flex;
 }
 
-.update__form__phone__select {
+.update-form__phone-select {
     padding-left: 10px;
-    padding-top: 8px;
-    height: 24px;
+    padding-top: 10px;
+    height: 22px;
     border-radius: 1px;
     border: 1px solid black;
-    background-image: url(svg/drop_up_small.svg);
-    background-repeat: no-repeat;
     background-size: 20px 35px;
-    background-position: right 0px top;
+    background: url(svg/drop_up_small.svg) no-repeat right 0px top 10px;
     flex-basis: 40%;
 }
 
-.update__form__phone__menu {
+.update-form__phone-menu {
     padding-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     background-color: var(--background-white);
     position: fixed;
     transform: translate(0%, -50%);
@@ -92,55 +92,53 @@ body {
 }
 
 @media (min-width: 400px) { 
-    .update__form__phone__menu {
+    .update-form__phone-menu {
         top: 315px;
     }
 }
 
 
 @media (max-width: 400px) { 
-    .update__form__phone__menu {
+    .update-form__phone-menu {
         top: 365px;
     }
 }
 
-.update__form__phone__menu__item {
+.update-form__phone-menu__item {
     padding-left: 30px;
-    padding-top: 8px;
+    padding-top: 10px;
 }
 
-.update__form__phone__menu__selectedItem {
-    background-color: var(--border-gray);
+.update-form__phone-menu__selectedItem {
     height: 30px;
     padding-left: 30px;
-    padding-top: 8px;
-    background-image: url(svg/done.svg);
-    background-repeat: no-repeat;
+    padding-top: 10px;
+    background: url(svg/done.svg) no-repeat 5px 0px;
     background-size: 20px 35px;
-    background-position: 5px;
+    background-color: var(--border-gray);
 }
 
-.update__form__phone__input {
+.update-form__phone-input {
     flex-basis: 60%;
 }
 
-.update__buttons {
+.update-buttons {
     padding-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     display: flex;
 }
 
-.update__buttons__update {
+.update-buttons__update {
     height: 40px;
     width: 110px;
-    margin-right: 10px;
+    margin-right: 12px;
     display: block;
     background-color: var(--mail-blue);
     color: var(--background-white);
     font-size: 14px;
 }
 
-.update__buttons__delete {
+.update-buttons__delete {
     background-color: var(--button-gray);
     width: 110px;
     font-size: 14px;

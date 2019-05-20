@@ -31,28 +31,28 @@ b {
     }
 }
 
-.profile__header {
+.profile-header {
     padding: 10px;
     font-weight: normal;
 }
 
-.profile__userinfo {
+.profile-userinfo {
     padding: 10px;
     border-top: 1px solid var(--border-gray);
     border-bottom: 1px solid var(--border-gray);
 }
 
-.profile__userinfo__row {
+.profile-userinfo__row {
     display: flex;
     padding-left: 10px;
 }
 
-.profile__userinfo__row__field {
+.profile-userinfo__row-field {
     flex-basis: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
-.profile__buttons {
+.profile-buttons {
     padding: 10px;
     display: flex;
 }
@@ -65,14 +65,14 @@ button {
     font-size: 20px;
 }
 
-.profile__buttons__update {
+.profile-buttons__update {
     background-color: var(--mail-blue);
     color: var(--background-white);
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
-.profile__buttons__delete {
+.profile-buttons__delete {
     background-color: var(--button-gray);
     color: var(--background-gray);
-    margin-left: 10px;
+    margin-left: 12px;
 }

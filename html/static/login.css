@@ -1,6 +1,5 @@
 html {
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -9,6 +8,10 @@ body {
     align-items: center;
     display: flex;
     height: 100%;
+}
+
+.login-title {
+    font-weight: normal;
 }
 
 .login {
@@ -22,7 +25,7 @@ body {
     
 }
 
-.login__divider {
+.login-divider {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -30,32 +33,31 @@ body {
     margin-top: 24px;
 }
 
-.login__divider__left {
-    float:left;
+.login-divider__left {
+    float: left;
 }
 
-.login__divider__right {
-    float:right;
+.login-divider__right {
+    float: right;
 }
 
-.login__form__input {
+.login-form__input {
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
     height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     padding: 5px 15px;
-    font-size: 15px;
+    font-size: 18px;
     width: 90%;
     border: 1px solid var(--border-gray);
-
 }
 
-.login__form {
+.login-form {
     width: 90%;
 }
 
-.login__form__error {
+.login-form__error {
     color: var(--red-error);
 }
 
@@ -63,15 +65,15 @@ body {
     .login {
         width: 500px;
     }
-    .login__divider__left {
-        width:45%;
+    .login-divider__left {
+        width: 45%;
     }
-    .login__divider__right {
-        width:45%;
+    .login-divider__right {
+        width: 45%;
     }
 
-    .login__form__error {
-        margin-left: -415px;
+    .login-form__error {
+        margin-left: -416px;
         position: fixed;
     }
 }
@@ -80,11 +82,11 @@ body {
     .login {
         width: 90%;
     }
-    .login__divider__left {
-        width:40%;
+    .login-divider__left {
+        width: 40%;
     }
-    .login__divider__right {
-        width:40%;
+    .login-divider__right {
+        width: 40%;
     }
 }
 
@@ -95,14 +97,14 @@ button {
     font-weight: bold;
     font-size: 14px;
     color: var(--background-white);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     border-radius: 10px;
     height: 50px;
     width: 90%;
 }
 
 .vk {
-    background-color:var(--vk-blue);
+    background-color: var(--vk-blue);
 }
 
 .fb {
@@ -113,10 +115,10 @@ button {
     background-color: var(--mail-blue);
 }
 
-.login__button__image {
+.login-button__image {
     padding: 0 0 0 10px;
-    margin-top: -45px;
-    margin-right: 225px;
+    margin-top: -44px;
+    margin-right: 224px;
     margin-bottom: 30px;
     height: 20px;
 }
@@ -125,12 +127,12 @@ button {
     border: 1px solid var(--red-error);
 }
 
-.login__form__input__eye {
+.login-form__input-eye {
     position: unset;
     z-index: 100;
     padding: 0 0 0 25px;
     top: 10px;
-    margin-top: -45px;
+    margin-top: -48px;
     margin-left: 80%;
     margin-bottom: 40px;
     height: 20px;

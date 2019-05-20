@@ -21,57 +21,57 @@ body {
     flex-direction: column;
 }
 
-.signup__title {
+.signup-title {
     color: var(--background-white);
     font-weight: normal;
 }
 
 @media (min-width: 1150px) {
-    .signup__title{
+    .signup-title{
         font-size: 50px;
         width: 1200px;
     }
 }
 
 @media (max-width: 1150px) and (min-width: 400px) {
-    .signup__title{
+    .signup-title{
         max-width: 90%;
     }
 }
 
 @media (max-width: 400px) {
-    .signup__title{
+    .signup-title{
         font-size: 20px;
     }
 }
 
-.signup__form {
+.signup-form {
     display: flex;
     flex-direction: column;
 }
 
-.signup__form__input {
+.signup-form__input {
     border-radius: 5px;
     height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     padding: 5px 15px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 @media (min-width: 400px) {
-    .signup__form__input{
+    .signup-form__input{
         width: 350px;
     }
 }
 
 @media (max-width: 400px) {
-    .signup__form__input{
+    .signup-form__input{
         width: 90%;
     }
 }
 
-.signup__form__button {
-    margin-bottom: 10px;
+.signup-form__button {
+    margin-bottom: 12px;
     border-radius: 10px;
     height: 50px;
     width: 300px;
@@ -83,15 +83,15 @@ body {
     border-width: 0px;
 }
 
-.signup__form__eye {
+.signup-form__eye {
     padding: 0 0 0 10px;
-    margin-top: -45px;
+    margin-top: -48px;
     margin-left: 80%;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     height: 20px;
 }
 
-.signup__form__anchor {
+.signup-form__anchor {
     color: var(--background-white);      
 }
 
