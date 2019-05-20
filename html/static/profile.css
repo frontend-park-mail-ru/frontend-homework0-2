@@ -3,7 +3,7 @@ b {
 }
 
 .profile {
-    border: 1px solid #BBBBBB;
+    border: 1px solid var(--border-gray);
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -38,12 +38,13 @@ b {
 
 .profile__userinfo {
     padding: 10px;
-    border-top: 1px solid #BBBBBB;
-    border-bottom: 1px solid #BBBBBB;
+    border-top: 1px solid var(--border-gray);
+    border-bottom: 1px solid var(--border-gray);
 }
 
 .profile__userinfo__row {
     display: flex;
+    padding-left: 10px;
 }
 
 .profile__userinfo__row__field {
@@ -59,19 +60,19 @@ b {
 button {
     height: 40px;
     width: 90%;
-    border: 1px solid #BBBBBB;
+    border: 1px solid var(--border-gray);
     padding: 0px;
     font-size: 20px;
 }
 
 .profile__buttons__update {
-    background-color: #005ff9;
-    color: #ffffff;
+    background-color: var(--mail-blue);
+    color: var(--background-white);
     margin-right: 10px;
 }
 
 .profile__buttons__delete {
-    background-color: #F7F3F3;
-    color: #888888;
+    background-color: var(--button-gray);
+    color: var(--background-gray);
     margin-left: 10px;
 }

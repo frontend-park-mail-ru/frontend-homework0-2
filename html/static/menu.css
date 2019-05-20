@@ -2,18 +2,18 @@
     width:450px;
     position: fixed;
     height: 100%;
-    background-color: #ffffff;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-color: var(--background-white);
+    box-shadow: var(--shadow);
 }
 
 .sidenav__header {
-    background-color: #005ff9;
+    background-color: var(--mail-blue);
     height: 70px;
     padding-left: 10px;
 }
 
 .sidenav__body {
-    background-color: #ffffff;
+    background-color: var(--background-silver);
     padding: 20px;
     height: 100%;
     text-align: center;
@@ -21,8 +21,8 @@
 }
 
 .sidenav__body__opened {
-    background-color: #005ff9;
-    color: #ffffff;
+    background-color: var(--mail-blue);
+    color: var(--background-white);
     font-weight: bold;
     font-size: 17px;
     margin-bottom: 20px;
@@ -31,11 +31,11 @@
 }
 
 .sidenav__body__button {
-    border: 1px solid #BBBBBB;
+    border: 1px solid var(--border-gray);
     margin-bottom: 20px;
     height: 70px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--background-silver);
     font-weight: bold;
     font-size: 17px;
 }
@@ -45,11 +45,19 @@
     position: fixed;
 }
 
+.main__form__image {
+    position: absolute;
+    margin-top: -68px;
+    margin-left: 90%;
+    height: 28px;
+}
+
 @media (min-width: 1275px) {
     .main__form {
         left: 60%;
         top: 40%;
     }
+    
 }
 
 @media (max-width: 1275px) and (min-width: 1050px) {
@@ -60,7 +68,7 @@
 }
 
 .main__form__input {
-    border: 1px solid #BBBBBB;
+    border: 1px solid var(--border-gray);
     border-radius: 2px;
     height: 60px;
     width: 500px;
@@ -73,6 +81,11 @@
 @media (max-width: 1050px) {
     .main__form {
         left: 50%;
+    }
+
+    .main__form__image {
+        margin-top: -46px;
+        height: 20px;
     }
     
     @media (max-height: 600px) {
@@ -96,7 +109,7 @@
 
     .sidenav__body {
         padding-top: 10px;
-        height: 40px;
+        height: 220px;
     }
 
     .sidenav__body__button {
@@ -129,13 +142,19 @@
     height: 40px;
     width: 250px;
     font-size: 20px;
-    background-color: #005ff9;
-    color: #ffffff;
+    background-color: var(--mail-blue);
+    color: var(--background-white);
     padding-left: 40px;
 }
 
-.main__form__image {
-    position: absolute;
+.main__form__button__image {
+    position: fixed;
     left: 20px;
     height: 24px;
 }
+
+.sidenav__body__anchor {
+    color: var(--mail-blue);
+    text-decoration: blink;
+}
+

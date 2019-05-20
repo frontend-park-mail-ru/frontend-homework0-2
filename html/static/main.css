@@ -3,5 +3,14 @@ body {
 }
 
 :root {
-    
+    --background-white: #ffffff;
+    --background-silver: #f3efef;
+    --mail-blue:#005ff9;
+    --border-gray: #BBBBBB;
+    --background-gray: #888888;
+    --button-gray: #F7F3F3;
+    --vk-blue:#597da3;
+    --fb-blue:#3b5998;
+    --red-error: red;
+    --shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
