@@ -102,7 +102,7 @@
     }
     
     .sidenav {
-        width: 90%;
+        width: 90vw;
         height: 320px;
         left: 50%;
         transform: translate(-50%, 0%);
@@ -127,11 +127,17 @@
 
     .main-form__input {
         height: 20px;
-        width: 90%;
+        width: 220px;
     }
 
     .main-form__header {
         font-size: 19px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .sidenav {
+        min-width: 240px;
     }
 }
 
