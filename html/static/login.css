@@ -51,7 +51,6 @@ button {
     padding: 5px;
 }
 
-
 .login-form__input {
     margin-left: auto;
     margin-right: auto;
@@ -131,7 +130,6 @@ button {
     }
 }
 
-
 .vk {
     background-color: var(--vk-blue);
 }
@@ -139,6 +137,7 @@ button {
 .fb {
     background-color: var(--fb-blue);
 }
+
 .mail {
     margin-top: 20px;
     background-color: var(--mail-blue);
