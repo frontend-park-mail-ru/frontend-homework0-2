@@ -104,6 +104,12 @@ body {
     }
 }
 
+@media (max-width: 320px) { 
+    .update {
+        width: 320px;
+    }
+}
+
 .update-form__phone-menu__item {
     padding-left: 30px;
     padding-top: 10px;
