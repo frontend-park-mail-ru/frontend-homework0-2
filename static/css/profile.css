@@ -1,0 +1,108 @@
+body {
+    background-color: var(--main-bg-color);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    width: 420px;
+    height: 424px;
+
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--border-gray-color);
+    border-radius: var(--border-radius-size);
+}
+
+.profile__header {
+    text-align: center;
+    font-size: var(--header-font-size);
+    font-weight: unset;
+    margin-top: 20px;
+}
+
+.profile__avatar {
+    width: 48px;
+    height: 48px;
+    margin: 20px auto 0 auto;
+    border-radius: 50%;
+    background: rgb(240,240,240);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.row {
+    width: 248px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-gray-color);
+}
+.row_lower {
+    border-bottom: none;
+}
+
+.row__title {
+    width: 130px;
+    font-weight: bold;
+    font-size: var(--main-font-size);
+}
+
+.row__content {
+    margin-left: 22px;
+    user-select: text;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 18px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: var(--button-font-size);
+    width: 136px;
+    height: 36px;
+    border-radius: var(--border-radius-size);
+}
+.btn_change {
+    background-color: var(--blue-color);
+    color: var(--main-bg-color);
+    border: 1px solid var(--btn-border-blue-color);
+    margin-right: 8px;
+}
+
+.btn_delete {
+    background-color: rgb(247,247,247);
+    color: rgb(156,156,156);
+    border: 1px solid rgb(233,233,233)
+}
+
+.btn__icon {
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+}
+.btn__icon_light {
+    fill: var(--main-bg-color);
+}
+.btn__icon_dark {
+    fill: rgb(156,156,156);
+}

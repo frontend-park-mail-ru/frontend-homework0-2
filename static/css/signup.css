@@ -1,0 +1,172 @@
+body {
+    background-color: var(--main-bg-color);
+}
+
+.sign-up {
+    width: 420px;
+    height: 564px;
+    background: var(--main-bg-color);
+    border: 1px solid var(--border-gray-color);
+    border-radius: var(--border-radius-size);
+    margin: 8px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.sign-up__header {
+    display: flex;
+    font-size: var(--header-font-size);
+    font-weight: unset;
+    margin: 16px;
+}
+
+.hr {
+    width: 100%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--border-gray-color);
+    padding: 0;
+    margin: 0;
+}
+
+.sign-up__info-requester {
+    display: flex;
+    color: rgb(153,153,153);
+    line-height: 20px;
+    font-size: 15px;
+    margin: 8px 16px;
+}
+
+.sign-up__row {
+    display: flex;
+    width: 376px;
+    height: 28px;
+    padding-left: 2%;
+    font-size: var(--main-font-size);
+    margin: 16px 16px 0 16px;
+    border: 1px solid var(--border-gray-color);
+    border-radius: var(--border-radius-size);
+}
+.sign-up__row_invalid {
+    border: 1px solid var(--invalid-red-color);
+    margin-bottom: 4px;
+}
+.validation {
+    font-size: 12px;
+    color: var(--invalid-red-color);
+    padding-left: 16px;
+}
+.sign-up__row_password {
+    margin: 0 16px 16px 16px;
+}
+.sign-up__title {
+    font-size: var(--main-font-size);
+    font-weight: bold;
+    margin: 16px 16px 2px 16px;
+}
+
+.date {
+    display: flex;
+    margin-left: 4%;
+    margin-top: 4px;
+}
+.unit {
+    display: flex;
+    align-items: center;
+    font-size: var(--main-font-size);
+    border: 1px solid var(--border-gray-color);
+}
+.date-unit {
+    height: 28px;
+    border-radius: var(--border-radius-size);
+}
+.date-unit_day {
+    width: 124px;
+}
+.date-unit_month {
+    width: 132px;
+}
+.date-unit_year {
+    width: 122px;
+}
+
+.unit__placeholder {
+    padding-left: 10px;
+}
+
+.unit__dropdown {
+    display: flex;
+    margin-right: 4px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.phone {
+    display: flex;
+    margin-left: 4%;
+    margin-top: 4px;
+}
+.phone-unit {
+    display: flex;
+    height: 28px;
+    border: 1px solid var(--border-gray-color);
+    font-size: var(--main-font-size);
+    align-items: center;
+}
+.phone-unit_country-code {
+    width: 156px;
+    border-radius: var(--border-radius-size) 0 0 var(--border-radius-size);
+    border-right: none;
+}
+
+.phone-unit_number {
+    width: 226px;
+    border-radius: 0 var(--border-radius-size) var(--border-radius-size) 0;
+}
+.input-number {
+    background: transparent;
+    border: none;
+    width: 184px;
+    height: 38px;
+    margin-left: 4px;
+    font-size: var(--main-font-size);
+}
+.flag-icon {
+    width: 16px;
+    height: 11px;
+    padding: 10px 0 10px 10px;
+}
+
+.password {
+    margin: 16px 0 16px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: left;
+    margin: 4%;
+}
+
+.btn {
+    display: flex;
+    cursor: pointer;
+    font-size: var(--button-font-size);
+    height: 30px;
+    border-radius: var(--border-radius-size);
+    justify-content: center;
+    align-items: center;
+}
+.btn_sign-up {
+    background-color: var(--blue-color);
+    color: white;
+    width: 172px;
+    border: 1px solid var(--btn-border-blue-color);
+    margin-right: 2%;
+}
+
+.btn_cancel {
+    background-color: var(--btn-bg-gray-color);
+    color: black;
+    width: 96px;
+    border: 1px solid var(--btn-border-gray-color);
+}

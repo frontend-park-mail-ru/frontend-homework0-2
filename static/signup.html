@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>sign up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <main class="sign-up">
+        <h1 class="sign-up__header">Регистрация</h1>
+        <hr class="hr"/>
+        <div class="sign-up__info-requester">Для регистрации на ресурсе укажите инфомацию о себе</div>
+        <label>
+            <input class="sign-up__row sign-up__row_invalid" type="text" placeholder="Имя">
+        </label>
+        <div class="validation">Заполните обязательное поле</div>
+        <label>
+            <input class="sign-up__row" type="text" placeholder="Фамилия">
+        </label>
+
+        <h2 class="sign-up__title">Дата рождения</h2>
+        <div class="date">
+            <div class="unit date-unit date-unit_day">
+                <span class="unit__placeholder">День</span>
+                <svg class="unit__dropdown" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
+                </svg>
+            </div>
+            <div class="unit date-unit date-unit_month">
+                <span class="unit__placeholder">Месяц</span>
+                <svg class="unit__dropdown" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
+                </svg>
+            </div>
+            <div class="unit date-unit date-unit_year">
+                <span class="unit__placeholder">Год</span>
+                <svg class="unit__dropdown" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
+                </svg>
+            </div>
+        </div>
+
+        <h2 class="sign-up__title">Телефон</h2>
+        <div class="phone">
+            <div class="unit phone-unit phone-unit_country-code">
+                <img class="flag-icon" src="https://img.imgsmail.ru/mail/ru/images/country_icons/ru.png">
+                <span class="unit__placeholder">Россия</span>
+                <svg class="unit__dropdown" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 0 1 5.75 6h4.5a.75.75 0 0 1 .579 1.226l-2.223 2.966a.75.75 0 0 1-1.212 0L5.171 7.226z"/>
+                </svg>
+            </div>
+            <div class="unit phone-unit phone-unit_number">
+                <span class="unit__placeholder">+7</span>
+                <label>
+                    <input class="input-number">
+                </label>
+            </div>
+        </div>
+
+        <div class="password">
+            <label>
+                <input class="sign-up__row sign-up__row_password" type="password" placeholder="Пароль">
+            </label>
+            <label>
+                <input class="sign-up__row sign-up__row_password" type="password" placeholder="Повторите пароль">
+            </label>
+        </div>
+
+        <hr class="hr"/>
+
+        <div class="buttons">
+            <button class="btn btn_sign-up">Зарегистрироваться</button>
+            <button class="btn btn_cancel">Отменить</button>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    font-family: Helvetica, Arial, san-serif;
+    background: rgb(133,133,133);
+    user-select: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.hovered:hover {
+    box-shadow: 0 0 10px var;
+}
+
+:root {
+    --main-font-size: 14px;
+    --button-font-size: 14px;
+    --header-font-size: 24px;
+    
+    --border-radius-size: 2px;
+
+    --main-bg-color: white;
+    --blue-color: rgb(0,95,249);
+    --btn-border-blue-color: rgb(0,83,219);
+    --border-gray-color: rgb(224,224,224);
+
+    --menu-green-color: rgb(40,199,93);
+    --invalid-red-color: red;
+
+    --btn-bg-gray-color: rgb(240,240,240);
+    --btn-border-gray-color: rgb(211,211,211);
+
+    --shadow-color: rgb(99, 99, 99);
+}
+
+.hovered:hover {
+    box-shadow: 0 0 10px var(--shadow-color);
+}
