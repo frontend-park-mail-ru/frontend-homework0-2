@@ -6,205 +6,206 @@
 </head>
 
 <body>
+    <div id="root">
 
-    <!--Screen 1-->
-    <section class="modal-form" style="display: none;">
-        <div class="modal-form__content modal-form__content_rounded">
-            <div class="modal-form__title modal-form__title_centered">Логин</div>
-            <div class="modal-form__oauth-btn-container">
-                <button class="button button_vk modal-form__oauth-btn">
-                    <i class="icon icon_vk button__icon"></i>
-                    Войти через Вконтакте
-                </button>
-                <button class="button button_fb modal-form__oauth-btn">
-                    <i class="icon icon_fb button__icon"></i>
-                    Войти через Facebook
+        <!--Screen 1-->
+        <section class="modal-form" style="display: none;">
+            <div class="modal-form__content modal-form__content_rounded">
+                <div class="modal-form__title modal-form__title_centered">Логин</div>
+                <div class="modal-form__oauth-btn-container">
+                    <button class="button button_vk modal-form__oauth-btn">
+                        <i class="icon icon_vk button__icon"></i>
+                        Войти через Вконтакте
+                    </button>
+                    <button class="button button_fb modal-form__oauth-btn">
+                        <i class="icon icon_fb button__icon"></i>
+                        Войти через Facebook
+                    </button>
+                </div>
+                <div class="divider">или</div>
+                <div class="modal-form__input-container">
+                    <div class="modal-form__input input">
+                        <input class="input__field input__field_wide" placeholder="Email">
+                    </div>
+                    <div class="modal-form__input input input_password-show">
+                        <input class="input__field input__field_wide input__field_error" placeholder="Пароль">
+                        <p class="input__error">Введите пароль</p>
+                    </div>
+                </div>
+                <button class="modal-form__email-btn button button_green">
+                    <i class="icon icon_mail button__icon"></i>
+                    Войти через почту
                 </button>
             </div>
-            <div class="divider">или</div>
-            <div class="modal-form__input-container">
-                <div class="modal-form__input input">
-                    <input class="input__field input__field_wide" placeholder="Email">
+        </section>
+
+        <!--Screen 2-->
+        <section class="section section-2" style="display: none;">
+            <div class="sidebar">
+                <div class="sidebar__header"></div>
+                <div class="sidebar__tab-container">
+                    <a href="#" class="sidebar__tab sidebar__tab_active sidebar__tab_button">
+                        <i class="icon icon_sign-in sidebar__tab-icon sidebar__tab-icon_active"></i>
+                        Авторизация
+                    </a>
+                    <a href="#" class="sidebar__tab sidebar__tab_button">
+                        <i class="icon icon_access sidebar__tab-icon"></i>
+                        Регистрация
+                    </a>
+                    <a href="#" class="sidebar__tab sidebar__tab_button">
+                        <i class="icon icon_users sidebar__tab-icon"></i>
+                        Авторы
+                    </a>
+                    <a href="#" class="sidebar__tab sidebar__tab_button">
+                        <i class="icon icon_game sidebar__tab-icon"></i>
+                        Играть
+                    </a>
                 </div>
-                <div class="modal-form__input input input_password-show">
-                    <input class="input__field input__field_wide input__field_error" placeholder="Пароль">
-                    <p class="input__error">Введите пароль</p>
+                <a href="#" class="sidebar__link">О проекте</a>
+            </div>
+
+            <div class="auth-form">
+                <h2 class="auth-form__title">Авторизуйтесь на сервисе</h2>
+                <div class="auth-form__input-container">
+                    <div class="auth-form__input input">
+                        <input class="input__field input__field_wide input__field_squared" placeholder="Email">
+                    </div>
+                    <div class="auth-form__input input input_password-show">
+                        <input class="input__field input__field_wide input__field_squared" placeholder="Пароль">
+                    </div>
+                </div>
+                <button class="auth-form__button button button_green button_sm button_squared">
+                    <i class="icon icon_mail button__icon"></i>
+                    Войти через почту
+                </button>
+            </div>
+        </section>
+
+        <!--Screen 3-->
+        <section class="section section-3" style="display: none;">
+            <div class="edit-page__container">
+                <h2 class="edit-page__title">Профиль</h2>
+                <div class="edit-page__divider"></div>
+                <div class="edit-page__content">
+                    <div class="edit-page__row">
+                        <div class="edit-page__cell">
+                            <h3 class="edit-page__cell-title">Фамилия</h3>
+                            <p class="edit-page__cell-content">Иванов</p>
+                        </div>
+                        <div class="edit-page__cell">
+                            <h3 class="edit-page__cell-title">Имя</h3>
+                            <p class="edit-page__cell-content">Иван</p>
+                        </div>
+                    </div>
+                    <div class="edit-page__row">
+                        <div class="edit-page__cell">
+                            <h3 class="edit-page__cell-title">Никнейм</h3>
+                            <p class="edit-page__cell-content">vileven</p>
+                        </div>
+                    </div>
+                    <div class="edit-page__row">
+                        <div class="edit-page__cell">
+                            <h3 class="edit-page__cell-title">Дата рождения</h3>
+                            <p class="edit-page__cell-content">15.06.1997</p>
+                        </div>
+                    </div>
+                    <div class="edit-page__row">
+                        <div class="edit-page__cell">
+                            <h3 class="edit-page__cell-title">Пол</h3>
+                            <p class="edit-page__cell-content">Мужской</p>
+                        </div>
+                    </div>
+                    <div class="edit-page__row">
+                        <div class="edit-page__cell">
+                            <h3 class="edit-page__cell-title">Email</h3>
+                            <p class="edit-page__cell-content">lol@kek</p>
+                        </div>
+                        <div class="edit-page__cell">
+                            <h3 class="edit-page__cell-title">Телефон</h3>
+                            <p class="edit-page__cell-content">+7 (965) 432-**-**</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="edit-page__divider"></div>
+                <div class="edit-page__row">
+                    <button class="edit-page__button button button_green button_sm button_squared">
+                        <i class="icon icon_user-edit button__icon"></i>
+                        Изменить
+                    </button>
+                    <button class="edit-page__button button button_disable button_sm button_squared">
+                        <i class="icon icon_delete button__icon"></i>
+                        Удалить
+                    </button>
                 </div>
             </div>
-            <button class="modal-form__email-btn button button_green">
-                <i class="icon icon_mail button__icon"></i>
-                Войти через почту
+        </section>
+
+        <!--Screen 4-->
+        <section class="section section-4 sign-up" style="display: none;">
+            <h1 class="sign-up__title">
+                Наше невероятно красивое приложение, в котором вы обязаны зарегистироваться
+            </h1>
+            <div class="input sign-up__input">
+                <input class="input__field input__field_wide" placeholder="Email">
+            </div>
+            <div class="input sign-up__input">
+                <input class="input__field input__field_wide" type="password" placeholder="Пароль">
+            </div>
+            <button class="sign-up__btn button button_green button_inline">
+                Зарегистрироваться
             </button>
-        </div>
-    </section>
+            <a href="#" class="sign-up__link">Или зайти через Facebook</a>
+        </section>
 
-    <!--Screen 2-->
-    <section class="section section-2" style="display: none;">
-        <div class="sidebar">
-            <div class="sidebar__header"></div>
-            <div class="sidebar__tab-container">
-                <a href="#" class="sidebar__tab sidebar__tab_active sidebar__tab_button">
-                    <i class="icon icon_sign-in sidebar__tab-icon sidebar__tab-icon_active"></i>
-                    Авторизация
-                </a>
-                <a href="#" class="sidebar__tab sidebar__tab_button">
-                    <i class="icon icon_access sidebar__tab-icon"></i>
-                    Регистрация
-                </a>
-                <a href="#" class="sidebar__tab sidebar__tab_button">
-                    <i class="icon icon_users sidebar__tab-icon"></i>
-                    Авторы
-                </a>
-                <a href="#" class="sidebar__tab sidebar__tab_button">
-                    <i class="icon icon_game sidebar__tab-icon"></i>
-                    Играть
-                </a>
-            </div>
-            <a href="#" class="sidebar__link">О проекте</a>
-        </div>
+    <!--    Screen 5-->
+        <section class="section modal-form">
+            <div class="modal-form__content">
+                <div class="modal-form__cross"></div>
+                <div class="modal-form__title update-contacts__title">Обновление контактных данных</div>
 
-        <div class="auth-form">
-            <h2 class="auth-form__title">Авторизуйтесь на сервисе</h2>
-            <div class="auth-form__input-container">
-                <div class="auth-form__input input">
-                    <input class="input__field input__field_wide input__field_squared" placeholder="Email">
+                <div class="input update-contacts__input">
+                    <p class="input__label">
+                        Email
+                    </p>
+                    <input
+                        class="input__field input__field_wide input__field_squared input__field_small input__field_error"
+                    >
+                    <p class="input__error">
+                        Поле не должно быть пустым
+                    </p>
                 </div>
-                <div class="auth-form__input input input_password-show">
-                    <input class="input__field input__field_wide input__field_squared" placeholder="Пароль">
-                </div>
-            </div>
-            <button class="auth-form__button button button_green button_sm button_squared">
-                <i class="icon icon_mail button__icon"></i>
-                Войти через почту
-            </button>
-        </div>
-    </section>
-
-    <!--Screen 3-->
-    <section class="section section-3" style="display: none;">
-        <div class="edit-page__container">
-            <h2 class="edit-page__title">Профиль</h2>
-            <div class="edit-page__divider"></div>
-            <div class="edit-page__content">
-                <div class="edit-page__row">
-                    <div class="edit-page__cell">
-                        <h3 class="edit-page__cell-title">Фамилия</h3>
-                        <p class="edit-page__cell-content">Иванов</p>
-                    </div>
-                    <div class="edit-page__cell">
-                        <h3 class="edit-page__cell-title">Имя</h3>
-                        <p class="edit-page__cell-content">Иван</p>
-                    </div>
-                </div>
-                <div class="edit-page__row">
-                    <div class="edit-page__cell">
-                        <h3 class="edit-page__cell-title">Никнейм</h3>
-                        <p class="edit-page__cell-content">vileven</p>
-                    </div>
-                </div>
-                <div class="edit-page__row">
-                    <div class="edit-page__cell">
-                        <h3 class="edit-page__cell-title">Дата рождения</h3>
-                        <p class="edit-page__cell-content">15.06.1997</p>
-                    </div>
-                </div>
-                <div class="edit-page__row">
-                    <div class="edit-page__cell">
-                        <h3 class="edit-page__cell-title">Пол</h3>
-                        <p class="edit-page__cell-content">Мужской</p>
-                    </div>
-                </div>
-                <div class="edit-page__row">
-                    <div class="edit-page__cell">
-                        <h3 class="edit-page__cell-title">Email</h3>
-                        <p class="edit-page__cell-content">lol@kek</p>
-                    </div>
-                    <div class="edit-page__cell">
-                        <h3 class="edit-page__cell-title">Телефон</h3>
-                        <p class="edit-page__cell-content">+7 (965) 432-**-**</p>
-                    </div>
-                </div>
-            </div>
-            <div class="edit-page__divider"></div>
-            <div class="edit-page__row">
-                <button class="edit-page__button button button_green button_sm button_squared">
-                    <i class="icon icon_user-edit button__icon"></i>
-                    Изменить
-                </button>
-                <button class="edit-page__button button button_disable button_sm button_squared">
-                    <i class="icon icon_delete button__icon"></i>
-                    Удалить
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!--Screen 4-->
-    <section class="section section-4 sign-up" style="display: none;">
-        <h1 class="sign-up__title">
-            Наше невероятно красивое приложение, в котором вы обязаны зарегистироваться
-        </h1>
-        <div class="input sign-up__input">
-            <input class="input__field input__field_wide" placeholder="Email">
-        </div>
-        <div class="input sign-up__input">
-            <input class="input__field input__field_wide" type="password" placeholder="Пароль">
-        </div>
-        <button class="sign-up__btn button button_green button_inline">
-            Зарегистрироваться
-        </button>
-        <a href="#" class="sign-up__link">Или зайти через Facebook</a>
-    </section>
-
-<!--    Screen 5-->
-    <section class="section modal-form">
-        <div class="modal-form__content">
-            <div class="modal-form__cross"></div>
-            <div class="modal-form__title update-contacts__title">Обновление контактных данных</div>
-
-            <div class="input update-contacts__input">
-                <p class="input__label">
-                    Email
-                </p>
-                <input
-                    class="input__field input__field_wide input__field_squared input__field_small input__field_error"
-                >
-                <p class="input__error">
-                    Поле не должно быть пустым
-                </p>
-            </div>
-            <div class="input">
-                <p class="input__label">
-                    Телефон
-                </p>
-                <div class="dropdown update-contacts__dropdown">
-                    <div class="dropdown__button">
-                        <span class="dropdown__option-icon dropdown__option-icon_ru"></span>
-                        Россия
-                    </div>
-                    <div class="dropdown__options">
-                        <div class="dropdown__option dropdown__option_checked">
+                <div class="input">
+                    <p class="input__label">
+                        Телефон
+                    </p>
+                    <div class="dropdown update-contacts__dropdown">
+                        <div class="dropdown__button">
                             <span class="dropdown__option-icon dropdown__option-icon_ru"></span>
                             Россия
                         </div>
-                        <div class="dropdown__option">
-                            <span class="dropdown__option-icon dropdown__option-icon_ua"></span>
-                            Украина
+                        <div class="dropdown__options">
+                            <div class="dropdown__option dropdown__option_checked">
+                                <span class="dropdown__option-icon dropdown__option-icon_ru"></span>
+                                Россия
+                            </div>
+                            <div class="dropdown__option">
+                                <span class="dropdown__option-icon dropdown__option-icon_ua"></span>
+                                Украина
+                            </div>
                         </div>
-                    </div>
-                </div><input
-                    class="input__field input__field_squared input__field_small update-contacts__phone-input"
-                >
+                    </div><input
+                        class="input__field input__field_squared input__field_small update-contacts__phone-input"
+                    >
+                </div>
+                <div class="update-contacts__divider"></div>
+                <button class="button button_green button_sm button_squared button_inline update-contacts__btn">
+                    Обновить
+                </button>
+                <button class="button button_disable button_sm button_squared button_inline update-contacts__btn">
+                    Отменить
+                </button>
             </div>
-            <div class="update-contacts__divider"></div>
-            <button class="button button_green button_sm button_squared button_inline update-contacts__btn">
-                Обновить
-            </button>
-            <button class="button button_disable button_sm button_squared button_inline update-contacts__btn">
-                Отменить
-            </button>
-        </div>
-    </section>
-
+        </section>
+    </div>
 </body>
 </html>
