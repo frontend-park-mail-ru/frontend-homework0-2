@@ -12,17 +12,23 @@
     top: 50%;
     left: 50%;
 
-    border-radius: 5px;
     width: 422px;
     padding: 20px;
     box-sizing: border-box;
     background-color: #ffffff;
+
+    &_rounded {
+      border-radius: 5px;
+    }
   }
 
   &__title {
-    text-align: center;
     font-size: 32px;
     margin-bottom: 20px;
+
+    &_centered {
+      text-align: center;
+    }
   }
 
   &__oauth-btn {
@@ -47,5 +53,14 @@
 
   &__email-btn {
     margin-bottom: 12px;
+  }
+
+  &__cross {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    background: url('./ModalForm/img/close_big.svg') no-repeat center;
   }
 }

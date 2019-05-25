@@ -12,10 +12,6 @@ $local-color-error: #f51a5b;
 
 .input {
   position: relative;
-  background-color: #ffffff;
-  border-radius: $global-border-radius;
-  border: 1px solid $global-color-light-grey;
-
 
   &_password-show:after {
     position: absolute;
@@ -32,13 +28,28 @@ $local-color-error: #f51a5b;
     box-sizing: border-box;
     height: $global-controller-height;
     padding: 10px;
-    width: 100%;
-    background: none;
+    //width: 100%;
     outline: none;
+
+    background-color: #ffffff;
+    border-radius: $global-border-radius;
+    border: 1px solid $global-color-light-grey;
 
     @include inputText;
     &::placeholder {
       @include inputText;
+    }
+
+    &_wide {
+      width: 100%;
+    }
+
+    &_small {
+      height: 30px;
+      font-size: 12px;
+      &::placeholder {
+        font-size: 12px;
+      }
     }
 
     &_error {
@@ -55,6 +66,13 @@ $local-color-error: #f51a5b;
     font-size: 12px;
     font-weight: 700;
     margin: 7px 0 0;
+    letter-spacing: 0.02em;
+  }
+
+  &__label {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 0 7px;
     letter-spacing: 0.02em;
   }
 }

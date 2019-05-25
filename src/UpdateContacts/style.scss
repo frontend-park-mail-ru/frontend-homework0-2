@@ -1,0 +1,39 @@
+@import '../constants.scss';
+
+.update-contacts {
+  &__title {
+    box-sizing: border-box;
+    padding-right: 80px;
+  }
+
+  &__input {
+    margin-bottom: 18px;
+  }
+
+  &__dropdown {
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__phone-input {
+    &.input__field {
+      display: inline-block;
+      width: calc(100% - 150px);
+      border-left: none;
+    }
+  }
+
+  &__divider {
+    margin: 40px -20px 20px;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: $global-color-light-grey;
+  }
+
+  &__btn {
+    &.button_inline {
+      padding: 0 20px;
+    }
+  }
+}

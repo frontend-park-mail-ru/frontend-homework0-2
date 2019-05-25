@@ -1,0 +1,70 @@
+@import '../../constants';
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  &__button {
+    box-sizing: border-box;
+    line-height: 28px;
+    padding-left: 8px;
+    background-color: #ffffff;
+    border: 1px solid $global-color-light-grey;
+    cursor: pointer;
+  }
+
+  &:hover .dropdown__options {
+    display: block;
+  }
+
+  &__options {
+    display: none;
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 4px 0;
+  }
+
+  &__option {
+    cursor: pointer;
+    line-height: 30px;
+    padding-left: 24px;
+    position: relative;
+
+    &_checked {
+      background-color: $global-color-light-grey;
+
+      &:after {
+        content: '';
+        top: 50%;
+        left: 4px;
+        transform: translateY(-50%);
+        position: absolute;
+
+        width: 8px;
+        height: 8px;
+        background: url('./components/DropDown/img/done.svg') no-repeat center;
+      }
+    }
+
+    &-icon {
+      display: inline-block;
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+
+      &_ru {
+        background: url('./components/DropDown/img/ru.png') no-repeat center;
+      }
+
+      &_ua {
+        background: url('./components/DropDown/img/ua.png') no-repeat center;
+      }
+    }
+
+  }
+}
