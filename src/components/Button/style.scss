@@ -30,6 +30,12 @@
     height: 32px;
   }
 
+  &_inline {
+    width: auto;
+    display: inline-block;
+    padding: 0 52px;
+  }
+
   &__icon {
     margin-right: 8px;
   }

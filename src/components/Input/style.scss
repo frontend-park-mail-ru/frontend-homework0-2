@@ -12,6 +12,10 @@ $local-color-error: #f51a5b;
 
 .input {
   position: relative;
+  background-color: #ffffff;
+  border-radius: $global-border-radius;
+  border: 1px solid $global-color-light-grey;
+
 
   &_password-show:after {
     position: absolute;
@@ -27,9 +31,6 @@ $local-color-error: #f51a5b;
   &__field {
     box-sizing: border-box;
     height: $global-controller-height;
-    border-radius: $global-border-radius;
-    border: 1px solid $global-color-light-grey;
-    background: #ffffff;
     padding: 10px;
     width: 100%;
     background: none;

@@ -3,13 +3,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <!--<link rel="stylesheet" href="static/css/main.css">-->
 </head>
 
 <body>
 
     <!--Screen 1-->
-    <div class="modal-form" hidden>
+    <section class="modal-form" style="display: none;">
         <div class="modal-form__content">
             <div class="modal-form__title">Логин</div>
             <div class="modal-form__oauth-btn-container">
@@ -37,10 +36,10 @@
                 Войти через почту
             </button>
         </div>
-    </div>
+    </section>
 
     <!--Screen 2-->
-    <section class="section section-2">
+    <section class="section section-2" style="display: none;">
         <div class="sidebar">
             <div class="sidebar__header"></div>
             <div class="sidebar__tab-container">
@@ -81,7 +80,8 @@
         </div>
     </section>
 
-    <section class="section section-3">
+    <!--Screen 3-->
+    <section class="section section-3" style="display: none;">
         <div class="edit-page__container">
             <h2 class="edit-page__title">Профиль</h2>
             <div class="edit-page__divider"></div>
@@ -128,15 +128,33 @@
             <div class="edit-page__divider"></div>
             <div class="edit-page__row">
                 <button class="edit-page__button button button_green button_sm button_squared">
-                    <i class="icon icon_mail button__icon"></i>
+                    <i class="icon icon_user-edit button__icon"></i>
                     Изменить
                 </button>
                 <button class="edit-page__button button button_disable button_sm button_squared">
-                    <i class="icon icon_mail button__icon"></i>
+                    <i class="icon icon_delete button__icon"></i>
                     Удалить
                 </button>
             </div>
         </div>
     </section>
+
+    <!--Screen 4-->
+    <section class="section section-4 sign-up">
+        <h1 class="sign-up__title">
+            Наше невероятно красивое приложение, в котором вы обязаны зарегистироваться
+        </h1>
+        <div class="input sign-up__input">
+            <input class="input__field" placeholder="Email">
+        </div>
+        <div class="input sign-up__input">
+            <input class="input__field" type="password" placeholder="Пароль">
+        </div>
+        <button class="sign-up__btn button button_green button_inline">
+            Зарегистрироваться
+        </button>
+        <a href="#" class="sign-up__link">Или зайти через Facebook</a>
+    </section>
+
 </body>
 </html>

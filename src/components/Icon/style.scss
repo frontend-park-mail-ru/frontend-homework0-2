@@ -36,4 +36,12 @@
   &_users {
     mask-image: url("./components/Icon/img/users.svg");
   }
+
+  &_delete {
+    mask-image: url("./components/Icon/img/delete.svg");
+  }
+
+  &_user-edit {
+    mask-image: url("./components/Icon/img/user_edit.svg");
+  }
 }

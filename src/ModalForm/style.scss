@@ -13,7 +13,7 @@
     left: 50%;
 
     border-radius: 5px;
-    width: 420px;
+    width: 422px;
     padding: 20px;
     box-sizing: border-box;
     background-color: #ffffff;
@@ -41,7 +41,11 @@
     }
   }
 
+  &__input-container {
+    margin-bottom: 16px;
+  }
+
   &__email-btn {
-    margin: 15px 0 10px;
+    margin-bottom: 12px;
   }
 }
