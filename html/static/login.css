@@ -40,15 +40,14 @@ button {
     margin-left: auto;
     margin-right: auto;
     width: 440px;
-    margin-bottom: 40px;
     margin-top: 24px;
 }
 
 .login-divider__title {
-    margin-top: -56px;
-    margin-bottom: 28px;
     background-color: var(--background-white);
     padding: 5px;
+    position: relative;
+    bottom: 24px;
 }
 
 .login-form__input {
@@ -70,17 +69,17 @@ button {
 .login-form__error {
     color: var(--red-error);
     text-align: left;
-    margin-block-start: -20px;
     margin-block-end: 0px;
+    position: relative;
+    bottom: 32px;
+    margin-block-start: 0px;
 }
 
 .login-form__input-eye {
-    padding: 0 0 0 25px;
-    top: 10px;
-    margin-top: -48px;
     margin-left: 360px;
-    margin-bottom: 40px;
-    height: 20px;
+    padding: 5px;
+    position: relative;
+    bottom: 54px;
 }
 
 @media (min-width: 525px) {
@@ -139,16 +138,16 @@ button {
 }
 
 .mail {
-    margin-top: 20px;
     background-color: var(--mail-blue);
 }
 
 .login-button__image {
-    padding: 0 0 0 10px;
-    margin-top: -44px;
-    margin-right: 224px;
-    margin-bottom: 30px;
+    padding: 0 0 0 10px; 
+    margin-right: 200px;
     height: 20px;
+    padding: 5px;
+    position: relative;
+    bottom: 48px;
 }
 
 .error {
