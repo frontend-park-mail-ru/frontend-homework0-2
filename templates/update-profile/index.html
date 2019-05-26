@@ -5,60 +5,62 @@
     <title>Update profile</title>
     <link href="style.css" rel="stylesheet">
 </head>
-<body class="update-page">
-    <div class="update-page__main-block">
-        <div class="update-page__form">
-            <div class="update-page__title">Изменение настроек</div>
-            <div class="update-page__close-icon-container">
-                <div class="update-page__close-icon"></div>
-            </div>
-            <div class="update-page__input-container">
-                <div class="update-page__input-text">Логин</div>
-                <div class="update-page-input-container">
-                    <input class="update-page__input" type="text">
-                    <div class="update-page__helper-content">
-                        <div class="update-page__input-triangle">◀</div>
-                        <div class="update-page__input-helper-text">
-                            <div class="update-page__input-helper-text-title">Укажите новый логин</div>
-                            <div class="update-page__input-helper-text-content">Вы можете изменить свой логин</div>
+<body>
+    <div class="update-page">
+        <div class="update-page__main-block">
+            <div class="update-page__form">
+                <div class="update-page__title">Изменение настроек</div>
+                <div class="update-page__close-icon-container">
+                    <div class="update-page__close-icon"></div>
+                </div>
+                <div class="update-page__input-container">
+                    <div class="update-page__input-text">Логин</div>
+                    <div class="update-page-input-container">
+                        <input class="update-page__input" type="text">
+                        <div class="update-page__helper-content">
+                            <div class="update-page__input-triangle">◀</div>
+                            <div class="update-page__input-helper-text">
+                                <div class="update-page__input-helper-text-title">Укажите новый логин</div>
+                                <div class="update-page__input-helper-text-content">Вы можете изменить свой логин</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="update-page__input-container">
-                <div class="update-page__input-text">Телефон</div>
-                <div class="update-page__number-inputs-container">
-                    <div class="update-page-dropdown">
-                        <button class="update-page__number-input update-page__number-input_country">
+                <div class="update-page__input-container">
+                    <div class="update-page__input-text">Телефон</div>
+                    <div class="update-page__number-inputs-container">
+                        <div class="update-page-dropdown">
+                            <button class="update-page__number-input update-page__number-input_country">
                                 <div class="update-page-russia-icon"></div>
                                 <div class="update-page__country-title">Россия</div>
                                 <div class="update-page__dropdown-icon-container">
                                     <div class="update-page-dropdown-icon"></div>
                                 </div>
-                        </button>
-                        <div class="update-page__dropdown-content">
-                            <a class="update-page__dropdown-drop update-page__dropdown-drop_country" href="#">
-                                <div class="update-page-ua-icon"></div>
-                                <div class="update-page__country-title">Украина</div>
-                                <div class="update-page__dropdown-icon-container">
-                                    <div class="update-page-dropdown-icon"></div>
-                                </div>
-                            </a>
+                            </button>
+                            <div class="update-page__dropdown-content">
+                                <a class="update-page__dropdown-drop update-page__dropdown-drop_country" href="#">
+                                    <div class="update-page-ua-icon"></div>
+                                    <div class="update-page__country-title">Украина</div>
+                                    <div class="update-page__dropdown-icon-container">
+                                        <div class="update-page-dropdown-icon"></div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
+                        <input class="update-page__number-input update-page_number" placeholder="+79999999999">
                     </div>
-                    <input class="update-page__number-input update-page_number" placeholder="+79999999999">
-                </div>
-                <div class="update-page__error-text-container">
-                    <div class="update-page__error-text">Неправильный телефон</div>
+                    <div class="update-page__error-text-container">
+                        <div class="update-page__error-text">Неправильный телефон</div>
+                    </div>
                 </div>
             </div>
+            <footer class="update-page__footer">
+                <div class="update-page-button">Обновить</div>
+                <div class="update-page__cancel-button-container">
+                    <div class="update-page-button update-page-button_gray">Отменить</div>
+                </div>
+            </footer>
         </div>
-        <footer class="update-page__footer">
-            <div class="update-page-button">Обновить</div>
-            <div class="update-page__cancel-button-container">
-                <div class="update-page-button update-page-button_gray">Отменить</div>
-            </div>
-        </footer>
     </div>
 </body>
 </html>

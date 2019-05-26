@@ -13,17 +13,20 @@ html {
     height: 100%;
 }
 
-.update-page {
+body {
     margin: 0;
     height: 100%;
-    width: 100%;
+}
+
+.update-page {
+    height: 100%;
     padding: 8px;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
     align-items: center;
     font-family: Helvetica, Arial, san-serif;
-    font-size: 32px;
+    font-size: 15px;
     background-color: #858585;
 }
 
@@ -49,6 +52,7 @@ html {
     color: #000000;
     font-weight: bold;
     line-height: 1.16;
+    font-size: 32px;
     display: inline-block;
 }
 
@@ -71,7 +75,6 @@ html {
 .update-page__input-text {
     color: #000000;
     font-weight: bold;
-    font-size: 15px;
 }
 
 .update-page__input {
@@ -112,7 +115,6 @@ html {
 .update-page_number::placeholder {
     color: #000000;
     font-weight: bold;
-    font-size: 15px;
 }
 
 .update-page-russia-icon {
@@ -122,7 +124,6 @@ html {
 }
 
 .update-page__country-title {
-    font-size: 14px;
     color: #000000;
     font-weight: bold;
     margin-left: 10px;
@@ -166,7 +167,6 @@ html {
     background-color: #008079;
     border: 1px solid #00716A;
     border-radius: 4px;
-    font-size: 16px;
     font-weight: bold;
     color: #FFFFFF;
     cursor: pointer;
@@ -216,7 +216,6 @@ html {
     padding: 12px 8px 12px 12px;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
     color: #000000;
     font-weight: bold;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -239,19 +238,6 @@ html {
     height: 11px;
     background: url("img/Ua.png") no-repeat center;
     display: inline-block;
-}
-
-.update-page__input:hover::after {
-    left: 0;
-    top: 2em;
-    position: absolute;
-    width: 277px;
-    height: 68px;
-    border: 1px solid #FFFFFF;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    background: #2BC75D;
-    content: attr(data-tooltip);
 }
 
 .update-page__input-helper-text {
@@ -280,7 +266,6 @@ html {
 }
 
 .update-page__input-helper-text-title {
-    font-size: 14px;
     font-weight: bold;
 }
 
@@ -297,7 +282,6 @@ html {
     top: 11px;
     left: 348px;
     color: #FFFFFF;
-    font-size: 16px;
     z-index: 2;
     text-shadow: -8px 0 20px rgba(0,0,0,0.2);
 }

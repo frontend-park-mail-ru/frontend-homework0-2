@@ -2,18 +2,20 @@ html {
     width: 100%;
     height: 100%;
 }
-
-.profile-page {
+body {
     margin: 0;
+    height: 100%;
+}
+.profile-page {
     padding-top: 8px;
     height: 100%;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
     font-family: Helvetica, Arial, san-serif;
-    font-size: 32px;
     -webkit-box-pack: center;
     display: -webkit-box;
+    font-size: 13px;
 }
 
 .profile-page__main-block {
@@ -28,6 +30,7 @@ html {
 }
 
 .profile-page__title {
+    font-size: 32px;
     display: inline-flex;
     justify-content: center;
     font-weight: bold;
@@ -45,7 +48,7 @@ html {
     position: relative;
 }
 
-.profile-page__logo-circle:after {
+.profile-page__nickname {
     content: 'ИИ';
     font-size: 33px;
     font-weight: bold;

@@ -2,14 +2,18 @@ html {
     width: 100%;
     height: 100%;
 }
-.menu-page {
+
+body {
     margin: 0;
+    height: 100%;
+}
+.menu-page {
     padding: 8px;
     height: 100%;
     display: flex;
     flex-direction: column;
     font-family: Helvetica, Arial, san-serif, serif;
-    font-size: 33px;
+    font-size: 15px;
     box-sizing: border-box;
 }
 
@@ -49,6 +53,7 @@ html {
     padding: 3px 0 0 20px;
     display: flex;
     align-items: center;
+    font-size: 33px;
     border-bottom: 1px solid #E0E0E0;
     font-weight: bold;
     box-sizing: border-box;
@@ -87,7 +92,6 @@ html {
 
 .menu-page-menu-row__text {
     margin-left: 12px;
-    font-size: 15px;
     display: flex;
     align-items: center;
 }

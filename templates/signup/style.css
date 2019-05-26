@@ -12,11 +12,15 @@ html {
     height: 100%;
 }
 
-.sign-up-page {
+button {
     margin: 0;
+    height: 100%;
+}
+
+.sign-up-page {
     padding-top: 8px;
     height: 100%;
-    font-size: 32px;
+    font-size: 15px;
     font-family: Helvetica, Arial, san-serif;
     box-sizing: border-box;
 }
@@ -31,6 +35,7 @@ html {
 
 .sign-up-page__header {
     height: 67px;
+    font-size: 32px;
     border-bottom: 1px solid #E0E0E0;
     padding: 20px;
     font-weight: bold;
@@ -52,7 +57,6 @@ html {
 }
 
 .sign-up-page__helper-text {
-    font-size: 15px;
     color: #999999;
     line-height: 1.3;
 }
@@ -63,7 +67,6 @@ html {
 }
 
 .sign-up-page-input::placeholder {
-    font-size: 14px;
     color: #7C7C7C;
     font-weight: bold;
 }
@@ -91,11 +94,8 @@ html {
     font-weight: bold;
 }
 
-.sign-up-page__container-drop {}
-
 .sign-up-page-title-input {
     margin-top: 16px;
-    font-size: 15px;
     color: #000000;
     font-weight: bold;
 }
@@ -145,7 +145,6 @@ html {
     padding: 12px 8px 12px 12px;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
     color: #000000;
     font-weight: bold;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -193,13 +192,11 @@ html {
 }
 
 .sign-up-page__dropdown-text {
-    font-size: 14px;
     color: #000000;
     font-weight: bold;
 }
 
 .sign-up-page__country-title {
-    font-size: 14px;
     color: #000000;
     font-weight: bold;
     margin-left: 10px;
@@ -219,17 +216,17 @@ html {
     background: url("img/Done.svg") no-repeat center;
 }
 
-.sign-up-page__number-form {
+.sign-up-page__phone-form {
     margin-top: 20px;
 }
 
-.sign-up-page__number-inputs-container {
+.sign-up-page__phone-inputs-container {
     margin-top: 4px;
     height: 40px;
     display: flex;
 }
 
-.sign-up-page__number-input {
+.sign-up-page__phone-input {
     height: 100%;
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
@@ -238,14 +235,14 @@ html {
     position: relative;
 }
 
-.sign-up-page__number-input_country {
+.sign-up-page__phone-input_country {
     width: 157px;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
     border-right: none;
     padding: 0 8px 0 12px;
 }
-.sign-up-page__number-input_number {
+.sign-up-page__phone-input_number {
     width: 223px;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
@@ -265,8 +262,7 @@ html {
     display: inline-block;
 }
 
-.sign-up-page__number-input_number::placeholder {
-    font-size: 15px;
+.sign-up-page__phone-input_number::placeholder {
     color: #000000;
     font-weight: bold;
 }

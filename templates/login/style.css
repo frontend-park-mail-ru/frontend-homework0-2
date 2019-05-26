@@ -6,6 +6,7 @@ button {
     -webkit-border-image: none;
     -o-border-image: none;
     border-image: none;
+    cursor: pointer;
 }
 
 a{
@@ -16,17 +17,20 @@ html {
     width: 100%;
     height: 100%;
 }
-.login-page {
+
+body {
     margin: 0;
+    height: 100%;
+}
+.login-page {
     padding: 8px;
-    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     font-family: Helvetica, Arial, san-serif;
-    font-size: 27px;
+    font-size: 15px;
     background-color: #858585;
 }
 
@@ -55,7 +59,7 @@ html {
     right: 20px;
 }
 
-.login-page-close-button {
+.login-page__close-button {
     width: 15px;
     height: 15px;
     background: url("img/CloseBig.svg") no-repeat center;
@@ -78,11 +82,10 @@ html {
 
 .login-page__input::placeholder {
     color: #7E7E7E;
-    font-size: 14px;
     font-weight: bold;
 }
 
-.login-page-eye-button {
+.login-page__eye-button {
     width: 16px;
     height: 16px;
     background: url("img/Show.svg") no-repeat center;
@@ -90,6 +93,7 @@ html {
     transform: translateY(-50%);
     top: 50%;
     right: 12px;
+    cursor: pointer;
 }
 
 .login-page__helper-container {
@@ -107,7 +111,7 @@ html {
     display: flex;
 }
 
-.login-page-check-box {
+.login-page__check-box {
     width: 16px;
     height: 16px;
     box-sizing: border-box;
@@ -118,7 +122,7 @@ html {
     cursor: pointer;
 }
 
-.login-page-check-box:after {
+.login-page__check-box:after {
     content: '';
     width: 100%;
     height: 100%;
@@ -128,10 +132,6 @@ html {
     left: 48%;
     background: url("img/DonePerfect.svg") no-repeat center;
     z-index: 1;
-}
-
-.login-page__storage-text {
-    font-size: 15px;
 }
 
 .login-page__storage-text-container {
@@ -167,7 +167,6 @@ html {
     left: 50%;
     content: "Войти";
     color: #FFFFFF;
-    font-size: 16px;
     font-weight: bold;
     z-index: 1;
     display: flex;
@@ -175,14 +174,14 @@ html {
     align-items: center;
 }
 
-.login-page-form-helpful__text {
+.login-page__form-helpful-text {
     color: #9E9E9E;
     font-size: 12px;
     font-weight: bold;
     text-align: center;
 }
 
-.login-page-social-buttons {
+.login-page__social-buttons {
     margin: 10px 0;
     display: flex;
     justify-content: center;
@@ -257,7 +256,6 @@ html {
 
 .login-page__reg-text {
     color: #005BD1;
-    font-size: 15px;
     text-align: center;
     vertical-align: middle;
 }
