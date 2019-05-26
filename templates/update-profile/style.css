@@ -130,7 +130,7 @@ body {
     display: inline-block;
 }
 
-.update-page__dropdown-icon-container {
+.sign-up-page__dropdown-icon-container {
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
