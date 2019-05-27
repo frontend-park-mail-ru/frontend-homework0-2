@@ -39,7 +39,6 @@ body {
     }
 }
 
-
 .update-form {
     margin-bottom: 28px;
     padding: 20px;
@@ -96,7 +95,6 @@ body {
         top: 315px;
     }
 }
-
 
 @media (max-width: 400px) { 
     .update-form__phone-menu {
