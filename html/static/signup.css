@@ -11,6 +11,10 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    /* margin: 0;
+    height: 100%;
+    background: url(images/hero-lg.jpg);
+    background-size: cover; */
 }
 
 .signup {
@@ -19,6 +23,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
+    position: fixed;
 }
 
 .signup-title {
@@ -72,7 +77,6 @@ body {
 }
 
 .signup-form__eye {
-    margin-left: 320px;
     height: 20px;
     margin-left: 340px;
     position: relative;
@@ -98,7 +102,7 @@ body {
 @media (max-width: 320px) {
     .signup {
         width: 320px;
-        position: absolute;
+        position: fixed;
     }
     
     .signup-form {
@@ -111,6 +115,10 @@ body {
 
     .signup-form__button {
         width: 280px;
+    }
+
+    .signup-form__eye {
+        margin-left: 260px;
     }
 
     body {
