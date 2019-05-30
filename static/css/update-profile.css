@@ -148,7 +148,7 @@
     border-bottom: none;
     border-right: none;
     transform: rotate(-45deg);
-    background: linear-gradient(135deg, white 0%, white 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(135deg, white 50%, rgba(255, 255, 255, 0) 51%);
 }
 .dialog-content {
     position: fixed;

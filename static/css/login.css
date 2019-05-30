@@ -157,7 +157,7 @@
     height: 32px;
     cursor: pointer;
     border-radius: var(--border-radius-size);
-    margin: 0  1% 1% 1%;
+    margin: 0 1% 1% 1%;
 }
 .provider_vk {
     background: rgb(74,118,168);

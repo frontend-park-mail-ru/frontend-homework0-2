@@ -8,10 +8,6 @@ body {
     outline: none;
 }
 
-.hovered:hover {
-    box-shadow: 0 0 10px var;
-}
-
 :root {
     --main-font-size: 14px;
     --button-font-size: 14px;
