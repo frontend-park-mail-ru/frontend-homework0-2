@@ -1,0 +1,11 @@
+$list:  left, right,
+        start, flex-start,
+        end, flex-end,
+        center, stretch,
+        space-between, space-around, space-evenly;
+
+@each $key in $list {
+    .justify-content_#{$key} {
+        justify-content: $key;
+    }
+}

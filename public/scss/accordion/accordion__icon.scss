@@ -1,0 +1,16 @@
+@import "../global";
+
+$width: 32px;
+
+.accordion__icon {
+  width: $width;
+  height: $width;
+  border-radius: $width / 2;
+  @include box-sizing(border-box);
+  padding: 7px 0 0 7px;
+  background-color: var(--primary-color);
+}
+
+.accordion__icon svg {
+  fill: var(--svg-color);
+}

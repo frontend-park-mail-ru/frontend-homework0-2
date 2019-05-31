@@ -1,0 +1,10 @@
+$list:
+        start, self-start, flex-start,
+        end, self-end, flex-end,
+        center, stretch, baseline;
+
+@each $key in $list {
+    .align-items_#{$key} {
+        align-items: $key;
+    }
+}

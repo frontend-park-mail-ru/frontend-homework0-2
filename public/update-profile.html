@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update profile</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="modal container justify-content_center align-items_center">
+            <div class="upd-profile modal__content card shadow-xl">
+                <div class="card__header">
+                    <div class="modal__close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6.586 8L4.293 5.707a.999.999 0 1 1 1.414-1.414L8 6.586l2.293-2.293a1 1 0 0 1 1.414 1.414L9.414 8l2.293 2.293a1 1 0 0 1-1.414 1.414L8 9.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L6.586 8z"/>
+                        </svg>
+                    </div>
+                    <h1>Изменение настроек</h1>
+                </div>
+                <form class="form">
+                    <div class="card__body">
+                        <div class="form__group">
+                            <label class="form__group__label" for="login">Логин</label>
+                            <input id="login" class="form__control" type="text" name="login">
+                            <div class="form__control__fd popup_fd" hidden>
+                                    <p class="popup__title">Укажите новый логин</p>
+                                    <p class="description">Вы можете изменить свой логин</p>
+                            </div>
+                            <div class="popup shadow-xl">
+                                <div class="popup__body">
+                                    <p class="popup__title">Укажите новый логин</p>
+                                    <p class="description">Вы можете изменить свой логин</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__input-group">
+                            <label class="form__group__label" for="phone">Телефон</label>
+                            <div class="container">
+                                <div class="dropdown w-50" id="dropdown">
+                                    <div class="dropdown__option dropdown__option_active" data-value="+7" data-active="true">
+                                    <span class="dropdown__option__icon">
+                                        <img src="img/ru.png" alt="ru">
+                                    </span>
+                                        <span> Россия </span>
+                                    </div>
+                                    <div id="dropdown__list" class="dropdown__list">
+                                        <div class="dropdown__option" data-value="+380">
+                                        <span class="dropdown__option__icon" >
+                                            <img src="img/ua.png" alt="ua">
+                                        </span>
+                                            <span> Украина </span>
+                                        </div>
+                                        <div class="dropdown__option" data-value="+992">
+                                        <span class="dropdown__option__icon">
+                                            <img src="img/tj.png" alt="tj">
+                                        </span>
+                                            <span> Таджикистан </span>
+                                        </div>
+                                    </div>
+                                    <div class="form__control__fd form__control__fd_invalid no-wrap">Неправильный телефон</div>
+                                </div>
+                                <div class="form__group">
+                                    <input id="phone" type="text" name="phone" class="form__control input-phone" value="+7">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <button type="submit" class="button button_success button_disabled">Обновить</button>
+                        <button type="button" class="button button_light">Отменить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

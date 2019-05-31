@@ -1,0 +1,8 @@
+@import '../global';
+@import 'card';
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    padding: px($padding-top-bottom) px($padding-left-right);
+}

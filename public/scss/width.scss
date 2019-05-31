@@ -1,0 +1,22 @@
+@import "global";
+$widths: (
+        w-33:  33.5%,
+        w-40:  40%,
+        w-50:  50%,
+        w-55:  55%,
+        w-60:  60%,
+        w-100: 100%
+);
+
+@each $key, $size in $widths {
+    .#{$key} {
+      width: $size;
+    }
+}
+
+$margin-bottoms: 10, 15;
+@each $key in $margin-bottoms {
+    .mb-#{$key} {
+        margin-bottom: px($key);
+    }
+}

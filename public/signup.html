@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container justify-content_center">
+        <div class="card sign-up">
+            <div class="card__header card__header_bb">
+                <h1>Регистрация</h1>
+            </div>
+            <form class="form">
+                <div class="card__body">
+                    <p class="description mb-10">Для регистрации на ресурсе укажите информацию о себе</p>
+                    <div class="form__group">
+                        <input type="text" name="name" class="form__control form__control_invalid" placeholder="Имя">
+                        <span class="form__control__fd form__control__fd_invalid">Заполните обязательное поле</span>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" name="name" class="form__control" placeholder="Фамилия">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__group__label">Дата рождения</label>
+                        <select class="select w-33">
+                            <option>День</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                        <select class="select w-33">
+                            <option>Месяц</option>
+                            <option>Январь</option>
+                            <option>Февраль</option>
+                            <option>Март</option>
+                            <option>Апрель</option>
+                            <option>Май</option>
+                            <option>Июнь</option>
+                            <option>Июль</option>
+                            <option>Август</option>
+                            <option>Сентябрь</option>
+                            <option>Октябрь</option>
+                            <option>Ноябрь</option>
+                            <option>Декабрь</option>
+                        </select>
+                        <select class="select w-33">
+                            <option>Год</option>
+                            <option>1995</option>
+                            <option>1996</option>
+                            <option>1997</option>
+                            <option>1998</option>
+                            <option>1999</option>
+                            <option>2000</option>
+                            <option>2001</option>
+                            <option>2002</option>
+                            <option>2003</option>
+                            <option>2004</option>
+                            <option>2005</option>
+                            <option>2006</option>
+                            <option>2007</option>
+                            <option>2008</option>
+                            <option>2009</option>
+                            <option>2010</option>
+                        </select>
+                    </div>
+                    <div class="form__input-group">
+                        <label class="form__group__label" for="phone">Телефон</label>
+                        <div class="container">
+                            <div class="dropdown w-50" id="dropdown">
+                                <div class="dropdown__option dropdown__option_active" data-value="+7" data-active="true">
+                                    <span class="dropdown__option__icon">
+                                        <img src="img/ru.png" alt="ru">
+                                    </span>
+                                    <span> Россия </span>
+                                </div>
+                                <div id="dropdown__list" class="dropdown__list">
+                                    <div class="dropdown__option" data-value="+380">
+                                        <span class="dropdown__option__icon" >
+                                            <img src="img/ua.png" alt="ua">
+                                        </span>
+                                        <span> Украина </span>
+                                    </div>
+                                    <div class="dropdown__option" data-value="+992">
+                                        <span class="dropdown__option__icon">
+                                            <img src="img/tj.png" alt="tj">
+                                        </span>
+                                        <span> Таджикистан </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <input id="phone" type="text" name="phone" class="form__control input-phone" value="+7">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <input type="password" name="password1" class="form__control" placeholder="Пароль">
+                    </div>
+                    <div class="form__group">
+                        <input type="password" name="password2" class="form__control" placeholder="Повторите пароль">
+                    </div>
+                </div>
+                <div class="card__footer card__footer_bt">
+                    <button type="submit" class="button button_success">Зарегистрироваться</button>
+                    <button type="button" class="button button_light button_disabled">Отменить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="application/javascript">
+        const dropdown = document.getElementById('dropdown');
+        const list = document.getElementById('dropdown__list');
+        const inputPhone = document.getElementById('phone');
+
+        dropdown.addEventListener('click', (e) => {
+            let current = e.target;
+            if (current instanceof HTMLSpanElement) {
+                current = current.parentElement;
+            }
+
+            if ('active' in current.dataset && current.dataset.active) {
+                current.dataset.active = '';
+                dropdown.classList.add('dropdown_open');
+                list.style.display = 'block';
+            } else {
+                current.dataset.active = 'true';
+                dropdown.classList.remove('dropdown_open');
+                list.style.display = 'none';
+            }
+        });
+
+        list.addEventListener('click', (e) => {
+            const active = document.getElementsByClassName('dropdown__option_active')[0];
+            active.classList.remove('dropdown__option_active');
+
+            let current = e.target;
+            if (current instanceof HTMLSpanElement) {
+                current = current.parentElement;
+            }
+
+            current.classList.add('dropdown__option_active');
+            inputPhone.value = current.dataset.value;
+
+            list.style.display = 'none';
+            dropdown.classList.remove('dropdown_open');
+
+            list.appendChild(active);
+            dropdown.appendChild(current);
+            setTimeout(() => current.dataset.active = 'true', 100);
+        });
+    </script>
+</body>
+</html>

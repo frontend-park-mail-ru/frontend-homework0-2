@@ -1,0 +1,16 @@
+.accordion {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion:after {
+  position: absolute;
+  top: 30px;
+  right: 24px;
+  font-size: 14px;
+  content: "\25bc";
+}

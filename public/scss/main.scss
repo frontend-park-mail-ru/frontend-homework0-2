@@ -1,0 +1,218 @@
+@import "accordion/accordion";
+@import "accordion/accordion__icon";
+@import "accordion/accordion__text";
+@import "accordion/accordion_active";
+@import "accordion/accordion_light";
+@import "accordion/panel";
+@import "button/button";
+@import "button/button__icon";
+@import "button/button__text";
+@import "button/button_disabled";
+@import "button/button_light";
+@import "button/button_success";
+@import "card/card";
+@import "card/card__body";
+@import "card/card__footer";
+@import "card/card__footer_bt";
+@import "card/card__header";
+@import "card/card__header_bb";
+@import "container/container";
+@import "container/container_column";
+@import "custom-checkbox/custom-checkbox";
+@import "custom-checkbox/custom-checkbox__input";
+@import "custom-checkbox/custom-checkbox__label";
+@import "form/form";
+@import "form/__control/form__control";
+@import "form/__control/form__control_invalid";
+@import "form/__control/form__control_success";
+@import "form/__control/__feadback/form__control__fd";
+@import "form/__control/__feadback/form__control__fd_invalid";
+@import "form/__control/__feadback/form__control__fd_success";
+@import "dropdown/dropdown";
+@import "dropdown/dropdown__list";
+@import "dropdown/dropdown__option";
+@import "dropdown/dropdown_open";
+@import "dropdown/dropdown__option__icon";
+@import "form/__group/form__group";
+@import "form/__group/form__group__show-psw";
+@import "form/__group/form__group__label";
+@import "header/header";
+@import "header/header__icon";
+@import "link/link";
+@import "modal/modal";
+@import "modal/modal__close";
+@import "modal/modal__content";
+@import "popup/popup";
+@import "popup/popup__body";
+@import "popup/popup__title";
+@import "social-block/social-block";
+@import "social-block/social-block__icon";
+@import "social-block/social-block_fb";
+@import "social-block/social-block_ok";
+@import "social-block/social-block_vk";
+@import "select/select";
+
+@import "align-items/align-items";
+@import "justify-content/justify-content";
+@import "width";
+
+:root {
+  --primary-color: #23D07A;
+  --secondary-color: #FFF;
+  --light-color: #9C9C9C;
+  --border-color: #E0E0E0;
+  --svg-color: #FFF;
+  --invalid-color: #FF5B89;
+  --success-color: #23D07A;
+}
+
+body {
+  font-family: Helvetica, Arial, san-serif;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+.font-size_sm {
+  font-size: small;
+}
+
+.description {
+  color: #ABABAB;
+  font-size: small;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.text_bold {
+  font-weight: 600;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+$menu-width: 680px;
+
+.menu {
+  margin-top: 40px;
+  width: $menu-width;
+}
+
+@media (max-width: $menu-width) {
+  .menu {
+    margin-top: 10px;
+  }
+}
+
+.sign-in {
+  position: relative;
+  width: 420px;
+  height: 390px;
+}
+
+$sign-up-width: 450px;
+.profile, .sign-up {
+  width: $sign-up-width;
+  margin-top: 20px;
+}
+
+$profile-logo-width: 48px;
+.profile__logo {
+  width: $profile-logo-width;
+  height: $profile-logo-width;
+  background-color: var(--border-color);
+  border-radius: $profile-logo-width / 2;
+}
+
+.profile__row:not(:last-child) {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.profile__row div {
+  padding: 10px 0;
+}
+
+@media (max-width: $sign-up-width) {
+  .sign-up, .profile {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .sign-up .container {
+    flex-wrap: wrap;
+  }
+
+  .sign-up .dropdown {
+    width: 99%;
+  }
+
+  .sign-up .button, .profile .button {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .sign-up .button:last-child, .profile .button:last-child {
+    margin-bottom: 0;
+  }
+
+  .profile__info {
+    width: 100%;
+  }
+}
+
+
+$upd-profile-width: 380px;
+.upd-profile {
+  position: relative;
+  width: $upd-profile-width;
+}
+
+@media (max-width: $upd-profile-width) {
+  .upd-profile {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .upd-profile .container {
+    flex-wrap: wrap;
+  }
+
+  .upd-profile .dropdown {
+    width: 99%;
+  }
+
+  .upd-profile .button {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .upd-profile .button:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 870px) {
+  .popup {
+    right: -55%;
+  }
+}
+
+@media (max-width: 700px) {
+  .popup {
+    display: none;
+  }
+
+  .popup_fd {
+    display: block;
+  }
+}
+
+.shadow-xl {
+  @include box-shadow(0 0 30px rgba(156,156,156, 0.7));
+}

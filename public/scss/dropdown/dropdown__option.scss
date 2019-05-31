@@ -1,0 +1,10 @@
+.dropdown__option {
+    height: 20px;
+    cursor: pointer;
+    padding: 7px 0 3px 10px;
+    background-color: var(--secondary-color);
+}
+
+.dropdown__option:last-child {
+    margin-bottom: 0;
+}

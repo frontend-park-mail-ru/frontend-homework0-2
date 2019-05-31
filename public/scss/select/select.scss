@@ -1,0 +1,9 @@
+@import '../global';
+
+.select {
+    border: 1px  solid var(--border-color);
+    background-color: var(--secondary-color);
+    padding: 5px 0 5px 10px;
+    margin-right: -5px;
+    height: $form-control-height;
+}

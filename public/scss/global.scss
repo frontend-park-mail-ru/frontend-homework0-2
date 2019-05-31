@@ -1,0 +1,67 @@
+@mixin box-sizing($args) {
+    -moz-box-sizing: $args;
+    -webkit-box-sizing: $args;
+    box-sizing: $args;
+}
+
+@mixin user-select($args) {
+    -webkit-user-select: $args;
+    -moz-user-select: $args;
+    -ms-user-select: $args;
+    user-select: $args;
+}
+
+@mixin background-size($args) {
+    -moz-background-size: $args;
+    -o-background-size: $args;
+    -webkit-background-size: $args;
+    background-size: $args;
+}
+
+@mixin opacity($arg) {
+    $opacity: $arg * 100;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity})";
+    /* IE 5-7 */
+    filter: alpha(opacity=$opacity);
+    /* Netscape */
+    -moz-opacity: $arg;
+    /* Safari 1.x */
+    -khtml-opacity: $arg;
+    /* Good browsers */
+    opacity: $arg;
+}
+
+@mixin box-shadow($args) {
+    -moz-box-shadow: $args;
+    -o-box-shadow: $args;
+    -webkit-box-shadow: $args;
+    box-shadow: $args;
+}
+
+$minimum-screen-width: 320;
+$maximum-screen-width: 1100;
+
+$form-control-height: 32px;
+
+@function px($arg) {
+    @return $arg + px;
+}
+
+@function calcY($y1, $y2) {
+    $m: ($y2 - $y1) / ($maximum-screen-width - $minimum-screen-width);
+    $b: $y2 - $m * $maximum-screen-width;
+    @return calc(#{$m} * 100vw + #{px($b)});
+}
+
+@mixin media-min-width() {
+    @media (min-width: px($minimum-screen-width)) {
+        @content
+    }
+}
+
+@mixin media-max-width() {
+    @media (min-width: px($maximum-screen-width)) {
+        @content
+    }
+}

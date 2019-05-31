@@ -1,0 +1,19 @@
+@import '../global';
+
+.custom-checkbox__input {
+    position: absolute;
+    z-index: -1;
+    @include opacity(0);
+}
+
+.custom-checkbox__input:checked ~ .custom-checkbox__label::before {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.custom-checkbox__input:checked ~ .custom-checkbox__label::after {
+    content: '\2714';
+    color: var(--secondary-color);
+    font-size: 1rem;
+    margin-left: 1px;
+}

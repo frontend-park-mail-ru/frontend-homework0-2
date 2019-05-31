@@ -1,0 +1,10 @@
+@import "../../global";
+
+.form__control {
+    width: 100%;
+    height: $form-control-height;
+    padding: 5px 0 5px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    @include box-sizing(border-box);
+}

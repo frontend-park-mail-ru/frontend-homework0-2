@@ -1,0 +1,12 @@
+$padding-top-bottom: 16;
+$padding-left-right: 20;
+
+.card {
+  border: 1px solid var(--border-color);
+  border-radius: 1px;
+  background-color: var(--secondary-color);
+}
+
+.card h1 {
+  font-weight: 400;
+}

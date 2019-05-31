@@ -1,0 +1,8 @@
+.button_light {
+    color: var(--light-color);
+    background-color: var(--border-color) ;
+}
+
+.button_light .button__icon {
+    fill: var(--light-color);
+}

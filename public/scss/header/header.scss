@@ -1,0 +1,28 @@
+@import '../global';
+
+$min-height: 60;
+$max-height: 44;
+$padding-left-min: 12;
+$padding-left-max: 84;
+
+.header {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  height: px($min-height);
+  padding: 12px px($padding-left-min) 0;
+}
+
+@include media-min-width() {
+  .header {
+    padding: 12px calcY($padding-left-min, $padding-left-max) 0;
+    height: calcY($min-height, $max-height);
+  }
+}
+
+@include media-max-width() {
+  .header {
+    padding: 12px px($padding-left-max) 0;
+    height: px($max-height);
+  }
+}
+

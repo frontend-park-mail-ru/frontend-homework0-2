@@ -1,0 +1,19 @@
+$border: 1px solid var(--border-color);
+
+.dropdown__list {
+    padding-top: 5px;
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    width: 100%;
+    display: none;
+    cursor: pointer;
+    border-right: $border;
+    border-bottom: $border;
+    border-left: $border;
+    background-color: var(--secondary-color);
+}
+
+.dropdown__list .dropdown__option:not(:last-child) {
+    padding-bottom: 8px;
+}

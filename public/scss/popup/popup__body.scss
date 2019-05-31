@@ -1,0 +1,14 @@
+.popup__body::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: -6px;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.popup__body {
+    padding: 10px 15px;
+}
