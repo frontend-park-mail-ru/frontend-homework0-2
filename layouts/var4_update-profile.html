@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var4_update-profile</title>
+    <link rel="stylesheet" href="css/container/container.css">
+    <link rel="stylesheet" href="css/container/_centering/container_centering_both.css">
+    <link rel="stylesheet" href="css/container/_theme/container_theme_dark.css">
+    <link rel="stylesheet" href="css/card/card.css">
+    <link rel="stylesheet" href="css/card/_theme/card_theme_form.css">
+    <link rel="stylesheet" href="css/card/_with-shadow/card_with-shadow.css">
+    <link rel="stylesheet" href="css/card/__body/card__body.css">
+    <link rel="stylesheet" href="css/card/__title/card__title.css">
+    <link rel="stylesheet" href="css/card/__close-btn/card__close-btn.css">
+    <link rel="stylesheet" href="css/form/form.css">
+    <link rel="stylesheet" href="css/form/__fieldset/form__fieldset.css">
+    <link rel="stylesheet" href="css/form/__subtitle/form__subtitle.css">
+    <link rel="stylesheet" href="css/form/__field/form__field.css">
+    <link rel="stylesheet" href="css/form/__field/_error/form__field_error.css">
+    <link rel="stylesheet" href="css/form/__field-row/form__field-row.css">
+    <link rel="stylesheet" href="css/form/__field-row/_single-field/form__field-row_single-field.css">
+    <link rel="stylesheet" href="css/form/__field/_type/form__field_type_dropdown.css">
+    <link rel="stylesheet" href="css/form/__field/_w/form__field_w_40.css">
+    <link rel="stylesheet" href="css/form/__field/_w/form__field_w_60.css">
+    <link rel="stylesheet" href="css/form/__error-msg/form__error-msg.css">
+    <link rel="stylesheet" href="css/form/__icon/form__icon.css">
+    <link rel="stylesheet" href="css/card/__footer/card__footer.css">
+    <link rel="stylesheet" href="css/card/__footer/_margin-top/card__footer_margin-top.css">
+    <link rel="stylesheet" href="css/form/__submit-btn/form__submit-btn.css">
+    <link rel="stylesheet" href="css/form/__submit-btn/_theme/form__submit-btn_theme_dark-light.css">
+    <link rel="stylesheet" href="css/form/__submit-btn/_mini/form__submit-btn_mini.css">
+    <link rel="stylesheet" href="css/form/__submit-btn/_disabled/form__submit-btn_disabled.css">
+    <link rel="stylesheet" href="css/form/__submit-btn/_no-margin/form__submit-btn_no-margin.css">
+    <link rel="stylesheet" href="css/tooltip/tooltip.css">
+    <link rel="stylesheet" href="css/tooltip/__tooltip-content/tooltip__tooltip-content.css">
+    <link rel="stylesheet" href="css/card/__note/card__note.css">
+    <link rel="stylesheet" href="css/card/__note/_align/card__note_align_left.css">
+</head>
+<body class="container container_theme_dark container_centering_both">
+    <div class="card card_theme_form card_with-shadow">
+        <div class="card__body">
+            <h1 class="card__title">Изменение<br/>настроек</h1>
+            <svg class="card__close-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.983 6.455l4.34-4.34a1.105 1.105 0 0 1 1.562 1.562l-4.34 4.34 4.34 4.34a1.08 1.08 0 1 1-1.528 1.528l-4.34-4.34-4.34 4.34a1.105 1.105 0 0 1-1.562-1.562l4.34-4.34-4.34-4.34a1.08 1.08 0 1 1 1.528-1.528l4.34 4.34z"/>
+            </svg>
+            <form class="form" id="update_form">
+                <fieldset class="form__fieldset">
+                    <span class="form__subtitle">Логин</span>
+                    <div class="tooltip">
+                        <input class="form__field" id="login" type="text">
+                        <div class="tooltip__tooltip-content">
+                            <span>Укажиите новый логин</span>
+                            <h5 class="card__note card__note_align_left">Вы можете изменить свой логин</h5>
+                        </div>
+                    </div>
+                    <span class="form__subtitle">Телефон</span>
+                    <div class="form__field-row form__field-row_single-field">
+                        <span class="form__field form__field_type_dropdown form__field_w_40 form__field_error" id="phone_county">
+                            <img src="img/ru.png" class="form__icon" alt="Флаг России">Россия
+                        </span>
+                        <input class="form__field form__field_w_60 form__field_error" type="tel" id="country" value="+79999999999">
+                    </div>
+                    <span class="form__error-msg">Неправильный телефон</span>
+                </fieldset>
+            </form>
+        </div>
+        <div class="card__footer card__footer_margin-top">
+            <button class="form__submit-btn form__submit-btn_mini form__submit-btn_no-margin form__submit-btn_disabled" type="submit" form="update_form">Обновить</button>
+            <button class="form__submit-btn form__submit-btn_mini form__submit-btn_no-margin form__submit-btn_theme_dark-light" type="reset" form="update_form">Отменить</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.list__elem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+}

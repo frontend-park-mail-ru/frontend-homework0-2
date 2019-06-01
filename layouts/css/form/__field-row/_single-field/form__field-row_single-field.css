@@ -1,0 +1,16 @@
+.form__field-row_single-field .form__field:nth-child(1) {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form__field-row_single-field .form__field:not:nth-child(1):nth-last-child(1) {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form__field-row_single-field .form__field:nth-last-child(1) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}

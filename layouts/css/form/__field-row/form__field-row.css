@@ -1,0 +1,33 @@
+.form__field-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* one item in a row */
+.form__field-row .form__field:first-child:nth-last-child(1) {
+    width: 100%;
+}
+
+/* two items in a row */
+.form__field-row .form__field:first-child:nth-last-child(2),
+.form__field:first-child:nth-last-child(2) ~ .form__field {
+    width: 50%;
+}
+
+/* three items in a row */
+.form__field-row .form__field:first-child:nth-last-child(3),
+.form__field:first-child:nth-last-child(3) ~ .form__field {
+    width: 33.3333%;
+}
+
+/* four items in a row */
+.form__field-row .form__field:first-child:nth-last-child(4),
+.form__field:first-child:nth-last-child(4) ~ .form__field {
+    width: 25%;
+}

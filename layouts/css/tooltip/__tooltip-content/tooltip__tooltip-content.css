@@ -1,0 +1,22 @@
+.tooltip__tooltip-content {
+    position: absolute;
+    left: calc(100% + 8px);
+    width: 300px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background: white;
+    border-radius: .25rem;
+    box-shadow: -10px 0 20px 10px rgba(50, 50, 50, .25);
+}
+.tooltip__tooltip-content::before {
+    content: " ";
+    position: absolute;
+    top: calc(50% - 5px); /* At the bottom of the tooltip */
+    left: 0;
+    margin-left: -10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #FFFFFF transparent transparent;
+}

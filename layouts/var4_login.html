@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>var4_login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var4_login</title>
     <link rel="stylesheet" href="css/row/row.css">
     <link rel="stylesheet" href="css/row/_justify/row_justify_center.css">
     <link rel="stylesheet" href="css/container/container.css">
     <link rel="stylesheet" href="css/container/_theme/container_theme_dark.css">
     <link rel="stylesheet" href="css/container/_centering/container_centering_both.css">
     <link rel="stylesheet" href="css/card/card.css">
+    <link rel="stylesheet" href="css/card/_theme/card_theme_form.css">
+    <link rel="stylesheet" href="css/card/_with-shadow/card_with-shadow.css">
     <link rel="stylesheet" href="css/card/__body/card__body.css">
     <link rel="stylesheet" href="css/card/__title/card__title.css">
     <link rel="stylesheet" href="css/card/__close-btn/card__close-btn.css">
@@ -17,7 +19,8 @@
     <link rel="stylesheet" href="css/card/__note/card__note.css">
     <link rel="stylesheet" href="css/card/__footer/card__footer.css">
     <link rel="stylesheet" href="css/form/form.css">
-    <link rel="stylesheet" href="css/form/__text-field/form__text-field.css">
+    <link rel="stylesheet" href="css/form/__fieldset/form__fieldset.css">
+    <link rel="stylesheet" href="css/form/__field/form__field.css">
     <link rel="stylesheet" href="css/form/__pswd-wrapper/form__pswd-wrapper.css">
     <link rel="stylesheet" href="css/form/__show-pswd-btn/form__show-pswd-btn.css">
     <link rel="stylesheet" href="css/form/__pswd-helpers-wrapper/form__pswd-helpers-wrapper.css">
@@ -30,52 +33,52 @@
     <link rel="stylesheet" href="css/social-media-linlk/_style/social-media-link_style_VK.css">
 </head>
 <body class="container container_theme_dark container_centering_both">
-    <div class="card">
+    <div class="card card_theme_form card_with-shadow">
         <div class="card__body">
             <h1 class="card__title card__title_centered">Войти</h1>
             <svg class="card__close-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M7.983 6.455l4.34-4.34a1.105 1.105 0 0 1 1.562 1.562l-4.34 4.34 4.34 4.34a1.08 1.08 0 1 1-1.528 1.528l-4.34-4.34-4.34 4.34a1.105 1.105 0 0 1-1.562-1.562l4.34-4.34-4.34-4.34a1.08 1.08 0 1 1 1.528-1.528l4.34 4.34z"/>
             </svg>
             <form class="form">
-                <input class="form__text-field" id="phone_or_email" type="text" placeholder="Телефон или электронная почта" required>
-                <div class="form__pswd-wrapper">
-                    <input class="form__text-field" id="password" type="password" placeholder="Пароль" required>
-                    <svg class="form__show-pswd-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 1.488c-5.302 0-8 5.21-8 6.512 0 1.302 2.791 6.512 8 6.512S16 9.302 16 8c0-1.302-2.698-6.512-8-6.512zm0 10.233A3.731 3.731 0 0 1 4.279 8 3.731 3.731 0 0 1 8 4.279 3.731 3.731 0 0 1 11.721 8 3.731 3.731 0 0 1 8 11.721zM8 6c1.143 0 2 .953 2 2 0 1.143-.952 2-2 2-1.143 0-2-.952-2-2 0-1.142.857-2 2-2z"/>
-                    </svg>
-                </div>
-                <div class="form__pswd-helpers-wrapper">
-                    <div class="row">
-                        <input class="form__checkbox" id="remember_pswd" type="checkbox">
-                        <label for="remember_pswd">Запомнить пароль</label>
+                <fieldset class="form__fieldset">
+                    <input class="form__field" id="phone_or_email" type="text" placeholder="Телефон или электронная почта" required>
+                    <div class="form__pswd-wrapper">
+                        <input class="form__field" id="password" type="password" placeholder="Пароль" required>
+                        <svg class="form__show-pswd-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1.488c-5.302 0-8 5.21-8 6.512 0 1.302 2.791 6.512 8 6.512S16 9.302 16 8c0-1.302-2.698-6.512-8-6.512zm0 10.233A3.731 3.731 0 0 1 4.279 8 3.731 3.731 0 0 1 8 4.279 3.731 3.731 0 0 1 11.721 8 3.731 3.731 0 0 1 8 11.721zM8 6c1.143 0 2 .953 2 2 0 1.143-.952 2-2 2-1.143 0-2-.952-2-2 0-1.142.857-2 2-2z"/>
+                        </svg>
                     </div>
-                    <a href="#" class="link">Забыли пароль?</a>
-                </div>
+                    <div class="form__pswd-helpers-wrapper">
+                        <div class="row">
+                            <input class="form__checkbox" id="remember_pswd" type="checkbox" checked>
+                            <label for="remember_pswd">Запомнить пароль</label>
+                        </div>
+                        <a href="#" class="link">Забыли пароль?</a>
+                    </div>
+                </fieldset>
                 <button class="form__submit-btn" type="submit">Войти</button>
             </form>
             <h5 class="card__note">или продолжить через</h5>
             <div class="row row_justify_center">
-                <a href="#" class="social_media_link social_media_link_style_VK">
+                <a href="#" class="social-media-link social-media-link_style_VK">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <path fill="white" d="M15.623 3.901c.119-.373 0-.644-.525-.644h-1.745c-.441 0-.644.238-.763.492 0 0-.898 2.169-2.152 3.575-.406.407-.593.542-.813.542-.119 0-.271-.135-.271-.508V3.884c0-.44-.136-.644-.509-.644H6.1c-.271 0-.44.204-.44.407 0 .424.627.525.694 1.712v2.575c0 .559-.101.661-.322.661-.593 0-2.033-2.186-2.897-4.677-.17-.491-.339-.678-.78-.678H.593c-.508 0-.593.238-.593.492 0 .457.593 2.762 2.762 5.812 1.44 2.084 3.491 3.203 5.338 3.203 1.118 0 1.254-.255 1.254-.678v-1.576c0-.508.101-.593.457-.593.254 0 .712.135 1.746 1.135 1.186 1.186 1.389 1.729 2.05 1.729h1.745c.509 0 .746-.255.61-.746-.152-.491-.728-1.203-1.474-2.05-.407-.475-1.017-1-1.203-1.254-.254-.339-.186-.475 0-.78-.017 0 2.118-3.016 2.338-4.033"/>
                     </svg>
                 </a>
-                <a href="#" class="social_media_link social_media_link_style_FB">
+                <a href="#" class="social-media-link social-media-link_style_FB">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <path fill="white" d="M8.614 8.147h2.097s.217-.663.289-1.62v-.148.074-.368H8.542v-2.36c0-.22.362-.59.65-.59h1.519V1H9.41C6.663 1 6.446 3.505 6.446 3.874v2.284H5v2.21h1.446V15h2.168V8.147z"/>
                     </svg>
                 </a>
-                <a href="#" class="social_media_link social_media_link_style_OK">
+                <a href="#" class="social-media-link social-media-link_style_OK">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <path fill="white" d="M8 8.262c1.999 0 3.584-1.606 3.584-3.631C11.584 2.676 9.999 1 8 1S4.416 2.606 4.416 4.63c0 2.026 1.585 3.632 3.584 3.632zm0-5.097c.827 0 1.516.698 1.516 1.466 0 .838-.689 1.466-1.516 1.466-.827 0-1.516-.698-1.516-1.466S7.173 3.165 8 3.165zm1.447 8.03l2.137 2.024a1.022 1.022 0 0 1 0 1.467 1.072 1.072 0 0 1-1.516 0l-2-1.955-1.998 1.955c-.207.21-.482.28-.758.28s-.551-.07-.758-.28a1.022 1.022 0 0 1 0-1.467l1.999-2.024c-.69-.14-1.448-.42-2.068-.838-.482-.35-.62-.978-.344-1.467.275-.489.964-.628 1.447-.349 1.447.908 3.377.908 4.824 0 .483-.28 1.172-.14 1.447.35.276.488.138 1.186-.344 1.466-.62.419-1.31.698-2.068.838z"/>
                     </svg>
                 </a>
             </div>
         </div>
-        <div class="card__footer">
-            <div class="row row_justify_center">
-                <a href="#" class="link">Зарегистрироваться</a>
-            </div>
+        <div class="card__footer row row_justify_center">
+            <a href="#" class="link">Зарегистрироваться</a>
         </div>
     </div>
 </body>

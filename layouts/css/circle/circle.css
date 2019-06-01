@@ -1,0 +1,8 @@
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px 0 8px;
+    padding: 10px;
+    border-radius: 100%;
+}

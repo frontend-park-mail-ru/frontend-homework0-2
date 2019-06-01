@@ -1,0 +1,11 @@
+.form__field_type_dropdown {
+    position: relative;
+    font-size: .85rem;
+}
+
+.form__field_type_dropdown:after {
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 8px;
+    content: url("drop_down.svg");
+}

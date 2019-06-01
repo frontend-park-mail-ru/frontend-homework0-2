@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var4_signup</title>
+    <link rel="stylesheet" href="css/container/container.css">
+    <link rel="stylesheet" href="css/container/_centering/container_centering_x.css">
+    <link rel="stylesheet" href="css/container/_theme/container_theme_light.css">
+    <link rel="stylesheet" href="css/card/card.css">
+    <link rel="stylesheet" href="css/card/_bordered/card_bordered.css">
+    <link rel="stylesheet" href="css/card/_theme/card_theme_form.css">
+    <link rel="stylesheet" href="css/card/__header/card__header.css">
+    <link rel="stylesheet" href="css/card/__title/card__title.css">
+    <link rel="stylesheet" href="css/card/__title/_no-margin/card__title_no-margin.css">
+    <link rel="stylesheet" href="css/card/__body/card__body.css">
+    <link rel="stylesheet" href="css/card/__note/card__note.css">
+    <link rel="stylesheet" href="css/card/__footer/card__footer.css">
+    <link rel="stylesheet" href="css/card/__footer/_margin-top/card__footer_margin-top.css">
+    <link rel="stylesheet" href="css/form/__subtitle/form__subtitle.css">
+    <link rel="stylesheet" href="css/form/form.css">
+    <link rel="stylesheet" href="css/form/__field/_error/form__field_error.css">
+    <link rel="stylesheet" href="css/form/__fieldset/form__fieldset.css">
+    <link rel="stylesheet" href="css/form/__field/form__field.css">
+    <link rel="stylesheet" href="css/form/__field/_w/form__field_w_40.css">
+    <link rel="stylesheet" href="css/form/__field/_w/form__field_w_60.css">
+    <link rel="stylesheet" href="css/form/__field/_type/form__field_type_dropdown.css">
+    <link rel="stylesheet" href="css/form/__error-msg/form__error-msg.css">
+    <link rel="stylesheet" href="css/form/__field-row/form__field-row.css">
+    <link rel="stylesheet" href="css/form/__field-row/_single-field/form__field-row_single-field.css">
+    <link rel="stylesheet" href="css/form/__submit-btn/form__submit-btn.css">
+    <link rel="stylesheet" href="css/form/__submit-btn/_mini/form__submit-btn_mini.css">
+    <link rel="stylesheet" href="css/form/__submit-btn/_theme/form__submit-btn_theme_dark-light.css">
+    <link rel="stylesheet" href="css/form/__submit-btn/_no-margin/form__submit-btn_no-margin.css">
+    <link rel="stylesheet" href="css/form/__icon/form__icon.css">
+</head>
+<body class="container container_centering_x container_theme_light">
+    <div class="card card_bordered card_theme_form">
+        <div class="card__header">
+            <h1 class="card__title card__title_no-margin">Регистрация</h1>
+        </div>
+        <div class="card__body">
+            <span class="card__note">Для регистрации на ресурсе укажите информацию о себе</span>
+            <form class="form" id="registration_form">
+                <fieldset class="form__fieldset">
+                    <input class="form__field form__field_error" type="text" id="name" placeholder="Имя">
+                    <span class="form__error-msg">Заполните обязательное поле</span>
+                    <input class="form__field" type="text" id="surname" placeholder="Фамилия">
+                    <span class="form__subtitle">Дата рождения</span>
+                    <div class="form__field-row">
+                        <span class="form__field form__field_type_dropdown" id="day_of_birth">День</span>
+                        <span class="form__field form__field_type_dropdown" id="month_of_birth">Месяц</span>
+                        <span class="form__field form__field_type_dropdown" id="year_of_birth">Год</span>
+                    </div>
+                    <span class="form__subtitle">Телефон</span>
+                    <div class="form__field-row form__field-row_single-field">
+                        <span class="form__field form__field_type_dropdown form__field_w_40" id="phone_county">
+                            <img src="img/ru.png" class="form__icon" alt="Флаг России">Россия
+                        </span>
+                        <input class="form__field form__field_w_60" type="tel" id="country" value="+7">
+                    </div>
+                    <input class="form__field" type="password" id="password" placeholder="Пароль">
+                    <input class="form__field" type="password" id="confirm_password" placeholder="Повторите пароль">
+                </fieldset>
+            </form>
+        </div>
+        <div class="card__footer card__footer_margin-top">
+            <button class="form__submit-btn form__submit-btn_mini form__submit-btn_no-margin" type="submit" form="registration_form">
+                Зарегистрироваться
+            </button>
+            <button class="form__submit-btn form__submit-btn_mini form__submit-btn_no-margin form__submit-btn_theme_dark-light" type="reset" form="registration_form">
+                Отменить
+            </button>
+        </div>
+    </div>
+</body>
+</html>

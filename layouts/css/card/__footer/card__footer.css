@@ -1,6 +1,6 @@
 .card__footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 20px;
     border-top: 1px solid #E0E0E0;
 }

@@ -1,0 +1,6 @@
+.list__elem_dropdown::after {
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 20px;
+    content: url("drop_down.svg");
+}

@@ -1,5 +1,7 @@
 .form__pswd-wrapper {
     position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }

@@ -1,0 +1,3 @@
+.list_striped .list__elem:nth-child(even) {
+    background: #F5F5F5;
+}

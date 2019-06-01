@@ -1,6 +1,5 @@
 .form__submit-btn {
-    margin-top: 16px;
-    margin-bottom: 8px;
+    margin: 16px 4px 8px 4px;
     padding: 10px 70px 10px 70px;
     border: 1px solid #E0BA00;
     border-radius: .25rem;
@@ -8,4 +7,5 @@
     color: white;
     font-weight: bold;
     font-size: large;
+    text-decoration: none;
 }
