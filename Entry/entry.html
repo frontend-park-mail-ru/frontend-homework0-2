@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+ 
+  <style>
+      body {
+display: grid;
+grid-template-areas:
+“empty empty empty empty empty empty”
+“empty empty empty empty empty empty”  
+“empty empty login login empty empty”
+“empty empty login login empty empty”
+“empty empty empty empty empty empty”
+“empty empty empty empty empty empty”;
+grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
+grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+grid-gap: 10px;
+height: 100vh;
+margin: 0;
+}
+}
+ login, div {
+padding: 10px;
+background: white
+}
+      empty {
+          background: gray;
+      }
+#EmptyPage {
+grid-area: empty;
+}
+#LoginPage {
+grid-area: login;
+}
+
+</style>
+    </head>
+    
+<body>
+<empty id=”EmptyPage”>Empty</empty>
+<login id=”LoginPage”>Login</login>
+</body>
+
+</html>

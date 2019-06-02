@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homepage</title>
+    <style type="text/css">
+  
+       
+          html {
+        background: url(fuckyou.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+            
+             border: 7px solid white;  
+    background-clip: border-box; /* Фон под рамкой */    
+    padding: 94px; 
+              border: 100x solid white; 
+        background-size: 100% 100%;
+              border-bottom: none;
+}
+        }
+        .icon {
+            margin: -60px 330px;
+            position:absolute;
+            
+        }
+        h2 {
+            text-align:justify;
+            font-family: "Arial", "Helvetica", sans-serif;
+             
+            font-weight: 800;
+            font-size: 34px;
+            margin-bottom: 10px;
+            color: aliceblue;
+        }
+       
+.login-form {
+  width: 350px;
+  position: absolute;
+    left:40%;
+  top: 45%;
+
+
+}
+        .log-btn {
+  background: #267E71;
+  width: 70%;
+  font-size: 16px;
+  height: 50px;
+  color: #fff;
+   
+  border-radius: 5px;
+  border: 1.5px solid #267E71;
+}
+        
+.form-control {
+    margin-bottom: 10px;
+  border-radius: 7px;
+  border: 1.5px solid gray;
+  width: 100%;
+  height: 50px;
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+     .link {
+            text-align: center;
+            color: #236AC7;
+            font-family: "Arial","Helvetica", sans-serif;
+            margin-top:-23px;
+            font-size: 16px;
+            font-weight: 600;
+        }    
+svg path {
+stroke:inherit;
+stroke-width:inherit;
+fill:inherit;
+}
+
+        .wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 200px;
+  grid-template-areas: 
+    ". a a ."
+    ". a a .";
+}
+.item1 {
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+     <h2>Наше невероятно красивое приложение, в котором вы обязаны зарегистрироваться</h2>
+    <div class="wrapper">
+        <div class="item1">
+
+            <div class="login-form">
+               
+                <div>
+                    <input type="text" class="form-control" placeholder="Email " id="UserName">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Пароль" id="Passwod">
+                    <object type="image/svg+xml" data="show.svg" id='object' class='icon'></object>
+                </div>
+                <button type="button" class="log-btn"><img src="mailru.svg">Зарегистрироваться</button>
+                <a href="#about" class="link">Или зайти через Facebook</a>
+            </div>
+        </div>
+    </div>
+        </div>
+</body>
+
+</html>
