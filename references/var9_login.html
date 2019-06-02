@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Логин</h1>
+    <div class="input-area">
+      <input type="button" class="btn vk" value="Войти через Вконтакте">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#FFFFFF">
+        <path fill-rule="evenodd"
+          d="M15.623 3.901c.119-.373 0-.644-.525-.644h-1.745c-.441 0-.644.238-.763.492 0 0-.898 2.169-2.152 3.575-.406.407-.593.542-.813.542-.119 0-.271-.135-.271-.508V3.884c0-.44-.136-.644-.509-.644H6.1c-.271 0-.44.204-.44.407 0 .424.627.525.694 1.712v2.575c0 .559-.101.661-.322.661-.593 0-2.033-2.186-2.897-4.677-.17-.491-.339-.678-.78-.678H.593c-.508 0-.593.238-.593.492 0 .457.593 2.762 2.762 5.812 1.44 2.084 3.491 3.203 5.338 3.203 1.118 0 1.254-.255 1.254-.678v-1.576c0-.508.101-.593.457-.593.254 0 .712.135 1.746 1.135 1.186 1.186 1.389 1.729 2.05 1.729h1.745c.509 0 .746-.255.61-.746-.152-.491-.728-1.203-1.474-2.05-.407-.475-1.017-1-1.203-1.254-.254-.339-.186-.475 0-.78-.017 0 2.118-3.016 2.338-4.033" />
+      </svg>
+    </div>
+    <div class="input-area">
+      <input type="button" class="btn fb" value="Войти через Facebook">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#FFFFFF">
+        <path fill-rule="evenodd"
+          d="M8.614 8.147h2.097s.217-.663.289-1.62v-.148.074-.368H8.542v-2.36c0-.22.362-.59.65-.59h1.519V1H9.41C6.663 1 6.446 3.505 6.446 3.874v2.284H5v2.21h1.446V15h2.168V8.147z" />
+      </svg>
+    </div>
+    <div class="or">
+      <hr>
+      или
+      <hr>
+    </div>
+    <form>
+      <div class="input-area">
+        <input class="input-field" type="email" name="" placeholder="Email">
+      </div>
+      <div class="input-area input-area__wrong">
+        <input class="input-field input-field__wrong" type="password" name="" placeholder="Пароль">
+        <svg class="icon-input" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#171717">
+          <path fill-rule="evenodd"
+            d="M11.949 2.578L13.527 1A1.041 1.041 0 1 1 15 2.473L2.473 15A1.041 1.041 0 1 1 1 13.527l1.409-1.409C.823 10.566 0 8.707 0 8c0-1.302 2.698-6.512 8-6.512 1.536 0 2.853.437 3.949 1.09zm2.573 2.314C15.505 6.167 16 7.442 16 8c0 1.302-2.791 6.512-8 6.512a7.452 7.452 0 0 1-2.626-.472l2.331-2.331a3.731 3.731 0 0 0 4.004-4.004l2.813-2.813zm-4.735-.153A3.688 3.688 0 0 0 8 4.279 3.731 3.731 0 0 0 4.279 8c0 .647.167 1.256.46 1.787l1.319-1.318A1.931 1.931 0 0 1 6 8c0-1.143.857-2 2-2 .163 0 .321.019.471.056l1.316-1.317z" />
+        </svg>
+      </div>
+      <div class="input-area input-area__email">
+        <input type="button" class="btn email" value="Войти через почту">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#FFFFFF">
+          <path fill-rule="evenodd" d="M13.932 8A5.928 5.928 0 1 0 2.076 8a5.928 5.928 0 0 0 7.523 5.705c.249-.07.435-.169.696-.249.519-.161 1.167.121 1.298.649.15.602-.147 1.116-.647 1.331-.24.102-.544.198-.661.232A8.004 8.004 0 0 1 0 8c0-4.415 3.585-8 8-8s8 3.585 8 8l-.001.098a7.984 7.984 0 0 1-.232 1.815l-.004.014c-.573 1.929-1.852 2.758-3.326 2.758-.948-.007-1.823-.495-2.273-1.313a3.794 3.794 0 0 1-2.312.787c-2.162 0-3.917-1.828-3.917-4.079C3.935 5.828 5.69 4 7.852 4c.832 0 1.605.271 2.24.733a.884.884 0 0 1 1.677.392v4.414c0 .501.244.993.861.993.542 0 .951-.524 1.191-1.387.067-.34.104-.687.11-1.045l.001-.1zM7.905 6.041c1.115 0 2.021.916 2.021 2.044 0 1.129-.906 2.045-2.021 2.045a2.034 2.034 0 0 1-2.022-2.045c0-1.128.906-2.044 2.022-2.044z"/>
+        </svg>      
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
+
+<style>
+  body {
+    font-family: Helvetica, Arial, san-serif;
+    font-size: 14px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E0E0E0;
+    border-radius: 8px;
+
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-bottom: 10px;
+  }
+
+  .input-area {
+    position: relative;
+    width: 300px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .btn {
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translate(0, -50%);
+  }
+
+  .vk {
+    background-color: #4A76A8;
+    border-color: #436B98;
+  }
+
+  .fb {
+    background-color: #3B5998;
+    border-color: #37538F;
+  }
+
+  .email {
+    background-color: #FFD400;
+    border-color: #E0BB04;
+  }
+
+  .input-area {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 36px;
+    width: 290px;
+  }
+
+  .input-field {
+    border: 1px;
+    border-style: solid;
+    border-color: #E4E4E4;
+    border-radius: 8px;
+    padding-left: 20px;
+    height: inherit;
+    width: 278px;
+  }
+
+  .input-field__wrong {
+    border-color: red;
+  }
+
+  .input-area__wrong::after {
+    content: "Введите пароль";
+    position: relative;
+    bottom: -2px;
+    left: 0;
+    color: red;
+    font-size: 11px;
+  }
+
+  .input-area__email {
+    margin-top: 30px;
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+  }
+
+  .icon-input {
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translate(0, -50%);
+  }
+
+  .or {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+    color: #9C9C9C;
+    margin: 20px 0px 30px 0px;
+  }
+
+  hr {
+    width: 135px;
+    border: none;
+    height: 1px;
+    background: #E1E1E1;
+    margin: 5px;
+  }

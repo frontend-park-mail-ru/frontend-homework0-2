@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Signup</title>
+</head>
+
+<body>
+
+  <div class="singup">
+    <h1>Наше невероятно крассивое приложение, в котором вы обязаны зарегистрироваться</h1>
+    <form>
+      
+      <div class="input-area">
+        <input class="input-field" type="email" name="" placeholder="Email">
+      </div>
+      <div class="input-area">
+        <input class="input-field" type="password" name="" placeholder="Пароль">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#171717">
+          <path fill-rule="evenodd"
+            d="M11.949 2.578L13.527 1A1.041 1.041 0 1 1 15 2.473L2.473 15A1.041 1.041 0 1 1 1 13.527l1.409-1.409C.823 10.566 0 8.707 0 8c0-1.302 2.698-6.512 8-6.512 1.536 0 2.853.437 3.949 1.09zm2.573 2.314C15.505 6.167 16 7.442 16 8c0 1.302-2.791 6.512-8 6.512a7.452 7.452 0 0 1-2.626-.472l2.331-2.331a3.731 3.731 0 0 0 4.004-4.004l2.813-2.813zm-4.735-.153A3.688 3.688 0 0 0 8 4.279 3.731 3.731 0 0 0 4.279 8c0 .647.167 1.256.46 1.787l1.319-1.318A1.931 1.931 0 0 1 6 8c0-1.143.857-2 2-2 .163 0 .321.019.471.056l1.316-1.317z" />
+        </svg>
+      </div>
+    </form>
+    <input type="submit" class="button" value="Зарегистрироваться">
+    <a class="another" href="#">Или зайти через Facebook</a>
+  </div>
+
+</body>
+
+</html>
+
+<style>
+  body {
+    background: #000000 url("https://www.scdn.co/i/generic/hero-lg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Helvetica, Arial, san-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+
+  a {
+    user-select: none;
+  }
+
+  .singup {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    text-align: center;
+    width: 70%;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .input-area {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 400px;
+  }
+
+  .input-field {
+    border: 1px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 10px;
+    padding-left: 20px;
+    height: inherit;
+    width: 380px;
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+  }
+
+  .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 10px 46px 10px 46px;
+    background-color: #FFD400;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E0BA00;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .another {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+
+</style>

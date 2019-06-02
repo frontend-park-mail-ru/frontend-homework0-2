@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Profile</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="form-title">Профиль</h1>
+    <div class="person">
+      <div class="block ceil-1">
+        <p class="block__label">Фамилия</p>
+        <p class="block__value">Иванов</p>
+      </div>
+      <div class="block ceil-2">
+        <p class="block__label">Имя</p>
+        <p class="block__value">Иван</p>
+      </div>
+      <div class="block ceil-3">
+        <p class="block__label">Никнейм</p>
+        <p class="block__value">vileven</p>
+      </div>
+      <div class="block ceil-4">
+        <p class="block__label">Дата рождения</p>
+        <p class="block__value">15.06.1997</p>
+      </div>
+      <div class="block ceil-5">
+        <p class="block__label">Пол</p>
+        <p class="block__value">Мужской</p>
+      </div>
+      <div class="block ceil-6">
+        <p class="block__label">Email</p>
+        <p class="block__value">lol@kek</p>
+      </div>
+      <div class="block ceil-7">
+        <p class="block__label">Телефон</p>
+        <p class="block__value">+7 (965) 432-**-**</p>
+      </div>
+    </div>
+    <div class="action-bar">
+      <div class="button-area">
+          <input type="button" class="button button_change" value="Изменить">
+          <svg class="icon__edit" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M7.627 13.203l4.237-4.237 2.17 2.17-3.152 3.152-1.085 1.085c-.001.001-.243.225-.712.314l-1.621.306a.438.438 0 0 1-.36-.097.438.438 0 0 1-.097-.36l.306-1.621c.089-.468.312-.71.314-.712zM5.557 14H2.013a1 1 0 0 1-1-1v-.3c0-2.48 2.01-4.494 4.488-4.5v-.796a3 3 0 0 1-1.488-2.591V3a3.001 3.001 0 0 1 6 0v1.813a3 3 0 0 1-1.488 2.591V8.2a4.52 4.52 0 0 1 1.199.165 2477.73 2477.73 0 0 0-3.326 3.329c-.004.004-.509.552-.71 1.611L5.557 14zm8.994-6.812a.643.643 0 0 0-.909 0l-.856.856 2.17 2.17.856-.856a.643.643 0 0 0 0-.909l-1.261-1.261z"/>
+          </svg>          
+      </div>
+      <div class="button-area">
+          <input type="button" class="button button_delete" value="Удалить">
+          <svg class="icon__delete" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M12.437 6a.463.463 0 0 1 .464.489l-.367 6.679c0 1.104-.914 1.84-2.018 1.84H5.548c-1.103 0-2.017-.686-2.017-1.79l-.436-6.724A.462.462 0 0 1 3.558 6h8.879zM2.128 5a.529.529 0 0 1-.531-.525l.001-.012c0-.414.251-.769.608-.922.455-.241 1.681-.439 3.292-.542V1.41C5.498.632 6.13 0 6.908 0h2.184c.778 0 1.41.632 1.41 1.41v1.589c1.611.103 2.837.301 3.292.542.357.153.608.508.608.922 0 .297-.24.537-.537.537H2.128zm6.571-3.407H7.301A.301.301 0 0 0 7 1.894v1.041a46.454 46.454 0 0 1 2 0V1.894a.301.301 0 0 0-.301-.301z"/>
+          </svg>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<style>
+
+  .container {
+    font-family: Helvetica, Arial, san-serif;
+    font-size: 14px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E0E0E0;
+    border-radius: 5px;
+
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 5px;
+  }
+
+  .form-title {
+    margin: 15px auto 20px 20px;
+  }
+
+  .person {
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 20px 0px 30px 20px;
+
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: 40px 40px 40px 40px 40px;
+    grid-template-areas: 
+      "c1 c2"
+      "c3 ."
+      "c4 ."
+      "c5 ."
+      "c6 c7";
+    grid-gap: 15px;
+  }
+
+  .block {
+    display: grid;
+    grid-auto-rows: 20px 20px;
+    grid-gap: 0px;
+    align-items: center;
+  }
+
+  .block__label {
+    font-weight: bold;
+  }
+
+  .block__value {
+
+  }
+
+  .ceil-1 {
+    grid-area: c1;
+  }
+  .ceil-2 {
+    grid-area: c2;
+  }
+  .ceil-3 {
+    grid-area: c3;
+  }
+  .ceil-4 {
+    grid-area: c4;
+  }
+  .ceil-5 {
+    grid-area: c5;
+  }
+  .ceil-6 {
+    grid-area: c6;
+  }
+  .ceil-7 {
+    grid-area: c7;
+  }
+
+  .action-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .button-area {
+    position: relative;
+  }
+
+  .button {
+    padding: 10px 46px 10px 46px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: Helvetica, Arial, san-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 10px 10px 15px 10px;
+    width: 170px;
+  }
+
+  .button_change {
+    background-color: #FFD400;
+    border-color: #E0BA00;
+    color: #FFFFFF;
+    margin-right: 5px;
+  }
+
+  .icon__edit {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    fill: #FFFFFF;    
+  }
+  
+  .icon__delete {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    fill: #9C9C9C;    
+  }
+
+  .button_delete {
+    background-color: #F7F7F7;
+    border-color: #E9E9E9;
+    color: #9C9C9C;
+    margin-left: 5px;
+  }
+
+</style>
